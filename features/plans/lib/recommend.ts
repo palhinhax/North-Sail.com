@@ -55,7 +55,7 @@ export function recommendPlan(input: RecommendArgs): Recommendation {
     return {
       planCode: "MINI_APP_PLUS",
       reason:
-        "Vários profissionais ou horários semanais/calendário — Mini App+ cobre.",
+        "Vários profissionais ou horários semanais/calendário — App Avançada cobre.",
       quoteOnly: false,
     };
   }
@@ -64,7 +64,7 @@ export function recommendPlan(input: RecommendArgs): Recommendation {
     return {
       planCode: "MINI_APP",
       reason:
-        "Uma funcionalidade essencial (reservas / marcações / pedidos / aulas) — Mini App.",
+        "Uma funcionalidade essencial (reservas / marcações / pedidos / aulas) — App Essencial.",
       quoteOnly: false,
     };
   }

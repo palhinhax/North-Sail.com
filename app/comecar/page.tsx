@@ -28,7 +28,7 @@ const sectorOptions: { value: Sector; label: string }[] = [
   { value: Sector.HOTEL, label: "Hotel / Alojamento" },
   { value: Sector.GYM, label: "Ginásio / Estúdio" },
   { value: Sector.LOCAL_SERVICES, label: "Serviços locais" },
-  { value: Sector.SMALL_SHOP, label: "Loja pequena" },
+  { value: Sector.SMALL_SHOP, label: "Loja local" },
   { value: Sector.CLINIC, label: "Clínica" },
   { value: Sector.OTHER, label: "Outro" },
 ];

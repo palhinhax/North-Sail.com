@@ -18,7 +18,7 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "NorthSail — O site do seu negócio",
   description:
-    "Mini web apps para negócios locais — site, domínio, reservas e manutenção tratados pela NorthSail.",
+    "Web apps profissionais para negócios locais — site, domínio, reservas e manutenção tratados pela NorthSail.",
 };
 
 export default function RootLayout({
