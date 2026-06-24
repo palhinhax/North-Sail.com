@@ -1,0 +1,126 @@
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { isLocale, type Locale } from "@/lib/i18n/config";
+import {
+  allSlugParams,
+  industryKeyOf,
+  resolvePageKey,
+  type PageKey,
+} from "@/lib/i18n/routes";
+import { buildMetadata } from "@/lib/seo/metadata";
+import { PRICING_META } from "@/lib/content/plans";
+import {
+  getAiSummaryContent,
+  getCompareContent,
+  getContactContent,
+  getIndustryContent,
+} from "@/lib/content/locales";
+import {
+  AiSummaryTemplate,
+  CompareTemplate,
+  ContactTemplate,
+  IndustryTemplate,
+  LocaleMarketingLayout,
+  PricingTemplate,
+} from "@/components/i18n";
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return allSlugParams();
+}
+
+/** Resolve (locale, slug) → page key, or null if it doesn't exist/has no content. */
+function resolve(localeRaw: string, slug: string) {
+  if (!isLocale(localeRaw)) return null;
+  const locale = localeRaw as Locale;
+  const pageKey = resolvePageKey(locale, slug);
+  if (!pageKey) return null;
+  return { locale, pageKey };
+}
+
+export function generateMetadata({
+  params,
+}: {
+  params: { locale: string; slug: string };
+}): Metadata {
+  const r = resolve(params.locale, params.slug);
+  if (!r) return {};
+  const { locale, pageKey } = r;
+
+  const meta = metaFor(locale, pageKey);
+  if (!meta) return {};
+  return buildMetadata({
+    locale,
+    pageKey,
+    title: meta.title,
+    description: meta.description,
+  });
+}
+
+function metaFor(
+  locale: Locale,
+  pageKey: PageKey
+): { title: string; description: string } | null {
+  if (pageKey === "pricing") {
+    const m = PRICING_META[locale];
+    return { title: m.metaTitle, description: m.metaDescription };
+  }
+  if (pageKey === "ai-summary") {
+    const c = getAiSummaryContent(locale);
+    return { title: c.metaTitle, description: c.metaDescription };
+  }
+  if (pageKey === "contact") {
+    const c = getContactContent(locale);
+    return { title: c.metaTitle, description: c.metaDescription };
+  }
+  const industry = industryKeyOf(pageKey);
+  if (industry) {
+    const c = getIndustryContent(locale, industry);
+    return c ? { title: c.metaTitle, description: c.metaDescription } : null;
+  }
+  if (pageKey.startsWith("compare:")) {
+    const c = getCompareContent(locale, pageKey);
+    return c ? { title: c.metaTitle, description: c.metaDescription } : null;
+  }
+  return null;
+}
+
+export default function LocaleSlugPage({
+  params,
+}: {
+  params: { locale: string; slug: string };
+}) {
+  const r = resolve(params.locale, params.slug);
+  if (!r) notFound();
+  const { locale, pageKey } = r;
+
+  let body: React.ReactNode = null;
+
+  if (pageKey === "pricing") {
+    body = <PricingTemplate locale={locale} />;
+  } else if (pageKey === "ai-summary") {
+    body = <AiSummaryTemplate locale={locale} />;
+  } else if (pageKey === "contact") {
+    body = <ContactTemplate locale={locale} />;
+  } else {
+    const industry = industryKeyOf(pageKey);
+    if (industry) {
+      const content = getIndustryContent(locale, industry);
+      if (!content) notFound();
+      body = <IndustryTemplate locale={locale} content={content} />;
+    } else if (pageKey.startsWith("compare:")) {
+      const content = getCompareContent(locale, pageKey);
+      if (!content) notFound();
+      body = <CompareTemplate locale={locale} content={content} />;
+    }
+  }
+
+  if (!body) notFound();
+
+  return (
+    <LocaleMarketingLayout locale={locale} pageKey={pageKey}>
+      {body}
+    </LocaleMarketingLayout>
+  );
+}
