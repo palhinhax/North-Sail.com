@@ -4,6 +4,7 @@ import { isLocale, type Locale } from "@/lib/i18n/config";
 import {
   allSlugParams,
   industryKeyOf,
+  legalKeyOf,
   resolvePageKey,
   type PageKey,
 } from "@/lib/i18n/routes";
@@ -15,11 +16,13 @@ import {
   getContactContent,
   getIndustryContent,
 } from "@/lib/content/locales";
+import { getLegalContent } from "@/lib/content/legal";
 import {
   AiSummaryTemplate,
   CompareTemplate,
   ContactTemplate,
   IndustryTemplate,
+  LegalTemplate,
   LocaleMarketingLayout,
   PricingTemplate,
 } from "@/components/i18n";
@@ -83,6 +86,11 @@ function metaFor(
     const c = getCompareContent(locale, pageKey);
     return c ? { title: c.metaTitle, description: c.metaDescription } : null;
   }
+  const legal = legalKeyOf(pageKey);
+  if (legal) {
+    const c = getLegalContent(locale, legal);
+    return { title: c.metaTitle, description: c.metaDescription };
+  }
   return null;
 }
 
@@ -103,6 +111,8 @@ export default function LocaleSlugPage({
     body = <AiSummaryTemplate locale={locale} />;
   } else if (pageKey === "contact") {
     body = <ContactTemplate locale={locale} />;
+  } else if (legalKeyOf(pageKey)) {
+    body = <LegalTemplate locale={locale} which={legalKeyOf(pageKey)!} />;
   } else {
     const industry = industryKeyOf(pageKey);
     if (industry) {

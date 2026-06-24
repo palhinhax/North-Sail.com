@@ -10,4 +10,5 @@ export { IndustryTemplate } from "./templates/industry-template";
 export { CompareTemplate } from "./templates/compare-template";
 export { AiSummaryTemplate } from "./templates/ai-summary-template";
 export { ContactTemplate } from "./templates/contact-template";
+export { LegalTemplate } from "./templates/legal-template";
 export { AiSummaryBlock } from "./templates/ai-summary-block";

@@ -11,6 +11,7 @@ import {
   ClipboardList,
   Building2,
   Receipt,
+  Inbox,
   X,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -32,6 +33,7 @@ const adminNav = [
   { title: "Clientes", href: "/admin/clients", icon: Users },
   { title: "Subscrições", href: "/admin/subscriptions", icon: CreditCard },
   { title: "Pedidos", href: "/admin/requests", icon: ClipboardList },
+  { title: "Leads", href: "/admin/leads", icon: Inbox },
   { title: "Planos", href: "/admin/plans", icon: Receipt },
 ];
 

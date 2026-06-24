@@ -58,6 +58,13 @@ enum RequestStatus {
   REJECTED
 }
 
+enum LeadStatus {
+  NEW
+  CONTACTED
+  CONVERTED
+  ARCHIVED
+}
+
 model User {
   id           String   @id @default(cuid())
   name         String?
@@ -169,4 +176,22 @@ model RequestMessage {
   authorId  String
   body      String
   createdAt DateTime       @default(now())
+}
+
+/// Inbound marketing leads captured from the public lead form.
+model Lead {
+  id                String     @id @default(cuid())
+  businessName      String
+  businessType      String
+  country           String?
+  preferredLanguage String?
+  currentSite       String?
+  need              String
+  email             String
+  phone             String?
+  locale            String?
+  status            LeadStatus @default(NEW)
+  createdAt         DateTime   @default(now())
+
+  @@index([status, createdAt])
 }

@@ -26,7 +26,7 @@ export function LocaleFooter({ locale }: { locale: Locale }) {
           },
           {
             href: localePath(locale, "compare:website-with-bookings"),
-            label: "Bookings",
+            label: dict.footerBookings,
           },
         ],
       },
@@ -35,6 +35,16 @@ export function LocaleFooter({ locale }: { locale: Locale }) {
         links: [
           { href: localePath(locale, "ai-summary"), label: dict.nav[3].label },
           { href: localePath(locale, "contact"), label: dict.ctaContact },
+        ],
+      },
+      {
+        title: dict.footerLegal,
+        links: [
+          {
+            href: localePath(locale, "legal:privacy"),
+            label: dict.footerPrivacy,
+          },
+          { href: localePath(locale, "legal:terms"), label: dict.footerTerms },
         ],
       },
     ];

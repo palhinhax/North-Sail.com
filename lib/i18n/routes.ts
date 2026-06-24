@@ -17,7 +17,9 @@ export type PageKey =
   | "industry:clinics"
   | "industry:local-services"
   | "compare:website-with-bookings"
-  | "compare:cheap-website-for-small-business";
+  | "compare:cheap-website-for-small-business"
+  | "legal:privacy"
+  | "legal:terms";
 
 /** Industry page keys, used by the programmatic-SEO content registry. */
 export const INDUSTRY_KEYS = [
@@ -117,7 +119,29 @@ export const SLUGS: SlugMap = {
     fr: "site-pas-cher-pour-petites-entreprises",
     de: "guenstige-website-fuer-kleine-unternehmen",
   },
+  "legal:privacy": {
+    en: "privacy",
+    pt: "privacidade",
+    es: "privacidad",
+    fr: "confidentialite",
+    de: "datenschutz",
+  },
+  "legal:terms": {
+    en: "terms",
+    pt: "termos",
+    es: "terminos",
+    fr: "conditions",
+    de: "nutzungsbedingungen",
+  },
 };
+
+/** Map a page key to its legal-page kind when applicable. */
+export type LegalKey = "privacy" | "terms";
+export function legalKeyOf(key: PageKey): LegalKey | null {
+  if (key === "legal:privacy") return "privacy";
+  if (key === "legal:terms") return "terms";
+  return null;
+}
 
 export const ALL_PAGE_KEYS = Object.keys(SLUGS) as PageKey[];
 
