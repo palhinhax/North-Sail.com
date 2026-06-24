@@ -59,6 +59,12 @@ const config: Config = {
           accent: "#004fda",
           "accent-hover": "#2b69fd",
         },
+        // Teal accent, used sparingly for the free-trial highlight.
+        teal: {
+          DEFAULT: "#19b5a7",
+          ink: "#0c6b62", // accessible (WCAG AA) text on the tinted surface
+          surface: "#e7f7f5", // light teal tint background for pills/badges
+        },
         surface: {
           DEFAULT: "#faf9fb",
           lowest: "#ffffff",

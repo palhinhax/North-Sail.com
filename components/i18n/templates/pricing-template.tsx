@@ -4,6 +4,7 @@ import {
   CtaLink,
   Section,
   SectionHeader,
+  TrialReassurance,
 } from "@/components/marketing";
 import type { Locale } from "@/lib/i18n/config";
 import { localePath } from "@/lib/i18n/routes";
@@ -75,8 +76,8 @@ export function PricingTemplate({ locale }: { locale: Locale }) {
               )}
             >
               {plan.highlighted && (
-                <span className="absolute -top-3 left-6 rounded-full bg-brand-accent px-3 py-1 text-label-sm font-bold uppercase tracking-wider text-white">
-                  ★
+                <span className="absolute -top-3 left-6 whitespace-nowrap rounded-full bg-brand-accent px-3 py-1 text-label-sm font-bold uppercase tracking-wider text-white">
+                  {dict.trialBadge}
                 </span>
               )}
               <h2
@@ -153,6 +154,14 @@ export function PricingTemplate({ locale }: { locale: Locale }) {
               >
                 {dict.choosePlan}
               </CtaLink>
+              <TrialReassurance
+                className={cn(
+                  "mt-3 text-center",
+                  plan.highlighted && "text-surface-highest"
+                )}
+              >
+                {dict.trialReassurance}
+              </TrialReassurance>
             </div>
           ))}
         </div>
@@ -191,6 +200,7 @@ export function PricingTemplate({ locale }: { locale: Locale }) {
             {dict.ctaContact}
             <ArrowRight className="h-4 w-4" />
           </CtaLink>
+          <TrialReassurance>{dict.trialReassurance}</TrialReassurance>
         </div>
       </Section>
     </>

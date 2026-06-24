@@ -21,6 +21,8 @@ import {
   Section,
   SectionHeader,
   StepCard,
+  TrialBadge,
+  TrialReassurance,
 } from "@/components/marketing";
 import type { Locale } from "@/lib/i18n/config";
 import { localePath, type IndustryKey } from "@/lib/i18n/routes";
@@ -29,6 +31,7 @@ import { getHomeContent } from "@/lib/content/locales";
 import { getPlans } from "@/lib/content/plans";
 import { JsonLd, organizationSchema, websiteSchema } from "@/lib/seo/jsonld";
 import { AiSummaryBlock } from "./ai-summary-block";
+import { ExampleSites } from "./example-sites";
 
 const SECTOR_ICONS: Record<IndustryKey, React.ReactNode> = {
   restaurants: <UtensilsCrossed className="h-5 w-5" />,
@@ -57,6 +60,7 @@ export function HomeTemplate({ locale }: { locale: Locale }) {
       <Hero
         title={c.h1}
         subtitle={c.subtitle}
+        badge={<TrialBadge label={dict.trialBadge} />}
         actions={
           <>
             <CtaLink
@@ -64,7 +68,7 @@ export function HomeTemplate({ locale }: { locale: Locale }) {
               variant="primary"
               size="lg"
             >
-              {c.primaryCta}
+              {dict.trialCtaStart}
               <ArrowRight className="h-4 w-4" />
             </CtaLink>
             <CtaLink
@@ -75,6 +79,9 @@ export function HomeTemplate({ locale }: { locale: Locale }) {
               {c.secondaryCta}
             </CtaLink>
           </>
+        }
+        actionsNote={
+          <TrialReassurance>{dict.trialReassurance}</TrialReassurance>
         }
         visual={<HeroDashboardMockup />}
       />
@@ -103,6 +110,9 @@ export function HomeTemplate({ locale }: { locale: Locale }) {
           ))}
         </div>
       </Section>
+
+      {/* See a real example */}
+      <ExampleSites locale={locale} />
 
       {/* How it works */}
       <Section tone="muted" bordered>
@@ -134,7 +144,8 @@ export function HomeTemplate({ locale }: { locale: Locale }) {
               ctaLabel={dict.choosePlan}
               ctaHref={localePath(locale, "pricing")}
               highlighted={plan.highlighted}
-              badge={plan.highlighted ? "★" : undefined}
+              badge={plan.highlighted ? dict.trialBadge : undefined}
+              footnote={dict.trialReassurance}
             />
           ))}
         </div>

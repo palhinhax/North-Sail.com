@@ -78,6 +78,26 @@ const pt: LocaleContent = {
     faqTitle: "Perguntas frequentes",
     faqs: [
       {
+        question: "Preciso de cartão para experimentar?",
+        answer:
+          "Não. Começa o mês grátis sem dar qualquer dado de pagamento. Só pedimos o pagamento se decidir continuar.",
+      },
+      {
+        question: "E se cancelar durante o mês grátis?",
+        answer:
+          "Não paga nada. Se não confirmar a subscrição no fim do mês, simplesmente não é cobrado.",
+      },
+      {
+        question: "Quem fica dono do domínio?",
+        answer:
+          "O domínio fica incluído e gerido por nós enquanto a subscrição estiver ativa. Se cancelar, tratamos da transferência conforme os termos do serviço. Não garantimos a disponibilidade de um domínio específico nem a proteção de marca.",
+      },
+      {
+        question: "O que está incluído nos 15€?",
+        answer:
+          "Domínio, alojamento, SSL, botão de WhatsApp, Google Maps e manutenção — mais uma funcionalidade essencial do seu negócio, como reservas, marcações ou pedidos de orçamento.",
+      },
+      {
         question: "Preciso de conhecimentos técnicos?",
         answer:
           "Não. A NorthSail trata da configuração, domínio, alojamento, SSL e manutenção técnica. Recebe um painel simples para gerir os seus pedidos e atualizar conteúdos básicos.",

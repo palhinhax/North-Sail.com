@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { redirect } from "next/navigation";
+import { ShieldCheck } from "lucide-react";
 import { prisma } from "@/lib/prisma";
 import { auth } from "@/lib/auth";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -55,6 +56,20 @@ export default async function DashboardHomePage() {
           Olá, {session.user.name || session.user.email}
         </p>
       </div>
+
+      {trialDays !== null && (
+        <div className="flex flex-wrap items-center gap-2 rounded-lg border border-teal/30 bg-teal-surface px-4 py-3 text-sm text-teal-ink">
+          <ShieldCheck className="h-4 w-4 shrink-0" aria-hidden />
+          <span className="font-medium">
+            Estás no teu mês grátis — sem cartão, sem compromisso.
+          </span>
+          <span className="text-teal-ink/90">
+            {trialDays > 0
+              ? `Faltam ${trialDays} dia(s).`
+              : "O teu mês grátis terminou."}
+          </span>
+        </div>
+      )}
 
       <div className="grid gap-4 md:grid-cols-3">
         <Card>
