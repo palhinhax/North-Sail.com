@@ -1,3 +1,4 @@
+import { TRIAL_DAYS } from "@/lib/content/trial";
 import type { Subscription } from "../schemas";
 
 export function getTrialDaysLeft(
@@ -13,5 +14,5 @@ export function getTrialDaysLeft(
 }
 
 export function buildTrialEnd(now: Date = new Date()): Date {
-  return new Date(now.getTime() + 30 * 24 * 60 * 60 * 1000);
+  return new Date(now.getTime() + TRIAL_DAYS * 24 * 60 * 60 * 1000);
 }

@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { signIn } from "next-auth/react";
+import { ShieldCheck } from "lucide-react";
 import { Sector } from "@prisma/client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -21,6 +22,7 @@ import { recommendPlan } from "@/features/plans/lib";
 import { usePlans } from "@/features/plans/hooks";
 import type { PlanCode } from "@/features/plans/schemas";
 import { fetchApi } from "@/lib/api";
+import { TRIAL_COPY_PT } from "@/lib/content/trial";
 
 const sectorOptions: { value: Sector; label: string }[] = [
   { value: Sector.RESTAURANT, label: "Restaurante" },
@@ -323,9 +325,15 @@ export default function ComecarPage() {
                 </Button>
               </div>
 
-              <p className="text-sm text-muted-foreground">
-                Começas com 30 dias grátis. Só pagas no fim do trial.
-              </p>
+              <div className="rounded-lg border border-teal/30 bg-teal-surface p-3">
+                <p className="flex items-center gap-2 text-sm font-medium text-teal-ink">
+                  <ShieldCheck className="h-4 w-4 shrink-0" aria-hidden />
+                  {TRIAL_COPY_PT.badge}
+                </p>
+                <p className="mt-1 text-sm text-teal-ink/90">
+                  {TRIAL_COPY_PT.onboarding}
+                </p>
+              </div>
 
               <div className="flex justify-between">
                 <Button variant="ghost" onClick={() => setStep(2)}>

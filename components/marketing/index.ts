@@ -8,6 +8,7 @@ export { StepCard } from "./step-card";
 export { PricingCard } from "./pricing-card";
 export { FaqItem } from "./faq-item";
 export { Hero, HeroDashboardMockup } from "./hero";
+export { TrialBadge, TrialReassurance } from "./trial-badge";
 export { PageHeader } from "./page-header";
 export { MarketingLayout } from "./marketing-layout";
 export { AuthShell } from "./auth-shell";

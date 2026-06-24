@@ -1,3 +1,4 @@
+import * as React from "react";
 import Link from "next/link";
 import { CheckCircle2 } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -12,6 +13,8 @@ interface PricingCardProps {
   ctaHref: string;
   highlighted?: boolean;
   badge?: string;
+  /** Small muted line rendered under the CTA (e.g. trial reassurance). */
+  footnote?: React.ReactNode;
 }
 
 export function PricingCard({
@@ -23,6 +26,7 @@ export function PricingCard({
   ctaHref,
   highlighted = false,
   badge,
+  footnote,
 }: PricingCardProps) {
   return (
     <div
@@ -34,7 +38,7 @@ export function PricingCard({
       )}
     >
       {badge && (
-        <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-brand-accent px-3 py-1 text-label-sm font-bold uppercase tracking-wider text-white">
+        <span className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-brand-accent px-3 py-1 text-label-sm font-bold uppercase tracking-wider text-white">
           {badge}
         </span>
       )}
@@ -93,6 +97,16 @@ export function PricingCard({
       >
         {ctaLabel}
       </Link>
+      {footnote && (
+        <p
+          className={cn(
+            "mt-3 text-center text-label-sm",
+            highlighted ? "text-surface-highest" : "text-ink-subtle"
+          )}
+        >
+          {footnote}
+        </p>
+      )}
     </div>
   );
 }

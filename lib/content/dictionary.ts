@@ -1,5 +1,6 @@
 import type { Locale } from "@/lib/i18n/config";
 import type { PageKey } from "@/lib/i18n/routes";
+import { TRIAL_COPY_PT } from "./trial";
 
 /** UI chrome strings (navigation, footer, shared labels) per locale. */
 export interface Dictionary {
@@ -40,6 +41,15 @@ export interface Dictionary {
   ctaSeePricing: string;
   ctaGetRecommendation: string;
   ctaContact: string;
+  // free-trial offer (canonical phrasing, see lib/content/trial.ts)
+  trialBadge: string; // short pill, e.g. "1 mês grátis · sem cartão"
+  trialReassurance: string; // muted line under CTAs, e.g. "Sem cartão, sem compromisso."
+  trialCtaStart: string; // primary CTA, e.g. "Começar 1 mês grátis"
+  // "see a real example" section
+  exampleSitesTitle: string;
+  exampleSitesSubtitle: string;
+  exampleSitesBadge: string; // tag shown on each example card
+  exampleSitesCta: string; // per-card link label
   // lead form
   leadTitle: string;
   leadIntro: string;
@@ -101,6 +111,14 @@ const en: Dictionary = {
   ctaSeePricing: "See pricing",
   ctaGetRecommendation: "Ask for a recommendation",
   ctaContact: "Contact NorthSail",
+  trialBadge: "1 month free · no card",
+  trialReassurance: "No card, no commitment.",
+  trialCtaStart: "Start 1 month free",
+  exampleSitesTitle: "See a real example",
+  exampleSitesSubtitle:
+    "Real websites and mini apps, from €15/month. (Illustrative examples.)",
+  exampleSitesBadge: "Example",
+  exampleSitesCta: "View example",
   leadTitle: "Tell us about your business",
   leadIntro:
     "Send us a few details and we'll recommend the minimum plan that fits — no obligation.",
@@ -162,6 +180,14 @@ const pt: Dictionary = {
   ctaSeePricing: "Ver preços",
   ctaGetRecommendation: "Pedir uma recomendação",
   ctaContact: "Contactar a NorthSail",
+  trialBadge: TRIAL_COPY_PT.badge,
+  trialReassurance: TRIAL_COPY_PT.reassurance,
+  trialCtaStart: TRIAL_COPY_PT.ctaStart,
+  exampleSitesTitle: "Veja um exemplo real",
+  exampleSitesSubtitle:
+    "Sites e mini apps reais, desde 15€/mês. (Exemplos ilustrativos.)",
+  exampleSitesBadge: "Exemplo",
+  exampleSitesCta: "Ver exemplo",
   leadTitle: "Fale-nos do seu negócio",
   leadIntro:
     "Envie alguns dados e recomendamos o plano mínimo que se adequa — sem compromisso.",
@@ -223,6 +249,14 @@ const es: Dictionary = {
   ctaSeePricing: "Ver precios",
   ctaGetRecommendation: "Pedir una recomendación",
   ctaContact: "Contactar con NorthSail",
+  trialBadge: "1 mes gratis · sin tarjeta",
+  trialReassurance: "Sin tarjeta, sin compromiso.",
+  trialCtaStart: "Empezar 1 mes gratis",
+  exampleSitesTitle: "Mira un ejemplo real",
+  exampleSitesSubtitle:
+    "Webs y mini apps reales, desde 15€/mes. (Ejemplos ilustrativos.)",
+  exampleSitesBadge: "Ejemplo",
+  exampleSitesCta: "Ver ejemplo",
   leadTitle: "Cuéntanos sobre tu negocio",
   leadIntro:
     "Envíanos algunos datos y te recomendaremos el plan mínimo que encaja — sin compromiso.",
@@ -284,6 +318,14 @@ const fr: Dictionary = {
   ctaSeePricing: "Voir les tarifs",
   ctaGetRecommendation: "Demander une recommandation",
   ctaContact: "Contacter NorthSail",
+  trialBadge: "1 mois gratuit · sans carte",
+  trialReassurance: "Sans carte, sans engagement.",
+  trialCtaStart: "Commencer 1 mois gratuit",
+  exampleSitesTitle: "Voyez un exemple réel",
+  exampleSitesSubtitle:
+    "Sites et mini apps réels, à partir de 15€/mois. (Exemples illustratifs.)",
+  exampleSitesBadge: "Exemple",
+  exampleSitesCta: "Voir l'exemple",
   leadTitle: "Parlez-nous de votre entreprise",
   leadIntro:
     "Envoyez-nous quelques informations et nous recommanderons le plan minimum adapté — sans engagement.",
@@ -345,6 +387,14 @@ const de: Dictionary = {
   ctaSeePricing: "Preise ansehen",
   ctaGetRecommendation: "Empfehlung anfragen",
   ctaContact: "NorthSail kontaktieren",
+  trialBadge: "1 Monat gratis · ohne Karte",
+  trialReassurance: "Ohne Karte, ohne Verpflichtung.",
+  trialCtaStart: "1 Monat gratis starten",
+  exampleSitesTitle: "Sehen Sie ein echtes Beispiel",
+  exampleSitesSubtitle:
+    "Echte Websites und Mini-Apps, ab 15€/Monat. (Illustrative Beispiele.)",
+  exampleSitesBadge: "Beispiel",
+  exampleSitesCta: "Beispiel ansehen",
   leadTitle: "Erzählen Sie uns von Ihrem Unternehmen",
   leadIntro:
     "Senden Sie uns ein paar Angaben und wir empfehlen den passenden Mindesttarif — unverbindlich.",

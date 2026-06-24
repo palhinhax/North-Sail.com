@@ -5,7 +5,11 @@ import { cn } from "@/lib/utils";
 interface HeroProps {
   title: React.ReactNode;
   subtitle?: React.ReactNode;
+  /** Highlight shown between the subtitle and the CTAs (e.g. the trial badge). */
+  badge?: React.ReactNode;
   actions?: React.ReactNode;
+  /** Muted line rendered directly under the CTAs (e.g. the trial reassurance). */
+  actionsNote?: React.ReactNode;
   visual?: React.ReactNode;
   className?: string;
 }
@@ -13,7 +17,9 @@ interface HeroProps {
 export function Hero({
   title,
   subtitle,
+  badge,
   actions,
+  actionsNote,
   visual,
   className,
 }: HeroProps) {
@@ -40,9 +46,11 @@ export function Hero({
                 {subtitle}
               </p>
             )}
+            {badge && <div className="-mt-2">{badge}</div>}
             {actions && (
-              <div className="mt-2 flex flex-col gap-3 sm:flex-row">
-                {actions}
+              <div className="flex flex-col gap-3">
+                <div className="flex flex-col gap-3 sm:flex-row">{actions}</div>
+                {actionsNote}
               </div>
             )}
           </div>
