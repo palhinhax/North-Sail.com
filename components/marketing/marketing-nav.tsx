@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useSession } from "next-auth/react";
@@ -34,8 +35,15 @@ export function MarketingNav() {
     >
       <div className="mx-auto flex h-16 max-w-[1280px] items-center justify-between px-6">
         <div className="flex items-center gap-10">
-          <Link href="/" className="text-headline-md font-bold text-brand">
-            NorthSail
+          <Link href="/" aria-label="NorthSail" className="flex items-center">
+            <Image
+              src="/logo.png"
+              alt="NorthSail"
+              width={140}
+              height={36}
+              priority
+              className="h-9 w-auto"
+            />
           </Link>
           <div className="hidden gap-8 md:flex">
             {NAV_LINKS.map((l) => (
