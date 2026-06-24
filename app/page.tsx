@@ -1,107 +1,145 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Code2, Database, Shield, Palette } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { prisma } from "@/lib/prisma";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 
-export default function Home() {
+const cents = (n: number) => (n / 100).toFixed(2).replace(".", ",");
+
+const examples = [
+  {
+    sector: "Ginásios",
+    text: "App para gerir aulas, horários semanais e inscrições.",
+  },
+  {
+    sector: "Restaurantes",
+    text: "Menu digital, pedidos take-away e reservas de mesa.",
+  },
+  {
+    sector: "Cabeleireiros",
+    text: "Marcações online com vários profissionais.",
+  },
+  {
+    sector: "Hotéis e AL",
+    text: "Site com disponibilidade e pedidos diretos.",
+  },
+];
+
+export default async function Home() {
+  const plans = await prisma.plan
+    .findMany({ where: { active: true }, orderBy: { monthlyPrice: "asc" } })
+    .catch(() => []);
+
   return (
     <div className="min-h-screen">
-      {/* Header */}
       <header className="border-b">
         <div className="container mx-auto flex h-16 items-center justify-between px-4">
-          <div className="font-bold text-xl">SaaS Template</div>
+          <div className="text-xl font-bold">NorthSail</div>
           <div className="flex items-center gap-4">
             <Link href="/auth/login">
-              <Button variant="ghost">Sign in</Button>
+              <Button variant="ghost">Entrar</Button>
             </Link>
-            <Link href="/auth/register">
-              <Button>Get started</Button>
+            <Link href="/comecar">
+              <Button>Começar</Button>
             </Link>
           </div>
         </div>
       </header>
 
-      {/* Hero */}
-      <section className="container mx-auto px-4 py-24 text-center">
-        <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-          Production-Ready
+      <section className="container mx-auto px-4 py-20 text-center">
+        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
+          Mini web apps para negócios locais
           <br />
-          <span className="text-primary">SaaS Template</span>
+          <span className="text-primary">desde 15€/mês</span>
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
-          A full-stack Next.js 14 template with authentication, database, and
-          beautiful UI components. Start building your SaaS product today.
+          Tu cuidas do negócio. Nós tratamos do site, do domínio, do alojamento
+          e das atualizações. Reservas, marcações, pedidos, aulas — tudo pronto
+          a usar.
         </p>
-        <div className="mt-10 flex items-center justify-center gap-4">
-          <Link href="/auth/register">
+        <div className="mt-8 flex justify-center gap-3">
+          <Link href="/comecar">
             <Button size="lg">
-              Get started
+              Começar agora
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </Link>
           <Link href="/auth/login">
             <Button size="lg" variant="outline">
-              Sign in
+              Entrar
             </Button>
           </Link>
         </div>
+        <p className="mt-4 text-sm text-muted-foreground">
+          30 dias grátis. Só pagas no fim do trial.
+        </p>
       </section>
 
-      {/* Features */}
-      <section className="border-t bg-muted/50 py-24">
+      <section className="border-t bg-muted/30 py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-center text-3xl font-bold">Built with the Best Stack</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-center text-muted-foreground">
-            Modern technologies carefully selected for developer experience and production readiness.
-          </p>
-          <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            <FeatureCard
-              icon={<Code2 className="h-8 w-8" />}
-              title="Next.js 14"
-              description="App Router with React Server Components and TypeScript"
-            />
-            <FeatureCard
-              icon={<Database className="h-8 w-8" />}
-              title="Prisma + PostgreSQL"
-              description="Type-safe database access with migrations"
-            />
-            <FeatureCard
-              icon={<Shield className="h-8 w-8" />}
-              title="Auth.js"
-              description="Secure authentication with credentials provider"
-            />
-            <FeatureCard
-              icon={<Palette className="h-8 w-8" />}
-              title="shadcn/ui"
-              description="Beautiful, accessible UI components with Tailwind"
-            />
+          <h2 className="text-center text-2xl font-bold">Exemplos por setor</h2>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {examples.map((e) => (
+              <div
+                key={e.sector}
+                className="rounded-lg border bg-background p-5"
+              >
+                <div className="text-sm text-primary">{e.sector}</div>
+                <p className="mt-2 text-sm text-muted-foreground">{e.text}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t py-12">
+      {plans.length > 0 && (
+        <section className="border-t py-16">
+          <div className="container mx-auto px-4">
+            <h2 className="text-center text-2xl font-bold">Planos simples</h2>
+            <p className="mx-auto mt-2 max-w-xl text-center text-muted-foreground">
+              Começa pequeno. Cresce quando precisares.
+            </p>
+            <div className="mt-10 grid gap-4 md:grid-cols-3 lg:grid-cols-5">
+              {plans.map((p) => (
+                <Card key={p.id}>
+                  <CardHeader>
+                    <CardTitle className="text-base">{p.name}</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-2 text-sm">
+                    <div className="text-3xl font-bold">
+                      {cents(p.monthlyPrice)}€
+                      <span className="text-sm font-normal text-muted-foreground">
+                        {" "}
+                        / mês
+                      </span>
+                    </div>
+                    <p className="text-muted-foreground">{p.description}</p>
+                    <ul className="space-y-1">
+                      {p.features.slice(0, 4).map((f) => (
+                        <li key={f} className="flex items-start gap-2">
+                          <CheckCircle2 className="mt-0.5 h-4 w-4 text-primary" />
+                          <span>{f}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+            <div className="mt-10 text-center">
+              <Link href="/comecar">
+                <Button size="lg">Escolher um plano</Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
+
+      <footer className="border-t py-10">
         <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-          <p>Built with ❤️ using Next.js, Prisma, and shadcn/ui</p>
+          NorthSail · Mini web apps para negócios locais
         </div>
       </footer>
-    </div>
-  );
-}
-
-function FeatureCard({
-  icon,
-  title,
-  description,
-}: {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-}) {
-  return (
-    <div className="rounded-lg border bg-background p-6">
-      <div className="text-primary">{icon}</div>
-      <h3 className="mt-4 font-semibold">{title}</h3>
-      <p className="mt-2 text-sm text-muted-foreground">{description}</p>
     </div>
   );
 }

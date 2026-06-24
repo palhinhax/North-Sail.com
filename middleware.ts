@@ -3,15 +3,13 @@ import { NextResponse } from "next/server";
 
 export default auth((req) => {
   const isLoggedIn = !!req.auth;
+  const role = req.auth?.user?.role;
   const { pathname } = req.nextUrl;
 
-  // Protected routes
-  const protectedRoutes = ["/dashboard"];
-  const isProtectedRoute = protectedRoutes.some((route) =>
-    pathname.startsWith(route)
-  );
+  const isDashboardRoute = pathname.startsWith("/dashboard");
+  const isAdminRoute = pathname.startsWith("/admin");
+  const isProtectedRoute = isDashboardRoute || isAdminRoute;
 
-  // Auth routes (should redirect to dashboard if logged in)
   const authRoutes = ["/auth/login", "/auth/register"];
   const isAuthRoute = authRoutes.some((route) => pathname.startsWith(route));
 
@@ -21,8 +19,13 @@ export default auth((req) => {
     return NextResponse.redirect(loginUrl);
   }
 
-  if (isAuthRoute && isLoggedIn) {
+  if (isAdminRoute && isLoggedIn && role !== "ADMIN") {
     return NextResponse.redirect(new URL("/dashboard", req.url));
+  }
+
+  if (isAuthRoute && isLoggedIn) {
+    const target = role === "ADMIN" ? "/admin" : "/dashboard";
+    return NextResponse.redirect(new URL(target, req.url));
   }
 
   return NextResponse.next();

@@ -12,6 +12,7 @@ interface NavbarProps {
 
 export function Navbar({ onMenuClick, showMenuButton }: NavbarProps) {
   const { data: session } = useSession();
+  const homeHref = session?.user?.role === "ADMIN" ? "/admin" : "/dashboard";
 
   return (
     <nav className="border-b bg-background">
@@ -26,36 +27,38 @@ export function Navbar({ onMenuClick, showMenuButton }: NavbarProps) {
             <Menu className="h-5 w-5" />
           </Button>
         )}
-        
-        <Link href="/" className="font-bold text-xl">
-          SaaS Template
+
+        <Link href={session ? homeHref : "/"} className="text-xl font-bold">
+          NorthSail
         </Link>
 
         <div className="ml-auto flex items-center space-x-4">
           {session ? (
             <>
-              <div className="hidden sm:flex items-center gap-2">
+              <div className="hidden items-center gap-2 sm:flex">
                 <User className="h-4 w-4" />
-                <span className="text-sm">{session.user?.name || session.user?.email}</span>
+                <span className="text-sm">
+                  {session.user?.name || session.user?.email}
+                </span>
               </div>
               <Button
                 variant="outline"
                 size="sm"
                 onClick={() => signOut({ callbackUrl: "/" })}
               >
-                <LogOut className="h-4 w-4 mr-2" />
-                Sign out
+                <LogOut className="mr-2 h-4 w-4" />
+                Sair
               </Button>
             </>
           ) : (
             <>
               <Link href="/auth/login">
                 <Button variant="ghost" size="sm">
-                  Sign in
+                  Entrar
                 </Button>
               </Link>
-              <Link href="/auth/register">
-                <Button size="sm">Get started</Button>
+              <Link href="/comecar">
+                <Button size="sm">Começar</Button>
               </Link>
             </>
           )}

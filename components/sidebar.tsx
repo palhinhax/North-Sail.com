@@ -2,8 +2,17 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useSession } from "next-auth/react";
 import { cn } from "@/lib/utils";
-import { LayoutDashboard, FileText, X } from "lucide-react";
+import {
+  LayoutDashboard,
+  Users,
+  CreditCard,
+  ClipboardList,
+  Building2,
+  Receipt,
+  X,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface SidebarProps {
@@ -11,25 +20,28 @@ interface SidebarProps {
   onClose: () => void;
 }
 
-const navItems = [
-  {
-    title: "Dashboard",
-    href: "/dashboard",
-    icon: LayoutDashboard,
-  },
-  {
-    title: "Posts",
-    href: "/dashboard/posts",
-    icon: FileText,
-  },
+const clientNav = [
+  { title: "Visão geral", href: "/dashboard", icon: LayoutDashboard },
+  { title: "Subscrição", href: "/dashboard/subscription", icon: CreditCard },
+  { title: "Pedidos", href: "/dashboard/requests", icon: ClipboardList },
+  { title: "Negócio", href: "/dashboard/business", icon: Building2 },
+];
+
+const adminNav = [
+  { title: "Visão geral", href: "/admin", icon: LayoutDashboard },
+  { title: "Clientes", href: "/admin/clients", icon: Users },
+  { title: "Subscrições", href: "/admin/subscriptions", icon: CreditCard },
+  { title: "Pedidos", href: "/admin/requests", icon: ClipboardList },
+  { title: "Planos", href: "/admin/plans", icon: Receipt },
 ];
 
 export function Sidebar({ open, onClose }: SidebarProps) {
   const pathname = usePathname();
+  const { data: session } = useSession();
+  const navItems = session?.user?.role === "ADMIN" ? adminNav : clientNav;
 
   return (
     <>
-      {/* Backdrop for mobile */}
       {open && (
         <div
           className="fixed inset-0 z-40 bg-black/50 md:hidden"
@@ -37,7 +49,6 @@ export function Sidebar({ open, onClose }: SidebarProps) {
         />
       )}
 
-      {/* Sidebar */}
       <aside
         className={cn(
           "fixed inset-y-0 left-0 z-50 w-64 transform border-r bg-background transition-transform duration-200 ease-in-out md:relative md:translate-x-0",
@@ -53,7 +64,11 @@ export function Sidebar({ open, onClose }: SidebarProps) {
 
         <nav className="space-y-1 p-4">
           {navItems.map((item) => {
-            const isActive = pathname === item.href;
+            const isActive =
+              pathname === item.href ||
+              (item.href !== "/dashboard" &&
+                item.href !== "/admin" &&
+                pathname.startsWith(item.href));
             return (
               <Link
                 key={item.href}
