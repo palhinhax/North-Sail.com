@@ -1,145 +1,210 @@
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  ArrowRight,
+  Building2,
+  Dumbbell,
+  HeartPulse,
+  Hotel,
+  LayoutDashboard,
+  Scissors,
+  ShoppingCart,
+  Store,
+  UtensilsCrossed,
+  Wrench,
+} from "lucide-react";
 import { prisma } from "@/lib/prisma";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import {
+  CtaLink,
+  FaqItem,
+  FeatureCard,
+  Hero,
+  HeroDashboardMockup,
+  MarketingLayout,
+  PricingCard,
+  Section,
+  SectionHeader,
+  StepCard,
+} from "@/components/marketing";
 
-const cents = (n: number) => (n / 100).toFixed(2).replace(".", ",");
+const cents = (n: number) => (n / 100).toFixed(0).replace(".", ",");
 
-const examples = [
+const SECTORS = [
   {
-    sector: "Ginásios",
-    text: "App para gerir aulas, horários semanais e inscrições.",
+    icon: <UtensilsCrossed className="h-5 w-5" />,
+    title: "Restaurantes",
+    description: "Menus digitais, reservas de mesa e horários.",
   },
   {
-    sector: "Restaurantes",
-    text: "Menu digital, pedidos take-away e reservas de mesa.",
+    icon: <Scissors className="h-5 w-5" />,
+    title: "Cabeleireiros",
+    description: "Marcações online, serviços e portfólio.",
   },
   {
-    sector: "Cabeleireiros",
-    text: "Marcações online com vários profissionais.",
+    icon: <Hotel className="h-5 w-5" />,
+    title: "Hotéis",
+    description: "Reservas diretas, quartos e comodidades.",
   },
   {
-    sector: "Hotéis e AL",
-    text: "Site com disponibilidade e pedidos diretos.",
+    icon: <Dumbbell className="h-5 w-5" />,
+    title: "Ginásios",
+    description: "Aulas, horários e inscrições de sócios.",
+  },
+  {
+    icon: <Store className="h-5 w-5" />,
+    title: "Serviços",
+    description: "Para eletricistas, canalizadores e mais.",
   },
 ];
 
-export default async function Home() {
+const STEPS = [
+  {
+    icon: <ShoppingCart className="h-7 w-7" />,
+    title: "Escolha o plano",
+    description:
+      "Selecione o plano que melhor se adapta às necessidades do seu negócio.",
+  },
+  {
+    icon: <Wrench className="h-7 w-7" />,
+    title: "Nós criamos e publicamos",
+    description: "Preparamos tudo para si. Sem dores de cabeça técnicas.",
+  },
+  {
+    icon: <LayoutDashboard className="h-7 w-7" />,
+    title: "Você gere tudo num só painel",
+    description: "Aceda às reservas, atualize menus e horários facilmente.",
+  },
+];
+
+const TRUST_ICONS = [
+  <UtensilsCrossed key="r" className="h-8 w-8" />,
+  <Scissors key="s" className="h-8 w-8" />,
+  <Hotel key="h" className="h-8 w-8" />,
+  <Dumbbell key="g" className="h-8 w-8" />,
+  <Store key="t" className="h-8 w-8" />,
+  <HeartPulse key="c" className="h-8 w-8" />,
+  <Building2 key="b" className="h-8 w-8" />,
+];
+
+const FAQS = [
+  {
+    question: "Preciso de conhecimentos técnicos para usar a NorthSail?",
+    answer:
+      "Não. Nós tratamos de toda a configuração inicial, publicação e manutenção técnica. Terá acesso a um painel simples e intuitivo para gerir as suas reservas e atualizar conteúdos básicos.",
+  },
+  {
+    question: "Posso usar o meu próprio domínio?",
+    answer:
+      "Sim. Se já possui um domínio, podemos conectá-lo ao seu novo site NorthSail. Se não tiver, os nossos planos incluem o registo de um domínio novo sem custo adicional no primeiro ano.",
+  },
+  {
+    question: "O que acontece após o mês de teste grátis?",
+    answer:
+      "No final do período de teste, será convidado a subscrever um dos nossos planos. Não cobramos nada automaticamente e não é necessário cartão de crédito para iniciar o teste.",
+  },
+  {
+    question: "Existe um período de fidelização?",
+    answer:
+      "Não. Pode cancelar a sua subscrição a qualquer momento, sem taxas de cancelamento ou perguntas complicadas.",
+  },
+];
+
+export default async function HomePage() {
   const plans = await prisma.plan
     .findMany({ where: { active: true }, orderBy: { monthlyPrice: "asc" } })
     .catch(() => []);
 
+  const highlightIndex = plans.length >= 2 ? 1 : 0;
+
   return (
-    <div className="min-h-screen">
-      <header className="border-b">
-        <div className="container mx-auto flex h-16 items-center justify-between px-4">
-          <div className="text-xl font-bold">NorthSail</div>
-          <div className="flex items-center gap-4">
-            <Link href="/auth/login">
-              <Button variant="ghost">Entrar</Button>
-            </Link>
-            <Link href="/comecar">
-              <Button>Começar</Button>
-            </Link>
-          </div>
-        </div>
-      </header>
-
-      <section className="container mx-auto px-4 py-20 text-center">
-        <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-          Mini web apps para negócios locais
-          <br />
-          <span className="text-primary">desde 15€/mês</span>
-        </h1>
-        <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
-          Tu cuidas do negócio. Nós tratamos do site, do domínio, do alojamento
-          e das atualizações. Reservas, marcações, pedidos, aulas — tudo pronto
-          a usar.
-        </p>
-        <div className="mt-8 flex justify-center gap-3">
-          <Link href="/comecar">
-            <Button size="lg">
+    <MarketingLayout>
+      <Hero
+        title="O site do seu negócio, com reservas e marcações incluídas."
+        subtitle="Mini web apps para negócios locais — domínio, gestão e manutenção, desde 15€/mês."
+        actions={
+          <>
+            <CtaLink href="/comecar" variant="primary" size="lg">
               Começar agora
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-          </Link>
-          <Link href="/auth/login">
-            <Button size="lg" variant="outline">
-              Entrar
-            </Button>
-          </Link>
-        </div>
-        <p className="mt-4 text-sm text-muted-foreground">
-          30 dias grátis. Só pagas no fim do trial.
-        </p>
-      </section>
+              <ArrowRight className="h-4 w-4" />
+            </CtaLink>
+            <CtaLink href="#planos" variant="outline" size="lg">
+              Ver planos
+            </CtaLink>
+          </>
+        }
+        visual={<HeroDashboardMockup />}
+      />
 
-      <section className="border-t bg-muted/30 py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-center text-2xl font-bold">Exemplos por setor</h2>
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {examples.map((e) => (
-              <div
-                key={e.sector}
-                className="rounded-lg border bg-background p-5"
-              >
-                <div className="text-sm text-primary">{e.sector}</div>
-                <p className="mt-2 text-sm text-muted-foreground">{e.text}</p>
-              </div>
-            ))}
+      {/* Trust strip */}
+      <section className="border-y border-line bg-surface-lowest py-12">
+        <div className="mx-auto max-w-[1280px] px-6 text-center">
+          <p className="mb-6 text-label-md uppercase tracking-wider text-ink-muted">
+            Para restaurantes, cabeleireiros, hotéis, ginásios e serviços
+            locais.
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-12 text-ink-subtle opacity-70">
+            {TRUST_ICONS.map((icon) => icon)}
           </div>
         </div>
       </section>
 
-      {plans.length > 0 && (
-        <section className="border-t py-16">
-          <div className="container mx-auto px-4">
-            <h2 className="text-center text-2xl font-bold">Planos simples</h2>
-            <p className="mx-auto mt-2 max-w-xl text-center text-muted-foreground">
-              Começa pequeno. Cresce quando precisares.
-            </p>
-            <div className="mt-10 grid gap-4 md:grid-cols-3 lg:grid-cols-5">
-              {plans.map((p) => (
-                <Card key={p.id}>
-                  <CardHeader>
-                    <CardTitle className="text-base">{p.name}</CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-2 text-sm">
-                    <div className="text-3xl font-bold">
-                      {cents(p.monthlyPrice)}€
-                      <span className="text-sm font-normal text-muted-foreground">
-                        {" "}
-                        / mês
-                      </span>
-                    </div>
-                    <p className="text-muted-foreground">{p.description}</p>
-                    <ul className="space-y-1">
-                      {p.features.slice(0, 4).map((f) => (
-                        <li key={f} className="flex items-start gap-2">
-                          <CheckCircle2 className="mt-0.5 h-4 w-4 text-primary" />
-                          <span>{f}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
+      {/* Sectors */}
+      <Section id="setores">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-5">
+          {SECTORS.map((sector) => (
+            <FeatureCard key={sector.title} {...sector} />
+          ))}
+        </div>
+      </Section>
+
+      {/* Como funciona */}
+      <Section id="como-funciona" tone="muted" bordered>
+        <SectionHeader title="Como funciona" />
+        <div className="relative grid grid-cols-1 gap-16 md:grid-cols-3">
+          <div className="absolute left-[16.6%] right-[16.6%] top-8 z-0 hidden h-px bg-line md:block" />
+          {STEPS.map((step, i) => (
+            <StepCard key={step.title} index={i + 1} {...step} />
+          ))}
+        </div>
+      </Section>
+
+      {/* Planos */}
+      <Section id="planos">
+        <SectionHeader
+          title="Planos simples e transparentes"
+          subtitle="Comece com 1 mês de teste grátis. Cancele quando quiser."
+        />
+        {plans.length > 0 ? (
+          <div className="mx-auto grid max-w-5xl grid-cols-1 items-center gap-6 md:grid-cols-3">
+            {plans
+              .slice(0, 3)
+              .map((plan: (typeof plans)[number], i: number) => (
+                <PricingCard
+                  key={plan.id}
+                  name={plan.name}
+                  price={`${cents(plan.monthlyPrice)}€`}
+                  features={plan.features.slice(0, 4)}
+                  ctaLabel="Selecionar Plano"
+                  ctaHref="/comecar"
+                  highlighted={i === highlightIndex}
+                  badge={i === highlightIndex ? "Mais Popular" : undefined}
+                />
               ))}
-            </div>
-            <div className="mt-10 text-center">
-              <Link href="/comecar">
-                <Button size="lg">Escolher um plano</Button>
-              </Link>
-            </div>
           </div>
-        </section>
-      )}
+        ) : (
+          <p className="text-center text-ink-muted">
+            Os planos serão publicados em breve.
+          </p>
+        )}
+      </Section>
 
-      <footer className="border-t py-10">
-        <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
-          NorthSail · Mini web apps para negócios locais
+      {/* FAQ */}
+      <Section id="faq" tone="muted" bordered>
+        <SectionHeader title="Perguntas Frequentes" />
+        <div className="mx-auto flex max-w-[800px] flex-col gap-3">
+          {FAQS.map((faq, i) => (
+            <FaqItem key={faq.question} {...faq} defaultOpen={i === 0} />
+          ))}
         </div>
-      </footer>
-    </div>
+      </Section>
+    </MarketingLayout>
   );
 }

@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/card";
 import { Spinner } from "@/components/ui/spinner";
 import { useToast } from "@/components/ui/use-toast";
+import { Container, MarketingNav } from "@/components/marketing";
 import { recommendPlan } from "@/features/plans/lib";
 import { usePlans } from "@/features/plans/hooks";
 import type { PlanCode } from "@/features/plans/schemas";
@@ -143,13 +144,18 @@ export default function ComecarPage() {
   }
 
   return (
-    <div className="min-h-screen bg-muted/30 py-12">
-      <div className="container mx-auto max-w-2xl px-4">
-        <div className="mb-6 text-center">
-          <h1 className="text-3xl font-bold">Começar com a NorthSail</h1>
-          <p className="text-muted-foreground">
-            Passo {step} de 4 — tratamos da app, domínio e manutenção. Tu focas
-            no negócio.
+    <div className="hero-gradient ambient-glow relative min-h-screen overflow-hidden">
+      <MarketingNav />
+      <Container className="relative z-10 max-w-2xl pb-16 pt-28">
+        <div className="mb-10 text-center">
+          <span className="text-label-md uppercase tracking-wider text-ink-muted">
+            Passo {step} de 4
+          </span>
+          <h1 className="mt-2 text-display-sm text-brand md:text-display-lg">
+            Começar com a NorthSail
+          </h1>
+          <p className="mt-3 text-body-md text-ink-muted">
+            Tratamos da app, domínio e manutenção. Tu focas no negócio.
           </p>
         </div>
 
@@ -414,7 +420,7 @@ export default function ComecarPage() {
             </CardContent>
           </Card>
         )}
-      </div>
+      </Container>
     </div>
   );
 }

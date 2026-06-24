@@ -51,7 +51,7 @@ export function Sidebar({ open, onClose }: SidebarProps) {
 
       <aside
         className={cn(
-          "fixed inset-y-0 left-0 z-50 w-64 transform border-r bg-background transition-transform duration-200 ease-in-out md:relative md:translate-x-0",
+          "fixed inset-y-0 left-0 z-50 w-64 transform border-r border-line bg-surface-low transition-transform duration-200 ease-in-out md:relative md:translate-x-0",
           open ? "translate-x-0" : "-translate-x-full"
         )}
       >
@@ -75,10 +75,10 @@ export function Sidebar({ open, onClose }: SidebarProps) {
                 href={item.href}
                 onClick={onClose}
                 className={cn(
-                  "flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium transition-colors",
+                  "flex items-center gap-3 rounded-md px-3 py-2 text-label-md font-medium transition-colors",
                   isActive
-                    ? "bg-primary text-primary-foreground"
-                    : "hover:bg-muted"
+                    ? "bg-brand-container text-white"
+                    : "text-ink-muted hover:bg-surface-high hover:text-brand"
                 )}
               >
                 <item.icon className="h-4 w-4" />
