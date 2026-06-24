@@ -26,7 +26,7 @@ export function LocaleFooter({ locale }: { locale: Locale }) {
           },
           {
             href: localePath(locale, "compare:website-with-bookings"),
-            label: "Bookings",
+            label: dict.footerBookings,
           },
         ],
       },

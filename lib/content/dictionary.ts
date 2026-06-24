@@ -9,6 +9,7 @@ export interface Dictionary {
   navDashboard: string;
   footerTagline: string;
   footerProduct: string;
+  footerBookings: string;
   footerCompany: string;
   footerLegal: string;
   footerRights: string;
@@ -51,6 +52,8 @@ export interface Dictionary {
   leadOptional: string;
   leadSubmit: string;
   leadSuccess: string;
+  leadError: string;
+  leadOther: string;
   breadcrumbHome: string;
 }
 
@@ -66,6 +69,7 @@ const en: Dictionary = {
   navDashboard: "Dashboard",
   footerTagline: "Your business website, without the technical headaches.",
   footerProduct: "Product",
+  footerBookings: "Bookings",
   footerCompany: "Company",
   footerLegal: "Legal",
   footerRights: "All rights reserved.",
@@ -107,6 +111,8 @@ const en: Dictionary = {
   leadOptional: "optional",
   leadSubmit: "Send request",
   leadSuccess: "Thank you! We'll get back to you shortly.",
+  leadError: "Something went wrong. Please try again.",
+  leadOther: "Other",
   breadcrumbHome: "Home",
 };
 
@@ -122,6 +128,7 @@ const pt: Dictionary = {
   navDashboard: "Painel",
   footerTagline: "O site do seu negócio, sem complicações técnicas.",
   footerProduct: "Produto",
+  footerBookings: "Reservas",
   footerCompany: "Empresa",
   footerLegal: "Legal",
   footerRights: "Todos os direitos reservados.",
@@ -163,6 +170,8 @@ const pt: Dictionary = {
   leadOptional: "opcional",
   leadSubmit: "Enviar pedido",
   leadSuccess: "Obrigado! Entraremos em contacto em breve.",
+  leadError: "Algo correu mal. Tenta novamente.",
+  leadOther: "Outro",
   breadcrumbHome: "Início",
 };
 
@@ -178,6 +187,7 @@ const es: Dictionary = {
   navDashboard: "Panel",
   footerTagline: "La web de tu negocio, sin complicaciones técnicas.",
   footerProduct: "Producto",
+  footerBookings: "Reservas",
   footerCompany: "Empresa",
   footerLegal: "Legal",
   footerRights: "Todos los derechos reservados.",
@@ -219,6 +229,8 @@ const es: Dictionary = {
   leadOptional: "opcional",
   leadSubmit: "Enviar solicitud",
   leadSuccess: "¡Gracias! Te responderemos en breve.",
+  leadError: "Algo salió mal. Inténtalo de nuevo.",
+  leadOther: "Otro",
   breadcrumbHome: "Inicio",
 };
 
@@ -234,6 +246,7 @@ const fr: Dictionary = {
   navDashboard: "Tableau de bord",
   footerTagline: "Le site de votre entreprise, sans tracas technique.",
   footerProduct: "Produit",
+  footerBookings: "Réservations",
   footerCompany: "Entreprise",
   footerLegal: "Légal",
   footerRights: "Tous droits réservés.",
@@ -275,6 +288,8 @@ const fr: Dictionary = {
   leadOptional: "facultatif",
   leadSubmit: "Envoyer la demande",
   leadSuccess: "Merci ! Nous vous répondrons rapidement.",
+  leadError: "Une erreur s'est produite. Veuillez réessayer.",
+  leadOther: "Autre",
   breadcrumbHome: "Accueil",
 };
 
@@ -290,6 +305,7 @@ const de: Dictionary = {
   navDashboard: "Dashboard",
   footerTagline: "Die Website Ihres Unternehmens, ohne technischen Aufwand.",
   footerProduct: "Produkt",
+  footerBookings: "Buchungen",
   footerCompany: "Unternehmen",
   footerLegal: "Rechtliches",
   footerRights: "Alle Rechte vorbehalten.",
@@ -331,6 +347,8 @@ const de: Dictionary = {
   leadOptional: "optional",
   leadSubmit: "Anfrage senden",
   leadSuccess: "Danke! Wir melden uns in Kürze.",
+  leadError: "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+  leadOther: "Andere",
   breadcrumbHome: "Startseite",
 };
 

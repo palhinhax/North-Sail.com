@@ -130,7 +130,7 @@ export function LeadForm({
                 {INDUSTRY_LABELS[locale][k]}
               </option>
             ))}
-            <option value="other">Other</option>
+            <option value="other">{dict.leadOther}</option>
           </select>
         </div>
         <div>
@@ -196,9 +196,7 @@ export function LeadForm({
         />
       </div>
       {status === "error" && (
-        <p className="text-label-md text-destructive">
-          {dict.leadEmail} — please try again.
-        </p>
+        <p className="text-label-md text-destructive">{dict.leadError}</p>
       )}
       <button
         type="submit"
