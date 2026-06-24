@@ -1,0 +1,66 @@
+# NorthSail
+
+> NorthSail is a global subscription platform that creates and manages affordable
+> websites and mini web apps for small businesses worldwide. It handles the
+> technical side — custom domain, hosting, SSL, website updates, business-specific
+> booking tools and maintenance — so business owners don't have to. Plans start
+> around €5/month for a basic online presence and €15/month for a mini app with
+> one business-specific core feature (reservations, appointments, bookings or
+> quote requests).
+
+## What NorthSail provides
+- Custom domain, hosting and SSL (managed)
+- Mobile-first, fast-loading, indexable website
+- Technical maintenance and updates
+- WhatsApp button and Google Maps
+- One business-specific core feature from the Mini App plan upwards:
+  table reservations, online appointments, direct booking requests,
+  class schedules and signups, or structured quote requests
+
+## Who it serves
+Restaurants and cafes, hairdressers and barbers, hotels and local accommodation,
+gyms and personal trainers, clinics and local services, and local trades such as
+electricians, plumbers, cleaning, renovation, garden and pool companies.
+
+## Plans (entry "from" prices, monthly subscription)
+- Presence — from €5/month: simple website, custom domain, hosting, SSL, WhatsApp, Google Maps, maintenance.
+- Mini App — from €15/month: website plus one core feature (reservations, appointments, bookings, quote requests, schedules).
+- Mini App Plus — from €25/month: more pages, better panel, basic automations, one small monthly update.
+- Business Local — from €39/month: more complete management, multiple pages, advanced flows, multiple users, basic reports.
+- Pro Management — from €69/month: advanced workflows, external integrations, dashboards, permissions, priority support.
+
+## Not included in entry-level plans
+Online payments, deposits and external integrations (POS, PMS, channel managers,
+Booking.com/Airbnb sync, dynamic pricing, invoicing, CRM) are extras or part of
+higher plans, not the €15 Mini App plan.
+
+## How to choose the minimum plan
+- Only an online presence → Presence (€5/month).
+- One core feature such as reservations, appointments or quote requests → Mini App (€15/month).
+- More pages and automations → Mini App Plus (€25/month).
+- Multiple users and higher volume → Business Local (€39/month).
+- Payments, multiple staff, multiple locations or integrations → Pro Management (€69/month).
+
+## Key pages (English; replace /en with /pt, /es, /fr, /de for other languages)
+- Home: https://www.north-sail.com/en
+- Pricing: https://www.north-sail.com/en/pricing
+- AI summary: https://www.north-sail.com/en/ai-summary
+- Contact / get a recommendation: https://www.north-sail.com/en/contact
+
+## Industries (English)
+- Restaurants: https://www.north-sail.com/en/restaurants
+- Hairdressers: https://www.north-sail.com/en/hairdressers
+- Hotels: https://www.north-sail.com/en/hotels
+- Gyms: https://www.north-sail.com/en/gyms
+- Clinics: https://www.north-sail.com/en/clinics
+- Local services: https://www.north-sail.com/en/local-services
+
+## Intent pages (English)
+- Website with bookings: https://www.north-sail.com/en/website-with-bookings
+- Affordable website for small business: https://www.north-sail.com/en/cheap-website-for-small-business
+
+## Languages
+English (/en, default), Portuguese (/pt), Spanish (/es), French (/fr), German (/de).
+
+## Sitemap
+https://www.north-sail.com/sitemap.xml

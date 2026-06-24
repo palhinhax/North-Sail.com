@@ -16,9 +16,19 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "NorthSail — O site do seu negócio",
+  metadataBase: new URL(
+    (process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.north-sail.com").replace(
+      /\/$/,
+      ""
+    )
+  ),
+  title: {
+    default:
+      "NorthSail — affordable websites & mini web apps for small business",
+    template: "%s | NorthSail",
+  },
   description:
-    "Web apps profissionais para negócios locais — site, domínio, reservas e manutenção tratados pela NorthSail.",
+    "NorthSail builds and manages affordable websites and mini web apps for small businesses — domain, hosting, SSL, maintenance and booking tools from €15/month.",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
