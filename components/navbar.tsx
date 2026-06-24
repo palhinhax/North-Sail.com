@@ -37,10 +37,10 @@ export function Navbar({ onMenuClick, showMenuButton }: NavbarProps) {
           <Image
             src="/logo.png"
             alt="NorthSail"
-            width={140}
+            width={36}
             height={36}
             priority
-            className="h-9 w-auto"
+            className="h-9 w-9"
           />
         </Link>
 
