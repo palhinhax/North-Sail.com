@@ -37,6 +37,16 @@ export function LocaleFooter({ locale }: { locale: Locale }) {
           { href: localePath(locale, "contact"), label: dict.ctaContact },
         ],
       },
+      {
+        title: dict.footerLegal,
+        links: [
+          {
+            href: localePath(locale, "legal:privacy"),
+            label: dict.footerPrivacy,
+          },
+          { href: localePath(locale, "legal:terms"), label: dict.footerTerms },
+        ],
+      },
     ];
 
   return (

@@ -13,6 +13,8 @@ export interface Dictionary {
   footerCompany: string;
   footerLegal: string;
   footerRights: string;
+  footerPrivacy: string;
+  footerTerms: string;
   // shared section labels
   whoFor: string;
   whatProblem: string;
@@ -73,6 +75,8 @@ const en: Dictionary = {
   footerCompany: "Company",
   footerLegal: "Legal",
   footerRights: "All rights reserved.",
+  footerPrivacy: "Privacy",
+  footerTerms: "Terms",
   whoFor: "Who it's for",
   whatProblem: "The problem",
   ourSolution: "What NorthSail does",
@@ -132,6 +136,8 @@ const pt: Dictionary = {
   footerCompany: "Empresa",
   footerLegal: "Legal",
   footerRights: "Todos os direitos reservados.",
+  footerPrivacy: "Privacidade",
+  footerTerms: "Termos",
   whoFor: "Para quem é",
   whatProblem: "O problema",
   ourSolution: "O que a NorthSail faz",
@@ -191,6 +197,8 @@ const es: Dictionary = {
   footerCompany: "Empresa",
   footerLegal: "Legal",
   footerRights: "Todos los derechos reservados.",
+  footerPrivacy: "Privacidad",
+  footerTerms: "Términos",
   whoFor: "Para quién es",
   whatProblem: "El problema",
   ourSolution: "Qué hace NorthSail",
@@ -250,6 +258,8 @@ const fr: Dictionary = {
   footerCompany: "Entreprise",
   footerLegal: "Légal",
   footerRights: "Tous droits réservés.",
+  footerPrivacy: "Confidentialité",
+  footerTerms: "Conditions",
   whoFor: "Pour qui",
   whatProblem: "Le problème",
   ourSolution: "Ce que fait NorthSail",
@@ -309,6 +319,8 @@ const de: Dictionary = {
   footerCompany: "Unternehmen",
   footerLegal: "Rechtliches",
   footerRights: "Alle Rechte vorbehalten.",
+  footerPrivacy: "Datenschutz",
+  footerTerms: "Nutzungsbedingungen",
   whoFor: "Für wen",
   whatProblem: "Das Problem",
   ourSolution: "Was NorthSail macht",

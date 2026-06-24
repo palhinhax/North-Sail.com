@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
 import { LOCALES, OG_LOCALE, type Locale } from "@/lib/i18n/config";
 import { localePath, type PageKey } from "@/lib/i18n/routes";
-import { absUrl, OG_IMAGE, SITE_NAME, SITE_URL } from "./site";
+import { absUrl, SITE_NAME, SITE_URL } from "./site";
 
 interface BuildMetadataArgs {
   locale: Locale;
   pageKey: PageKey;
   title: string;
   description: string;
-  /** Optional override for the social share image (site-root path). */
+  /**
+   * Optional override for the social share image (site-root path). When
+   * omitted, the branded card from `app/opengraph-image.tsx` is used.
+   */
   image?: string;
   /** Set true for pages that should not be indexed. */
   noindex?: boolean;
@@ -24,7 +27,7 @@ export function buildMetadata({
   pageKey,
   title,
   description,
-  image = OG_IMAGE,
+  image,
   noindex = false,
 }: BuildMetadataArgs): Metadata {
   const canonicalPath = localePath(locale, pageKey);
@@ -59,13 +62,15 @@ export function buildMetadata({
       alternateLocale: LOCALES.filter((l) => l !== locale).map(
         (l) => OG_LOCALE[l]
       ),
-      images: [{ url: image, alt: SITE_NAME }],
+      // Only override the default branded card (app/opengraph-image.tsx) when a
+      // page passes an explicit image.
+      ...(image ? { images: [{ url: image, alt: SITE_NAME }] } : {}),
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [image],
+      ...(image ? { images: [image] } : {}),
     },
   };
 }
