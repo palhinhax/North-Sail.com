@@ -16,9 +16,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "NorthSail",
+  title: "NorthSail — O site do seu negócio",
   description:
-    "Mini web apps para negócios locais — site, domínio e gestão tratados pela NorthSail.",
+    "Mini web apps para negócios locais — site, domínio, reservas e manutenção tratados pela NorthSail.",
 };
 
 export default function RootLayout({
@@ -27,9 +27,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="pt-PT" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
       >
         <Providers>
           {children}

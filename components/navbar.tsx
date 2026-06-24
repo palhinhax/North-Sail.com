@@ -15,7 +15,7 @@ export function Navbar({ onMenuClick, showMenuButton }: NavbarProps) {
   const homeHref = session?.user?.role === "ADMIN" ? "/admin" : "/dashboard";
 
   return (
-    <nav className="border-b bg-background">
+    <nav className="sticky top-0 z-30 border-b border-line bg-background/95 backdrop-blur-md">
       <div className="flex h-16 items-center px-4 md:px-6">
         {showMenuButton && (
           <Button
@@ -28,16 +28,19 @@ export function Navbar({ onMenuClick, showMenuButton }: NavbarProps) {
           </Button>
         )}
 
-        <Link href={session ? homeHref : "/"} className="text-xl font-bold">
+        <Link
+          href={session ? homeHref : "/"}
+          className="text-headline-md font-bold text-brand"
+        >
           NorthSail
         </Link>
 
         <div className="ml-auto flex items-center space-x-4">
           {session ? (
             <>
-              <div className="hidden items-center gap-2 sm:flex">
+              <div className="hidden items-center gap-2 text-ink-muted sm:flex">
                 <User className="h-4 w-4" />
-                <span className="text-sm">
+                <span className="text-label-md">
                   {session.user?.name || session.user?.email}
                 </span>
               </div>
