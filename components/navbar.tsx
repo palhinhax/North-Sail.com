@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useSession, signOut } from "next-auth/react";
 import { Button } from "@/components/ui/button";
@@ -30,9 +31,17 @@ export function Navbar({ onMenuClick, showMenuButton }: NavbarProps) {
 
         <Link
           href={session ? homeHref : "/"}
-          className="text-headline-md font-bold text-brand"
+          aria-label="NorthSail"
+          className="flex items-center"
         >
-          NorthSail
+          <Image
+            src="/logo.png"
+            alt="NorthSail"
+            width={140}
+            height={36}
+            priority
+            className="h-9 w-auto"
+          />
         </Link>
 
         <div className="ml-auto flex items-center space-x-4">
