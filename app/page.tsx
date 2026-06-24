@@ -118,7 +118,7 @@ export default async function HomePage() {
     <MarketingLayout>
       <Hero
         title="O site do seu negócio, com reservas e marcações incluídas."
-        subtitle="Mini web apps para negócios locais — domínio, gestão e manutenção, desde 15€/mês."
+        subtitle="Web apps profissionais para negócios locais — domínio, gestão e manutenção, desde 15€/mês."
         actions={
           <>
             <CtaLink href="/comecar" variant="primary" size="lg">

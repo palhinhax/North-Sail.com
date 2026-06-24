@@ -28,7 +28,7 @@ const plans = [
   },
   {
     code: "MINI_APP",
-    name: "Mini App",
+    name: "App Essencial",
     monthlyPrice: 1500,
     annualPrice: 18000,
     setupPrice: 9900,
@@ -43,14 +43,14 @@ const plans = [
   },
   {
     code: "MINI_APP_PLUS",
-    name: "Mini App+",
+    name: "App Avançada",
     monthlyPrice: 2500,
     annualPrice: 30000,
     setupPrice: 14900,
     description:
       "Vários profissionais, horários semanais, calendário, categorias.",
     features: [
-      "Tudo do Mini App",
+      "Tudo do App Essencial",
       "Vários profissionais / quartos / turmas",
       "Calendário semanal automático",
       "Gestão de categorias e horários",
@@ -64,7 +64,7 @@ const plans = [
     setupPrice: 19900,
     description: "Equipa com múltiplos utilizadores, histórico, exportações.",
     features: [
-      "Tudo do Mini App+",
+      "Tudo do App Avançada",
       "Múltiplos utilizadores na equipa",
       "Histórico e exportações",
       "Salas, eventos e gestão de membros",
@@ -131,7 +131,7 @@ async function main() {
   });
   console.log("✅ Admin:", admin.email);
 
-  const miniPlus = await prisma.plan.findUniqueOrThrow({
+  const advancedPlan = await prisma.plan.findUniqueOrThrow({
     where: { code: "MINI_APP_PLUS" },
   });
 
@@ -168,7 +168,7 @@ async function main() {
   await prisma.subscription.upsert({
     where: { businessId: business.id },
     update: {
-      planId: miniPlus.id,
+      planId: advancedPlan.id,
       status: SubscriptionStatus.TRIALING,
       billingCycle: BillingCycle.MONTHLY,
       trialEndsAt,
@@ -176,7 +176,7 @@ async function main() {
     },
     create: {
       businessId: business.id,
-      planId: miniPlus.id,
+      planId: advancedPlan.id,
       status: SubscriptionStatus.TRIALING,
       billingCycle: BillingCycle.MONTHLY,
       trialEndsAt,
