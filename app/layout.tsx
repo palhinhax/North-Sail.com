@@ -16,8 +16,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Next.js SaaS Template",
-  description: "A production-grade SaaS template with Next.js 14, Prisma, and Auth.js",
+  title: "NorthSail",
+  description:
+    "Mini web apps para negócios locais — site, domínio e gestão tratados pela NorthSail.",
 };
 
 export default function RootLayout({
