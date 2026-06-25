@@ -2,7 +2,15 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { Phone, MessageCircle, MapPin, Globe, Info } from "lucide-react";
+import {
+  Phone,
+  MessageCircle,
+  MapPin,
+  Globe,
+  Info,
+  Building2,
+  Contact,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -81,7 +89,10 @@ export function BusinessForm({ business }: Props) {
     >
       {/* Main column */}
       <div className="flex flex-col gap-6 lg:col-span-8">
-        <Section title="Informações gerais">
+        <Section
+          title="Informações gerais"
+          icon={<Building2 className="h-4 w-4" />}
+        >
           <div className="space-y-2">
             <Label htmlFor="name">Nome do negócio</Label>
             <Input
@@ -106,7 +117,10 @@ export function BusinessForm({ business }: Props) {
           </div>
         </Section>
 
-        <Section title="Contactos e localização">
+        <Section
+          title="Contactos e localização"
+          icon={<Contact className="h-4 w-4" />}
+        >
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             <IconField
               id="phone"
@@ -137,10 +151,10 @@ export function BusinessForm({ business }: Props) {
 
       {/* Side column */}
       <div className="flex flex-col gap-6 lg:col-span-4">
-        <Section title="Presença digital">
+        <Section title="Presença digital" icon={<Globe className="h-4 w-4" />}>
           <div className="space-y-2">
             <Label htmlFor="domain">Domínio desejado</Label>
-            <div className="flex items-center overflow-hidden rounded-md border bg-background transition-colors focus-within:border-primary focus-within:ring-2 focus-within:ring-primary/20">
+            <div className="flex items-center overflow-hidden rounded-md border bg-background transition-colors focus-within:border-brand-accent focus-within:ring-2 focus-within:ring-brand-accent/20">
               <Globe className="ml-3 h-4 w-4 shrink-0 text-muted-foreground" />
               <input
                 id="domain"
@@ -157,14 +171,18 @@ export function BusinessForm({ business }: Props) {
           </div>
         </Section>
 
-        <div className="sticky top-6 flex flex-col gap-4 rounded-2xl border bg-card p-5 shadow-sm">
-          <div className="flex items-start gap-2">
-            <Info className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-            <p className="text-sm text-muted-foreground">
+        <div className="sticky top-6 flex flex-col gap-4 rounded-2xl border border-line bg-gradient-to-br from-card to-surface-low p-5 shadow-sm">
+          <div className="flex items-start gap-3 rounded-xl bg-brand-accent/[0.06] p-3 ring-1 ring-inset ring-brand-accent/10">
+            <Info className="mt-0.5 h-4 w-4 shrink-0 text-brand-accent" />
+            <p className="text-sm text-ink-muted">
               Ao guardar, as alterações refletem-se na tua página pública.
             </p>
           </div>
-          <Button type="submit" disabled={update.isPending} className="w-full">
+          <Button
+            type="submit"
+            disabled={update.isPending}
+            className="w-full bg-brand-accent text-white shadow-sm hover:bg-brand-accent-hover"
+          >
             {update.isPending && <Spinner size="sm" className="mr-2" />}
             Guardar alterações
           </Button>
@@ -185,21 +203,30 @@ export function BusinessForm({ business }: Props) {
 
 function Section({
   title,
+  icon,
   children,
   className,
 }: {
   title: string;
+  icon?: React.ReactNode;
   children: React.ReactNode;
   className?: string;
 }) {
   return (
     <section
       className={cn(
-        "rounded-2xl border bg-card p-6 shadow-sm md:p-8",
+        "rounded-2xl border border-line bg-card p-6 shadow-sm transition-shadow hover:shadow-md md:p-8",
         className
       )}
     >
-      <h3 className="mb-4 border-b pb-3 text-lg font-semibold">{title}</h3>
+      <h3 className="mb-4 flex items-center gap-2.5 border-b pb-3 text-lg font-semibold text-ink">
+        {icon && (
+          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-accent/10 text-brand-accent ring-1 ring-inset ring-brand-accent/15">
+            {icon}
+          </span>
+        )}
+        {title}
+      </h3>
       <div className="flex flex-col gap-4">{children}</div>
     </section>
   );

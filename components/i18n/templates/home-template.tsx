@@ -10,6 +10,12 @@ import {
   Wrench,
   LayoutDashboard,
   ShoppingCart,
+  Coffee,
+  AppWindow,
+  Users,
+  Workflow,
+  Scale,
+  Code2,
 } from "lucide-react";
 import {
   CtaLink,
@@ -31,10 +37,10 @@ import { getHomeContent } from "@/lib/content/locales";
 import { getPlans } from "@/lib/content/plans";
 import { JsonLd, organizationSchema, websiteSchema } from "@/lib/seo/jsonld";
 import { AiSummaryBlock } from "./ai-summary-block";
-import { ExampleSites } from "./example-sites";
 
 const SECTOR_ICONS: Record<IndustryKey, React.ReactNode> = {
   restaurants: <UtensilsCrossed className="h-5 w-5" />,
+  cafes: <Coffee className="h-5 w-5" />,
   hairdressers: <Scissors className="h-5 w-5" />,
   hotels: <Hotel className="h-5 w-5" />,
   gyms: <Dumbbell className="h-5 w-5" />,
@@ -46,6 +52,16 @@ const STEP_ICONS = [
   <ShoppingCart key="1" className="h-7 w-7" />,
   <Wrench key="2" className="h-7 w-7" />,
   <LayoutDashboard key="3" className="h-7 w-7" />,
+];
+
+/** Icons for the "for companies" axis cards, in content `items` order. */
+const BUSINESS_ICONS = [
+  <AppWindow key="b1" className="h-5 w-5" />,
+  <Users key="b2" className="h-5 w-5" />,
+  <LayoutDashboard key="b3" className="h-5 w-5" />,
+  <Workflow key="b4" className="h-5 w-5" />,
+  <Scale key="b5" className="h-5 w-5" />,
+  <Code2 key="b6" className="h-5 w-5" />,
 ];
 
 export function HomeTemplate({ locale }: { locale: Locale }) {
@@ -107,8 +123,36 @@ export function HomeTemplate({ locale }: { locale: Locale }) {
         </div>
       </Section>
 
-      {/* See a real example */}
-      <ExampleSites locale={locale} />
+      {/* For companies: web apps, portals, dashboards */}
+      {c.businessAxis && (
+        <Section tone="muted" bordered>
+          <SectionHeader
+            title={c.businessAxis.title}
+            subtitle={c.businessAxis.body}
+          />
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+            {c.businessAxis.items.map((item, i) => (
+              <Link key={item.target} href={localePath(locale, item.target)}>
+                <FeatureCard
+                  icon={BUSINESS_ICONS[i % BUSINESS_ICONS.length]}
+                  title={item.title}
+                  description={item.description}
+                />
+              </Link>
+            ))}
+          </div>
+          <div className="mt-8 text-center">
+            <CtaLink
+              href={localePath(locale, c.businessAxis.ctaTarget)}
+              variant="primary"
+              size="lg"
+            >
+              {c.businessAxis.cta}
+              <ArrowRight className="h-4 w-4" />
+            </CtaLink>
+          </div>
+        </Section>
+      )}
 
       {/* How it works */}
       <Section tone="muted" bordered>

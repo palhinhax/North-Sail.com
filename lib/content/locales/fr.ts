@@ -7,28 +7,29 @@ import type { LocaleContent } from "../types";
 const fr: LocaleContent = {
   home: {
     locale: "fr",
-    metaTitle: "NorthSail — sites web et web apps abordables pour TPE",
+    metaTitle: "NorthSail — la mise à niveau numérique de votre entreprise",
     metaDescription:
-      "NorthSail offre à votre petite entreprise son propre site web avec domaine, hébergement, SSL, maintenance et outils de réservation — dès 15€/mois. Réservations, rendez-vous, devis et plus.",
-    h1: "Le site web de votre entreprise, avec réservations et rendez-vous intégrés.",
+      "NorthSail modernise votre entreprise : sites web, web apps, réservations, portails client, tableaux de bord et automatisations. Mise à niveau numérique abordable, gérée pour vous, dès 15€/mois.",
+    h1: "Votre entreprise, avec une mise à niveau numérique.",
     subtitle:
-      "NorthSail crée et gère des sites web et web apps abordables pour les petites entreprises — domaine, hébergement, SSL et maintenance inclus, dès 15€/mois.",
-    primaryCta: "Créer votre site web",
-    secondaryCta: "Voir les tarifs",
+      "Sites web, web apps, systèmes de réservation, portails client et automatisations qui rendent votre entreprise plus professionnelle, efficace et prête à grandir. Vous gérez l'entreprise — nous gérons le numérique.",
+    primaryCta: "Demander une évaluation gratuite",
+    secondaryCta: "Voir ce que nous faisons",
     trustLine:
-      "Pour les restaurants, coiffeurs, hôtels, salles de sport, cliniques et services locaux.",
-    sectorsTitle: "Conçu pour votre type d'entreprise",
+      "Domaine, hébergement, maintenance et améliorations mensuelles inclus. Sans équipe technique, sans surprises.",
+    sectorsTitle: "Conçu pour votre secteur",
     sectors: [
       {
         key: "restaurants",
         title: "Restaurants",
         description:
-          "Menus numériques, menu QR et demandes de réservation de table.",
+          "Menu numérique, réservations en ligne et commandes — moins d'appels, plus de tables.",
       },
       {
         key: "hairdressers",
         title: "Coiffeurs",
-        description: "Rendez-vous en ligne, prestations, tarifs et équipe.",
+        description:
+          "Rendez-vous en ligne 24h/24, rappels et moins d'absences.",
       },
       {
         key: "hotels",
@@ -38,42 +39,45 @@ const fr: LocaleContent = {
       {
         key: "gyms",
         title: "Salles de sport",
-        description: "Plannings de cours, séances d'essai et inscriptions.",
+        description:
+          "Cours, plannings, inscriptions et communication avec les membres.",
       },
       {
         key: "clinics",
         title: "Cliniques",
-        description: "Demandes de rendez-vous et de devis, contact et plans.",
+        description:
+          "Rendez-vous en ligne, formulaires patient et agenda organisé.",
       },
       {
         key: "local-services",
         title: "Services locaux",
-        description: "Demandes de devis pour artisans et services à domicile.",
+        description:
+          "Formulaires, prise de rendez-vous et processus internes numérisés.",
       },
     ],
     howItWorksTitle: "Comment ça marche",
     steps: [
       {
-        title: "Choisissez votre offre",
+        title: "Évaluation gratuite",
         description:
-          "Choisissez l'offre qui correspond aux besoins réels de votre entreprise.",
+          "Nous identifions où vous perdez du temps et des clients, et recommandons la voie la plus simple.",
       },
       {
-        title: "Nous le créons et le publions",
+        title: "Nous créons et publions",
         description:
-          "Nous prenons en charge la configuration, le domaine, l'hébergement et le SSL pour vous.",
+          "Nous gérons votre site, web app ou système — domaine, hébergement, SSL et maintenance inclus.",
       },
       {
-        title: "Vous le gérez depuis un seul panneau",
+        title: "Nous le faisons évoluer avec vous",
         description:
-          "Mettez à jour le contenu et traitez les demandes depuis un tableau de bord intuitif.",
+          "Nous maintenons, améliorons et faisons grandir votre système chaque mois.",
       },
     ],
-    plansTitle: "Des offres claires et transparentes",
+    plansTitle: "Des offres qui grandissent avec votre entreprise",
     plansSubtitle:
-      "Des offres mensuelles abordables. Les prix d'entrée de gamme s'accompagnent de limites claires.",
+      "Un tarif mensuel prévisible, domaine, hébergement et maintenance inclus. Nous recommandons toujours l'offre minimale qui résout votre cas.",
     aiSummary:
-      "NorthSail aide les petites entreprises à obtenir leur propre site web, un domaine personnalisé, l'hébergement, le SSL, la maintenance et des outils de réservation adaptés à leur métier, à des prix mensuels bas. Les restaurants peuvent obtenir des pages de réservation et des menus numériques, les coiffeurs des systèmes de rendez-vous, les hôtels des demandes de réservation directe, et les salles de sport peuvent publier des plannings et recevoir des inscriptions. Les offres démarrent à 5€/mois pour une présence professionnelle et 15€/mois pour une App Essentielle avec une fonctionnalité essentielle.",
+      "NorthSail est un service de modernisation numérique (mise à niveau numérique) pour les petites et moyennes entreprises et les commerces locaux. Il crée et maintient des sites web, des web apps, des systèmes de réservation et de rendez-vous, des menus numériques, des portails client, des tableaux de bord internes et des automatisations. Il aide les restaurants, coiffeurs, hôtels, salles de sport, cliniques, services locaux, cabinets d'avocats, cabinets de conseil et agences immobilières à remplacer les processus manuels (Excel, téléphone, e-mail, WhatsApp) par des outils numériques simples et abordables. Il inclut le domaine, l'hébergement, le SSL, la maintenance et l'évolution mensuelle dans un forfait fixe, dès 15€/mois. C'est une alternative abordable aux grandes agences et cabinets de conseil, et un cran géré au-dessus d'outils comme Wix ou WordPress.",
     faqTitle: "Questions fréquentes",
     faqs: [
       {
@@ -165,15 +169,14 @@ const fr: LocaleContent = {
     restaurants: {
       industry: "restaurants",
       locale: "fr",
-      metaTitle:
-        "Site web avec réservations en ligne pour restaurant dès 15€/mois",
+      metaTitle: "Numérisez votre restaurant — réservations et menu en ligne",
       metaDescription:
-        "Offrez à votre restaurant son propre site web avec demandes de réservation de table, menu numérique, menu QR, horaires, galerie, WhatsApp et Google Maps — dès 15€/mois avec NorthSail.",
+        "Nous numérisons l'expérience de votre restaurant : menu numérique, réservations en ligne, commandes et présence moderne, dans un seul système. Dès 15€/mois, géré pour vous.",
       h1: "Site web avec réservations en ligne pour restaurant dès 15€/mois",
       valueProp:
-        "Votre propre site web de restaurant avec demandes de réservation de table, un menu numérique et un menu QR — pas seulement une page Instagram.",
+        "Nous numérisons l'expérience de votre restaurant : menu numérique, réservations en ligne, commandes et présence moderne — dans un seul système, géré pour vous.",
       heroText:
-        "Les restaurants peuvent obtenir leur propre site web avec demandes de réservation de table, un menu numérique, un menu QR, les horaires, la localisation, une galerie, un bouton WhatsApp, Google Maps et des demandes directes de clients — sans dépendre uniquement d'Instagram ou de plateformes tierces.",
+        "Nous modernisons l'expérience de votre restaurant dans un seul système : menu numérique et menu QR toujours à jour, réservations en ligne, commandes directes, horaires, localisation, galerie, WhatsApp et Google Maps. Moins d'appels et moins de dépendance à Instagram — plus de tables et des clients qui reviennent. Nous gérons le domaine, l'hébergement, le SSL, la maintenance et les améliorations mensuelles pour vous.",
       audience: [
         "Restaurants et bistrots indépendants",
         "Cafés, spots de brunch et bars à tapas",
@@ -236,15 +239,14 @@ const fr: LocaleContent = {
     hairdressers: {
       industry: "hairdressers",
       locale: "fr",
-      metaTitle:
-        "Site web avec prise de rendez-vous pour coiffeur dès 15€/mois",
+      metaTitle: "Modernisez votre salon — rendez-vous en ligne 24h/24",
       metaDescription:
-        "Offrez à votre salon ou barbershop son propre site web avec un système de rendez-vous en ligne, prestations, tarifs, équipe et plannings — dès 15€/mois avec NorthSail.",
+        "Nous modernisons votre salon : rendez-vous en ligne 24h/24, rappels, prestations, tarifs et équipe. Moins d'absences, moins de téléphone. Dès 15€/mois, géré pour vous.",
       h1: "Site web avec rendez-vous en ligne pour coiffeur dès 15€/mois",
       valueProp:
-        "Votre propre site web de salon avec un système de réservation personnalisé, prestations, tarifs et plannings de l'équipe.",
+        "Nous modernisons votre salon : rendez-vous en ligne 24h/24, rappels, prestations et équipe — moins d'absences et moins de temps au téléphone.",
       heroText:
-        "Les coiffeurs et barbiers peuvent obtenir leur propre site web avec un système de réservation personnalisé, une liste de prestations et de tarifs, les profils et plannings de l'équipe — pour que les clients réservent en ligne au lieu de remplir votre téléphone de messages.",
+        "Nous modernisons votre salon ou barbershop : rendez-vous en ligne 24h/24 avec des rappels qui réduisent les absences, liste des prestations et tarifs, profils et plannings de l'équipe. Les clients réservent eux-mêmes au lieu de remplir votre téléphone de messages — et vous gagnez du temps. Domaine, hébergement, SSL et maintenance inclus.",
       audience: [
         "Salons de coiffure et barbershops",
         "Coiffeurs indépendants et fauteuils en location",
@@ -305,15 +307,14 @@ const fr: LocaleContent = {
     hotels: {
       industry: "hotels",
       locale: "fr",
-      metaTitle:
-        "Site web d'hôtel avec demandes de réservation directe dès 15€/mois",
+      metaTitle: "Modernisez votre hôtel — réservation directe en ligne",
       metaDescription:
-        "Offrez à votre hôtel ou hébergement local son propre site web avec chambres, équipements, galerie, localisation et un formulaire de demande de réservation directe — dès 15€/mois avec NorthSail.",
+        "Nous modernisons la présence de votre hôtel ou hébergement : chambres, équipements, galerie et demandes de réservation directe. Moins de commissions de plateformes. Dès 15€/mois.",
       h1: "Site web d'hôtel avec demandes de réservation directe dès 15€/mois",
       valueProp:
-        "Votre propre site web d'hôtel avec chambres, équipements, galerie et un formulaire de demande de réservation directe.",
+        "Nous modernisons la présence de votre hôtel : chambres, équipements, galerie et demandes de réservation directe — moins de dépendance aux plateformes externes.",
       heroText:
-        "Les hôtels et hébergements locaux peuvent avoir leur propre site web avec chambres, équipements, galerie, localisation, un formulaire de demande de réservation directe, WhatsApp, contact et un flux dédié de disponibilité/demande — pour que les voyageurs vous joignent directement.",
+        "Nous modernisons la présence de votre hôtel ou hébergement local : chambres, équipements, galerie, localisation et un flux clair de demande de réservation directe, avec WhatsApp et contact. Les clients réservent directement avec vous, avec moins de dépendance (et de commissions) aux plateformes externes. Domaine, hébergement, SSL et maintenance inclus.",
       audience: [
         "Petits hôtels et maisons d'hôtes",
         "Hébergements locaux et locations de courte durée",
@@ -374,15 +375,14 @@ const fr: LocaleContent = {
     gyms: {
       industry: "gyms",
       locale: "fr",
-      metaTitle:
-        "Site web de salle de sport avec plannings et essais dès 15€/mois",
+      metaTitle: "Modernisez votre salle de sport — cours et inscriptions",
       metaDescription:
-        "Offrez à votre salle de sport ou studio son propre site web avec plannings de cours, demandes de séances d'essai, abonnements et profils de coachs — dès 15€/mois avec NorthSail.",
+        "Nous modernisons votre salle de sport ou studio : cours, plannings, inscriptions et communication avec les membres dans un seul système. Dès 15€/mois, géré pour vous.",
       h1: "Site web de salle de sport avec plannings et inscriptions dès 15€/mois",
       valueProp:
-        "Votre propre site web de salle de sport avec plannings de cours, demandes de séances d'essai et profils de coachs.",
+        "Nous modernisons votre salle de sport : cours, plannings, inscriptions et communication avec les membres — tout organisé dans un seul système.",
       heroText:
-        "Les salles de sport, studios et coachs sportifs peuvent obtenir leur propre site web avec plannings de cours, demandes de séances d'essai, informations sur les abonnements et profils de coachs — pour que les prospects voient votre planning et s'inscrivent en ligne.",
+        "Nous modernisons votre salle de sport, studio ou activité de coach personnel : plannings de cours, inscriptions et séances d'essai, informations d'abonnement, profils de coachs et communication avec les membres — tout organisé dans un seul système. Moins de WhatsApp et de papier, plus d'inscriptions. Domaine, hébergement, SSL et maintenance inclus.",
       audience: [
         "Salles de sport et studios de fitness",
         "Coachs sportifs et petites équipes de coaching",
@@ -445,15 +445,14 @@ const fr: LocaleContent = {
     clinics: {
       industry: "clinics",
       locale: "fr",
-      metaTitle:
-        "Site web de clinique avec demandes de RDV et devis dès 15€/mois",
+      metaTitle: "Modernisez votre clinique — rendez-vous en ligne",
       metaDescription:
-        "Offrez à votre clinique ou service local son propre site web avec demandes de rendez-vous, demandes de devis, formulaires de contact, WhatsApp et Google Maps — dès 15€/mois avec NorthSail.",
+        "Nous modernisons votre clinique : rendez-vous en ligne, formulaires patient et agenda organisé. Moins d'appels, une meilleure expérience. Dès 15€/mois.",
       h1: "Site web de clinique avec demandes de rendez-vous et de devis dès 15€/mois",
       valueProp:
-        "Votre propre site web de clinique avec demandes de rendez-vous, demandes de devis et options de contact claires.",
+        "Nous modernisons votre clinique : rendez-vous en ligne, formulaires patient et agenda organisé — moins d'appels, une meilleure expérience.",
       heroText:
-        "Les cliniques et services locaux peuvent obtenir leur propre site web avec demandes de rendez-vous, demandes de devis, formulaires de contact, un bouton WhatsApp et Google Maps — une présence en ligne digne de confiance qui transforme les visiteurs en rendez-vous réservés.",
+        "Nous modernisons votre clinique ou cabinet : rendez-vous en ligne, formulaires patient, demandes de devis, contact, WhatsApp et Google Maps. L'accueil est libéré des appels et les patients réservent eux-mêmes, dans une présence qui inspire confiance. Domaine, hébergement, SSL et maintenance inclus, avec soin dans l'organisation des données.",
       audience: [
         "Cliniques dentaires, de kiné et médicales",
         "Thérapeutes et praticiens de santé locaux",
@@ -515,15 +514,14 @@ const fr: LocaleContent = {
     "local-services": {
       industry: "local-services",
       locale: "fr",
-      metaTitle:
-        "Site web avec demandes de devis pour services locaux dès 15€/mois",
+      metaTitle: "Modernisez votre service local — devis en ligne",
       metaDescription:
-        "Électriciens, plombiers, sociétés de nettoyage et de rénovation, jardiniers et pisciniers : obtenez votre propre site web avec des flux de demande de devis — dès 15€/mois avec NorthSail.",
+        "Nous numérisons votre service : formulaires intelligents, demandes de devis et planning organisé. Moins de processus manuels. Dès 15€/mois.",
       h1: "Site web avec demandes de devis pour artisans locaux dès 15€/mois",
       valueProp:
-        "Votre propre site web avec un flux clair de demande de devis pour les artisans et services à domicile.",
+        "Nous numérisons votre service : formulaires intelligents, demandes de devis et planning organisé — moins de processus manuels.",
       heroText:
-        "Les artisans locaux — électriciens, plombiers, sociétés de nettoyage, sociétés de rénovation, jardiniers et pisciniers — peuvent obtenir leur propre site web avec un flux structuré de demande de devis, une liste de services, une galerie, WhatsApp et Google Maps, pour que les clients envoient des demandes qualifiées au lieu de messages vagues.",
+        "Nous numérisons votre service — électriciens, plombiers, nettoyage, rénovation, jardinage, piscines et plus : formulaires intelligents de demande de devis, liste des prestations, galerie, WhatsApp et Google Maps. Vous recevez des demandes qualifiées et organisées, au lieu de messages vagues et de travail manuel. Domaine, hébergement, SSL et maintenance inclus.",
       audience: [
         "Électriciens, plombiers et bricoleurs",
         "Sociétés de nettoyage et de rénovation",
@@ -579,6 +577,71 @@ const fr: LocaleContent = {
         },
       ],
       cta: { label: "Créer le site web de vos services", target: "contact" },
+    },
+    cafes: {
+      industry: "cafes",
+      locale: "fr",
+      metaTitle: "Modernisez votre café — menu numérique et Google Maps",
+      metaDescription:
+        "Nous modernisons votre café : menu numérique, menu QR et présence sur Google Maps. Pour que les clients vous trouvent et reviennent. Dès 15€/mois.",
+      h1: "Site web pour cafés et coffee shops dès 15€/mois",
+      valueProp:
+        "Nous modernisons votre café : menu numérique, menu QR et présence sur Google Maps — pour que les clients vous trouvent et reviennent.",
+      heroText:
+        "Nous modernisons votre café, coffee shop, lieu de brunch ou salon de thé : menu numérique et menu QR pour les tables toujours à jour, horaires, galerie, WhatsApp et Google Maps. Une présence moderne qui se classe sur Google, se lit clairement dans les réponses IA et fait revenir les clients. Domaine, hébergement, SSL et maintenance inclus.",
+      audience: [
+        "Cafés et coffee shops indépendants",
+        "Lieux de brunch, boulangeries et salons de thé",
+        "Bars à café de spécialité avec commande au comptoir",
+      ],
+      problems: [
+        "Les clients ne trouvent pas vos horaires, votre menu ou votre adresse rapidement.",
+        "Votre seule présence est un fil Instagram qui ne se classe pas sur Google.",
+        "Les menus imprimés se périment et les réimpressions coûtent de l'argent.",
+        "Les nouveaux clients à proximité ne découvrent jamais votre existence.",
+      ],
+      solution:
+        "NorthSail crée et gère un site de café rapide avec un menu numérique toujours à jour, un menu QR pour les tables, vos horaires, votre localisation et votre galerie, ainsi qu'un bouton WhatsApp — pour que vous apparaissiez sur Google Maps et dans la recherche, et que les clients trouvent tout en un clic.",
+      included: [
+        "Site de café à votre image de marque",
+        "Menu numérique et menu QR pour les tables",
+        "Horaires, localisation et Google Maps",
+        "Galerie de photos et bouton WhatsApp",
+        "Domaine personnalisé, hébergement, SSL et maintenance",
+      ],
+      excluded: [
+        "Système de caisse / comptoir complet",
+        "Commande en ligne avec livraison dans le plan de base",
+        "Automatisation de fidélité / carte à tampons",
+        "Traitement des paiements en ligne dans le plan de base",
+      ],
+      minimumPlan: {
+        code: "MINI_APP",
+        reason:
+          "L'App Essentielle (dès 15€/mois) couvre un site avec menu numérique et menu QR, ce dont la plupart des cafés ont besoin.",
+      },
+      upgrade:
+        "Passez à l'App Avancée pour les demandes de commande en ligne, plus de pages et des automatisations, ou ajoutez la commande WhatsApp en option.",
+      aiSummary:
+        "Un site de café NorthSail inclut un menu numérique, un menu QR, les horaires, la localisation, une galerie et un bouton WhatsApp, dès 15€/mois. Il ne remplace pas une caisse complète et n'inclut pas l'intégration de plateformes de livraison dans le plan de base.",
+      faqs: [
+        {
+          question: "Puis-je mettre à jour mon menu et mes prix moi-même ?",
+          answer:
+            "Oui. Vous mettez à jour le menu numérique depuis votre panneau et le menu QR sur les tables affiche toujours la dernière version — sans réimpression.",
+        },
+        {
+          question: "Mon café apparaîtra-t-il sur Google ?",
+          answer:
+            "Oui. Le site est conçu pour être indexé par Google et connecté à votre fiche Google Maps, pour que les clients à proximité vous trouvent.",
+        },
+        {
+          question: "Les clients peuvent-ils commander en ligne ?",
+          answer:
+            "Les demandes de commande en ligne sont disponibles sur un plan supérieur ou via l'option commande WhatsApp ; le plan de base se concentre sur votre menu, vos horaires et votre localisation.",
+        },
+      ],
+      cta: { label: "Créer votre site de café", target: "contact" },
     },
   },
 

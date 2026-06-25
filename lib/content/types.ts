@@ -89,6 +89,17 @@ export interface HomeContent {
   sectors: { key: IndustryKey; title: string; description: string }[];
   howItWorksTitle: string;
   steps: { title: string; description: string }[];
+  /**
+   * Optional "for companies" axis block (web apps, portals, dashboards).
+   * Optional so locales without translated copy stay valid until filled.
+   */
+  businessAxis?: {
+    title: string;
+    body: string;
+    cta: string;
+    ctaTarget: PageKey;
+    items: { title: string; description: string; target: PageKey }[];
+  };
   plansTitle: string;
   plansSubtitle: string;
   aiSummary: string;

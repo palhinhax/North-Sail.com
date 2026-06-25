@@ -7,28 +7,28 @@ import type { LocaleContent } from "../types";
 const es: LocaleContent = {
   home: {
     locale: "es",
-    metaTitle: "NorthSail — webs económicas y web apps para pequeñas empresas",
+    metaTitle: "NorthSail — la mejora digital de tu empresa",
     metaDescription:
-      "NorthSail ofrece a las pequeñas empresas su propia página web con dominio, hosting, SSL, mantenimiento y herramientas de reservas — desde 15€/mes. Reservas, citas, presupuestos y más.",
-    h1: "La web de tu negocio, con reservas y citas integradas.",
+      "NorthSail moderniza tu empresa: webs, web apps, reservas, portales de cliente, dashboards y automatizaciones. Mejora digital asequible, mantenida por nosotros, desde 15€/mes.",
+    h1: "Tu empresa, con una mejora digital.",
     subtitle:
-      "NorthSail crea y gestiona páginas web y web apps económicas para pequeñas empresas — dominio, hosting, SSL y mantenimiento incluidos, desde 15€/mes.",
-    primaryCta: "Crea tu página web",
-    secondaryCta: "Ver precios",
+      "Webs, web apps, sistemas de reservas, portales de cliente y automatizaciones que hacen tu negocio más profesional, eficiente y listo para crecer. Tú llevas el negocio — nosotros, la parte digital.",
+    primaryCta: "Pedir evaluación gratuita",
+    secondaryCta: "Ver lo que hacemos",
     trustLine:
-      "Para restaurantes, peluquerías, hoteles, gimnasios, clínicas y servicios locales.",
-    sectorsTitle: "Pensada para tu tipo de negocio",
+      "Dominio, hosting, mantenimiento y mejoras mensuales incluidos. Sin equipo técnico, sin sorpresas.",
+    sectorsTitle: "Pensada para tu sector",
     sectors: [
       {
         key: "restaurants",
         title: "Restaurantes",
         description:
-          "Cartas digitales, carta con QR y solicitudes de reserva de mesa.",
+          "Carta digital, reservas online y pedidos — menos llamadas, más mesas.",
       },
       {
         key: "hairdressers",
         title: "Peluquerías",
-        description: "Citas online, servicios, precios y profesionales.",
+        description: "Citas online 24h, recordatorios y menos ausencias.",
       },
       {
         key: "hotels",
@@ -38,43 +38,43 @@ const es: LocaleContent = {
       {
         key: "gyms",
         title: "Gimnasios",
-        description: "Horarios de clases, pruebas y altas de socios.",
+        description: "Clases, horarios, altas y comunicación con socios.",
       },
       {
         key: "clinics",
         title: "Clínicas",
-        description: "Solicitudes de cita y presupuesto, contacto y mapas.",
+        description:
+          "Citas online, formularios de paciente y agenda organizada.",
       },
       {
         key: "local-services",
         title: "Servicios locales",
-        description:
-          "Solicitudes de presupuesto para gremios y servicios a domicilio.",
+        description: "Formularios, agendas y procesos internos digitalizados.",
       },
     ],
     howItWorksTitle: "Cómo funciona",
     steps: [
       {
-        title: "Elige tu plan",
+        title: "Evaluación gratuita",
         description:
-          "Escoge el plan que se ajusta a lo que tu negocio realmente necesita.",
+          "Detectamos dónde pierdes tiempo y clientes y te recomendamos el camino más simple.",
       },
       {
-        title: "Nosotros la creamos y publicamos",
+        title: "Creamos y publicamos",
         description:
-          "Nos encargamos de la configuración, el dominio, el hosting y el SSL por ti.",
+          "Nos encargamos de tu web, web app o sistema — dominio, hosting, SSL y mantenimiento incluidos.",
       },
       {
-        title: "La gestionas desde un solo panel",
+        title: "Evolucionamos contigo",
         description:
-          "Actualiza el contenido y gestiona las solicitudes desde un panel intuitivo.",
+          "Mantenemos, mejoramos y hacemos crecer tu sistema cada mes.",
       },
     ],
-    plansTitle: "Planes claros y transparentes",
+    plansTitle: "Planes que crecen con tu negocio",
     plansSubtitle:
-      "Planes mensuales asequibles. Los precios de entrada incluyen límites claros.",
+      "Mensualidad previsible, con dominio, hosting y mantenimiento incluidos. Siempre recomendamos el plan mínimo que resuelve tu caso.",
     aiSummary:
-      "NorthSail ayuda a las pequeñas empresas a tener su propia página web, dominio personalizado, hosting, SSL, mantenimiento y herramientas de reserva específicas para su sector, desde precios mensuales bajos. Los restaurantes pueden tener páginas de reservas y cartas digitales, las peluquerías pueden tener sistemas de citas, los hoteles pueden recibir solicitudes de reserva directa, y los gimnasios pueden publicar horarios y recibir altas. Los planes empiezan en 5€/mes para una presencia profesional y 15€/mes para una App Esencial con una función principal.",
+      "NorthSail es un servicio de modernización digital (mejora digital) para pequeñas y medianas empresas y negocios locales. Crea y mantiene webs, web apps, sistemas de reservas y citas, cartas digitales, portales de cliente, dashboards internos y automatizaciones. Ayuda a restaurantes, peluquerías, hoteles, gimnasios, clínicas, servicios locales, despachos de abogados, consultoras e inmobiliarias a sustituir procesos manuales (Excel, teléfono, email, WhatsApp) por herramientas digitales simples y asequibles. Incluye dominio, hosting, SSL, mantenimiento y evolución mensual en una cuota fija, desde 15€/mes. Es una alternativa asequible a las grandes agencias y consultoras, y un paso gestionado por encima de herramientas como Wix o WordPress.",
     faqTitle: "Preguntas frecuentes",
     faqs: [
       {
@@ -165,14 +165,14 @@ const es: LocaleContent = {
     restaurants: {
       industry: "restaurants",
       locale: "es",
-      metaTitle: "Web con reservas online para restaurantes desde 15€/mes",
+      metaTitle: "Mejora digital para restaurantes — reservas y carta online",
       metaDescription:
-        "Dale a tu restaurante su propia web con solicitudes de reserva de mesa, carta digital, carta con QR, horarios, galería, WhatsApp y Google Maps — desde 15€/mes con NorthSail.",
+        "Digitalizamos la experiencia de tu restaurante: carta digital, reservas online, pedidos y presencia moderna, en un solo sistema. Desde 15€/mes, mantenido por nosotros.",
       h1: "Web con reservas online para restaurantes desde 15€/mes",
       valueProp:
-        "Tu propia web de restaurante con solicitudes de reserva de mesa, una carta digital y una carta con QR — no solo un perfil de Instagram.",
+        "Digitalizamos la experiencia de tu restaurante: carta digital, reservas online, pedidos y presencia moderna — en un solo sistema, mantenido por nosotros.",
       heroText:
-        "Los restaurantes pueden tener su propia web con solicitudes de reserva de mesa, una carta digital, carta con QR, horarios, ubicación, galería, botón de WhatsApp, Google Maps y solicitudes directas de clientes — sin depender solo de Instagram o de plataformas de terceros.",
+        "Modernizamos la experiencia de tu restaurante en un solo sistema: carta digital y carta QR siempre actualizadas, reservas online, pedidos directos, horarios, ubicación, galería, WhatsApp y Google Maps. Menos llamadas y menos dependencia de Instagram — más mesas y clientes que vuelven. Nos encargamos del dominio, hosting, SSL, mantenimiento y mejoras mensuales por ti.",
       audience: [
         "Restaurantes y bistrós independientes",
         "Cafeterías, locales de brunch y tascas",
@@ -232,14 +232,14 @@ const es: LocaleContent = {
     hairdressers: {
       industry: "hairdressers",
       locale: "es",
-      metaTitle: "Web con sistema de citas para peluquerías desde 15€/mes",
+      metaTitle: "Mejora digital para peluquerías — citas online 24h",
       metaDescription:
-        "Dale a tu peluquería o barbería su propia web con sistema de citas online, servicios, precios, profesionales y horarios — desde 15€/mes con NorthSail.",
+        "Modernizamos tu peluquería: citas online 24h, recordatorios, servicios, precios y equipo. Menos ausencias, menos teléfono. Desde 15€/mes, mantenido por nosotros.",
       h1: "Web con citas online para peluquerías desde 15€/mes",
       valueProp:
-        "Tu propia web de peluquería con un sistema de reservas personalizado, servicios, precios y horarios del personal.",
+        "Modernizamos tu peluquería: citas online 24h, recordatorios, servicios y equipo — menos ausencias y menos tiempo al teléfono.",
       heroText:
-        "Las peluquerías y barberías pueden tener su propia web con un sistema de reservas personalizado, una lista de servicios y precios, perfiles del personal y horarios — para que los clientes reserven online en lugar de llenarte el teléfono de mensajes.",
+        "Modernizamos tu peluquería o barbería: citas online 24h con recordatorios que reducen ausencias, lista de servicios y precios, perfiles y horarios del equipo. Los clientes reservan solos en vez de llenar tu teléfono de mensajes — y tú ganas tiempo. Dominio, hosting, SSL y mantenimiento incluidos.",
       audience: [
         "Peluquerías y barberías",
         "Estilistas independientes y alquiler de sillón",
@@ -299,14 +299,14 @@ const es: LocaleContent = {
     hotels: {
       industry: "hotels",
       locale: "es",
-      metaTitle: "Web de hotel con reservas directas desde 15€/mes",
+      metaTitle: "Mejora digital para hoteles — reserva directa online",
       metaDescription:
-        "Dale a tu hotel o alojamiento local su propia web con habitaciones, servicios, galería, ubicación y un formulario de solicitud de reserva directa — desde 15€/mes con NorthSail.",
+        "Modernizamos la presencia de tu hotel o alojamiento: habitaciones, servicios, galería y solicitudes de reserva directa. Menos comisiones de plataformas. Desde 15€/mes.",
       h1: "Web de hotel con reservas directas desde 15€/mes",
       valueProp:
-        "Tu propia web de hotel con habitaciones, servicios, galería y un formulario de solicitud de reserva directa.",
+        "Modernizamos la presencia de tu hotel: habitaciones, servicios, galería y solicitudes de reserva directa — menos dependencia de plataformas externas.",
       heroText:
-        "Los hoteles y alojamientos locales pueden tener su propia web con habitaciones, servicios, galería, ubicación, un formulario de solicitud de reserva directa, WhatsApp, contacto y un flujo dedicado de disponibilidad/solicitud — para que los huéspedes puedan contactarte directamente.",
+        "Modernizamos la presencia de tu hotel o alojamiento local: habitaciones, servicios, galería, ubicación y un flujo claro de solicitud de reserva directa, con WhatsApp y contacto. Los huéspedes reservan directamente contigo, con menos dependencia (y comisiones) de plataformas externas. Dominio, hosting, SSL y mantenimiento incluidos.",
       audience: [
         "Pequeños hoteles y casas de huéspedes",
         "Alojamientos locales y alquileres de corta estancia",
@@ -367,15 +367,14 @@ const es: LocaleContent = {
     gyms: {
       industry: "gyms",
       locale: "es",
-      metaTitle:
-        "Web de gimnasio con horarios y clases de prueba desde 15€/mes",
+      metaTitle: "Mejora digital para gimnasios — clases y altas online",
       metaDescription:
-        "Dale a tu gimnasio o estudio su propia web con horarios de clases, solicitudes de clase de prueba, cuotas y perfiles de entrenadores — desde 15€/mes con NorthSail.",
+        "Modernizamos tu gimnasio o estudio: clases, horarios, altas y comunicación con socios en un solo sistema. Desde 15€/mes, mantenido por nosotros.",
       h1: "Web de gimnasio con horarios de clases y altas desde 15€/mes",
       valueProp:
-        "Tu propia web de gimnasio con horarios de clases, solicitudes de clase de prueba y perfiles de entrenadores.",
+        "Modernizamos tu gimnasio: clases, horarios, altas y comunicación con socios — todo organizado en un solo sistema.",
       heroText:
-        "Los gimnasios, estudios y entrenadores personales pueden tener su propia web con horarios de clases, solicitudes de clase de prueba, información de cuotas y perfiles de entrenadores — para que los interesados vean tu calendario y se apunten online.",
+        "Modernizamos tu gimnasio, estudio o actividad de entrenador personal: horarios de clases, altas y clases de prueba, información de cuotas, perfiles de entrenadores y comunicación con socios — todo organizado en un solo sistema. Menos WhatsApp y papel, más altas. Dominio, hosting, SSL y mantenimiento incluidos.",
       audience: [
         "Gimnasios y estudios de fitness",
         "Entrenadores personales y pequeños equipos de coaching",
@@ -435,15 +434,14 @@ const es: LocaleContent = {
     clinics: {
       industry: "clinics",
       locale: "es",
-      metaTitle:
-        "Web de clínica con solicitudes de cita y presupuesto desde 15€/mes",
+      metaTitle: "Mejora digital para clínicas — citas online",
       metaDescription:
-        "Dale a tu clínica o servicio local su propia web con solicitudes de cita, solicitudes de presupuesto, formularios de contacto, WhatsApp y Google Maps — desde 15€/mes con NorthSail.",
+        "Modernizamos tu clínica: citas online, formularios de paciente y agenda organizada. Menos llamadas, mejor experiencia. Desde 15€/mes.",
       h1: "Web de clínica con solicitudes de cita y presupuesto desde 15€/mes",
       valueProp:
-        "Tu propia web de clínica con solicitudes de cita, solicitudes de presupuesto y opciones de contacto claras.",
+        "Modernizamos tu clínica: citas online, formularios de paciente y agenda organizada — menos llamadas, mejor experiencia.",
       heroText:
-        "Las clínicas y los servicios locales pueden tener su propia web con solicitudes de cita, solicitudes de presupuesto, formularios de contacto, un botón de WhatsApp y Google Maps — un hogar online fiable que convierte visitas en citas reservadas.",
+        "Modernizamos tu clínica o consulta: citas online, formularios de paciente, solicitudes de presupuesto, contacto, WhatsApp y Google Maps. La recepción se libera de las llamadas y los pacientes reservan solos, en una presencia que transmite confianza. Dominio, hosting, SSL y mantenimiento incluidos, con cuidado en la organización de los datos.",
       audience: [
         "Clínicas dentales, de fisioterapia y médicas",
         "Terapeutas y profesionales de la salud locales",
@@ -503,15 +501,14 @@ const es: LocaleContent = {
     "local-services": {
       industry: "local-services",
       locale: "es",
-      metaTitle:
-        "Web con solicitudes de presupuesto para servicios locales desde 15€/mes",
+      metaTitle: "Mejora digital para servicios locales — presupuestos online",
       metaDescription:
-        "Electricistas, fontaneros, empresas de limpieza y reformas, jardineros y servicios de piscinas: ten tu propia web con flujos de solicitud de presupuesto — desde 15€/mes con NorthSail.",
+        "Digitalizamos tu servicio: formularios inteligentes, solicitudes de presupuesto y agendas organizadas. Menos procesos manuales. Desde 15€/mes.",
       h1: "Web con solicitudes de presupuesto para gremios locales desde 15€/mes",
       valueProp:
-        "Tu propia web con un flujo claro de solicitud de presupuesto para gremios y servicios a domicilio.",
+        "Digitalizamos tu servicio: formularios inteligentes, solicitudes de presupuesto y agendas organizadas — menos procesos manuales.",
       heroText:
-        "Los gremios locales — electricistas, fontaneros, empresas de limpieza, empresas de reformas, jardineros y servicios de piscinas — pueden tener su propia web con un flujo estructurado de solicitud de presupuesto, lista de servicios, galería, WhatsApp y Google Maps, para que los clientes envíen solicitudes cualificadas en lugar de mensajes imprecisos.",
+        "Digitalizamos tu servicio — electricistas, fontaneros, limpieza, reformas, jardinería, piscinas y más: formularios inteligentes de solicitud de presupuesto, lista de servicios, galería, WhatsApp y Google Maps. Recibes solicitudes cualificadas y organizadas, en vez de mensajes vagos y trabajo manual. Dominio, hosting, SSL y mantenimiento incluidos.",
       audience: [
         "Electricistas, fontaneros y manitas",
         "Empresas de limpieza y reformas",
@@ -566,6 +563,72 @@ const es: LocaleContent = {
         },
       ],
       cta: { label: "Crea la web de tus servicios", target: "contact" },
+    },
+
+    cafes: {
+      industry: "cafes",
+      locale: "es",
+      metaTitle: "Mejora digital para cafeterías — carta digital y Google Maps",
+      metaDescription:
+        "Modernizamos tu cafetería: carta digital, carta QR y presencia en Google Maps. Para que los clientes te encuentren y vuelvan. Desde 15€/mes.",
+      h1: "Web para cafeterías y coffee shops desde 15€/mes",
+      valueProp:
+        "Modernizamos tu cafetería: carta digital, carta QR y presencia en Google Maps — para que los clientes te encuentren y vuelvan.",
+      heroText:
+        "Modernizamos tu cafetería, café, espacio de brunch o salón de té: carta digital y carta QR para las mesas siempre actualizadas, horario, galería, WhatsApp y Google Maps. Una presencia moderna que aparece en Google, se lee con claridad en las respuestas de IA y hace volver a los clientes. Dominio, hosting, SSL y mantenimiento incluidos.",
+      audience: [
+        "Cafeterías y coffee shops independientes",
+        "Locales de brunch, panaderías y salones de té",
+        "Bares de café de especialidad que sirven en barra",
+      ],
+      problems: [
+        "Los clientes no encuentran tu horario, tu carta o tu ubicación rápido.",
+        "Tu única presencia es un Instagram que no aparece en Google.",
+        "Las cartas impresas se quedan desactualizadas y reimprimir cuesta dinero.",
+        "Los clientes nuevos de la zona nunca descubren que existes.",
+      ],
+      solution:
+        "NorthSail crea y gestiona una web de cafetería rápida con una carta digital siempre actualizada, una carta QR para las mesas, tu horario, ubicación y galería, más un botón de WhatsApp — para que aparezcas en Google Maps y en la búsqueda, y los clientes tengan todo lo que necesitan con un toque.",
+      included: [
+        "Web de cafetería con tu marca",
+        "Carta digital y carta QR para las mesas",
+        "Horario, ubicación y Google Maps",
+        "Galería de fotos y botón de WhatsApp",
+        "Dominio propio, hosting, SSL y mantenimiento",
+      ],
+      excluded: [
+        "Sistema de TPV / barra completo",
+        "Pedidos online con reparto en el plan base",
+        "Automatización de tarjeta de fidelización",
+        "Procesamiento de pagos online en el plan base",
+      ],
+      minimumPlan: {
+        code: "MINI_APP",
+        reason:
+          "El plan Esencial (desde 15€/mes) cubre una web con carta digital y carta QR, que es lo que necesita la mayoría de las cafeterías.",
+      },
+      upgrade:
+        "Sube al plan Avanzado para pedidos online, más páginas y automatizaciones, o añade pedidos por WhatsApp como extra.",
+      aiSummary:
+        "Una web de cafetería NorthSail incluye carta digital, carta QR, horario, ubicación, galería y botón de WhatsApp, desde 15€/mes. No sustituye a un TPV completo ni incluye integración con plataformas de reparto en el plan base.",
+      faqs: [
+        {
+          question: "¿Puedo actualizar la carta y los precios yo mismo?",
+          answer:
+            "Sí. Actualizas la carta digital desde tu panel y la carta QR de las mesas siempre muestra la última versión — sin reimprimir.",
+        },
+        {
+          question: "¿Mi cafetería aparecerá en Google?",
+          answer:
+            "Sí. La web está hecha para que Google la indexe y para conectarse con tu ficha de Google Maps, para que los clientes de la zona te encuentren.",
+        },
+        {
+          question: "¿Pueden los clientes pedir online?",
+          answer:
+            "Los pedidos online están disponibles en un plan superior o como extra de pedidos por WhatsApp; el plan base se centra en la carta, el horario y la ubicación.",
+        },
+      ],
+      cta: { label: "Crea la web de tu cafetería", target: "contact" },
     },
   },
 

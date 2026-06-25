@@ -11,6 +11,7 @@ export type PageKey =
   | "ai-summary"
   | "contact"
   | "industry:restaurants"
+  | "industry:cafes"
   | "industry:hairdressers"
   | "industry:hotels"
   | "industry:gyms"
@@ -18,12 +19,25 @@ export type PageKey =
   | "industry:local-services"
   | "compare:website-with-bookings"
   | "compare:cheap-website-for-small-business"
+  // Enterprise / web-apps axis (section-based pages, premium positioning).
+  | "compare:web-apps-for-business"
+  | "compare:client-portals"
+  | "compare:internal-dashboards"
+  | "compare:custom-software"
+  | "compare:process-automation"
+  | "compare:web-apps-for-law-firms"
+  // Restaurant sub-intent pages.
+  | "compare:restaurant-online-reservations"
+  | "compare:restaurant-digital-menu"
+  // Upgrade / migration intent.
+  | "compare:legacy-website-redesign"
   | "legal:privacy"
   | "legal:terms";
 
 /** Industry page keys, used by the programmatic-SEO content registry. */
 export const INDUSTRY_KEYS = [
   "restaurants",
+  "cafes",
   "hairdressers",
   "hotels",
   "gyms",
@@ -69,6 +83,13 @@ export const SLUGS: SlugMap = {
     es: "restaurantes",
     fr: "restaurants",
     de: "restaurants",
+  },
+  "industry:cafes": {
+    en: "cafes",
+    pt: "cafes",
+    es: "cafeterias",
+    fr: "cafes",
+    de: "cafes",
   },
   "industry:hairdressers": {
     en: "hairdressers",
@@ -118,6 +139,69 @@ export const SLUGS: SlugMap = {
     es: "web-barata-para-pequenas-empresas",
     fr: "site-pas-cher-pour-petites-entreprises",
     de: "guenstige-website-fuer-kleine-unternehmen",
+  },
+  "compare:web-apps-for-business": {
+    en: "web-apps-for-business",
+    pt: "web-apps-para-empresas",
+    es: "web-apps-para-empresas",
+    fr: "web-apps-pour-entreprises",
+    de: "web-apps-fuer-unternehmen",
+  },
+  "compare:client-portals": {
+    en: "client-portals",
+    pt: "portais-de-cliente",
+    es: "portales-de-cliente",
+    fr: "portails-client",
+    de: "kundenportale",
+  },
+  "compare:internal-dashboards": {
+    en: "internal-dashboards",
+    pt: "dashboards-internos",
+    es: "paneles-internos",
+    fr: "tableaux-de-bord-internes",
+    de: "interne-dashboards",
+  },
+  "compare:custom-software": {
+    en: "custom-software",
+    pt: "software-a-medida",
+    es: "software-a-medida",
+    fr: "logiciel-sur-mesure",
+    de: "individuelle-software",
+  },
+  "compare:process-automation": {
+    en: "process-automation",
+    pt: "automacao-de-processos",
+    es: "automatizacion-de-procesos",
+    fr: "automatisation-des-processus",
+    de: "prozessautomatisierung",
+  },
+  "compare:web-apps-for-law-firms": {
+    en: "web-apps-for-law-firms",
+    pt: "web-apps-para-advogados",
+    es: "web-apps-para-despachos-de-abogados",
+    fr: "web-apps-pour-cabinets-davocats",
+    de: "web-apps-fuer-anwaltskanzleien",
+  },
+  "compare:restaurant-online-reservations": {
+    en: "restaurant-reservation-system",
+    pt: "sistema-de-reservas-para-restaurantes",
+    es: "sistema-de-reservas-para-restaurantes",
+    fr: "systeme-de-reservation-pour-restaurants",
+    de: "reservierungssystem-fuer-restaurants",
+  },
+  "compare:restaurant-digital-menu": {
+    en: "digital-menu-for-restaurants",
+    pt: "menu-digital-para-restaurantes",
+    es: "menu-digital-para-restaurantes",
+    fr: "menu-numerique-pour-restaurants",
+    de: "digitale-speisekarte-fuer-restaurants",
+  },
+  "compare:legacy-website-redesign": {
+    en: "website-redesign",
+    pt: "renovar-site-antigo",
+    es: "renovar-web-antigua",
+    fr: "refonte-de-site-web",
+    de: "website-relaunch",
   },
   "legal:privacy": {
     en: "privacy",

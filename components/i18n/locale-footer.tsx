@@ -31,6 +31,27 @@ export function LocaleFooter({ locale }: { locale: Locale }) {
         ],
       },
       {
+        title: dict.footerSolutions,
+        links: [
+          {
+            href: localePath(locale, "compare:web-apps-for-business"),
+            label: dict.footerWebApps,
+          },
+          {
+            href: localePath(locale, "compare:client-portals"),
+            label: dict.footerPortals,
+          },
+          {
+            href: localePath(locale, "compare:internal-dashboards"),
+            label: dict.footerDashboards,
+          },
+          {
+            href: localePath(locale, "compare:web-apps-for-law-firms"),
+            label: dict.footerLawFirms,
+          },
+        ],
+      },
+      {
         title: dict.footerCompany,
         links: [
           { href: localePath(locale, "ai-summary"), label: dict.nav[3].label },

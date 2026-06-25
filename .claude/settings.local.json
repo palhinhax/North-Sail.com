@@ -7,7 +7,11 @@
       "PowerShell(pnpm install)",
       "PowerShell(npx playwright install chromium)",
       "PowerShell(pnpm db:seed)",
-      "PowerShell(pnpm test:e2e)"
+      "PowerShell(pnpm test:e2e)",
+      "Bash(npx tsc *)",
+      "Bash(git add *)",
+      "PowerShell(\"---lock file---\")",
+      "Bash(grep -v \"^$\")"
     ]
   }
 }

@@ -11,6 +11,11 @@ export interface Dictionary {
   footerTagline: string;
   footerProduct: string;
   footerBookings: string;
+  footerSolutions: string;
+  footerWebApps: string;
+  footerPortals: string;
+  footerDashboards: string;
+  footerLawFirms: string;
   footerCompany: string;
   footerLegal: string;
   footerRights: string;
@@ -76,6 +81,7 @@ const en: Dictionary = {
     { label: "Restaurants", target: "industry:restaurants" },
     { label: "Hotels", target: "industry:hotels" },
     { label: "AI summary", target: "ai-summary" },
+    { label: "Web apps", target: "compare:web-apps-for-business" },
   ],
   navStart: "Get started",
   navLogin: "Log in",
@@ -83,6 +89,11 @@ const en: Dictionary = {
   footerTagline: "Your business website, without the technical headaches.",
   footerProduct: "Product",
   footerBookings: "Bookings",
+  footerSolutions: "Web apps",
+  footerWebApps: "Web apps for business",
+  footerPortals: "Client portals",
+  footerDashboards: "Internal dashboards",
+  footerLawFirms: "For law firms",
   footerCompany: "Company",
   footerLegal: "Legal",
   footerRights: "All rights reserved.",
@@ -146,6 +157,7 @@ const pt: Dictionary = {
     { label: "Restaurantes", target: "industry:restaurants" },
     { label: "Hotéis", target: "industry:hotels" },
     { label: "Resumo IA", target: "ai-summary" },
+    { label: "Web apps", target: "compare:web-apps-for-business" },
   ],
   navStart: "Começar",
   navLogin: "Entrar",
@@ -153,6 +165,11 @@ const pt: Dictionary = {
   footerTagline: "O site do seu negócio, sem complicações técnicas.",
   footerProduct: "Produto",
   footerBookings: "Reservas",
+  footerSolutions: "Web apps",
+  footerWebApps: "Web apps para empresas",
+  footerPortals: "Portais de cliente",
+  footerDashboards: "Dashboards internos",
+  footerLawFirms: "Para advogados",
   footerCompany: "Empresa",
   footerLegal: "Legal",
   footerRights: "Todos os direitos reservados.",
@@ -216,6 +233,7 @@ const es: Dictionary = {
     { label: "Restaurantes", target: "industry:restaurants" },
     { label: "Hoteles", target: "industry:hotels" },
     { label: "Resumen IA", target: "ai-summary" },
+    { label: "Web apps", target: "compare:web-apps-for-business" },
   ],
   navStart: "Empezar",
   navLogin: "Entrar",
@@ -223,6 +241,11 @@ const es: Dictionary = {
   footerTagline: "La web de tu negocio, sin complicaciones técnicas.",
   footerProduct: "Producto",
   footerBookings: "Reservas",
+  footerSolutions: "Web apps",
+  footerWebApps: "Web apps para empresas",
+  footerPortals: "Portales de cliente",
+  footerDashboards: "Paneles internos",
+  footerLawFirms: "Para despachos de abogados",
   footerCompany: "Empresa",
   footerLegal: "Legal",
   footerRights: "Todos los derechos reservados.",
@@ -286,6 +309,7 @@ const fr: Dictionary = {
     { label: "Restaurants", target: "industry:restaurants" },
     { label: "Hôtels", target: "industry:hotels" },
     { label: "Résumé IA", target: "ai-summary" },
+    { label: "Web apps", target: "compare:web-apps-for-business" },
   ],
   navStart: "Commencer",
   navLogin: "Connexion",
@@ -293,6 +317,11 @@ const fr: Dictionary = {
   footerTagline: "Le site de votre entreprise, sans tracas technique.",
   footerProduct: "Produit",
   footerBookings: "Réservations",
+  footerSolutions: "Web apps",
+  footerWebApps: "Web apps pour entreprises",
+  footerPortals: "Portails client",
+  footerDashboards: "Tableaux de bord internes",
+  footerLawFirms: "Pour cabinets d'avocats",
   footerCompany: "Entreprise",
   footerLegal: "Légal",
   footerRights: "Tous droits réservés.",
@@ -356,6 +385,7 @@ const de: Dictionary = {
     { label: "Restaurants", target: "industry:restaurants" },
     { label: "Hotels", target: "industry:hotels" },
     { label: "KI-Zusammenfassung", target: "ai-summary" },
+    { label: "Web-Apps", target: "compare:web-apps-for-business" },
   ],
   navStart: "Loslegen",
   navLogin: "Anmelden",
@@ -363,6 +393,11 @@ const de: Dictionary = {
   footerTagline: "Die Website Ihres Unternehmens, ohne technischen Aufwand.",
   footerProduct: "Produkt",
   footerBookings: "Buchungen",
+  footerSolutions: "Web-Apps",
+  footerWebApps: "Web-Apps für Unternehmen",
+  footerPortals: "Kundenportale",
+  footerDashboards: "Interne Dashboards",
+  footerLawFirms: "Für Anwaltskanzleien",
   footerCompany: "Unternehmen",
   footerLegal: "Rechtliches",
   footerRights: "Alle Rechte vorbehalten.",
