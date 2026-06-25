@@ -1,6 +1,8 @@
 import { redirect } from "next/navigation";
+import { CreditCard, TrendingUp, Users } from "lucide-react";
 import { auth } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
+import { cn } from "@/lib/utils";
 import { PlansManager, type AdminPlan } from "./_components/plans-manager";
 
 const eur = (cents: number) =>
@@ -50,9 +52,24 @@ export default async function AdminPlansPage() {
   }));
 
   const stats = [
-    { label: "Subscrições ativas", value: String(subscriptions.length) },
-    { label: "Receita mensal estimada", value: `€${eur(mrrCents)}` },
-    { label: "Clientes totais", value: String(clientCount) },
+    {
+      label: "Subscrições ativas",
+      value: String(subscriptions.length),
+      icon: CreditCard,
+      tint: "bg-sky-100 text-sky-600",
+    },
+    {
+      label: "Receita mensal estimada",
+      value: `€${eur(mrrCents)}`,
+      icon: TrendingUp,
+      tint: "bg-emerald-100 text-emerald-600",
+    },
+    {
+      label: "Clientes totais",
+      value: String(clientCount),
+      icon: Users,
+      tint: "bg-violet-100 text-violet-600",
+    },
   ];
 
   return (
@@ -69,10 +86,20 @@ export default async function AdminPlansPage() {
         {stats.map((s) => (
           <div
             key={s.label}
-            className="rounded-xl border bg-card p-5 shadow-sm"
+            className="flex items-center justify-between rounded-xl border bg-card p-5 shadow-sm transition-shadow hover:shadow-md"
           >
-            <span className="text-sm text-muted-foreground">{s.label}</span>
-            <div className="mt-1 text-2xl font-bold">{s.value}</div>
+            <div>
+              <span className="text-sm text-muted-foreground">{s.label}</span>
+              <div className="mt-1 text-2xl font-bold">{s.value}</div>
+            </div>
+            <span
+              className={cn(
+                "flex h-12 w-12 shrink-0 items-center justify-center rounded-full",
+                s.tint
+              )}
+            >
+              <s.icon className="h-5 w-5" />
+            </span>
           </div>
         ))}
       </div>

@@ -24,7 +24,10 @@ export default async function ClientRequestDetailPage({ params }: Props) {
     include: {
       business: true,
       statusEvents: { orderBy: { createdAt: "asc" } },
-      messages: { orderBy: { createdAt: "asc" } },
+      messages: {
+        orderBy: { createdAt: "asc" },
+        include: { attachments: true },
+      },
     },
   });
   if (!req) notFound();
@@ -89,6 +92,12 @@ export default async function ClientRequestDetailPage({ params }: Props) {
               authorId: m.authorId,
               body: m.body,
               createdAt: m.createdAt.toISOString(),
+              attachments: m.attachments.map((a) => ({
+                id: a.id,
+                fileName: a.fileName,
+                contentType: a.contentType,
+                size: a.size,
+              })),
             }))}
           />
         </div>

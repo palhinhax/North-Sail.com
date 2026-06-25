@@ -9,6 +9,7 @@ import Link from "next/link";
 import { signIn } from "next-auth/react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { PasswordInput } from "@/components/ui/password-input";
 import { Label } from "@/components/ui/label";
 import { Spinner } from "@/components/ui/spinner";
 import { AuthShell } from "@/components/marketing";
@@ -128,9 +129,8 @@ export default function RegisterPage() {
         </div>
         <div className="space-y-2">
           <Label htmlFor="password">Password</Label>
-          <Input
+          <PasswordInput
             id="password"
-            type="password"
             placeholder="••••••••"
             {...register("password")}
             aria-invalid={!!errors.password}
@@ -143,9 +143,8 @@ export default function RegisterPage() {
         </div>
         <div className="space-y-2">
           <Label htmlFor="confirmPassword">Confirmar password</Label>
-          <Input
+          <PasswordInput
             id="confirmPassword"
-            type="password"
             placeholder="••••••••"
             {...register("confirmPassword")}
             aria-invalid={!!errors.confirmPassword}

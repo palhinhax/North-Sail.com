@@ -71,12 +71,13 @@ export default async function SubscriptionPage({
     return <EmptyState />;
   }
 
-  // On return from payment, pull the latest status from Stripe (works without
-  // the webhook configured locally).
+  // Reconcile with Stripe whenever there's a Stripe subscription that isn't yet
+  // settled locally (covers the case where the webhook isn't configured and the
+  // user navigates here without the ?status=pago return param).
   if (
-    searchParams?.status === "pago" &&
     business.subscription.stripeSubscriptionId &&
-    business.subscription.status !== "ACTIVE"
+    business.subscription.status !== "ACTIVE" &&
+    business.subscription.status !== "CANCELED"
   ) {
     try {
       await syncSubscriptionFromStripe(

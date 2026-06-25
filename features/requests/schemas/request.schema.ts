@@ -23,9 +23,40 @@ export const statusChangeSchema = z.object({
   note: z.string().max(2000).optional(),
 });
 
-export const messageSchema = z.object({
-  body: z.string().min(1).max(5000),
+export const attachmentInputSchema = z.object({
+  key: z.string().min(1).max(500),
+  fileName: z.string().min(1).max(255),
+  contentType: z.string().min(1).max(150),
+  size: z
+    .number()
+    .int()
+    .min(0)
+    .max(50 * 1024 * 1024), // 50 MB
 });
+export type AttachmentInput = z.infer<typeof attachmentInputSchema>;
+
+export const messageSchema = z
+  .object({
+    body: z.string().max(5000).optional().default(""),
+    attachments: z.array(attachmentInputSchema).max(10).optional().default([]),
+  })
+  .refine((d) => d.body.trim().length > 0 || d.attachments.length > 0, {
+    message: "Escreve uma mensagem ou anexa um ficheiro.",
+  });
+
+export const presignSchema = z.object({
+  requestId: z.string().min(1),
+  fileName: z.string().min(1).max(255),
+  contentType: z.string().min(1).max(150),
+});
+
+export interface RequestAttachment {
+  id: string;
+  fileName: string;
+  contentType: string;
+  size: number;
+  createdAt: string;
+}
 
 export type CreateRequestInput = z.infer<typeof createRequestSchema>;
 export type UpdateRequestInput = z.infer<typeof updateRequestSchema>;

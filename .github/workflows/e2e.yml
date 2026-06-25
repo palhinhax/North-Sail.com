@@ -1,0 +1,91 @@
+name: E2E
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  e2e:
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: northsail
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    env:
+      # Plain Postgres for CI (no pgbouncer params).
+      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/northsail
+      DATABASE_URL_UNPOOLED: postgresql://postgres:postgres@localhost:5432/northsail
+      AUTH_SECRET: ci-secret-please-change
+      NEXTAUTH_URL: http://localhost:3000
+      NEXT_PUBLIC_SITE_URL: http://localhost:3000
+      # Stripe is optional in CI; the payment spec is not run here.
+      STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+      NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: ${{ secrets.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Generate Prisma Client
+        run: pnpm prisma generate
+
+      - name: Push schema to test database
+        run: pnpm db:push
+
+      - name: Seed database (plans + admin)
+        run: pnpm db:seed
+
+      - name: Install Playwright browsers
+        run: pnpm exec playwright install --with-deps chromium
+
+      - name: Run E2E (client + admin, no payment)
+        run: >-
+          pnpm exec playwright test
+          tests/e2e/onboarding.spec.ts
+          tests/e2e/auth.spec.ts
+          tests/e2e/admin.spec.ts
+
+      # --- Payment E2E (only when Stripe test secrets are configured) ---
+      - name: Sync plans to Stripe
+        if: ${{ env.STRIPE_SECRET_KEY != '' }}
+        run: pnpm exec tsx scripts/stripe-sync-plans.ts
+
+      - name: Run payment E2E
+        if: ${{ env.STRIPE_SECRET_KEY != '' }}
+        run: pnpm exec playwright test tests/e2e/subscribe.spec.ts
+
+      - name: Upload Playwright report
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 7

@@ -35,12 +35,29 @@ export async function POST(request: Request, { params }: RouteParams) {
     );
   }
 
+  const { body: messageBody, attachments } = result.data;
+
   const created = await prisma.requestMessage.create({
     data: {
       requestId: id,
       authorId: session.user.id,
-      body: result.data.body,
+      body: messageBody,
+      ...(attachments.length
+        ? {
+            attachments: {
+              create: attachments.map((a) => ({
+                requestId: id,
+                uploadedById: session.user.id,
+                key: a.key,
+                fileName: a.fileName,
+                contentType: a.contentType,
+                size: a.size,
+              })),
+            },
+          }
+        : {}),
     },
+    include: { attachments: true },
   });
   return NextResponse.json(created, { status: 201 });
 }

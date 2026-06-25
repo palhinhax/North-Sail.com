@@ -1,5 +1,8 @@
 # Next.js SaaS Template
 
+[![CI](https://github.com/palhinhax/North-Sail.com/actions/workflows/ci.yml/badge.svg)](https://github.com/palhinhax/North-Sail.com/actions/workflows/ci.yml)
+[![E2E](https://github.com/palhinhax/North-Sail.com/actions/workflows/e2e.yml/badge.svg)](https://github.com/palhinhax/North-Sail.com/actions/workflows/e2e.yml)
+
 A production-grade, full-stack SaaS template built with modern technologies.
 
 ## 🚀 Tech Stack
@@ -50,33 +53,39 @@ A production-grade, full-stack SaaS template built with modern technologies.
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/your-username/next-prisma-saas-template.git
    cd next-prisma-saas-template
    ```
 
 2. Install dependencies:
+
    ```bash
    pnpm install
    ```
 
 3. Set up environment variables:
+
    ```bash
    cp .env.example .env
    ```
-   
+
    Update `.env` with your database URL and auth secret:
+
    ```env
    DATABASE_URL="postgresql://postgres:password@localhost:5432/saas_template"
    AUTH_SECRET="your-secret-key-here"
    ```
 
 4. Run database migrations:
+
    ```bash
    pnpm db:migrate
    ```
 
 5. (Optional) Seed the database:
+
    ```bash
    pnpm db:seed
    ```
@@ -90,20 +99,20 @@ Visit [http://localhost:3000](http://localhost:3000) to see the app.
 
 ## 📜 Available Scripts
 
-| Command | Description |
-|---------|-------------|
-| `pnpm dev` | Start development server |
-| `pnpm build` | Build for production |
-| `pnpm start` | Start production server |
-| `pnpm lint` | Run ESLint |
-| `pnpm test` | Run tests |
-| `pnpm test:watch` | Run tests in watch mode |
-| `pnpm test:coverage` | Run tests with coverage |
-| `pnpm format` | Format code with Prettier |
-| `pnpm typecheck` | Run TypeScript type checking |
-| `pnpm db:migrate` | Run database migrations |
-| `pnpm db:seed` | Seed the database |
-| `pnpm db:studio` | Open Prisma Studio |
+| Command              | Description                  |
+| -------------------- | ---------------------------- |
+| `pnpm dev`           | Start development server     |
+| `pnpm build`         | Build for production         |
+| `pnpm start`         | Start production server      |
+| `pnpm lint`          | Run ESLint                   |
+| `pnpm test`          | Run tests                    |
+| `pnpm test:watch`    | Run tests in watch mode      |
+| `pnpm test:coverage` | Run tests with coverage      |
+| `pnpm format`        | Format code with Prettier    |
+| `pnpm typecheck`     | Run TypeScript type checking |
+| `pnpm db:migrate`    | Run database migrations      |
+| `pnpm db:seed`       | Seed the database            |
+| `pnpm db:studio`     | Open Prisma Studio           |
 
 ## 🔐 Authentication
 
@@ -112,6 +121,7 @@ The template uses Auth.js with a Credentials provider for email/password authent
 ### Demo Credentials
 
 After seeding the database:
+
 - Email: `demo@example.com`
 - Password: `password123`
 
@@ -123,13 +133,13 @@ Routes under `/dashboard` are protected and require authentication. The middlewa
 
 ### Posts API
 
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|---------------|
-| GET | `/api/posts` | List all posts | No |
-| GET | `/api/posts/:id` | Get a single post | No |
-| POST | `/api/posts` | Create a post | Yes |
-| PATCH | `/api/posts/:id` | Update a post | Yes (owner only) |
-| DELETE | `/api/posts/:id` | Delete a post | Yes (owner only) |
+| Method | Endpoint         | Description       | Auth Required    |
+| ------ | ---------------- | ----------------- | ---------------- |
+| GET    | `/api/posts`     | List all posts    | No               |
+| GET    | `/api/posts/:id` | Get a single post | No               |
+| POST   | `/api/posts`     | Create a post     | Yes              |
+| PATCH  | `/api/posts/:id` | Update a post     | Yes (owner only) |
+| DELETE | `/api/posts/:id` | Delete a post     | Yes (owner only) |
 
 ### Example Usage
 
@@ -227,6 +237,7 @@ The template supports dark mode out of the box. Add the `dark` class to the `<ht
 ## 📦 Database Models
 
 ### User
+
 ```prisma
 model User {
   id           String   @id @default(cuid())
@@ -239,6 +250,7 @@ model User {
 ```
 
 ### Post
+
 ```prisma
 model Post {
   id        String   @id @default(cuid())

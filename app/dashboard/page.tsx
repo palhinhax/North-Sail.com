@@ -7,6 +7,8 @@ import {
   ChevronRight,
   ClipboardList,
   CheckCircle2,
+  CreditCard,
+  ListChecks,
   MessageCircle,
   Timer,
 } from "lucide-react";
@@ -130,26 +132,50 @@ export default async function DashboardHomePage() {
         <div className="grid gap-6 sm:grid-cols-2 lg:col-span-8">
           {/* Subscription card */}
           <div className="relative flex flex-col overflow-hidden rounded-2xl border bg-card p-6 shadow-sm">
-            <div className="mb-6 flex items-start justify-between">
-              <div>
-                <span className="mb-1 block text-xs uppercase tracking-wider text-muted-foreground">
-                  O teu plano atual
+            <span className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#2F6BFF] via-[#19B5A7] to-[#2F6BFF]" />
+            <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-[#2F6BFF]/10 blur-2xl" />
+            <div className="relative mb-6 flex items-start justify-between">
+              <div className="flex items-center gap-3">
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#2F6BFF]/10 text-[#2F6BFF]">
+                  <CreditCard className="h-5 w-5" />
                 </span>
-                <h3 className="text-xl font-semibold">
-                  {subscription?.plan.name ?? "—"}
-                </h3>
+                <div>
+                  <span className="mb-0.5 block text-xs uppercase tracking-wider text-muted-foreground">
+                    O teu plano atual
+                  </span>
+                  <h3 className="text-xl font-semibold">
+                    {subscription?.plan.name ?? "—"}
+                  </h3>
+                </div>
               </div>
               {subscription && (
-                <span className="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+                <span
+                  className={cn(
+                    "inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold",
+                    subscription.status === "ACTIVE"
+                      ? "bg-emerald-100 text-emerald-700"
+                      : subscription.status === "TRIALING"
+                        ? "bg-teal-100 text-teal-700"
+                        : subscription.status === "PENDING"
+                          ? "bg-amber-100 text-amber-700"
+                          : subscription.status === "PAST_DUE"
+                            ? "bg-rose-100 text-rose-700"
+                            : "bg-slate-100 text-slate-600"
+                  )}
+                >
                   {subscription.status === "TRIALING"
                     ? "Em teste"
-                    : subscription.status}
+                    : subscription.status === "ACTIVE"
+                      ? "Ativa"
+                      : subscription.status === "PENDING"
+                        ? "Pendente"
+                        : subscription.status}
                 </span>
               )}
             </div>
-            <div className="mt-auto">
+            <div className="relative mt-auto">
               <div className="flex items-baseline gap-1">
-                <span className="text-3xl font-bold">
+                <span className="text-3xl font-bold text-[#0A2540]">
                   {subscription
                     ? `${cents(
                         subscription.billingCycle === "ANNUAL"
@@ -164,7 +190,7 @@ export default async function DashboardHomePage() {
               </div>
               <Link
                 href="/dashboard/subscription"
-                className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
+                className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-[#2F6BFF] hover:underline"
               >
                 Gerir subscrição <ArrowRight className="h-4 w-4" />
               </Link>
@@ -173,9 +199,12 @@ export default async function DashboardHomePage() {
 
           {/* Request status card */}
           <div className="flex flex-col rounded-2xl border bg-card p-6 shadow-sm">
-            <div className="mb-6 flex items-start justify-between">
+            <div className="mb-6 flex items-start gap-3">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#19B5A7]/10 text-[#19B5A7]">
+                <ListChecks className="h-5 w-5" />
+              </span>
               <div className="min-w-0">
-                <span className="mb-1 block text-xs uppercase tracking-wider text-muted-foreground">
+                <span className="mb-0.5 block text-xs uppercase tracking-wider text-muted-foreground">
                   Estado do pedido
                 </span>
                 <h3 className="truncate text-xl font-semibold">
@@ -250,18 +279,21 @@ export default async function DashboardHomePage() {
             label="Pedidos abertos"
             value={String(openRequests)}
             icon={<ClipboardList className="h-5 w-5" />}
+            tint="bg-sky-100 text-sky-600 group-hover:bg-sky-500"
           />
           <StatCard
             href="/dashboard/subscription"
             label="Próxima renovação"
             value={nextRenewal ? shortDate(nextRenewal) : "—"}
             icon={<CalendarClock className="h-5 w-5" />}
+            tint="bg-violet-100 text-violet-600 group-hover:bg-violet-500"
           />
           <StatCard
             href="/dashboard/requests"
             label="Pedidos concluídos"
             value={String(doneRequests)}
             icon={<CheckCircle2 className="h-5 w-5" />}
+            tint="bg-emerald-100 text-emerald-600 group-hover:bg-emerald-500"
           />
         </div>
       </div>
@@ -274,16 +306,18 @@ function StatCard({
   label,
   value,
   icon,
+  tint,
 }: {
   href: string;
   label: string;
   value: string;
   icon: React.ReactNode;
+  tint: string;
 }) {
   return (
     <Link
       href={href}
-      className="group flex items-center justify-between rounded-2xl border bg-card p-5 shadow-sm transition-colors hover:border-primary/40"
+      className="group flex items-center justify-between rounded-2xl border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
     >
       <div>
         <span className="mb-1 block text-xs text-muted-foreground">
@@ -291,7 +325,12 @@ function StatCard({
         </span>
         <span className="text-2xl font-bold">{value}</span>
       </div>
-      <div className="flex h-12 w-12 items-center justify-center rounded-full bg-muted text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+      <div
+        className={cn(
+          "flex h-12 w-12 items-center justify-center rounded-full transition-colors group-hover:text-white",
+          tint
+        )}
+      >
         {icon}
       </div>
     </Link>

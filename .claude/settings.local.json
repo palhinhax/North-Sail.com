@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(npx tsx scripts/stripe-sync-plans.ts 2>&1)",
+      "PowerShell(\\(Get-Command b2 -ErrorAction SilentlyContinue\\).Source; b2 version)",
+      "PowerShell(b2 bucket update --cors-rules \\(Get-Content \"c:\\\\Users\\\\jduarte\\\\Documents\\\\workSpace\\\\North-Sail.com\\\\cors.json\" -Raw\\) north-sail allPrivate)",
+      "PowerShell(pnpm install)",
+      "PowerShell(npx playwright install chromium)",
+      "PowerShell(pnpm db:seed)",
+      "PowerShell(pnpm test:e2e)"
+    ]
+  }
+}

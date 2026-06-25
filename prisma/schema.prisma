@@ -169,6 +169,7 @@ model ServiceRequest {
 
   statusEvents RequestStatusEvent[]
   messages     RequestMessage[]
+  attachments  Attachment[]
 }
 
 model RequestStatusEvent {
@@ -188,6 +189,22 @@ model RequestMessage {
   authorId  String
   body      String
   createdAt DateTime       @default(now())
+
+  attachments Attachment[]
+}
+
+model Attachment {
+  id           String          @id @default(cuid())
+  requestId    String
+  request      ServiceRequest  @relation(fields: [requestId], references: [id], onDelete: Cascade)
+  messageId    String?
+  message      RequestMessage? @relation(fields: [messageId], references: [id], onDelete: Cascade)
+  uploadedById String
+  key          String
+  fileName     String
+  contentType  String
+  size         Int
+  createdAt    DateTime        @default(now())
 }
 
 /// Inbound marketing leads captured from the public lead form.

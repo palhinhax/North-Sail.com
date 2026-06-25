@@ -24,7 +24,10 @@ export default async function AdminRequestDetail({ params }: Props) {
       },
       assignedTo: { select: { id: true, name: true, email: true } },
       statusEvents: { orderBy: { createdAt: "asc" } },
-      messages: { orderBy: { createdAt: "asc" } },
+      messages: {
+        orderBy: { createdAt: "asc" },
+        include: { attachments: true },
+      },
     },
   });
   if (!req) notFound();
@@ -61,6 +64,12 @@ export default async function AdminRequestDetail({ params }: Props) {
             authorId: m.authorId,
             body: m.body,
             createdAt: m.createdAt.toISOString(),
+            attachments: m.attachments.map((a) => ({
+              id: a.id,
+              fileName: a.fileName,
+              contentType: a.contentType,
+              size: a.size,
+            })),
           }))}
         />
       </div>

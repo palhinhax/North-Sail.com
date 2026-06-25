@@ -105,4 +105,27 @@
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
   }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 hsl(var(--secondary) / 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 8px hsl(var(--secondary) / 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 hsl(var(--secondary) / 0);
+  }
+}
+.active-step-indicator {
+  animation: pulse-ring 2s infinite;
 }
