@@ -147,11 +147,8 @@ export function BusinessForm({ business }: Props) {
                 value={domainDesired}
                 onChange={(e) => setDomainDesired(e.target.value)}
                 className="w-full bg-transparent px-2 py-2 text-sm outline-none"
-                placeholder="omeunegocio"
+                placeholder="omeunegocio.pt"
               />
-              <span className="border-l bg-muted px-3 py-2 text-sm text-muted-foreground">
-                .pt
-              </span>
             </div>
             <p className="text-xs text-muted-foreground">
               Será o endereço do teu site NorthSail (sujeito a validação de

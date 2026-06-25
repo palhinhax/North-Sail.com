@@ -31,8 +31,8 @@ export default async function RequestsListPage() {
 
       {!business?.requests.length ? (
         <div className="flex flex-col items-center justify-center rounded-[24px] border border-border/60 bg-card px-6 py-16 text-center">
-          <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-muted">
-            <Inbox className="h-7 w-7 text-muted-foreground" />
+          <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-[#2F6BFF]/10 text-[#2F6BFF]">
+            <Inbox className="h-7 w-7" />
           </div>
           <p className="font-medium">Ainda não tens pedidos</p>
           <p className="mt-1 text-sm text-muted-foreground">
