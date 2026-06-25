@@ -6,8 +6,9 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DATABASE_URL_UNPOOLED")
 }
 
 enum Role {
@@ -94,6 +95,11 @@ model Business {
   sector        Sector
   slug          String   @unique
   domainDesired String?
+  customDomain  String?  @unique
+  siteUrl       String?
+  sitePublished Boolean  @default(false)
+  stripeCustomerId String?
+  vercelProjectId  String?
   description   String?
   phone         String?
   whatsapp      String?
@@ -114,9 +120,14 @@ model Plan {
   monthlyPrice Int
   annualPrice  Int
   setupPrice   Int
+  setupPromo   Boolean  @default(false)
   description  String
   features     String[]
   active       Boolean  @default(true)
+
+  stripeProductId      String?
+  stripePriceMonthlyId String?
+  stripePriceAnnualId  String?
 
   subscriptions Subscription[]
 }
@@ -129,8 +140,9 @@ model Subscription {
   plan             Plan               @relation(fields: [planId], references: [id])
   status           SubscriptionStatus @default(TRIALING)
   billingCycle     BillingCycle       @default(MONTHLY)
-  trialEndsAt      DateTime?
-  currentPeriodEnd DateTime?
+  trialEndsAt          DateTime?
+  currentPeriodEnd     DateTime?
+  stripeSubscriptionId String?
   startedAt        DateTime           @default(now())
   canceledAt       DateTime?
   createdAt        DateTime           @default(now())

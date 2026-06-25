@@ -87,7 +87,7 @@ export function LocaleNav({
                 {dict.navLogin}
               </Link>
               <Link
-                href={localePath(locale, "contact")}
+                href="/comecar"
                 className="rounded-md bg-brand-container px-6 py-2.5 text-label-md font-medium text-white shadow-sm transition-colors hover:bg-brand"
               >
                 {dict.navStart}

@@ -63,11 +63,7 @@ export function HomeTemplate({ locale }: { locale: Locale }) {
         badge={<TrialBadge label={dict.trialBadge} />}
         actions={
           <>
-            <CtaLink
-              href={localePath(locale, "contact")}
-              variant="primary"
-              size="lg"
-            >
+            <CtaLink href="/comecar" variant="primary" size="lg">
               {dict.trialCtaStart}
               <ArrowRight className="h-4 w-4" />
             </CtaLink>
@@ -144,7 +140,8 @@ export function HomeTemplate({ locale }: { locale: Locale }) {
               ctaLabel={dict.choosePlan}
               ctaHref={localePath(locale, "pricing")}
               highlighted={plan.highlighted}
-              badge={plan.highlighted ? dict.trialBadge : undefined}
+              badge={plan.highlighted ? dict.planRecommended : undefined}
+              trialChip={dict.trialBadge}
               footnote={dict.trialReassurance}
             />
           ))}

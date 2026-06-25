@@ -4,6 +4,9 @@ import { auth } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { requestStatusLabels } from "@/features/requests/schemas";
+import { getPublicSiteHost } from "@/lib/site/public-url";
+import { SiteSettingsForm } from "./_components/site-settings-form";
+import { VercelDomainManager } from "./_components/vercel-domain-manager";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -52,6 +55,39 @@ export default async function AdminClientDetail({ params }: Props) {
           ) : (
             "Sem subscrição"
           )}
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Site &amp; domínio</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <SiteSettingsForm
+            business={{
+              id: business.id,
+              slug: business.slug,
+              customDomain: business.customDomain,
+              siteUrl: business.siteUrl,
+              sitePublished: business.sitePublished,
+            }}
+          />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Domínio na Vercel</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <VercelDomainManager
+            businessId={business.id}
+            defaultDomain={getPublicSiteHost({
+              slug: business.slug,
+              customDomain: business.customDomain,
+            })}
+            currentProjectId={business.vercelProjectId}
+          />
         </CardContent>
       </Card>
 

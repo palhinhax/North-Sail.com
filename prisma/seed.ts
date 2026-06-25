@@ -16,9 +16,9 @@ const plans = [
     code: "PRESENCA",
     name: "Presença",
     monthlyPrice: 500,
-    annualPrice: 6000,
+    annualPrice: 5000,
     setupPrice: 4900,
-    description: "Site simples com contactos, horários e WhatsApp.",
+    description: "Site profissional com contactos, horários e WhatsApp.",
     features: [
       "Site mobile-first com a identidade do negócio",
       "Contactos, horários, mapa e WhatsApp",
@@ -30,7 +30,7 @@ const plans = [
     code: "MINI_APP",
     name: "App Essencial",
     monthlyPrice: 1500,
-    annualPrice: 18000,
+    annualPrice: 15000,
     setupPrice: 9900,
     description:
       "Site + uma funcionalidade essencial (reservas, marcações, pedidos ou aulas).",
@@ -45,7 +45,7 @@ const plans = [
     code: "MINI_APP_PLUS",
     name: "App Avançada",
     monthlyPrice: 2500,
-    annualPrice: 30000,
+    annualPrice: 25000,
     setupPrice: 14900,
     description:
       "Vários profissionais, horários semanais, calendário, categorias.",
@@ -60,7 +60,7 @@ const plans = [
     code: "BUSINESS_LOCAL",
     name: "Business Local",
     monthlyPrice: 3900,
-    annualPrice: 46800,
+    annualPrice: 39000,
     setupPrice: 19900,
     description: "Equipa com múltiplos utilizadores, histórico, exportações.",
     features: [
@@ -74,7 +74,7 @@ const plans = [
     code: "PRO_GESTAO",
     name: "PRO Gestão",
     monthlyPrice: 6900,
-    annualPrice: 82800,
+    annualPrice: 69000,
     setupPrice: 29900,
     description:
       "Automações, dashboards, permissões, pagamentos e integrações.",

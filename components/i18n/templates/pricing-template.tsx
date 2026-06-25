@@ -4,6 +4,7 @@ import {
   CtaLink,
   Section,
   SectionHeader,
+  TrialBadge,
   TrialReassurance,
 } from "@/components/marketing";
 import type { Locale } from "@/lib/i18n/config";
@@ -62,108 +63,106 @@ export function PricingTemplate({ locale }: { locale: Locale }) {
         </Container>
       </section>
 
-      {/* Plans grid */}
-      <Section>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-5">
-          {plans.map((plan) => (
-            <div
-              key={plan.code}
-              className={cn(
-                "relative flex h-full flex-col rounded-2xl border p-6",
-                plan.highlighted
-                  ? "border-brand-container bg-brand-container text-white shadow-card-lg"
-                  : "border-line bg-surface-lowest shadow-card"
-              )}
-            >
-              {plan.highlighted && (
-                <span className="absolute -top-3 left-6 whitespace-nowrap rounded-full bg-brand-accent px-3 py-1 text-label-sm font-bold uppercase tracking-wider text-white">
-                  {dict.trialBadge}
-                </span>
-              )}
-              <h2
+      {/* Plans grid — horizontal snap-scroll on small screens, 5-up grid on xl */}
+      <Section bare>
+        <div className="mx-auto w-full max-w-[1600px] px-6">
+          <div className="flex snap-x snap-mandatory gap-5 overflow-x-auto px-1 pb-4 pt-6 xl:grid xl:grid-cols-5 xl:overflow-visible xl:px-0 xl:pb-0">
+            {plans.map((plan) => (
+              <div
+                key={plan.code}
                 className={cn(
-                  "text-headline-sm",
-                  plan.highlighted ? "text-white" : "text-brand"
+                  "relative flex h-full w-[280px] shrink-0 snap-start flex-col rounded-2xl border p-6 transition-transform duration-300 sm:w-[300px] xl:w-auto",
+                  plan.highlighted
+                    ? "border-brand-container bg-brand-container text-white shadow-card-lg xl:scale-105"
+                    : "border-line bg-surface-lowest shadow-card hover:-translate-y-1"
                 )}
               >
-                {plan.name}
-              </h2>
-              <div className="mb-3 mt-2 flex items-baseline gap-1">
-                <span className="text-label-md text-ink-muted">
-                  {dict.startingFrom}
-                </span>
-                <span
+                {plan.highlighted && (
+                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-brand-accent px-3 py-1 text-label-sm font-bold uppercase tracking-wider text-white">
+                    {dict.planRecommended}
+                  </span>
+                )}
+                <h2
                   className={cn(
-                    "text-display-sm",
+                    "text-headline-md",
                     plan.highlighted ? "text-white" : "text-brand"
                   )}
                 >
-                  €{plan.priceFrom}
-                </span>
-                <span
+                  {plan.name}
+                </h2>
+                <div className="mt-2 flex items-baseline gap-1">
+                  <span
+                    className={cn(
+                      "text-label-md",
+                      plan.highlighted
+                        ? "text-surface-highest"
+                        : "text-ink-muted"
+                    )}
+                  >
+                    {dict.startingFrom}
+                  </span>
+                  <span
+                    className={cn(
+                      "text-display-sm",
+                      plan.highlighted ? "text-white" : "text-brand"
+                    )}
+                  >
+                    €{plan.priceFrom}
+                  </span>
+                  <span
+                    className={cn(
+                      "text-body-md",
+                      plan.highlighted
+                        ? "text-surface-highest"
+                        : "text-ink-muted"
+                    )}
+                  >
+                    {dict.perMonth}
+                  </span>
+                </div>
+                <TrialBadge label={dict.trialBadge} className="mt-3" />
+                <p
                   className={cn(
-                    "text-body-md",
-                    plan.highlighted ? "text-surface-highest" : "text-ink-muted"
+                    "mt-4 min-h-[3rem] text-label-sm",
+                    plan.highlighted
+                      ? "text-surface-highest"
+                      : "text-ink-subtle"
                   )}
                 >
-                  {dict.perMonth}
-                </span>
+                  {dict.bestFor}: {plan.bestFor}
+                </p>
+                <ul className="my-5 flex flex-grow flex-col gap-2.5">
+                  {plan.features.map((f) => (
+                    <li key={f} className="flex items-start gap-2">
+                      <Check
+                        className={cn(
+                          "mt-1 h-4 w-4 shrink-0",
+                          plan.highlighted ? "text-white" : "text-brand-accent"
+                        )}
+                      />
+                      <span
+                        className={cn(
+                          "text-label-md",
+                          plan.highlighted
+                            ? "text-surface-highest"
+                            : "text-ink-muted"
+                        )}
+                      >
+                        {f}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+                <CtaLink
+                  href="/comecar"
+                  variant={plan.highlighted ? "primary" : "outline"}
+                  className="w-full"
+                >
+                  {dict.choosePlan}
+                </CtaLink>
               </div>
-              <p
-                className={cn(
-                  "mb-5 text-body-md",
-                  plan.highlighted ? "text-surface-highest" : "text-ink-muted"
-                )}
-              >
-                {plan.tagline}
-              </p>
-              <ul className="mb-6 flex flex-grow flex-col gap-2.5">
-                {plan.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2">
-                    <Check
-                      className={cn(
-                        "mt-1 h-4 w-4 shrink-0",
-                        plan.highlighted ? "text-white" : "text-brand-accent"
-                      )}
-                    />
-                    <span
-                      className={cn(
-                        "text-label-md",
-                        plan.highlighted
-                          ? "text-surface-highest"
-                          : "text-ink-muted"
-                      )}
-                    >
-                      {f}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-              <p
-                className={cn(
-                  "mb-4 text-label-sm",
-                  plan.highlighted ? "text-surface-highest" : "text-ink-subtle"
-                )}
-              >
-                {dict.bestFor}: {plan.bestFor}
-              </p>
-              <CtaLink
-                href={localePath(locale, "contact")}
-                variant={plan.highlighted ? "primary" : "outline"}
-                className="w-full"
-              >
-                {dict.choosePlan}
-              </CtaLink>
-              <TrialReassurance
-                className={cn(
-                  "mt-3 text-center",
-                  plan.highlighted && "text-surface-highest"
-                )}
-              >
-                {dict.trialReassurance}
-              </TrialReassurance>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </Section>
 

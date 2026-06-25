@@ -27,9 +27,10 @@ export async function POST(request: Request) {
   }
 
   const { business, account, answers, billingCycle } = result.data;
+  account.email = account.email.trim().toLowerCase();
 
-  const existingUser = await prisma.user.findUnique({
-    where: { email: account.email },
+  const existingUser = await prisma.user.findFirst({
+    where: { email: { equals: account.email, mode: "insensitive" } },
   });
   if (existingUser) {
     return NextResponse.json(

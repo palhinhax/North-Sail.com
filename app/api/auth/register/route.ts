@@ -16,15 +16,19 @@ export async function POST(request: Request) {
 
     if (!result.success) {
       return NextResponse.json(
-        { message: "Validation failed", errors: result.error.flatten().fieldErrors },
+        {
+          message: "Validation failed",
+          errors: result.error.flatten().fieldErrors,
+        },
         { status: 400 }
       );
     }
 
-    const { name, email, password } = result.data;
+    const { name, password } = result.data;
+    const email = result.data.email.trim().toLowerCase();
 
-    const existingUser = await prisma.user.findUnique({
-      where: { email },
+    const existingUser = await prisma.user.findFirst({
+      where: { email: { equals: email, mode: "insensitive" } },
     });
 
     if (existingUser) {

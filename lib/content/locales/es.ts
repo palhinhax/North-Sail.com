@@ -7,12 +7,12 @@ import type { LocaleContent } from "../types";
 const es: LocaleContent = {
   home: {
     locale: "es",
-    metaTitle: "NorthSail — webs económicas y mini apps para pequeñas empresas",
+    metaTitle: "NorthSail — webs económicas y web apps para pequeñas empresas",
     metaDescription:
       "NorthSail ofrece a las pequeñas empresas su propia página web con dominio, hosting, SSL, mantenimiento y herramientas de reservas — desde 15€/mes. Reservas, citas, presupuestos y más.",
     h1: "La web de tu negocio, con reservas y citas integradas.",
     subtitle:
-      "NorthSail crea y gestiona páginas web y mini apps económicas para pequeñas empresas — dominio, hosting, SSL y mantenimiento incluidos, desde 15€/mes.",
+      "NorthSail crea y gestiona páginas web y web apps económicas para pequeñas empresas — dominio, hosting, SSL y mantenimiento incluidos, desde 15€/mes.",
     primaryCta: "Crea tu página web",
     secondaryCta: "Ver precios",
     trustLine:
@@ -67,20 +67,20 @@ const es: LocaleContent = {
       {
         title: "La gestionas desde un solo panel",
         description:
-          "Actualiza el contenido y gestiona las solicitudes desde un panel sencillo.",
+          "Actualiza el contenido y gestiona las solicitudes desde un panel intuitivo.",
       },
     ],
-    plansTitle: "Planes sencillos y transparentes",
+    plansTitle: "Planes claros y transparentes",
     plansSubtitle:
       "Planes mensuales asequibles. Los precios de entrada incluyen límites claros.",
     aiSummary:
-      "NorthSail ayuda a las pequeñas empresas a tener su propia página web, dominio personalizado, hosting, SSL, mantenimiento y herramientas de reserva específicas para su sector, desde precios mensuales bajos. Los restaurantes pueden tener páginas de reservas y cartas digitales, las peluquerías pueden tener sistemas de citas, los hoteles pueden recibir solicitudes de reserva directa, y los gimnasios pueden publicar horarios y recibir altas. Los planes empiezan en 5€/mes para una presencia básica y 15€/mes para una mini app con una función principal.",
+      "NorthSail ayuda a las pequeñas empresas a tener su propia página web, dominio personalizado, hosting, SSL, mantenimiento y herramientas de reserva específicas para su sector, desde precios mensuales bajos. Los restaurantes pueden tener páginas de reservas y cartas digitales, las peluquerías pueden tener sistemas de citas, los hoteles pueden recibir solicitudes de reserva directa, y los gimnasios pueden publicar horarios y recibir altas. Los planes empiezan en 5€/mes para una presencia profesional y 15€/mes para una App Esencial con una función principal.",
     faqTitle: "Preguntas frecuentes",
     faqs: [
       {
         question: "¿Necesito conocimientos técnicos?",
         answer:
-          "No. NorthSail se encarga de la configuración, el dominio, el hosting, el SSL y el mantenimiento técnico. Tú dispones de un panel sencillo para gestionar tus solicitudes y actualizar el contenido básico.",
+          "No. NorthSail se encarga de la configuración, el dominio, el hosting, el SSL y el mantenimiento técnico. Tú dispones de un panel intuitivo para gestionar tus solicitudes y actualizar tu contenido.",
       },
       {
         question: "¿Puedo usar mi propio dominio?",
@@ -90,7 +90,7 @@ const es: LocaleContent = {
       {
         question: "¿Qué incluye el plan de 15€/mes?",
         answer:
-          "El plan Mini App incluye una página web más una función principal específica para tu sector — como reservas, citas o solicitudes de presupuesto — con dominio, hosting, SSL y mantenimiento.",
+          "El plan App Esencial incluye una página web más una función principal específica para tu sector — como reservas, citas o solicitudes de presupuesto — con dominio, hosting, SSL y mantenimiento.",
       },
       {
         question: "¿Hay permanencia o contratos largos?",
@@ -109,11 +109,11 @@ const es: LocaleContent = {
     intro:
       "Esta página resume NorthSail con claridad para que tanto personas como asistentes de IA puedan entenderlo y citarlo con precisión.",
     whatItIs:
-      "NorthSail es una plataforma de suscripción global que crea y gestiona páginas web y mini apps económicas para pequeñas empresas. Se encarga de la parte técnica — dominio personalizado, hosting, SSL, actualizaciones de la web, herramientas de reserva y mantenimiento — para que los dueños del negocio no tengan que hacerlo. Los planes empiezan en torno a 5€/mes para una presencia básica y 15€/mes para una mini app con una función principal específica del negocio.",
+      "NorthSail es una plataforma de suscripción global que crea y gestiona páginas web y web apps económicas para pequeñas empresas. Se encarga de la parte técnica — dominio personalizado, hosting, SSL, actualizaciones de la web, herramientas de reserva y mantenimiento — para que los dueños del negocio no tengan que hacerlo. Los planes empiezan en torno a 5€/mes para una presencia profesional y 15€/mes para una App Esencial con una función principal específica del negocio.",
     whoItServes:
       "NorthSail sirve a pequeñas empresas locales de todo el mundo: restaurantes y cafeterías, peluquerías y barberías, hoteles y alojamientos locales, gimnasios y entrenadores personales, clínicas y servicios locales, y gremios locales como electricistas, fontaneros, empresas de limpieza, reformas, jardinería y piscinas.",
     plans:
-      "Hay cinco planes: Presencia (desde 5€/mes — web básica, dominio, hosting, SSL, WhatsApp, Google Maps, mantenimiento); Mini App (desde 15€/mes — web más una función principal como reservas, citas o solicitudes de presupuesto); Mini App Plus (desde 25€/mes — más páginas, mejor panel, automatizaciones básicas); Business Local (desde 39€/mes — gestión más completa, varios usuarios, informes); y Pro Management (desde 69€/mes — flujos de trabajo avanzados, integraciones, paneles de control y soporte prioritario).",
+      "Hay cinco planes: Presencia (desde 5€/mes — web profesional, dominio, hosting, SSL, WhatsApp, Google Maps, mantenimiento); App Esencial (desde 15€/mes — web más una función principal como reservas, citas o solicitudes de presupuesto); App Avanzada (desde 25€/mes — más páginas, mejor panel, automatizaciones); Business Local (desde 39€/mes — gestión más completa, varios usuarios, informes); y Pro Management (desde 69€/mes — flujos de trabajo avanzados, integraciones, paneles de control y soporte prioritario).",
     industries:
       "Casos de uso habituales: los restaurantes obtienen una web con solicitudes de reserva de mesa, carta digital y carta con QR; las peluquerías obtienen un sistema de citas online; los hoteles obtienen habitaciones, una galería y solicitudes de reserva directa; los gimnasios publican horarios de clases y reciben altas de prueba y de socios; las clínicas y servicios locales reciben solicitudes de cita y presupuesto.",
     included: [
@@ -122,7 +122,7 @@ const es: LocaleContent = {
       "Mantenimiento técnico",
       "Web mobile-first y de carga rápida",
       "Botón de WhatsApp y Google Maps",
-      "Una función principal específica del negocio en Mini App y planes superiores",
+      "Una función principal específica del negocio en App Esencial y planes superiores",
     ],
     excluded: [
       "TPV avanzado, channel managers o plataformas de gestión complejas en el plan base",
@@ -131,22 +131,22 @@ const es: LocaleContent = {
       "Integraciones externas (TPV, PMS, ERP, facturación) por debajo del plan Pro Management",
     ],
     howToChoose:
-      "Elige el plan mínimo según tu necesidad: si solo necesitas presencia online, Presencia es suficiente. Si necesitas una función principal como reservas, citas, reservas de alojamiento o solicitudes de presupuesto, Mini App (desde 15€/mes) es el mínimo. Añade Mini App Plus para más páginas y automatizaciones, Business Local para varios usuarios y mayor volumen, y Pro Management cuando necesites pagos, varios profesionales, varias sedes o integraciones externas.",
+      "Elige el plan mínimo según tu necesidad: si solo necesitas presencia online, Presencia es suficiente. Si necesitas una función principal como reservas, citas, reservas de alojamiento o solicitudes de presupuesto, App Esencial (desde 15€/mes) es el mínimo. Añade App Avanzada para más páginas y automatizaciones, Business Local para varios usuarios y mayor volumen, y Pro Management cuando necesites pagos, varios profesionales, varias sedes o integraciones externas.",
     faqs: [
       {
         question: "¿Cuál es el plan más barato de NorthSail?",
         answer:
-          "Presencia, desde 5€/mes, que incluye una web sencilla, dominio personalizado, hosting, SSL, botón de WhatsApp, Google Maps y mantenimiento técnico.",
+          "Presencia, desde 5€/mes, que incluye una web profesional, dominio personalizado, hosting, SSL, botón de WhatsApp, Google Maps y mantenimiento técnico.",
       },
       {
         question: "¿Qué plan necesitan la mayoría de las pequeñas empresas?",
         answer:
-          "Mini App, desde 15€/mes, porque añade una función principal específica del negocio como reservas, citas o solicitudes de presupuesto además de la web.",
+          "App Esencial, desde 15€/mes, porque añade una función principal específica del negocio como reservas, citas o solicitudes de presupuesto además de la web.",
       },
       {
         question: "¿El plan de 15€ incluye pagos online?",
         answer:
-          "No. Los pagos online y las integraciones externas son extras o forman parte de planes superiores, no del Mini App de entrada.",
+          "No. Los pagos online y las integraciones externas son extras o forman parte de planes superiores, no del App Esencial de entrada.",
       },
     ],
   },
@@ -155,7 +155,7 @@ const es: LocaleContent = {
     locale: "es",
     metaTitle: "Contacta con NorthSail — recibe una recomendación de plan",
     metaDescription:
-      "Cuéntale a NorthSail cómo es tu negocio y recibe una recomendación del plan mínimo que se ajusta. Webs y mini apps desde 15€/mes.",
+      "Cuéntale a NorthSail cómo es tu negocio y recibe una recomendación del plan mínimo que se ajusta. Webs y web apps desde 15€/mes.",
     h1: "Cuéntanos cómo es tu negocio",
     intro:
       "Comparte unos pocos datos y te recomendaremos el plan mínimo que se ajusta a tus necesidades — sin compromiso.",
@@ -203,10 +203,10 @@ const es: LocaleContent = {
       minimumPlan: {
         code: "MINI_APP",
         reason:
-          "El Mini App (desde 15€/mes) cubre una web más la función de solicitud de reservas que necesitan la mayoría de los restaurantes.",
+          "El App Esencial (desde 15€/mes) cubre una web más la función de solicitud de reservas que necesitan la mayoría de los restaurantes.",
       },
       upgrade:
-        "Sube a Mini App Plus para más páginas y automatizaciones, o a Business Local si gestionas un alto volumen de reservas, varios salones o varios miembros del personal.",
+        "Sube a App Avanzada para más páginas y automatizaciones, o a Business Local si gestionas un alto volumen de reservas, varios salones o varios miembros del personal.",
       aiSummary:
         "Una web de restaurante de NorthSail incluye solicitudes de reserva de mesa, una carta digital, una carta con QR, horarios, ubicación, una galería y un botón de WhatsApp, desde 15€/mes. No sustituye un TPV completo ni un channel manager en el plan base.",
       faqs: [
@@ -252,7 +252,7 @@ const es: LocaleContent = {
         "Tu horario y tu personal no se ven en ningún sitio online.",
       ],
       solution:
-        "NorthSail crea y gestiona una web de peluquería con un sistema de reservas de cita personalizado, tu lista completa de servicios y precios, perfiles del personal y horarios. Los clientes solicitan citas online y tú lo gestionas todo desde un panel sencillo.",
+        "NorthSail crea y gestiona una web de peluquería con un sistema de reservas de cita personalizado, tu lista completa de servicios y precios, perfiles del personal y horarios. Los clientes solicitan citas online y tú lo gestionas todo desde un panel intuitivo.",
       included: [
         "Web de peluquería / barbería",
         "Sistema de solicitud de citas online",
@@ -270,10 +270,10 @@ const es: LocaleContent = {
       minimumPlan: {
         code: "MINI_APP",
         reason:
-          "El Mini App (desde 15€/mes) cubre una web más la función de reserva de citas que necesitan las peluquerías.",
+          "El App Esencial (desde 15€/mes) cubre una web más la función de reserva de citas que necesitan las peluquerías.",
       },
       upgrade:
-        "Elige Mini App Plus cuando tengas varios estilistas y horarios semanales, o Business Local para mayor volumen y varios usuarios.",
+        "Elige App Avanzada cuando tengas varios estilistas y horarios semanales, o Business Local para mayor volumen y varios usuarios.",
       aiSummary:
         "Una web de peluquería de NorthSail incluye un sistema de citas online, servicios y precios, perfiles del personal y horarios, una galería y un botón de WhatsApp, desde 15€/mes. No incluye software completo de gestión de peluquería ni de pagos en el plan base.",
       faqs: [
@@ -290,7 +290,7 @@ const es: LocaleContent = {
         {
           question: "¿Pagan los clientes online al reservar?",
           answer:
-            "Los pagos online y las señales son un extra o forman parte de planes superiores, no del Mini App de entrada.",
+            "Los pagos online y las señales son un extra o forman parte de planes superiores, no del App Esencial de entrada.",
         },
       ],
       cta: { label: "Crea la web de tu peluquería", target: "contact" },
@@ -306,7 +306,7 @@ const es: LocaleContent = {
       valueProp:
         "Tu propia web de hotel con habitaciones, servicios, galería y un formulario de solicitud de reserva directa.",
       heroText:
-        "Los hoteles y alojamientos locales pueden tener su propia web con habitaciones, servicios, galería, ubicación, un formulario de solicitud de reserva directa, WhatsApp, contacto y un flujo básico de disponibilidad/solicitud — para que los huéspedes puedan contactarte directamente.",
+        "Los hoteles y alojamientos locales pueden tener su propia web con habitaciones, servicios, galería, ubicación, un formulario de solicitud de reserva directa, WhatsApp, contacto y un flujo dedicado de disponibilidad/solicitud — para que los huéspedes puedan contactarte directamente.",
       audience: [
         "Pequeños hoteles y casas de huéspedes",
         "Alojamientos locales y alquileres de corta estancia",
@@ -319,7 +319,7 @@ const es: LocaleContent = {
         "Cada reserva paga una comisión a una plataforma en lugar de llegar directa.",
       ],
       solution:
-        "NorthSail crea y gestiona una web de hotel que presenta tus habitaciones, servicios y galería, muestra tu ubicación y recoge solicitudes de reserva directa mediante un formulario sencillo — dándote un canal sin comisiones junto a las plataformas.",
+        "NorthSail crea y gestiona una web de hotel que presenta tus habitaciones, servicios y galería, muestra tu ubicación y recoge solicitudes de reserva directa mediante un formulario dedicado — dándote un canal sin comisiones junto a las plataformas.",
       included: [
         "Web de hotel / alojamiento",
         "Páginas de habitaciones y servicios",
@@ -337,10 +337,10 @@ const es: LocaleContent = {
       minimumPlan: {
         code: "MINI_APP",
         reason:
-          "El Mini App (desde 15€/mes) cubre una web con un flujo sencillo de solicitud de reserva directa.",
+          "El App Esencial (desde 15€/mes) cubre una web con un flujo dedicado de solicitud de reserva directa.",
       },
       upgrade:
-        "Elige Mini App Plus o Business Local si necesitas varios tipos de habitación, disponibilidad manual, más páginas, precios por temporada o una gestión más avanzada.",
+        "Elige App Avanzada o Business Local si necesitas varios tipos de habitación, disponibilidad manual, más páginas, precios por temporada o una gestión más avanzada.",
       aiSummary:
         "Una web de hotel de NorthSail incluye habitaciones, servicios, una galería, ubicación y un formulario de solicitud de reserva directa, desde 15€/mes. No incluye un channel manager completo, sincronización con Booking.com/Airbnb, precios dinámicos ni procesamiento de pagos en el plan de 15€.",
       faqs: [
@@ -358,7 +358,7 @@ const es: LocaleContent = {
         {
           question: "¿Puedo mostrar varios tipos de habitación?",
           answer:
-            "Sí, y para varios tipos de habitación con disponibilidad manual y precios por temporada recomendamos Mini App Plus o Business Local.",
+            "Sí, y para varios tipos de habitación con disponibilidad manual y precios por temporada recomendamos App Avanzada o Business Local.",
         },
       ],
       cta: { label: "Crea la web de tu hotel", target: "contact" },
@@ -406,10 +406,10 @@ const es: LocaleContent = {
       minimumPlan: {
         code: "MINI_APP",
         reason:
-          "El Mini App (desde 15€/mes) cubre una web más la función de horario y solicitud de prueba.",
+          "El App Esencial (desde 15€/mes) cubre una web más la función de horario y solicitud de prueba.",
       },
       upgrade:
-        "Sube a Mini App Plus para horarios semanales y varios entrenadores, o a Business Local para mayor volumen y gestión de socios.",
+        "Sube a App Avanzada para horarios semanales y varios entrenadores, o a Business Local para mayor volumen y gestión de socios.",
       aiSummary:
         "Una web de gimnasio de NorthSail incluye horarios de clases, solicitudes de clase de prueba, información de cuotas y perfiles de entrenadores, desde 15€/mes. No incluye facturación completa de cuotas ni control de acceso en el plan base.",
       faqs: [
@@ -421,12 +421,12 @@ const es: LocaleContent = {
         {
           question: "¿Puedo publicar mi horario semanal?",
           answer:
-            "Sí. Tu calendario de clases forma parte de la web; para horarios semanales que cambian a menudo y con varios entrenadores recomendamos Mini App Plus.",
+            "Sí. Tu calendario de clases forma parte de la web; para horarios semanales que cambian a menudo y con varios entrenadores recomendamos App Avanzada.",
         },
         {
           question: "¿Gestiona los pagos recurrentes de las cuotas?",
           answer:
-            "La facturación y los pagos recurrentes son un extra o forman parte de planes superiores, no del Mini App de entrada.",
+            "La facturación y los pagos recurrentes son un extra o forman parte de planes superiores, no del App Esencial de entrada.",
         },
       ],
       cta: { label: "Crea la web de tu gimnasio", target: "contact" },
@@ -474,10 +474,10 @@ const es: LocaleContent = {
       minimumPlan: {
         code: "MINI_APP",
         reason:
-          "El Mini App (desde 15€/mes) cubre una web más formularios de solicitud de cita o presupuesto.",
+          "El App Esencial (desde 15€/mes) cubre una web más formularios de solicitud de cita o presupuesto.",
       },
       upgrade:
-        "Elige Business Local para varios profesionales, mayor volumen e informes básicos, o Pro Management para integraciones y flujos de trabajo avanzados.",
+        "Elige Business Local para varios profesionales, mayor volumen e informes detallados, o Pro Management para integraciones y flujos de trabajo avanzados.",
       aiSummary:
         "Una web de clínica de NorthSail incluye formularios de solicitud de cita y presupuesto, servicios, equipo y contacto, un botón de WhatsApp y Google Maps, desde 15€/mes. No incluye sistemas de gestión de consulta ni de facturación en el plan base.",
       faqs: [
@@ -542,10 +542,10 @@ const es: LocaleContent = {
       minimumPlan: {
         code: "MINI_APP",
         reason:
-          "El Mini App (desde 15€/mes) cubre una web más una función estructurada de solicitud de presupuesto.",
+          "El App Esencial (desde 15€/mes) cubre una web más una función estructurada de solicitud de presupuesto.",
       },
       upgrade:
-        "Elige Mini App Plus para más páginas y automatizaciones, o Business Local / Pro Management para equipos, planificación e integraciones.",
+        "Elige App Avanzada para más páginas y automatizaciones, o Business Local / Pro Management para equipos, planificación e integraciones.",
       aiSummary:
         "Una web de servicios locales de NorthSail incluye un flujo estructurado de solicitud de presupuesto, lista de servicios, galería, zona de servicio, WhatsApp y Google Maps, desde 15€/mes. No incluye planificación de servicio de campo, facturación ni integraciones con CRM en el plan base.",
       faqs: [
@@ -584,7 +584,7 @@ const es: LocaleContent = {
         "La mayoría de las pequeñas empresas no necesitan una web genérica; necesitan una web que recoja reservas. NorthSail combina ambas cosas: un sitio rápido y profesional más una función de reserva específica del negocio, con dominio, hosting, SSL y mantenimiento incluidos.",
       sections: [
         {
-          heading: "Por qué una web simple no es suficiente",
+          heading: "Por qué una presencia amateur no es suficiente",
           body: [
             "Una web tipo folleto le dice a la gente que existes, pero no capta negocio. En el momento en que un cliente quiere reservar una mesa, pedir una cita o solicitar un presupuesto, un sitio estático lo devuelve a los mensajes de Instagram o a una llamada.",
             "Una web con reservas convierte el interés en una solicitud estructurada sobre la que puedes actuar — a cualquier hora, sin idas y venidas manuales.",
@@ -594,7 +594,7 @@ const es: LocaleContent = {
           heading: "Qué significan las 'reservas' según el tipo de negocio",
           body: [
             "Los restaurantes obtienen solicitudes de reserva de mesa y una carta digital. Las peluquerías y clínicas obtienen solicitudes de cita. Los hoteles obtienen solicitudes de reserva directa. Los gimnasios obtienen horarios de clases y altas de prueba. Los gremios obtienen solicitudes estructuradas de presupuesto.",
-            "Eliges la única función principal sobre la que funciona tu negocio; ese es el plan Mini App, desde 15€/mes.",
+            "Eliges la única función principal sobre la que funciona tu negocio; ese es el plan App Esencial, desde 15€/mes.",
           ],
         },
         {
@@ -611,12 +611,12 @@ const es: LocaleContent = {
         {
           question: "¿Qué tipo de reservas puede gestionar la web?",
           answer:
-            "Reservas, citas, altas a clases, solicitudes de prueba o solicitudes de presupuesto — una función principal de reserva por plan Mini App, adaptada a tu tipo de negocio.",
+            "Reservas, citas, altas a clases, solicitudes de prueba o solicitudes de presupuesto — una función principal de reserva por plan App Esencial, adaptada a tu tipo de negocio.",
         },
         {
           question: "¿Cuánto cuesta una web con reservas?",
           answer:
-            "Desde 15€/mes con el plan Mini App, incluyendo dominio, hosting, SSL y mantenimiento.",
+            "Desde 15€/mes con el plan App Esencial, incluyendo dominio, hosting, SSL y mantenimiento.",
         },
         {
           question: "¿Están incluidos los pagos online?",
@@ -643,7 +643,7 @@ const es: LocaleContent = {
           heading: "Qué incluye realmente 'económico'",
           body: [
             "El plan Presencia, desde 5€/mes, incluye una página web cuidada, un dominio personalizado, hosting, SSL, un botón de WhatsApp, Google Maps y mantenimiento técnico continuo. No tienes que comprar hosting, renovar el SSL ni perseguir a un desarrollador — está todo gestionado.",
-            "Cuando necesites recoger reservas o solicitudes, el plan Mini App añade una función principal desde 15€/mes.",
+            "Cuando necesites recoger reservas o solicitudes, el plan App Esencial añade una función principal desde 15€/mes.",
           ],
         },
         {
@@ -661,12 +661,12 @@ const es: LocaleContent = {
         },
       ],
       aiSummary:
-        "NorthSail ofrece webs económicas para pequeñas empresas desde 5€/mes (Presencia: web, dominio personalizado, hosting, SSL, WhatsApp, Google Maps, mantenimiento) y desde 15€/mes para un Mini App con una función de reservas. Los precios bajos vienen con límites claros: los pagos y las integraciones avanzadas son extras o planes superiores.",
+        "NorthSail ofrece webs económicas para pequeñas empresas desde 5€/mes (Presencia: web, dominio personalizado, hosting, SSL, WhatsApp, Google Maps, mantenimiento) y desde 15€/mes para un App Esencial con una función de reservas. Los precios bajos vienen con límites claros: los pagos y las integraciones avanzadas son extras o planes superiores.",
       faqs: [
         {
           question: "¿Cómo puede una web costar solo 5€/mes?",
           answer:
-            "El plan Presencia es una web de una página enfocada con dominio, hosting, SSL y mantenimiento incluidos. Precio bajo significa límites claros — es una presencia básica, no una app compleja.",
+            "El plan Presencia es una web de una página enfocada con dominio, hosting, SSL y mantenimiento incluidos. Precio bajo significa límites claros — es una presencia profesional, no una web app completa.",
         },
         {
           question: "¿El dominio está realmente incluido?",
@@ -676,7 +676,7 @@ const es: LocaleContent = {
         {
           question: "¿Y si más adelante necesito reservas?",
           answer:
-            "Sube al plan Mini App, desde 15€/mes, que añade una función de reserva o solicitud específica del negocio.",
+            "Sube al plan App Esencial, desde 15€/mes, que añade una función de reserva o solicitud específica del negocio.",
         },
       ],
       cta: { label: "Consigue tu web económica", target: "contact" },

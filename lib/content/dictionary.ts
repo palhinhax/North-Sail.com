@@ -45,6 +45,7 @@ export interface Dictionary {
   trialBadge: string; // short pill, e.g. "1 mês grátis · sem cartão"
   trialReassurance: string; // muted line under CTAs, e.g. "Sem cartão, sem compromisso."
   trialCtaStart: string; // primary CTA, e.g. "Começar 1 mês grátis"
+  planRecommended: string; // top badge on the highlighted plan card, e.g. "Recomendado"
   // "see a real example" section
   exampleSitesTitle: string;
   exampleSitesSubtitle: string;
@@ -99,7 +100,7 @@ const en: Dictionary = {
   relatedIndustries: "Other business types",
   startingFrom: "from",
   perMonth: "/month",
-  pricingTitle: "Simple, transparent pricing",
+  pricingTitle: "Clear, transparent pricing",
   pricingSubtitle:
     "Affordable monthly plans. Very low prices mean clear plan limits — advanced integrations are not included in the entry-level plan.",
   pricingExtrasTitle: "Extras and add-ons",
@@ -114,9 +115,10 @@ const en: Dictionary = {
   trialBadge: "1 month free · no card",
   trialReassurance: "No card, no commitment.",
   trialCtaStart: "Start 1 month free",
+  planRecommended: "Recommended",
   exampleSitesTitle: "See a real example",
   exampleSitesSubtitle:
-    "Real websites and mini apps, from €15/month. (Illustrative examples.)",
+    "Real websites and web apps, from €15/month. (Illustrative examples.)",
   exampleSitesBadge: "Example",
   exampleSitesCta: "View example",
   leadTitle: "Tell us about your business",
@@ -168,7 +170,7 @@ const pt: Dictionary = {
   relatedIndustries: "Outros tipos de negócio",
   startingFrom: "desde",
   perMonth: "/mês",
-  pricingTitle: "Preços simples e transparentes",
+  pricingTitle: "Preços claros e transparentes",
   pricingSubtitle:
     "Planos mensais acessíveis. Preços muito baixos implicam limites claros — as integrações avançadas não estão incluídas no plano inicial.",
   pricingExtrasTitle: "Extras e complementos",
@@ -183,9 +185,10 @@ const pt: Dictionary = {
   trialBadge: TRIAL_COPY_PT.badge,
   trialReassurance: TRIAL_COPY_PT.reassurance,
   trialCtaStart: TRIAL_COPY_PT.ctaStart,
+  planRecommended: "Recomendado",
   exampleSitesTitle: "Veja um exemplo real",
   exampleSitesSubtitle:
-    "Sites e mini apps reais, desde 15€/mês. (Exemplos ilustrativos.)",
+    "Sites e web apps reais, desde 15€/mês. (Exemplos ilustrativos.)",
   exampleSitesBadge: "Exemplo",
   exampleSitesCta: "Ver exemplo",
   leadTitle: "Fale-nos do seu negócio",
@@ -229,7 +232,7 @@ const es: Dictionary = {
   whatProblem: "El problema",
   ourSolution: "Qué hace NorthSail",
   whatsIncluded: "Qué incluye",
-  notIncluded: "No incluido en el plan básico",
+  notIncluded: "No incluido en el plan base",
   minimumPlan: "Plan mínimo recomendado",
   upgradeOptions: "Opciones de mejora",
   faqTitle: "Preguntas frecuentes",
@@ -237,7 +240,7 @@ const es: Dictionary = {
   relatedIndustries: "Otros tipos de negocio",
   startingFrom: "desde",
   perMonth: "/mes",
-  pricingTitle: "Precios simples y transparentes",
+  pricingTitle: "Precios claros y transparentes",
   pricingSubtitle:
     "Planes mensuales asequibles. Los precios muy bajos implican límites claros — las integraciones avanzadas no se incluyen en el plan inicial.",
   pricingExtrasTitle: "Extras y complementos",
@@ -252,9 +255,10 @@ const es: Dictionary = {
   trialBadge: "1 mes gratis · sin tarjeta",
   trialReassurance: "Sin tarjeta, sin compromiso.",
   trialCtaStart: "Empezar 1 mes gratis",
+  planRecommended: "Recomendado",
   exampleSitesTitle: "Mira un ejemplo real",
   exampleSitesSubtitle:
-    "Webs y mini apps reales, desde 15€/mes. (Ejemplos ilustrativos.)",
+    "Webs y web apps reales, desde 15€/mes. (Ejemplos ilustrativos.)",
   exampleSitesBadge: "Ejemplo",
   exampleSitesCta: "Ver ejemplo",
   leadTitle: "Cuéntanos sobre tu negocio",
@@ -306,7 +310,7 @@ const fr: Dictionary = {
   relatedIndustries: "Autres types d'entreprise",
   startingFrom: "à partir de",
   perMonth: "/mois",
-  pricingTitle: "Des tarifs simples et transparents",
+  pricingTitle: "Des tarifs clairs et transparents",
   pricingSubtitle:
     "Des abonnements mensuels abordables. Des prix très bas impliquent des limites claires — les intégrations avancées ne sont pas incluses dans le plan d'entrée.",
   pricingExtrasTitle: "Options et extras",
@@ -321,9 +325,10 @@ const fr: Dictionary = {
   trialBadge: "1 mois gratuit · sans carte",
   trialReassurance: "Sans carte, sans engagement.",
   trialCtaStart: "Commencer 1 mois gratuit",
+  planRecommended: "Recommandé",
   exampleSitesTitle: "Voyez un exemple réel",
   exampleSitesSubtitle:
-    "Sites et mini apps réels, à partir de 15€/mois. (Exemples illustratifs.)",
+    "Sites et web apps réels, à partir de 15€/mois. (Exemples illustratifs.)",
   exampleSitesBadge: "Exemple",
   exampleSitesCta: "Voir l'exemple",
   leadTitle: "Parlez-nous de votre entreprise",
@@ -375,7 +380,7 @@ const de: Dictionary = {
   relatedIndustries: "Weitere Branchen",
   startingFrom: "ab",
   perMonth: "/Monat",
-  pricingTitle: "Einfache, transparente Preise",
+  pricingTitle: "Klare, transparente Preise",
   pricingSubtitle:
     "Bezahlbare Monatstarife. Sehr niedrige Preise bedeuten klare Grenzen — erweiterte Integrationen sind im Einstiegstarif nicht enthalten.",
   pricingExtrasTitle: "Extras und Zusatzoptionen",
@@ -390,9 +395,10 @@ const de: Dictionary = {
   trialBadge: "1 Monat gratis · ohne Karte",
   trialReassurance: "Ohne Karte, ohne Verpflichtung.",
   trialCtaStart: "1 Monat gratis starten",
+  planRecommended: "Empfohlen",
   exampleSitesTitle: "Sehen Sie ein echtes Beispiel",
   exampleSitesSubtitle:
-    "Echte Websites und Mini-Apps, ab 15€/Monat. (Illustrative Beispiele.)",
+    "Echte Websites und Web-Apps, ab 15€/Monat. (Illustrative Beispiele.)",
   exampleSitesBadge: "Beispiel",
   exampleSitesCta: "Beispiel ansehen",
   leadTitle: "Erzählen Sie uns von Ihrem Unternehmen",

@@ -11,6 +11,19 @@ export const planCodes = [
 
 export type PlanCode = (typeof planCodes)[number];
 
+export const updatePlanSchema = z.object({
+  name: z.string().min(2).max(120).optional(),
+  monthlyPrice: z.number().int().min(0).optional(),
+  annualPrice: z.number().int().min(0).optional(),
+  setupPrice: z.number().int().min(0).optional(),
+  setupPromo: z.boolean().optional(),
+  description: z.string().max(2000).optional(),
+  features: z.array(z.string().max(200)).max(50).optional(),
+  active: z.boolean().optional(),
+});
+
+export type UpdatePlanInput = z.infer<typeof updatePlanSchema>;
+
 export const recommendInputSchema = z.object({
   sector: z.nativeEnum(Sector),
   needsBookings: z.boolean().optional().default(false),
@@ -32,6 +45,7 @@ export interface Plan {
   monthlyPrice: number;
   annualPrice: number;
   setupPrice: number;
+  setupPromo: boolean;
   description: string;
   features: string[];
   active: boolean;

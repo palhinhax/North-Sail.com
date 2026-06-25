@@ -2,38 +2,57 @@
 
 import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { signIn } from "next-auth/react";
-import { ShieldCheck } from "lucide-react";
+import {
+  ArrowLeft,
+  ArrowRight,
+  Check,
+  CheckCircle2,
+  Dumbbell,
+  Gift,
+  Handshake,
+  Hotel,
+  Scissors,
+  Sparkles,
+  Stethoscope,
+  Store,
+  Utensils,
+  type LucideIcon,
+} from "lucide-react";
 import { Sector } from "@prisma/client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import { Spinner } from "@/components/ui/spinner";
 import { useToast } from "@/components/ui/use-toast";
-import { Container, MarketingNav } from "@/components/marketing";
-import { recommendPlan } from "@/features/plans/lib";
+import {
+  recommendPlan,
+  annualFromMonthly,
+  isSetupFree,
+} from "@/features/plans/lib";
 import { usePlans } from "@/features/plans/hooks";
 import type { PlanCode } from "@/features/plans/schemas";
 import { fetchApi } from "@/lib/api";
 import { TRIAL_COPY_PT } from "@/lib/content/trial";
+import { cn } from "@/lib/utils";
 
-const sectorOptions: { value: Sector; label: string }[] = [
-  { value: Sector.RESTAURANT, label: "Restaurante" },
-  { value: Sector.HAIR_SALON, label: "Cabeleireiro / Barbearia" },
-  { value: Sector.HOTEL, label: "Hotel / Alojamento" },
-  { value: Sector.GYM, label: "Ginásio / Estúdio" },
-  { value: Sector.LOCAL_SERVICES, label: "Serviços locais" },
-  { value: Sector.SMALL_SHOP, label: "Loja local" },
-  { value: Sector.CLINIC, label: "Clínica" },
-  { value: Sector.OTHER, label: "Outro" },
+const sectorOptions: { value: Sector; label: string; icon: LucideIcon }[] = [
+  { value: Sector.RESTAURANT, label: "Restaurante", icon: Utensils },
+  {
+    value: Sector.HAIR_SALON,
+    label: "Cabeleireiro / Barbearia",
+    icon: Scissors,
+  },
+  { value: Sector.HOTEL, label: "Hotel / Alojamento", icon: Hotel },
+  { value: Sector.GYM, label: "Ginásio / Estúdio", icon: Dumbbell },
+  { value: Sector.LOCAL_SERVICES, label: "Serviços locais", icon: Handshake },
+  { value: Sector.SMALL_SHOP, label: "Loja local", icon: Store },
+  { value: Sector.CLINIC, label: "Clínica", icon: Stethoscope },
+  { value: Sector.OTHER, label: "Outro", icon: Sparkles },
 ];
+
+const TOTAL_STEPS = 4;
 
 const cents = (n: number) => (n / 100).toFixed(2).replace(".", ",");
 
@@ -145,215 +164,274 @@ export default function ComecarPage() {
     }
   }
 
+  const canSubmit =
+    !submitting &&
+    !!businessName &&
+    !!accountName &&
+    !!email &&
+    password.length >= 8;
+
+  const stepMeta = [
+    {
+      title: "Qual é o seu negócio?",
+      subtitle:
+        "Personalizamos a plataforma para as suas necessidades específicas.",
+    },
+    {
+      title: "O que precisa?",
+      subtitle: "Marque tudo o que se aplica ao seu dia a dia.",
+    },
+    { title: "O plano que recomendamos", subtitle: recommendation.reason },
+    { title: "Criar conta", subtitle: "Últimos detalhes para arrancarmos." },
+  ][step - 1];
+
   return (
-    <div className="hero-gradient ambient-glow relative min-h-screen overflow-hidden">
-      <MarketingNav />
-      <Container className="relative z-10 max-w-2xl pb-16 pt-28">
-        <div className="mb-10 text-center">
-          <span className="text-label-md uppercase tracking-wider text-ink-muted">
-            Passo {step} de 4
+    <main className="hero-gradient ambient-glow relative flex min-h-screen flex-col items-center justify-center gap-6 overflow-hidden px-4 py-12 md:px-6 lg:flex-row lg:items-start lg:justify-center">
+      {/* Main onboarding card */}
+      <div className="relative z-10 flex w-full max-w-2xl flex-col rounded-2xl border border-line/40 bg-surface-lowest p-6 shadow-card md:p-8">
+        {/* Header & brand */}
+        <div className="mb-8 flex items-center justify-between">
+          <Link
+            href="/"
+            className="text-headline-sm font-black tracking-tight text-brand"
+          >
+            NorthSail
+          </Link>
+          <span className="text-label-sm text-ink-muted">
+            Passo {step} de {TOTAL_STEPS}
           </span>
-          <h1 className="mt-2 text-display-sm text-brand md:text-display-lg">
-            Começar com a NorthSail
-          </h1>
-          <p className="mt-3 text-body-md text-ink-muted">
-            Tratamos da app, domínio e manutenção. Tu focas no negócio.
+        </div>
+
+        {/* Segmented progress bar */}
+        <div className="mb-8 flex gap-1.5">
+          {Array.from({ length: TOTAL_STEPS }).map((_, i) => (
+            <div
+              key={i}
+              className={cn(
+                "h-1 flex-1 rounded-full transition-colors",
+                i < step ? "bg-brand-accent" : "bg-surface-highest"
+              )}
+            />
+          ))}
+        </div>
+
+        {/* Heading */}
+        <div className="mb-8">
+          <h1 className="text-headline-md text-brand">{stepMeta.title}</h1>
+          <p className="mt-2 text-body-md text-ink-muted">
+            {stepMeta.subtitle}
           </p>
         </div>
 
-        {step === 1 && (
-          <Card>
-            <CardHeader>
-              <CardTitle>1. O teu negócio</CardTitle>
-              <CardDescription>Em que setor estás?</CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="grid grid-cols-2 gap-2">
-                {sectorOptions.map((opt) => (
-                  <button
-                    key={opt.value}
-                    type="button"
-                    onClick={() => setSector(opt.value)}
-                    className={`rounded-md border px-3 py-3 text-left text-sm transition ${
-                      sector === opt.value
-                        ? "border-primary bg-primary/5"
-                        : "hover:bg-muted"
-                    }`}
-                  >
-                    {opt.label}
-                  </button>
-                ))}
+        {/* Step content */}
+        <div className="flex-1">
+          {step === 1 && (
+            <div className="space-y-8">
+              <div className="grid grid-cols-2 gap-3 md:grid-cols-3">
+                {sectorOptions.map((opt) => {
+                  const selected = sector === opt.value;
+                  const Icon = opt.icon;
+                  return (
+                    <button
+                      key={opt.value}
+                      type="button"
+                      onClick={() => setSector(opt.value)}
+                      className={cn(
+                        "group relative flex flex-col items-center justify-center gap-2 rounded-lg border p-4 text-center transition-colors",
+                        selected
+                          ? "border-2 border-brand-accent bg-brand-accent/5"
+                          : "border-line/40 hover:border-line hover:bg-surface-low"
+                      )}
+                    >
+                      {selected && (
+                        <span className="absolute right-2 top-2 flex h-4 w-4 items-center justify-center rounded-full bg-brand-accent text-white">
+                          <Check className="h-2.5 w-2.5" strokeWidth={3} />
+                        </span>
+                      )}
+                      <Icon
+                        className={cn(
+                          "h-8 w-8 transition-colors",
+                          selected
+                            ? "text-brand-accent"
+                            : "text-ink-subtle group-hover:text-brand"
+                        )}
+                      />
+                      <span
+                        className={cn(
+                          "text-label-md",
+                          selected
+                            ? "font-semibold text-brand-accent"
+                            : "text-brand"
+                        )}
+                      >
+                        {opt.label}
+                      </span>
+                    </button>
+                  );
+                })}
               </div>
-              <div className="flex justify-end">
-                <Button onClick={() => setStep(2)}>Continuar</Button>
-              </div>
-            </CardContent>
-          </Card>
-        )}
+            </div>
+          )}
 
-        {step === 2 && (
-          <Card>
-            <CardHeader>
-              <CardTitle>2. O que precisas</CardTitle>
-              <CardDescription>Marca o que se aplica.</CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-3">
-              <Checkbox
-                label="Reservas / marcações / pedidos / inscrições"
+          {step === 2 && (
+            <div className="space-y-2">
+              <Toggle
+                label="Reservas, marcações, pedidos ou inscrições"
                 checked={needsBookings}
                 onChange={setNeedsBookings}
               />
-              <Checkbox
-                label="Vários profissionais / aulas / turmas"
+              <Toggle
+                label="Vários profissionais, aulas ou turmas"
                 checked={multipleStaff}
                 onChange={setMultipleStaff}
               />
-              <Checkbox
+              <Toggle
                 label="Calendário ou horários semanais"
                 checked={weeklySchedule}
                 onChange={setWeeklySchedule}
               />
-              <Checkbox
+              <Toggle
                 label="Vários quartos, salas ou espaços"
                 checked={multipleLocationsOrRooms}
                 onChange={setMultipleLocationsOrRooms}
               />
-              <Checkbox
+              <Toggle
                 label="Equipa com vários utilizadores"
                 checked={teamUsers}
                 onChange={setTeamUsers}
               />
-              <Checkbox
+              <Toggle
                 label="Pagamentos online"
                 checked={payments}
                 onChange={setPayments}
               />
-              <Checkbox
+              <Toggle
                 label="Integrações externas (Booking, POS, ERP, faturação…)"
                 checked={externalIntegrations}
                 onChange={setExternalIntegrations}
               />
-              <div className="space-y-2">
+              <div className="space-y-2 pt-2">
                 <Label htmlFor="description">
-                  Descreve o que queres em 1-2 frases
+                  Descreva o que pretende em 1-2 frases
                 </Label>
                 <textarea
                   id="description"
                   value={description}
                   onChange={(e) => setDescription(e.target.value)}
-                  className="min-h-[80px] w-full rounded-md border bg-background px-3 py-2 text-sm"
+                  className="min-h-[80px] w-full rounded-lg border border-line/40 bg-surface-lowest px-3 py-2 text-body-md outline-none transition-colors focus:border-brand-accent focus:ring-2 focus:ring-brand-accent/20"
                   placeholder="Ex: tenho um ginásio e quero uma app para gerir as aulas semanais e permitir inscrições."
                 />
               </div>
-              <div className="flex justify-between">
-                <Button variant="ghost" onClick={() => setStep(1)}>
-                  Voltar
-                </Button>
-                <Button onClick={() => setStep(3)}>
-                  Ver plano recomendado
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
-        )}
+            </div>
+          )}
 
-        {step === 3 && (
-          <Card>
-            <CardHeader>
-              <CardTitle>3. O plano que recomendamos</CardTitle>
-              <CardDescription>{recommendation.reason}</CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-4">
+          {step === 3 && (
+            <div className="space-y-6">
               {recommendedPlan ? (
-                <div className="rounded-lg border bg-background p-4">
-                  <div className="flex items-center justify-between">
+                <div className="rounded-xl border border-line/40 bg-surface-low p-5">
+                  <div className="flex items-start justify-between">
                     <div>
-                      <div className="text-xs uppercase tracking-wide text-muted-foreground">
+                      <div className="text-label-sm uppercase tracking-wide text-ink-subtle">
                         {recommendedPlan.code}
                       </div>
-                      <div className="text-xl font-bold">
+                      <div className="text-headline-sm font-bold text-brand">
                         {recommendedPlan.name}
                       </div>
                     </div>
                     <div className="text-right">
-                      <div className="text-2xl font-bold">
+                      <div className="text-headline-md text-brand">
                         {cents(
                           billingCycle === "ANNUAL"
-                            ? recommendedPlan.annualPrice
+                            ? annualFromMonthly(recommendedPlan.monthlyPrice)
                             : recommendedPlan.monthlyPrice
                         )}
                         €
                       </div>
-                      <div className="text-xs text-muted-foreground">
+                      <div className="text-label-sm text-ink-muted">
                         {billingCycle === "ANNUAL" ? "/ ano" : "/ mês"}
                       </div>
                     </div>
                   </div>
-                  <p className="mt-2 text-sm text-muted-foreground">
-                    Setup: {cents(recommendedPlan.setupPrice)}€
+                  <p className="mt-2 text-label-md text-ink-muted">
+                    Setup:{" "}
+                    {isSetupFree(recommendedPlan) ? (
+                      <>
+                        {recommendedPlan.setupPrice > 0 && (
+                          <span className="line-through">
+                            {cents(recommendedPlan.setupPrice)}€
+                          </span>
+                        )}{" "}
+                        <span className="font-semibold text-teal">grátis</span>
+                      </>
+                    ) : (
+                      `${cents(recommendedPlan.setupPrice)}€`
+                    )}
                   </p>
-                  <ul className="mt-3 space-y-1 text-sm">
+                  <ul className="mt-4 space-y-2">
                     {recommendedPlan.features.map((f) => (
-                      <li key={f}>• {f}</li>
+                      <li key={f} className="flex items-start gap-2">
+                        <CheckCircle2
+                          className="mt-0.5 h-4 w-4 shrink-0 text-teal"
+                          aria-hidden
+                        />
+                        <span className="text-label-md text-ink-muted">
+                          {f}
+                        </span>
+                      </li>
                     ))}
                   </ul>
                   {recommendation.quoteOnly && (
-                    <p className="mt-3 text-sm text-amber-700">
-                      Como pediste integrações externas, este preço é uma base —
-                      confirmamos o orçamento contigo.
+                    <p className="mt-4 rounded-lg bg-amber-50 px-3 py-2 text-label-md text-amber-700">
+                      Como pediu integrações externas, este preço é uma base —
+                      confirmamos o orçamento consigo.
                     </p>
                   )}
                 </div>
               ) : (
-                <p>A carregar plano…</p>
+                <p className="text-body-md text-ink-muted">A carregar plano…</p>
               )}
 
-              <div className="flex gap-2">
-                <Button
+              <div className="inline-flex rounded-lg border border-line/40 bg-surface-low p-1">
+                <button
                   type="button"
-                  variant={billingCycle === "MONTHLY" ? "default" : "outline"}
                   onClick={() => setBillingCycle("MONTHLY")}
+                  className={cn(
+                    "rounded-md px-4 py-1.5 text-label-md transition-colors",
+                    billingCycle === "MONTHLY"
+                      ? "bg-surface-lowest text-brand shadow-sm"
+                      : "text-ink-muted hover:text-brand"
+                  )}
                 >
                   Mensal
-                </Button>
-                <Button
+                </button>
+                <button
                   type="button"
-                  variant={billingCycle === "ANNUAL" ? "default" : "outline"}
                   onClick={() => setBillingCycle("ANNUAL")}
+                  className={cn(
+                    "rounded-md px-4 py-1.5 text-label-md transition-colors",
+                    billingCycle === "ANNUAL"
+                      ? "bg-surface-lowest text-brand shadow-sm"
+                      : "text-ink-muted hover:text-brand"
+                  )}
                 >
                   Anual
-                </Button>
+                </button>
               </div>
 
               <div className="rounded-lg border border-teal/30 bg-teal-surface p-3">
-                <p className="flex items-center gap-2 text-sm font-medium text-teal-ink">
-                  <ShieldCheck className="h-4 w-4 shrink-0" aria-hidden />
+                <p className="flex items-center gap-2 text-label-md font-medium text-teal-ink">
+                  <Gift className="h-4 w-4 shrink-0" aria-hidden />
                   {TRIAL_COPY_PT.badge}
                 </p>
-                <p className="mt-1 text-sm text-teal-ink/90">
+                <p className="mt-1 text-label-md text-teal-ink/90">
                   {TRIAL_COPY_PT.onboarding}
                 </p>
               </div>
+            </div>
+          )}
 
-              <div className="flex justify-between">
-                <Button variant="ghost" onClick={() => setStep(2)}>
-                  Voltar
-                </Button>
-                <Button onClick={() => setStep(4)}>Continuar</Button>
-              </div>
-            </CardContent>
-          </Card>
-        )}
-
-        {step === 4 && (
-          <Card>
-            <CardHeader>
-              <CardTitle>4. Criar conta</CardTitle>
-              <CardDescription>
-                Últimos detalhes para arrancarmos.
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-4">
+          {step === 4 && (
+            <div className="space-y-4">
               <div className="space-y-2">
                 <Label htmlFor="businessName">Nome do negócio</Label>
                 <Input
@@ -382,7 +460,7 @@ export default function ComecarPage() {
                 </div>
               </div>
               <div className="space-y-2">
-                <Label htmlFor="accountName">O teu nome</Label>
+                <Label htmlFor="accountName">O seu nome</Label>
                 <Input
                   id="accountName"
                   value={accountName}
@@ -407,33 +485,101 @@ export default function ComecarPage() {
                   onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
-              <div className="flex justify-between">
-                <Button variant="ghost" onClick={() => setStep(3)}>
-                  Voltar
-                </Button>
-                <Button
-                  onClick={submit}
-                  disabled={
-                    submitting ||
-                    !businessName ||
-                    !accountName ||
-                    !email ||
-                    password.length < 8
-                  }
-                >
-                  {submitting && <Spinner size="sm" className="mr-2" />}
-                  Criar conta e começar
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
-        )}
-      </Container>
-    </div>
+            </div>
+          )}
+        </div>
+
+        {/* Footer actions */}
+        <div className="mt-8 flex items-center justify-between border-t border-line/30 pt-6">
+          {step > 1 ? (
+            <Button
+              variant="ghost"
+              onClick={() => setStep((s) => s - 1)}
+              className="gap-2 text-ink-muted"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              Voltar
+            </Button>
+          ) : (
+            <span />
+          )}
+
+          {step < TOTAL_STEPS ? (
+            <Button onClick={() => setStep((s) => s + 1)} className="gap-2">
+              {step === 2 ? "Ver plano recomendado" : "Continuar"}
+              <ArrowRight className="h-4 w-4" />
+            </Button>
+          ) : (
+            <Button onClick={submit} disabled={!canSubmit} className="gap-2">
+              {submitting && <Spinner size="sm" className="mr-1" />}
+              Criar conta e começar
+            </Button>
+          )}
+        </div>
+      </div>
+
+      {/* Live recommended-plan preview */}
+      <aside className="relative z-10 w-full lg:sticky lg:top-12 lg:w-[340px]">
+        <div className="relative overflow-hidden rounded-2xl border border-line/40 bg-surface-lowest p-6 shadow-card">
+          <div className="absolute left-0 top-0 h-1 w-full bg-gradient-to-r from-brand-accent to-teal" />
+          <div className="mt-1 flex items-center gap-2">
+            <Sparkles className="h-5 w-5 text-brand-accent" aria-hidden />
+            <span className="text-label-sm font-bold uppercase tracking-wide text-brand-accent">
+              Recomendado para si
+            </span>
+          </div>
+
+          <h3 className="mt-4 text-headline-sm font-bold text-brand">
+            {recommendedPlan?.name ?? "A calcular…"}
+          </h3>
+
+          {recommendedPlan && (
+            <div className="mt-1 flex items-baseline gap-1">
+              <span className="text-headline-md text-brand">
+                {cents(
+                  billingCycle === "ANNUAL"
+                    ? recommendedPlan.annualPrice
+                    : recommendedPlan.monthlyPrice
+                )}
+                €
+              </span>
+              <span className="text-body-md text-ink-muted">
+                {billingCycle === "ANNUAL" ? "/ano" : "/mês"}
+              </span>
+            </div>
+          )}
+
+          <ul className="mt-5 space-y-2">
+            {(recommendedPlan?.features ?? []).slice(0, 4).map((f) => (
+              <li key={f} className="flex items-start gap-2">
+                <CheckCircle2
+                  className="mt-0.5 h-4 w-4 shrink-0 text-teal"
+                  aria-hidden
+                />
+                <span className="text-label-md leading-tight text-ink-muted">
+                  {f}
+                </span>
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-5 flex items-center justify-center gap-2 rounded-full border border-teal/20 bg-teal-surface px-4 py-2">
+            <Gift className="h-4 w-4 text-teal-ink" aria-hidden />
+            <span className="text-label-sm font-semibold text-teal-ink">
+              {TRIAL_COPY_PT.badge}
+            </span>
+          </div>
+        </div>
+        <p className="mt-3 text-balance px-2 text-center text-label-sm text-ink-subtle">
+          O plano recomendado ajusta-se automaticamente às suas respostas para
+          garantir a melhor solução.
+        </p>
+      </aside>
+    </main>
   );
 }
 
-function Checkbox({
+function Toggle({
   label,
   checked,
   onChange,
@@ -443,14 +589,21 @@ function Checkbox({
   onChange: (v: boolean) => void;
 }) {
   return (
-    <label className="flex cursor-pointer items-center gap-3 rounded-md border px-3 py-2 hover:bg-muted">
+    <label
+      className={cn(
+        "flex cursor-pointer items-center gap-3 rounded-lg border px-4 py-3 transition-colors",
+        checked
+          ? "border-brand-accent/40 bg-brand-accent/5"
+          : "border-transparent hover:border-line/40 hover:bg-surface-low"
+      )}
+    >
       <input
         type="checkbox"
         checked={checked}
         onChange={(e) => onChange(e.target.checked)}
-        className="h-4 w-4"
+        className="h-4 w-4 rounded border-line text-brand-accent focus:ring-brand-accent/50"
       />
-      <span className="text-sm">{label}</span>
+      <span className="text-label-md text-brand">{label}</span>
     </label>
   );
 }

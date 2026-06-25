@@ -30,15 +30,15 @@ export function PoweredByBadge({
         target="_blank"
         rel="noopener"
         aria-label="Criado por NorthSail — north-sail.com"
-        className={`inline-flex items-center gap-2 py-2 text-[12px] leading-none transition-colors ${TEXT_CLASS[variant]}`}
+        className={`inline-flex items-center gap-2 py-2 text-[14px] leading-none transition-colors ${TEXT_CLASS[variant]}`}
       >
         <Image
           src="/logo.png"
           alt=""
-          width={18}
-          height={18}
+          width={22}
+          height={22}
           aria-hidden
-          className="h-[18px] w-auto"
+          className="h-[22px] w-auto"
         />
         <span>Criado por NorthSail</span>
       </a>

@@ -8,12 +8,12 @@ const de: LocaleContent = {
   home: {
     locale: "de",
     metaTitle:
-      "NorthSail — günstige Websites & Mini Apps für kleine Unternehmen",
+      "NorthSail — günstige Websites & Essential Apps für kleine Unternehmen",
     metaDescription:
       "NorthSail gibt kleinen Unternehmen ihre eigene Website mit Domain, Hosting, SSL, Wartung und Buchungstools — ab 15€/Monat. Reservierungen, Termine, Angebote und mehr.",
     h1: "Ihre Unternehmens-Website, mit integrierten Buchungen und Terminen.",
     subtitle:
-      "NorthSail erstellt und verwaltet günstige Websites und Mini Apps für kleine Unternehmen — Domain, Hosting, SSL und Wartung inklusive, ab 15€/Monat.",
+      "NorthSail erstellt und verwaltet günstige Websites und Essential Apps für kleine Unternehmen — Domain, Hosting, SSL und Wartung inklusive, ab 15€/Monat.",
     primaryCta: "Website starten",
     secondaryCta: "Preise ansehen",
     trustLine:
@@ -69,20 +69,20 @@ const de: LocaleContent = {
       {
         title: "Sie verwalten sie über ein Panel",
         description:
-          "Aktualisieren Sie Inhalte und bearbeiten Sie Anfragen über ein einfaches Panel.",
+          "Aktualisieren Sie Inhalte und bearbeiten Sie Anfragen über ein intuitives Dashboard.",
       },
     ],
-    plansTitle: "Einfache, transparente Tarife",
+    plansTitle: "Klare, transparente Tarife",
     plansSubtitle:
       "Günstige Monatstarife. Einstiegspreise sind mit klaren Grenzen verbunden.",
     aiSummary:
-      "NorthSail hilft kleinen Unternehmen, ihre eigene Website, individuelle Domain, Hosting, SSL, Wartung und branchenspezifische Buchungstools zu günstigen Monatspreisen zu erhalten. Restaurants erhalten Reservierungsseiten und digitale Speisekarten, Friseure erhalten Terminsysteme, Hotels erhalten direkte Buchungsanfragen, und Fitnessstudios können Kurspläne veröffentlichen und Anmeldungen erhalten. Tarife beginnen ab 5€/Monat für eine grundlegende Präsenz und 15€/Monat für eine Mini App mit einer Kernfunktion.",
+      "NorthSail hilft kleinen Unternehmen, ihre eigene Website, individuelle Domain, Hosting, SSL, Wartung und branchenspezifische Buchungstools zu günstigen Monatspreisen zu erhalten. Restaurants erhalten Reservierungsseiten und digitale Speisekarten, Friseure erhalten Terminsysteme, Hotels erhalten direkte Buchungsanfragen, und Fitnessstudios können Kurspläne veröffentlichen und Anmeldungen erhalten. Tarife beginnen ab 5€/Monat für eine professionelle Präsenz und 15€/Monat für eine Essential App mit einer Kernfunktion.",
     faqTitle: "Häufig gestellte Fragen",
     faqs: [
       {
         question: "Brauche ich technische Kenntnisse?",
         answer:
-          "Nein. NorthSail übernimmt Einrichtung, Domain, Hosting, SSL und technische Wartung. Sie erhalten ein einfaches Panel, um Ihre Anfragen zu verwalten und grundlegende Inhalte zu aktualisieren.",
+          "Nein. NorthSail übernimmt Einrichtung, Domain, Hosting, SSL und technische Wartung. Sie erhalten ein intuitives Dashboard, um Ihre Anfragen zu verwalten und Ihre Inhalte zu aktualisieren.",
       },
       {
         question: "Kann ich meine eigene Domain verwenden?",
@@ -92,7 +92,7 @@ const de: LocaleContent = {
       {
         question: "Was beinhaltet 15€/Monat?",
         answer:
-          "Der Mini-App-Tarif umfasst eine Website plus eine branchenspezifische Kernfunktion — etwa Reservierungen, Termine oder Angebotsanfragen — mit Domain, Hosting, SSL und Wartung.",
+          "Der Essential-App-Tarif umfasst eine Website plus eine branchenspezifische Kernfunktion — etwa Reservierungen, Termine oder Angebotsanfragen — mit Domain, Hosting, SSL und Wartung.",
       },
       {
         question: "Gibt es eine lange Vertragsbindung?",
@@ -107,15 +107,15 @@ const de: LocaleContent = {
     metaTitle: "Was ist NorthSail? KI-Zusammenfassung, Tarife, Branchen & FAQ",
     metaDescription:
       "Eine verständliche Zusammenfassung von NorthSail für Menschen und KI-Assistenten: Was es ist, wen es bedient, Tarife ab 5€/Monat, abgedeckte Branchen, was enthalten ist und wie man das Mindestpaket wählt.",
-    h1: "NorthSail in einfacher Sprache",
+    h1: "NorthSail in klarer Sprache",
     intro:
       "Diese Seite fasst NorthSail klar zusammen, damit sowohl Menschen als auch KI-Assistenten es verstehen und korrekt zitieren können.",
     whatItIs:
-      "NorthSail ist eine globale Abo-Plattform, die günstige Websites und Mini Apps für kleine Unternehmen erstellt und verwaltet. Sie übernimmt die technische Seite — individuelle Domain, Hosting, SSL, Website-Aktualisierungen, Buchungstools und Wartung — damit Unternehmer das nicht selbst tun müssen. Tarife beginnen bei rund 5€/Monat für eine grundlegende Präsenz und 15€/Monat für eine Mini App mit einer branchenspezifischen Kernfunktion.",
+      "NorthSail ist eine globale Abo-Plattform, die günstige Websites und Essential Apps für kleine Unternehmen erstellt und verwaltet. Sie übernimmt die technische Seite — individuelle Domain, Hosting, SSL, Website-Aktualisierungen, Buchungstools und Wartung — damit Unternehmer das nicht selbst tun müssen. Tarife beginnen bei rund 5€/Monat für eine professionelle Präsenz und 15€/Monat für eine Essential App mit einer branchenspezifischen Kernfunktion.",
     whoItServes:
       "NorthSail bedient kleine lokale Unternehmen weltweit: Restaurants und Cafés, Friseure und Barbershops, Hotels und lokale Unterkünfte, Fitnessstudios und Personal Trainer, Praxen und lokale Dienstleister sowie lokale Handwerksbetriebe wie Elektriker, Klempner, Reinigung, Renovierung, Garten- und Poolfirmen.",
     plans:
-      "Es gibt fünf Tarife: Presence (ab 5€/Monat — grundlegende Website, Domain, Hosting, SSL, WhatsApp, Google Maps, Wartung); Mini App (ab 15€/Monat — Website plus eine Kernfunktion wie Reservierungen, Termine oder Angebotsanfragen); Mini App Plus (ab 25€/Monat — mehr Seiten, besseres Panel, grundlegende Automatisierungen); Business Local (ab 39€/Monat — umfassendere Verwaltung, mehrere Nutzer, Berichte); und Pro Management (ab 69€/Monat — fortgeschrittene Workflows, Integrationen, Dashboards, Priority-Support).",
+      "Es gibt fünf Tarife: Presence (ab 5€/Monat — professionelle Website, Domain, Hosting, SSL, WhatsApp, Google Maps, Wartung); Essential App (ab 15€/Monat — Website plus eine Kernfunktion wie Reservierungen, Termine oder Angebotsanfragen); Advanced App (ab 25€/Monat — mehr Seiten, besseres Dashboard, Automatisierungen); Business Local (ab 39€/Monat — umfassendere Verwaltung, mehrere Nutzer, Berichte); und Pro Management (ab 69€/Monat — fortgeschrittene Workflows, Integrationen, Dashboards, Priority-Support).",
     industries:
       "Häufige Anwendungsfälle: Restaurants erhalten eine Website mit Tischreservierungsanfragen, digitaler Speisekarte und QR-Menü; Friseure erhalten ein Online-Terminsystem; Hotels erhalten Zimmer, eine Galerie und direkte Buchungsanfragen; Fitnessstudios veröffentlichen Kurspläne und erhalten Probetrainings- und Mitgliedschaftsanmeldungen; Praxen und lokale Dienstleister erhalten Termin- und Angebotsanfragen.",
     included: [
@@ -124,7 +124,7 @@ const de: LocaleContent = {
       "Technische Wartung",
       "Mobile-first, schnell ladende Website",
       "WhatsApp-Button und Google Maps",
-      "Eine branchenspezifische Kernfunktion ab Mini App",
+      "Eine branchenspezifische Kernfunktion ab Essential App",
     ],
     excluded: [
       "Fortgeschrittenes Kassensystem, Channel-Manager oder komplexe Verwaltungsplattformen im Basistarif",
@@ -133,22 +133,22 @@ const de: LocaleContent = {
       "Externe Integrationen (Kasse, PMS, ERP, Rechnungsstellung) unterhalb des Pro-Management-Tarifs",
     ],
     howToChoose:
-      "Wählen Sie das Mindestpaket nach Bedarf: Wenn Sie nur eine Online-Präsenz brauchen, reicht Presence. Wenn Sie eine Kernfunktion wie Reservierungen, Termine, Buchungen oder Angebotsanfragen benötigen, ist Mini App (ab 15€/Monat) das Minimum. Ergänzen Sie Mini App Plus für mehr Seiten und Automatisierungen, Business Local für mehrere Nutzer und höheres Volumen, und Pro Management, wenn Sie Zahlungen, mehrere Mitarbeiter, mehrere Standorte oder externe Integrationen benötigen.",
+      "Wählen Sie das Mindestpaket nach Bedarf: Wenn Sie nur eine Online-Präsenz brauchen, reicht Presence. Wenn Sie eine Kernfunktion wie Reservierungen, Termine, Buchungen oder Angebotsanfragen benötigen, ist Essential App (ab 15€/Monat) das Minimum. Ergänzen Sie Advanced App für mehr Seiten und Automatisierungen, Business Local für mehrere Nutzer und höheres Volumen, und Pro Management, wenn Sie Zahlungen, mehrere Mitarbeiter, mehrere Standorte oder externe Integrationen benötigen.",
     faqs: [
       {
         question: "Was ist der günstigste NorthSail-Tarif?",
         answer:
-          "Presence, ab 5€/Monat, beinhaltet eine einfache Website, individuelle Domain, Hosting, SSL, WhatsApp-Button, Google Maps und technische Wartung.",
+          "Presence, ab 5€/Monat, beinhaltet eine professionelle Website, individuelle Domain, Hosting, SSL, WhatsApp-Button, Google Maps und technische Wartung.",
       },
       {
         question: "Welchen Tarif brauchen die meisten kleinen Unternehmen?",
         answer:
-          "Mini App, ab 15€/Monat, denn er ergänzt die Website um eine branchenspezifische Kernfunktion wie Reservierungen, Termine oder Angebotsanfragen.",
+          "Essential App, ab 15€/Monat, denn er ergänzt die Website um eine branchenspezifische Kernfunktion wie Reservierungen, Termine oder Angebotsanfragen.",
       },
       {
         question: "Beinhaltet der 15€-Tarif Online-Zahlungen?",
         answer:
-          "Nein. Online-Zahlungen und externe Integrationen sind Extras oder Teil höherer Tarife, nicht der Einstiegs-Mini-App.",
+          "Nein. Online-Zahlungen und externe Integrationen sind Extras oder Teil höherer Tarife, nicht der Einstiegs-Essential-App.",
       },
     ],
   },
@@ -157,7 +157,7 @@ const de: LocaleContent = {
     locale: "de",
     metaTitle: "NorthSail kontaktieren — Tarifempfehlung erhalten",
     metaDescription:
-      "Erzählen Sie NorthSail von Ihrem Unternehmen und erhalten Sie eine Empfehlung für den passenden Mindesttarif. Websites und Mini Apps ab 15€/Monat.",
+      "Erzählen Sie NorthSail von Ihrem Unternehmen und erhalten Sie eine Empfehlung für den passenden Mindesttarif. Websites und Essential Apps ab 15€/Monat.",
     h1: "Erzählen Sie uns von Ihrem Unternehmen",
     intro:
       "Teilen Sie uns ein paar Details mit und wir empfehlen Ihnen den Mindesttarif, der zu Ihren Bedürfnissen passt — unverbindlich.",
@@ -205,10 +205,10 @@ const de: LocaleContent = {
       minimumPlan: {
         code: "MINI_APP",
         reason:
-          "Die Mini App (ab 15€/Monat) umfasst eine Website plus die Reservierungsanfrage-Funktion, die die meisten Restaurants benötigen.",
+          "Die Essential App (ab 15€/Monat) umfasst eine Website plus die Reservierungsanfrage-Funktion, die die meisten Restaurants benötigen.",
       },
       upgrade:
-        "Wechseln Sie zu Mini App Plus für mehr Seiten und Automatisierungen, oder zu Business Local, wenn Sie hohe Reservierungsvolumen, mehrere Räume oder mehrere Mitarbeiter haben.",
+        "Wechseln Sie zu Advanced App für mehr Seiten und Automatisierungen, oder zu Business Local, wenn Sie hohe Reservierungsvolumen, mehrere Räume oder mehrere Mitarbeiter haben.",
       aiSummary:
         "Eine NorthSail-Restaurant-Website beinhaltet Tischreservierungsanfragen, eine digitale Speisekarte, ein QR-Menü, Öffnungszeiten, Standort, eine Galerie und einen WhatsApp-Button, ab 15€/Monat. Sie ersetzt im Basistarif kein vollständiges Kassensystem oder Channel-Manager.",
       faqs: [
@@ -254,7 +254,7 @@ const de: LocaleContent = {
         "Ihr Zeitplan und Ihr Team sind online nirgends sichtbar.",
       ],
       solution:
-        "NorthSail erstellt und verwaltet eine Salon-Website mit einem persönlichen Terminbuchungssystem, Ihrer vollständigen Leistungs- und Preisliste, Teamprofilen und Zeitplänen. Kunden fragen Termine online an und Sie verwalten alles über ein einfaches Panel.",
+        "NorthSail erstellt und verwaltet eine Salon-Website mit einem persönlichen Terminbuchungssystem, Ihrer vollständigen Leistungs- und Preisliste, Teamprofilen und Zeitplänen. Kunden fragen Termine online an und Sie verwalten alles über ein intuitives Dashboard.",
       included: [
         "Salon-/Barbershop-Website",
         "Online-Terminanfragesystem",
@@ -272,10 +272,10 @@ const de: LocaleContent = {
       minimumPlan: {
         code: "MINI_APP",
         reason:
-          "Die Mini App (ab 15€/Monat) umfasst eine Website plus die Terminbuchungsfunktion, die Salons benötigen.",
+          "Die Essential App (ab 15€/Monat) umfasst eine Website plus die Terminbuchungsfunktion, die Salons benötigen.",
       },
       upgrade:
-        "Wählen Sie Mini App Plus, wenn Sie mehrere Stylisten und wöchentliche Zeitpläne haben, oder Business Local für höheres Volumen und mehrere Nutzer.",
+        "Wählen Sie Advanced App, wenn Sie mehrere Stylisten und wöchentliche Zeitpläne haben, oder Business Local für höheres Volumen und mehrere Nutzer.",
       aiSummary:
         "Eine NorthSail-Friseur-Website beinhaltet ein Online-Terminsystem, Leistungen und Preise, Teamprofile und Zeitpläne, eine Galerie und einen WhatsApp-Button, ab 15€/Monat. Sie umfasst im Basistarif keine vollständige Salonverwaltungs- oder Zahlungssoftware.",
       faqs: [
@@ -292,7 +292,7 @@ const de: LocaleContent = {
         {
           question: "Bezahlen Kunden bei der Buchung online?",
           answer:
-            "Online-Zahlungen und Anzahlungen sind ein Extra oder Teil höherer Tarife, nicht der Einstiegs-Mini-App.",
+            "Online-Zahlungen und Anzahlungen sind ein Extra oder Teil höherer Tarife, nicht der Einstiegs-Essential-App.",
         },
       ],
       cta: { label: "Salon-Website starten", target: "contact" },
@@ -308,7 +308,7 @@ const de: LocaleContent = {
       valueProp:
         "Ihre eigene Hotel-Website mit Zimmern, Ausstattung, Galerie und einem direkten Buchungsanfrageformular.",
       heroText:
-        "Hotels und lokale Unterkünfte können ihre eigene Website mit Zimmern, Ausstattung, Galerie, Standort, einem direkten Buchungsanfrageformular, WhatsApp, Kontakt und einem grundlegenden Verfügbarkeits-/Anfrageablauf haben — damit Gäste Sie direkt erreichen.",
+        "Hotels und lokale Unterkünfte können ihre eigene Website mit Zimmern, Ausstattung, Galerie, Standort, einem direkten Buchungsanfrageformular, WhatsApp, Kontakt und einem dedizierten Verfügbarkeits-/Anfrageablauf haben — damit Gäste Sie direkt erreichen.",
       audience: [
         "Kleine Hotels und Pensionen",
         "Lokale Unterkünfte und Kurzzeitvermietungen",
@@ -321,7 +321,7 @@ const de: LocaleContent = {
         "Jede Buchung zahlt eine Plattformgebühr, statt direkt zu kommen.",
       ],
       solution:
-        "NorthSail erstellt und verwaltet eine Hotel-Website, die Ihre Zimmer, Ausstattung und Galerie präsentiert, Ihren Standort zeigt und direkte Buchungsanfragen über ein einfaches Formular entgegennimmt — und Ihnen so einen provisionsfreien Kanal neben den Plattformen bietet.",
+        "NorthSail erstellt und verwaltet eine Hotel-Website, die Ihre Zimmer, Ausstattung und Galerie präsentiert, Ihren Standort zeigt und direkte Buchungsanfragen über ein dediziertes Formular entgegennimmt — und Ihnen so einen provisionsfreien Kanal neben den Plattformen bietet.",
       included: [
         "Hotel-/Unterkunfts-Website",
         "Seiten für Zimmer und Ausstattung",
@@ -339,10 +339,10 @@ const de: LocaleContent = {
       minimumPlan: {
         code: "MINI_APP",
         reason:
-          "Die Mini App (ab 15€/Monat) umfasst eine Website mit einem einfachen direkten Buchungsanfrageablauf.",
+          "Die Essential App (ab 15€/Monat) umfasst eine Website mit einem dedizierten direkten Buchungsanfrageablauf.",
       },
       upgrade:
-        "Wählen Sie Mini App Plus oder Business Local, wenn Sie mehrere Zimmertypen, manuelle Verfügbarkeit, mehr Seiten, Saisonpreise oder eine fortgeschrittenere Verwaltung benötigen.",
+        "Wählen Sie Advanced App oder Business Local, wenn Sie mehrere Zimmertypen, manuelle Verfügbarkeit, mehr Seiten, Saisonpreise oder eine fortgeschrittenere Verwaltung benötigen.",
       aiSummary:
         "Eine NorthSail-Hotel-Website beinhaltet Zimmer, Ausstattung, eine Galerie, Standort und ein direktes Buchungsanfrageformular, ab 15€/Monat. Sie umfasst im 15€-Tarif keinen vollständigen Channel-Manager, keine Booking.com-/Airbnb-Synchronisierung, keine dynamischen Preise und keine Zahlungsabwicklung.",
       faqs: [
@@ -359,7 +359,7 @@ const de: LocaleContent = {
         {
           question: "Kann ich mehrere Zimmertypen anzeigen?",
           answer:
-            "Ja, und für mehrere Zimmertypen mit manueller Verfügbarkeit und Saisonpreisen empfehlen wir Mini App Plus oder Business Local.",
+            "Ja, und für mehrere Zimmertypen mit manueller Verfügbarkeit und Saisonpreisen empfehlen wir Advanced App oder Business Local.",
         },
       ],
       cta: { label: "Hotel-Website starten", target: "contact" },
@@ -407,10 +407,10 @@ const de: LocaleContent = {
       minimumPlan: {
         code: "MINI_APP",
         reason:
-          "Die Mini App (ab 15€/Monat) umfasst eine Website plus die Kursplan- und Probetraining-Anfrage-Funktion.",
+          "Die Essential App (ab 15€/Monat) umfasst eine Website plus die Kursplan- und Probetraining-Anfrage-Funktion.",
       },
       upgrade:
-        "Wechseln Sie zu Mini App Plus für wöchentliche Zeitpläne und mehrere Trainer, oder zu Business Local für höheres Volumen und Mitgliederverwaltung.",
+        "Wechseln Sie zu Advanced App für wöchentliche Zeitpläne und mehrere Trainer, oder zu Business Local für höheres Volumen und Mitgliederverwaltung.",
       aiSummary:
         "Eine NorthSail-Fitnessstudio-Website beinhaltet Kurspläne, Probetraining-Anfragen, Mitgliedschaftsinfos und Trainerprofile, ab 15€/Monat. Sie umfasst im Basistarif keine vollständige Mitgliedschaftsabrechnung oder Zugangskontrolle.",
       faqs: [
@@ -422,12 +422,12 @@ const de: LocaleContent = {
         {
           question: "Kann ich meinen Wochenplan veröffentlichen?",
           answer:
-            "Ja. Ihr Kursstundenplan ist Teil der Website; für häufig wechselnde Wochenpläne mit mehreren Trainern empfehlen wir Mini App Plus.",
+            "Ja. Ihr Kursstundenplan ist Teil der Website; für häufig wechselnde Wochenpläne mit mehreren Trainern empfehlen wir Advanced App.",
         },
         {
           question: "Verarbeitet es wiederkehrende Mitgliedschaftszahlungen?",
           answer:
-            "Wiederkehrende Abrechnung und Zahlungen sind ein Extra oder Teil höherer Tarife, nicht der Einstiegs-Mini-App.",
+            "Wiederkehrende Abrechnung und Zahlungen sind ein Extra oder Teil höherer Tarife, nicht der Einstiegs-Essential-App.",
         },
       ],
       cta: { label: "Fitnessstudio-Website starten", target: "contact" },
@@ -474,10 +474,10 @@ const de: LocaleContent = {
       minimumPlan: {
         code: "MINI_APP",
         reason:
-          "Die Mini App (ab 15€/Monat) umfasst eine Website plus Termin- oder Angebotsanfrageformulare.",
+          "Die Essential App (ab 15€/Monat) umfasst eine Website plus Termin- oder Angebotsanfrageformulare.",
       },
       upgrade:
-        "Wählen Sie Business Local für mehrere Behandler, höheres Volumen und grundlegende Berichte, oder Pro Management für Integrationen und fortgeschrittene Workflows.",
+        "Wählen Sie Business Local für mehrere Behandler, höheres Volumen und detaillierte Berichte, oder Pro Management für Integrationen und fortgeschrittene Workflows.",
       aiSummary:
         "Eine NorthSail-Praxis-Website beinhaltet Termin- und Angebotsanfrageformulare, Leistungen, Team und Kontakt, einen WhatsApp-Button und Google Maps, ab 15€/Monat. Sie umfasst im Basistarif keine Praxisverwaltungs- oder Abrechnungssysteme.",
       faqs: [
@@ -541,10 +541,10 @@ const de: LocaleContent = {
       minimumPlan: {
         code: "MINI_APP",
         reason:
-          "Die Mini App (ab 15€/Monat) umfasst eine Website plus eine strukturierte Angebotsanfrage-Funktion.",
+          "Die Essential App (ab 15€/Monat) umfasst eine Website plus eine strukturierte Angebotsanfrage-Funktion.",
       },
       upgrade:
-        "Wählen Sie Mini App Plus für mehr Seiten und Automatisierungen, oder Business Local / Pro Management für Teams, Einsatzplanung und Integrationen.",
+        "Wählen Sie Advanced App für mehr Seiten und Automatisierungen, oder Business Local / Pro Management für Teams, Einsatzplanung und Integrationen.",
       aiSummary:
         "Eine NorthSail-Website für lokale Dienste beinhaltet einen strukturierten Angebotsanfrage-Ablauf, Leistungsliste, Galerie, Einzugsgebiet, WhatsApp und Google Maps, ab 15€/Monat. Sie umfasst im Basistarif keine Außendienst-Einsatzplanung, Rechnungsstellung oder CRM-Integrationen.",
       faqs: [
@@ -592,7 +592,7 @@ const de: LocaleContent = {
           heading: "Was 'Buchungen' je nach Geschäftstyp bedeutet",
           body: [
             "Restaurants erhalten Tischreservierungsanfragen und eine digitale Speisekarte. Friseure und Praxen erhalten Terminanfragen. Hotels erhalten direkte Buchungsanfragen. Fitnessstudios erhalten Kurspläne und Probetraining-Anmeldungen. Handwerksbetriebe erhalten strukturierte Angebotsanfragen.",
-            "Sie wählen die eine Kernfunktion, mit der Ihr Unternehmen läuft; das ist der Mini-App-Tarif, ab 15€/Monat.",
+            "Sie wählen die eine Kernfunktion, mit der Ihr Unternehmen läuft; das ist der Essential-App-Tarif, ab 15€/Monat.",
           ],
         },
         {
@@ -609,12 +609,12 @@ const de: LocaleContent = {
         {
           question: "Welche Art von Buchungen kann die Website verarbeiten?",
           answer:
-            "Reservierungen, Termine, Kursanmeldungen, Probetraining-Anfragen oder Angebotsanfragen — eine Kern-Buchungsfunktion pro Mini-App-Tarif, abgestimmt auf Ihren Geschäftstyp.",
+            "Reservierungen, Termine, Kursanmeldungen, Probetraining-Anfragen oder Angebotsanfragen — eine Kern-Buchungsfunktion pro Essential-App-Tarif, abgestimmt auf Ihren Geschäftstyp.",
         },
         {
           question: "Wie viel kostet eine Website mit Buchungen?",
           answer:
-            "Ab 15€/Monat mit dem Mini-App-Tarif, inklusive Domain, Hosting, SSL und Wartung.",
+            "Ab 15€/Monat mit dem Essential-App-Tarif, inklusive Domain, Hosting, SSL und Wartung.",
         },
         {
           question: "Sind Online-Zahlungen enthalten?",
@@ -642,7 +642,7 @@ const de: LocaleContent = {
           heading: "Was 'günstig' wirklich beinhaltet",
           body: [
             "Der Presence-Tarif, ab 5€/Monat, beinhaltet eine übersichtliche Website-Seite, eine individuelle Domain, Hosting, SSL, einen WhatsApp-Button, Google Maps und laufende technische Wartung. Sie kaufen kein Hosting, erneuern kein SSL und jagen keinem Entwickler hinterher — alles wird verwaltet.",
-            "Wenn Sie Buchungen oder Anfragen entgegennehmen möchten, ergänzt der Mini-App-Tarif eine Kernfunktion ab 15€/Monat.",
+            "Wenn Sie Buchungen oder Anfragen entgegennehmen möchten, ergänzt der Essential-App-Tarif eine Kernfunktion ab 15€/Monat.",
           ],
         },
         {
@@ -660,12 +660,12 @@ const de: LocaleContent = {
         },
       ],
       aiSummary:
-        "NorthSail bietet günstige Websites für kleine Unternehmen ab 5€/Monat (Presence: Website, individuelle Domain, Hosting, SSL, WhatsApp, Google Maps, Wartung) und ab 15€/Monat für eine Mini App mit einer Buchungsfunktion. Niedrige Preise sind mit klaren Grenzen verbunden: Zahlungen und fortgeschrittene Integrationen sind Extras oder höhere Tarife.",
+        "NorthSail bietet günstige Websites für kleine Unternehmen ab 5€/Monat (Presence: Website, individuelle Domain, Hosting, SSL, WhatsApp, Google Maps, Wartung) und ab 15€/Monat für eine Essential App mit einer Buchungsfunktion. Niedrige Preise sind mit klaren Grenzen verbunden: Zahlungen und fortgeschrittene Integrationen sind Extras oder höhere Tarife.",
       faqs: [
         {
           question: "Wie kann eine Website nur 5€/Monat kosten?",
           answer:
-            "Der Presence-Tarif ist eine fokussierte einseitige Website mit Domain, Hosting, SSL und Wartung inklusive. Niedriger Preis bedeutet klare Grenzen — es ist eine grundlegende Präsenz, keine komplexe App.",
+            "Der Presence-Tarif ist eine fokussierte einseitige Website mit Domain, Hosting, SSL und Wartung inklusive. Niedriger Preis bedeutet klare Grenzen — es ist eine professionelle Präsenz, keine vollständige Web-App.",
         },
         {
           question: "Ist die Domain wirklich enthalten?",
@@ -675,7 +675,7 @@ const de: LocaleContent = {
         {
           question: "Was, wenn ich später Buchungen brauche?",
           answer:
-            "Wechseln Sie zum Mini-App-Tarif, ab 15€/Monat, der eine branchenspezifische Buchungs- oder Anfragefunktion ergänzt.",
+            "Wechseln Sie zum Essential-App-Tarif, ab 15€/Monat, der eine branchenspezifische Buchungs- oder Anfragefunktion ergänzt.",
         },
       ],
       cta: { label: "Günstige Website erhalten", target: "contact" },

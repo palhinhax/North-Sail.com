@@ -241,11 +241,7 @@ export function IndustryTemplate({
         <div className="mx-auto flex max-w-2xl flex-col items-center gap-6 text-center">
           <h2 className="text-display-sm text-brand">{content.cta.label}</h2>
           <div className="flex flex-col gap-3 sm:flex-row">
-            <CtaLink
-              href={localePath(locale, content.cta.target)}
-              variant="primary"
-              size="lg"
-            >
+            <CtaLink href="/comecar" variant="primary" size="lg">
               {dict.ctaStart}
               <ArrowRight className="h-4 w-4" />
             </CtaLink>

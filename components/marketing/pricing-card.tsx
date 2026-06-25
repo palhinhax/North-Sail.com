@@ -1,6 +1,6 @@
 import * as React from "react";
 import Link from "next/link";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ctaClasses } from "./cta-button";
 
@@ -13,6 +13,8 @@ interface PricingCardProps {
   ctaHref: string;
   highlighted?: boolean;
   badge?: string;
+  /** Trial offer pill rendered under the price (shown on every plan). */
+  trialChip?: React.ReactNode;
   /** Small muted line rendered under the CTA (e.g. trial reassurance). */
   footnote?: React.ReactNode;
 }
@@ -26,6 +28,7 @@ export function PricingCard({
   ctaHref,
   highlighted = false,
   badge,
+  trialChip,
   footnote,
 }: PricingCardProps) {
   return (
@@ -68,6 +71,19 @@ export function PricingCard({
           {priceSuffix}
         </span>
       </div>
+      {trialChip && (
+        <span
+          className={cn(
+            "mb-6 inline-flex w-fit items-center gap-1.5 rounded-full px-2.5 py-1 text-label-sm font-semibold",
+            highlighted
+              ? "bg-white/15 text-white"
+              : "bg-teal-surface text-teal-ink"
+          )}
+        >
+          <Sparkles className="h-3.5 w-3.5 shrink-0" />
+          {trialChip}
+        </span>
+      )}
       <ul className="mb-10 flex flex-grow flex-col gap-3">
         {features.map((feature) => (
           <li key={feature} className="flex items-start gap-2">

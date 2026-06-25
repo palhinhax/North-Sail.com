@@ -1,7 +1,10 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { auth, isAdmin } from "@/lib/auth";
-import { updateBusinessSchema } from "@/features/businesses/schemas";
+import {
+  updateBusinessSchema,
+  ADMIN_ONLY_BUSINESS_FIELDS,
+} from "@/features/businesses/schemas";
 
 interface RouteParams {
   params: Promise<{ id: string }>;
@@ -53,9 +56,17 @@ export async function PATCH(request: Request, { params }: RouteParams) {
     );
   }
 
+  // Strip admin-only fields when the requester is not an admin.
+  const data: Record<string, unknown> = { ...result.data };
+  if (!isAdmin(session)) {
+    for (const field of ADMIN_ONLY_BUSINESS_FIELDS) {
+      delete data[field];
+    }
+  }
+
   const updated = await prisma.business.update({
     where: { id },
-    data: result.data,
+    data,
   });
   return NextResponse.json(updated);
 }

@@ -36,17 +36,17 @@ const PLAN_COPY: Record<Locale, Record<PlanCode, PlanCopy>> = {
       name: "Presence",
       tagline: "A clean one-page website so customers can find you.",
       features: [
-        "Simple website page",
+        "Professional website page",
         "Custom domain",
         "Hosting & SSL",
         "WhatsApp button & Google Maps",
-        "Basic contact information",
+        "Complete contact information",
         "Technical maintenance",
       ],
-      bestFor: "Businesses that only need a basic online presence.",
+      bestFor: "Businesses that need a polished online presence.",
     },
     MINI_APP: {
-      name: "Mini App",
+      name: "Essential App",
       tagline: "A website plus one business-specific core feature.",
       features: [
         "Everything in Presence",
@@ -58,15 +58,15 @@ const PLAN_COPY: Record<Locale, Record<PlanCode, PlanCopy>> = {
       highlighted: true,
     },
     MINI_APP_PLUS: {
-      name: "Mini App Plus",
-      tagline: "More pages, a better panel and basic automations.",
+      name: "Advanced App",
+      tagline: "More pages, a better dashboard and automations.",
       features: [
-        "Everything in Mini App",
+        "Everything in Essential App",
         "More pages",
-        "Better client/admin panel",
-        "Basic automations",
+        "Enhanced client/admin dashboard",
+        "Workflow automations",
         "More customization",
-        "One small monthly update included",
+        "One monthly update included",
       ],
       bestFor: "Businesses with more regular activity.",
     },
@@ -74,11 +74,11 @@ const PLAN_COPY: Record<Locale, Record<PlanCode, PlanCopy>> = {
       name: "Business Local",
       tagline: "More complete management for higher volume.",
       features: [
-        "Everything in Mini App Plus",
+        "Everything in Advanced App",
         "Multiple pages",
         "More advanced booking/request flows",
         "Multiple users",
-        "Export & basic reports",
+        "Export & detailed reports",
       ],
       bestFor: "Hotels, gyms, restaurants and clinics with more volume.",
     },
@@ -92,7 +92,7 @@ const PLAN_COPY: Record<Locale, Record<PlanCode, PlanCopy>> = {
         "Dashboards & permissions",
         "Priority support",
       ],
-      bestFor: "Businesses that need more than a simple mini app.",
+      bestFor: "Businesses that need more than a one-page website.",
     },
   },
   pt: {
@@ -100,17 +100,17 @@ const PLAN_COPY: Record<Locale, Record<PlanCode, PlanCopy>> = {
       name: "Presença",
       tagline: "Um site de uma página para os clientes o encontrarem.",
       features: [
-        "Página de site simples",
+        "Página de site profissional",
         "Domínio próprio",
         "Alojamento e SSL",
         "Botão WhatsApp e Google Maps",
-        "Informações de contacto básicas",
+        "Informações de contacto completas",
         "Manutenção técnica",
       ],
-      bestFor: "Negócios que só precisam de presença online básica.",
+      bestFor: "Negócios que precisam de uma presença online cuidada.",
     },
     MINI_APP: {
-      name: "Mini App",
+      name: "App Essencial",
       tagline: "Um site mais uma funcionalidade essencial do negócio.",
       features: [
         "Tudo do plano Presença",
@@ -123,15 +123,15 @@ const PLAN_COPY: Record<Locale, Record<PlanCode, PlanCopy>> = {
       highlighted: true,
     },
     MINI_APP_PLUS: {
-      name: "Mini App Plus",
-      tagline: "Mais páginas, melhor painel e automações básicas.",
+      name: "App Avançada",
+      tagline: "Mais páginas, melhor painel e automações.",
       features: [
-        "Tudo do plano Mini App",
+        "Tudo do plano App Essencial",
         "Mais páginas",
-        "Melhor painel de cliente/admin",
-        "Automações básicas",
+        "Painel de cliente/admin melhorado",
+        "Automações de fluxo",
         "Mais personalização",
-        "Uma pequena atualização mensal incluída",
+        "Uma atualização mensal incluída",
       ],
       bestFor: "Negócios com mais atividade regular.",
     },
@@ -139,11 +139,11 @@ const PLAN_COPY: Record<Locale, Record<PlanCode, PlanCopy>> = {
       name: "Business Local",
       tagline: "Gestão mais completa para maior volume.",
       features: [
-        "Tudo do plano Mini App Plus",
+        "Tudo do plano App Avançada",
         "Múltiplas páginas",
         "Fluxos de reserva/pedido mais avançados",
         "Vários utilizadores",
-        "Exportação e relatórios básicos",
+        "Exportação e relatórios detalhados",
       ],
       bestFor: "Hotéis, ginásios, restaurantes e clínicas com mais volume.",
     },
@@ -157,7 +157,8 @@ const PLAN_COPY: Record<Locale, Record<PlanCode, PlanCopy>> = {
         "Dashboards e permissões",
         "Suporte prioritário",
       ],
-      bestFor: "Negócios que precisam de mais do que uma mini app simples.",
+      bestFor:
+        "Negócios que precisam de mais do que uma presença de uma página.",
     },
   },
   es: {
@@ -165,17 +166,17 @@ const PLAN_COPY: Record<Locale, Record<PlanCode, PlanCopy>> = {
       name: "Presencia",
       tagline: "Una web de una página para que te encuentren.",
       features: [
-        "Página web simple",
+        "Página web profesional",
         "Dominio propio",
         "Alojamiento y SSL",
         "Botón de WhatsApp y Google Maps",
-        "Información de contacto básica",
+        "Información de contacto completa",
         "Mantenimiento técnico",
       ],
-      bestFor: "Negocios que solo necesitan presencia online básica.",
+      bestFor: "Negocios que necesitan una presencia online cuidada.",
     },
     MINI_APP: {
-      name: "Mini App",
+      name: "App Esencial",
       tagline: "Una web más una función esencial del negocio.",
       features: [
         "Todo lo del plan Presencia",
@@ -188,15 +189,15 @@ const PLAN_COPY: Record<Locale, Record<PlanCode, PlanCopy>> = {
       highlighted: true,
     },
     MINI_APP_PLUS: {
-      name: "Mini App Plus",
-      tagline: "Más páginas, mejor panel y automatizaciones básicas.",
+      name: "App Avanzada",
+      tagline: "Más páginas, mejor panel y automatizaciones.",
       features: [
-        "Todo lo del plan Mini App",
+        "Todo lo del plan App Esencial",
         "Más páginas",
-        "Mejor panel de cliente/admin",
-        "Automatizaciones básicas",
+        "Panel de cliente/admin mejorado",
+        "Automatizaciones de flujo",
         "Más personalización",
-        "Una pequeña actualización mensual incluida",
+        "Una actualización mensual incluida",
       ],
       bestFor: "Negocios con más actividad habitual.",
     },
@@ -204,11 +205,11 @@ const PLAN_COPY: Record<Locale, Record<PlanCode, PlanCopy>> = {
       name: "Business Local",
       tagline: "Gestión más completa para mayor volumen.",
       features: [
-        "Todo lo del plan Mini App Plus",
+        "Todo lo del plan App Avanzada",
         "Múltiples páginas",
         "Flujos de reserva/solicitud más avanzados",
         "Varios usuarios",
-        "Exportación e informes básicos",
+        "Exportación e informes detallados",
       ],
       bestFor: "Hoteles, gimnasios, restaurantes y clínicas con más volumen.",
     },
@@ -222,7 +223,7 @@ const PLAN_COPY: Record<Locale, Record<PlanCode, PlanCopy>> = {
         "Paneles y permisos",
         "Soporte prioritario",
       ],
-      bestFor: "Negocios que necesitan más que una mini app simple.",
+      bestFor: "Negocios que necesitan más que una presencia de una página.",
     },
   },
   fr: {
@@ -230,18 +231,17 @@ const PLAN_COPY: Record<Locale, Record<PlanCode, PlanCopy>> = {
       name: "Présence",
       tagline: "Un site d'une page pour que vos clients vous trouvent.",
       features: [
-        "Page de site simple",
+        "Page de site professionnelle",
         "Nom de domaine",
         "Hébergement et SSL",
         "Bouton WhatsApp et Google Maps",
-        "Coordonnées de base",
+        "Coordonnées complètes",
         "Maintenance technique",
       ],
-      bestFor:
-        "Entreprises qui ont seulement besoin d'une présence en ligne de base.",
+      bestFor: "Entreprises qui ont besoin d'une présence en ligne soignée.",
     },
     MINI_APP: {
-      name: "Mini App",
+      name: "App Essentielle",
       tagline: "Un site plus une fonctionnalité métier essentielle.",
       features: [
         "Tout le plan Présence",
@@ -254,16 +254,16 @@ const PLAN_COPY: Record<Locale, Record<PlanCode, PlanCopy>> = {
       highlighted: true,
     },
     MINI_APP_PLUS: {
-      name: "Mini App Plus",
+      name: "App Avancée",
       tagline:
-        "Plus de pages, un meilleur panneau et des automatisations de base.",
+        "Plus de pages, un meilleur tableau de bord et des automatisations.",
       features: [
-        "Tout le plan Mini App",
+        "Tout le plan App Essentielle",
         "Plus de pages",
-        "Meilleur panneau client/admin",
-        "Automatisations de base",
+        "Tableau de bord client/admin amélioré",
+        "Automatisations de flux",
         "Plus de personnalisation",
-        "Une petite mise à jour mensuelle incluse",
+        "Une mise à jour mensuelle incluse",
       ],
       bestFor: "Entreprises avec une activité plus régulière.",
     },
@@ -271,11 +271,11 @@ const PLAN_COPY: Record<Locale, Record<PlanCode, PlanCopy>> = {
       name: "Business Local",
       tagline: "Une gestion plus complète pour plus de volume.",
       features: [
-        "Tout le plan Mini App Plus",
+        "Tout le plan App Avancée",
         "Plusieurs pages",
         "Flux de réservation/demande plus avancés",
         "Plusieurs utilisateurs",
-        "Export et rapports de base",
+        "Export et rapports détaillés",
       ],
       bestFor:
         "Hôtels, salles de sport, restaurants et cliniques à fort volume.",
@@ -290,7 +290,7 @@ const PLAN_COPY: Record<Locale, Record<PlanCode, PlanCopy>> = {
         "Tableaux de bord et permissions",
         "Support prioritaire",
       ],
-      bestFor: "Entreprises qui ont besoin de plus qu'une simple mini app.",
+      bestFor: "Entreprises qui ont besoin de plus qu'un site d'une page.",
     },
   },
   de: {
@@ -298,17 +298,17 @@ const PLAN_COPY: Record<Locale, Record<PlanCode, PlanCopy>> = {
       name: "Präsenz",
       tagline: "Eine schlichte Ein-Seiten-Website, damit Kunden Sie finden.",
       features: [
-        "Einfache Website-Seite",
+        "Professionelle Website-Seite",
         "Eigene Domain",
         "Hosting und SSL",
         "WhatsApp-Button und Google Maps",
-        "Grundlegende Kontaktangaben",
+        "Vollständige Kontaktangaben",
         "Technische Wartung",
       ],
-      bestFor: "Unternehmen, die nur eine einfache Online-Präsenz brauchen.",
+      bestFor: "Unternehmen, die eine gepflegte Online-Präsenz brauchen.",
     },
     MINI_APP: {
-      name: "Mini App",
+      name: "Essential App",
       tagline: "Eine Website plus eine zentrale Geschäftsfunktion.",
       features: [
         "Alles aus dem Präsenz-Tarif",
@@ -321,15 +321,15 @@ const PLAN_COPY: Record<Locale, Record<PlanCode, PlanCopy>> = {
       highlighted: true,
     },
     MINI_APP_PLUS: {
-      name: "Mini App Plus",
-      tagline: "Mehr Seiten, besseres Panel und einfache Automatisierungen.",
+      name: "Advanced App",
+      tagline: "Mehr Seiten, besseres Dashboard und Automatisierungen.",
       features: [
-        "Alles aus dem Mini-App-Tarif",
+        "Alles aus dem Essential-App-Tarif",
         "Mehr Seiten",
-        "Besseres Kunden-/Admin-Panel",
-        "Einfache Automatisierungen",
+        "Verbessertes Kunden-/Admin-Dashboard",
+        "Workflow-Automatisierungen",
         "Mehr Anpassung",
-        "Ein kleines monatliches Update inklusive",
+        "Ein monatliches Update inklusive",
       ],
       bestFor: "Unternehmen mit regelmäßigerer Aktivität.",
     },
@@ -337,11 +337,11 @@ const PLAN_COPY: Record<Locale, Record<PlanCode, PlanCopy>> = {
       name: "Business Local",
       tagline: "Umfassendere Verwaltung für mehr Volumen.",
       features: [
-        "Alles aus dem Mini-App-Plus-Tarif",
+        "Alles aus dem Advanced-App-Tarif",
         "Mehrere Seiten",
         "Fortgeschrittenere Buchungs-/Anfrageabläufe",
         "Mehrere Benutzer",
-        "Export und einfache Berichte",
+        "Export und detaillierte Berichte",
       ],
       bestFor:
         "Hotels, Fitnessstudios, Restaurants und Kliniken mit mehr Volumen.",
@@ -356,7 +356,7 @@ const PLAN_COPY: Record<Locale, Record<PlanCode, PlanCopy>> = {
         "Dashboards und Berechtigungen",
         "Priorisierter Support",
       ],
-      bestFor: "Unternehmen, die mehr als eine einfache Mini App brauchen.",
+      bestFor: "Unternehmen, die mehr als eine einseitige Website brauchen.",
     },
   },
 };
@@ -463,39 +463,42 @@ export const PRICING_META: Record<
   { metaTitle: string; metaDescription: string; aiSummary: string }
 > = {
   en: {
-    metaTitle: "Pricing — affordable websites & mini web apps from €5/month",
+    metaTitle: "Pricing — professional websites & web apps from €5/month",
     metaDescription:
-      "NorthSail pricing: Presence from €5/mo, Mini App from €15/mo, Mini App Plus from €25/mo, Business Local from €39/mo and Pro Management from €69/mo. Domain, hosting, SSL and maintenance included.",
+      "NorthSail pricing: Presence from €5/mo, Essential App from €15/mo, Advanced App from €25/mo, Business Local from €39/mo and Pro Management from €69/mo. Domain, hosting, SSL and maintenance included.",
     aiSummary:
-      "NorthSail offers five subscription plans for small-business websites and mini web apps: Presence (from €5/month, basic online presence), Mini App (from €15/month, website plus one core feature like reservations or appointments), Mini App Plus (from €25/month), Business Local (from €39/month) and Pro Management (from €69/month). Every plan includes a custom domain, hosting, SSL and technical maintenance. Very low prices mean clear plan limits; advanced integrations and payments are not part of the entry-level plan.",
+      "NorthSail offers five subscription plans for small-business websites and web apps: Presence (from €5/month, a professional online presence), Essential App (from €15/month, website plus one core feature like reservations or appointments), Advanced App (from €25/month), Business Local (from €39/month) and Pro Management (from €69/month). Every plan includes a custom domain, hosting, SSL and technical maintenance. Low prices come with clear plan limits; advanced integrations and payments belong to higher plans.",
   },
   pt: {
-    metaTitle: "Preços — sites e mini web apps desde 5€/mês | NorthSail",
+    metaTitle:
+      "Preços — sites e web apps profissionais desde 5€/mês | NorthSail",
     metaDescription:
-      "Preços NorthSail: Presença desde 5€/mês, Mini App desde 15€/mês, Mini App Plus desde 25€/mês, Business Local desde 39€/mês e Pro Gestão desde 69€/mês. Domínio, alojamento, SSL e manutenção incluídos.",
+      "Preços NorthSail: Presença desde 5€/mês, App Essencial desde 15€/mês, App Avançada desde 25€/mês, Business Local desde 39€/mês e Pro Gestão desde 69€/mês. Domínio, alojamento, SSL e manutenção incluídos.",
     aiSummary:
-      "A NorthSail oferece cinco planos de subscrição para sites e mini web apps de pequenas empresas: Presença (desde 5€/mês, presença online básica), Mini App (desde 15€/mês, site mais uma funcionalidade essencial como reservas ou marcações), Mini App Plus (desde 25€/mês), Business Local (desde 39€/mês) e Pro Gestão (desde 69€/mês). Todos os planos incluem domínio próprio, alojamento, SSL e manutenção técnica. Preços muito baixos implicam limites claros; integrações avançadas e pagamentos não fazem parte do plano inicial.",
+      "A NorthSail oferece cinco planos de subscrição para sites e web apps de pequenas empresas: Presença (desde 5€/mês, uma presença online profissional), App Essencial (desde 15€/mês, site mais uma funcionalidade essencial como reservas ou marcações), App Avançada (desde 25€/mês), Business Local (desde 39€/mês) e Pro Gestão (desde 69€/mês). Todos os planos incluem domínio próprio, alojamento, SSL e manutenção técnica. Preços baixos vêm com limites claros; integrações avançadas e pagamentos fazem parte de planos superiores.",
   },
   es: {
-    metaTitle: "Precios — webs y mini web apps desde 5€/mes | NorthSail",
+    metaTitle:
+      "Precios — webs y web apps profesionales desde 5€/mes | NorthSail",
     metaDescription:
-      "Precios NorthSail: Presencia desde 5€/mes, Mini App desde 15€/mes, Mini App Plus desde 25€/mes, Business Local desde 39€/mes y Pro Gestión desde 69€/mes. Dominio, alojamiento, SSL y mantenimiento incluidos.",
+      "Precios NorthSail: Presencia desde 5€/mes, App Esencial desde 15€/mes, App Avanzada desde 25€/mes, Business Local desde 39€/mes y Pro Gestión desde 69€/mes. Dominio, alojamiento, SSL y mantenimiento incluidos.",
     aiSummary:
-      "NorthSail ofrece cinco planes de suscripción para webs y mini web apps de pequeños negocios: Presencia (desde 5€/mes, presencia online básica), Mini App (desde 15€/mes, web más una función esencial como reservas o citas), Mini App Plus (desde 25€/mes), Business Local (desde 39€/mes) y Pro Gestión (desde 69€/mes). Todos los planes incluyen dominio propio, alojamiento, SSL y mantenimiento técnico. Los precios muy bajos implican límites claros; las integraciones avanzadas y los pagos no forman parte del plan inicial.",
+      "NorthSail ofrece cinco planes de suscripción para webs y web apps de pequeños negocios: Presencia (desde 5€/mes, una presencia online profesional), App Esencial (desde 15€/mes, web más una función esencial como reservas o citas), App Avanzada (desde 25€/mes), Business Local (desde 39€/mes) y Pro Gestión (desde 69€/mes). Todos los planes incluyen dominio propio, alojamiento, SSL y mantenimiento técnico. Los precios bajos vienen con límites claros; las integraciones avanzadas y los pagos forman parte de planes superiores.",
   },
   fr: {
     metaTitle:
-      "Tarifs — sites et mini web apps à partir de 5€/mois | NorthSail",
+      "Tarifs — sites et web apps professionnels à partir de 5€/mois | NorthSail",
     metaDescription:
-      "Tarifs NorthSail : Présence dès 5€/mois, Mini App dès 15€/mois, Mini App Plus dès 25€/mois, Business Local dès 39€/mois et Pro Gestion dès 69€/mois. Domaine, hébergement, SSL et maintenance inclus.",
+      "Tarifs NorthSail : Présence dès 5€/mois, App Essentielle dès 15€/mois, App Avancée dès 25€/mois, Business Local dès 39€/mois et Pro Gestion dès 69€/mois. Domaine, hébergement, SSL et maintenance inclus.",
     aiSummary:
-      "NorthSail propose cinq abonnements pour les sites et mini web apps des petites entreprises : Présence (dès 5€/mois, présence en ligne de base), Mini App (dès 15€/mois, un site plus une fonctionnalité clé comme les réservations ou les rendez-vous), Mini App Plus (dès 25€/mois), Business Local (dès 39€/mois) et Pro Gestion (dès 69€/mois). Chaque plan inclut un nom de domaine, l'hébergement, le SSL et la maintenance technique. Des prix très bas impliquent des limites claires ; les intégrations avancées et les paiements ne font pas partie du plan d'entrée.",
+      "NorthSail propose cinq abonnements pour les sites et web apps des petites entreprises : Présence (dès 5€/mois, une présence en ligne professionnelle), App Essentielle (dès 15€/mois, un site plus une fonctionnalité clé comme les réservations ou les rendez-vous), App Avancée (dès 25€/mois), Business Local (dès 39€/mois) et Pro Gestion (dès 69€/mois). Chaque plan inclut un nom de domaine, l'hébergement, le SSL et la maintenance technique. Des prix bas s'accompagnent de limites claires ; les intégrations avancées et les paiements font partie des offres supérieures.",
   },
   de: {
-    metaTitle: "Preise — Websites und Mini Web-Apps ab 5€/Monat | NorthSail",
+    metaTitle:
+      "Preise — professionelle Websites und Web-Apps ab 5€/Monat | NorthSail",
     metaDescription:
-      "NorthSail-Preise: Präsenz ab 5€/Monat, Mini App ab 15€/Monat, Mini App Plus ab 25€/Monat, Business Local ab 39€/Monat und Pro Management ab 69€/Monat. Domain, Hosting, SSL und Wartung inklusive.",
+      "NorthSail-Preise: Präsenz ab 5€/Monat, Essential App ab 15€/Monat, Advanced App ab 25€/Monat, Business Local ab 39€/Monat und Pro Management ab 69€/Monat. Domain, Hosting, SSL und Wartung inklusive.",
     aiSummary:
-      "NorthSail bietet fünf Abo-Tarife für Websites und Mini Web-Apps kleiner Unternehmen: Präsenz (ab 5€/Monat, einfache Online-Präsenz), Mini App (ab 15€/Monat, Website plus eine Kernfunktion wie Reservierungen oder Termine), Mini App Plus (ab 25€/Monat), Business Local (ab 39€/Monat) und Pro Management (ab 69€/Monat). Jeder Tarif enthält eine eigene Domain, Hosting, SSL und technische Wartung. Sehr niedrige Preise bedeuten klare Grenzen; erweiterte Integrationen und Zahlungen sind nicht Teil des Einstiegstarifs.",
+      "NorthSail bietet fünf Abo-Tarife für Websites und Web-Apps kleiner Unternehmen: Präsenz (ab 5€/Monat, eine professionelle Online-Präsenz), Essential App (ab 15€/Monat, Website plus eine Kernfunktion wie Reservierungen oder Termine), Advanced App (ab 25€/Monat), Business Local (ab 39€/Monat) und Pro Management (ab 69€/Monat). Jeder Tarif enthält eine eigene Domain, Hosting, SSL und technische Wartung. Sehr niedrige Preise bedeuten klare Grenzen; erweiterte Integrationen und Zahlungen sind nicht Teil des Einstiegstarifs.",
   },
 };

@@ -25,7 +25,7 @@ const LEGAL: Record<Locale, Record<LegalKey, LegalContent>> = {
       h1: "Privacy Policy",
       updated: "Last updated: 24 June 2026",
       intro:
-        "This Privacy Policy explains what personal data NorthSail collects, why we collect it, and the choices you have. We aim to keep our handling of data simple, honest and proportionate to running our service.",
+        "This Privacy Policy explains what personal data NorthSail collects, why we collect it, and the choices you have. We aim to keep our handling of data clear, honest and proportionate to running our service.",
       sections: [
         {
           heading: "Who we are",
@@ -161,7 +161,7 @@ const LEGAL: Record<Locale, Record<LegalKey, LegalContent>> = {
       h1: "Política de Privacidade",
       updated: "Última atualização: 24 de junho de 2026",
       intro:
-        "Esta Política de Privacidade explica que dados pessoais a NorthSail recolhe, porque os recolhe e que opções tem. Procuramos tratar os dados de forma simples, honesta e proporcional ao funcionamento do nosso serviço.",
+        "Esta Política de Privacidade explica que dados pessoais a NorthSail recolhe, porque os recolhe e que opções tem. Procuramos tratar os dados de forma clara, honesta e proporcional ao funcionamento do nosso serviço.",
       sections: [
         {
           heading: "Quem somos",
@@ -297,7 +297,7 @@ const LEGAL: Record<Locale, Record<LegalKey, LegalContent>> = {
       h1: "Política de Privacidad",
       updated: "Última actualización: 24 de junio de 2026",
       intro:
-        "Esta Política de Privacidad explica qué datos personales recopila NorthSail, por qué los recopila y qué opciones tienes. Buscamos tratar los datos de forma sencilla, honesta y proporcional al funcionamiento de nuestro servicio.",
+        "Esta Política de Privacidad explica qué datos personales recopila NorthSail, por qué los recopila y qué opciones tienes. Buscamos tratar los datos de forma clara, honesta y proporcional al funcionamiento de nuestro servicio.",
       sections: [
         {
           heading: "Quiénes somos",
@@ -433,7 +433,7 @@ const LEGAL: Record<Locale, Record<LegalKey, LegalContent>> = {
       h1: "Politique de Confidentialité",
       updated: "Dernière mise à jour : 24 juin 2026",
       intro:
-        "Cette Politique de Confidentialité explique quelles données personnelles NorthSail collecte, pourquoi nous les collectons et quels sont vos choix. Nous cherchons à traiter les données de manière simple, honnête et proportionnée au fonctionnement de notre service.",
+        "Cette Politique de Confidentialité explique quelles données personnelles NorthSail collecte, pourquoi nous les collectons et quels sont vos choix. Nous cherchons à traiter les données de manière claire, honnête et proportionnée au fonctionnement de notre service.",
       sections: [
         {
           heading: "Qui sommes-nous",
@@ -569,7 +569,7 @@ const LEGAL: Record<Locale, Record<LegalKey, LegalContent>> = {
       h1: "Datenschutzerklärung",
       updated: "Zuletzt aktualisiert: 24. Juni 2026",
       intro:
-        "Diese Datenschutzerklärung erläutert, welche personenbezogenen Daten NorthSail erhebt, warum wir sie erheben und welche Wahlmöglichkeiten Sie haben. Wir behandeln Daten einfach, ehrlich und im angemessenen Verhältnis zum Betrieb unseres Dienstes.",
+        "Diese Datenschutzerklärung erläutert, welche personenbezogenen Daten NorthSail erhebt, warum wir sie erheben und welche Wahlmöglichkeiten Sie haben. Wir behandeln Daten klar, ehrlich und im angemessenen Verhältnis zum Betrieb unseres Dienstes.",
       sections: [
         {
           heading: "Wer wir sind",

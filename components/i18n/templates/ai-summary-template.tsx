@@ -99,11 +99,7 @@ export function AiSummaryTemplate({ locale }: { locale: Locale }) {
       <Section>
         <div className="mx-auto flex max-w-2xl flex-col items-center gap-6 text-center">
           <h2 className="text-display-sm text-brand">{dict.leadTitle}</h2>
-          <CtaLink
-            href={localePath(locale, "contact")}
-            variant="primary"
-            size="lg"
-          >
+          <CtaLink href="/comecar" variant="primary" size="lg">
             {dict.ctaStart}
             <ArrowRight className="h-4 w-4" />
           </CtaLink>
