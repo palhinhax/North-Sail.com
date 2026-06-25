@@ -10,7 +10,8 @@ import { getDictionary } from "@/lib/content/dictionary";
 /** Localized labels for the business-type select. */
 const INDUSTRY_LABELS: Record<Locale, Record<IndustryKey, string>> = {
   en: {
-    restaurants: "Restaurant / cafe",
+    restaurants: "Restaurant",
+    cafes: "Cafe / coffee shop",
     hairdressers: "Hairdresser / barber",
     hotels: "Hotel / accommodation",
     gyms: "Gym / studio",
@@ -18,7 +19,8 @@ const INDUSTRY_LABELS: Record<Locale, Record<IndustryKey, string>> = {
     "local-services": "Local trade / services",
   },
   pt: {
-    restaurants: "Restaurante / café",
+    restaurants: "Restaurante",
+    cafes: "Café / cafetaria",
     hairdressers: "Cabeleireiro / barbearia",
     hotels: "Hotel / alojamento",
     gyms: "Ginásio / estúdio",
@@ -26,7 +28,8 @@ const INDUSTRY_LABELS: Record<Locale, Record<IndustryKey, string>> = {
     "local-services": "Serviços / ofícios locais",
   },
   es: {
-    restaurants: "Restaurante / cafetería",
+    restaurants: "Restaurante",
+    cafes: "Cafetería / café",
     hairdressers: "Peluquería / barbería",
     hotels: "Hotel / alojamiento",
     gyms: "Gimnasio / estudio",
@@ -34,7 +37,8 @@ const INDUSTRY_LABELS: Record<Locale, Record<IndustryKey, string>> = {
     "local-services": "Oficios / servicios locales",
   },
   fr: {
-    restaurants: "Restaurant / café",
+    restaurants: "Restaurant",
+    cafes: "Café / salon de thé",
     hairdressers: "Coiffeur / barbier",
     hotels: "Hôtel / hébergement",
     gyms: "Salle de sport / studio",
@@ -42,7 +46,8 @@ const INDUSTRY_LABELS: Record<Locale, Record<IndustryKey, string>> = {
     "local-services": "Artisan / services locaux",
   },
   de: {
-    restaurants: "Restaurant / Café",
+    restaurants: "Restaurant",
+    cafes: "Café / Coffeeshop",
     hairdressers: "Friseur / Barbier",
     hotels: "Hotel / Unterkunft",
     gyms: "Fitnessstudio / Studio",
