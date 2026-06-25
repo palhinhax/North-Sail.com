@@ -11,7 +11,9 @@
       "Bash(npx tsc *)",
       "Bash(git add *)",
       "PowerShell(\"---lock file---\")",
-      "Bash(grep -v \"^$\")"
+      "Bash(grep -v \"^$\")",
+      "Bash(git commit -m ' *)",
+      "Bash(git commit -m 'chore: update local Claude permissions *)"
     ]
   }
 }
