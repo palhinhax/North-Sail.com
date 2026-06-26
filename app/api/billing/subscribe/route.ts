@@ -4,6 +4,10 @@ import { prisma } from "@/lib/prisma";
 import { auth } from "@/lib/auth";
 import { stripe } from "@/lib/stripe/server";
 import { isSetupFree } from "@/features/plans/lib";
+import {
+  pendingCheckoutCoupon,
+  consumeCheckoutDiscounts,
+} from "@/features/discounts/api/redeem";
 
 export const runtime = "nodejs";
 
@@ -54,9 +58,10 @@ export async function POST() {
     });
   }
 
-  // One-time setup fee on the first invoice (unless the plan is on promo / free).
+  // One-time setup fee on the first invoice (unless the plan is on promo / free,
+  // or a FREE_SETUP discount code waived it for this subscription).
   const addInvoiceItems: Stripe.SubscriptionCreateParams.AddInvoiceItem[] =
-    isSetupFree(plan)
+    isSetupFree(plan) || subscription.setupWaived
       ? []
       : [
           {
@@ -69,15 +74,22 @@ export async function POST() {
           },
         ];
 
+  // PERCENT/FIXED discount code redeemed but not yet applied → attach its coupon.
+  const couponId = await pendingCheckoutCoupon(business.id);
+
   const sub = await stripe.subscriptions.create({
     customer: customerId,
     items: [{ price: priceId }],
     add_invoice_items: addInvoiceItems,
+    ...(couponId ? { discounts: [{ coupon: couponId }] } : {}),
     payment_behavior: "default_incomplete",
     payment_settings: { save_default_payment_method: "on_subscription" },
     expand: ["latest_invoice.payment_intent"],
     metadata: { businessId: business.id, subscriptionId: subscription.id },
   });
+
+  // Mark the discount redemptions used at checkout as consumed.
+  await consumeCheckoutDiscounts(business.id);
 
   const invoice = sub.latest_invoice as Stripe.Invoice;
   const paymentIntent = invoice.payment_intent as Stripe.PaymentIntent;

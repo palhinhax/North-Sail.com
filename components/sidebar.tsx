@@ -14,6 +14,7 @@ import {
   Receipt,
   Inbox,
   Eye,
+  Ticket,
   HelpCircle,
   LogOut,
   Plus,
@@ -41,6 +42,7 @@ const adminNav = [
   { title: "Pedidos", href: "/admin/requests", icon: ClipboardList },
   { title: "Leads", href: "/admin/leads", icon: Inbox },
   { title: "Planos", href: "/admin/plans", icon: Receipt },
+  { title: "Descontos", href: "/admin/discounts", icon: Ticket },
 ];
 
 export function Sidebar({ open, onClose }: SidebarProps) {
