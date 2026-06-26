@@ -31,7 +31,7 @@ const SCRIPT = `(function () {
 
   var client = attr("data-client", "client-site");
   var variant = attr("data-variant", "light");
-  var label = attr("data-label", "Feito por NorthSail");
+  var label = attr("data-label", "NorthSail");
   var targetId = attr("data-target", "");
 
   if (!document.getElementById("ns-credit-style")) {
@@ -65,7 +65,7 @@ const SCRIPT = `(function () {
   a.href = href;
   a.target = "_blank";
   a.rel = "noopener";
-  a.setAttribute("aria-label", "Feito por NorthSail — north-sail.com");
+  a.setAttribute("aria-label", "NorthSail — north-sail.com");
   a.innerHTML =
     '<img class="ns-credit__logo" src="https://www.north-sail.com/android-chrome-192x192.png" width="20" height="20" alt="" aria-hidden="true" />' +
     '<span class="ns-credit__word" style="background-image:' +
