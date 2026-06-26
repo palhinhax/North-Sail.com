@@ -247,6 +247,22 @@ export function onboardingPath(locale: Locale): string {
   return `/${locale}/comecar`;
 }
 
+/** The four localized authentication pages, served under `/{locale}/auth/*`. */
+export type AuthPage =
+  | "login"
+  | "register"
+  | "forgot-password"
+  | "reset-password";
+
+/**
+ * Path to a localized authentication page, e.g. `/pt/auth/login`. Auth pages
+ * keep the same English slugs across locales (they are `noindex`, so translated
+ * slugs would add no SEO value); the locale prefix selects the language.
+ */
+export function authPath(locale: Locale, page: AuthPage): string {
+  return `/${locale}/auth/${page}`;
+}
+
 /** Resolve a locale + raw slug back to its page key, or null if unknown. */
 export function resolvePageKey(locale: Locale, slug: string): PageKey | null {
   for (const key of SLUG_PAGE_KEYS) {

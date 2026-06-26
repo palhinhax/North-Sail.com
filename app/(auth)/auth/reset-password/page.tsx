@@ -4,10 +4,9 @@ import { DEFAULT_LOCALE, isLocale, type Locale } from "@/lib/i18n/config";
 import { authPath } from "@/lib/i18n/routes";
 
 /**
- * Legacy entry point. Auth pages now live at `/{locale}/auth/*`; this route
- * resolves a best-guess locale from the `Accept-Language` header and redirects
- * there, so older links, NextAuth's `signIn` page and server-side
- * `redirect("/auth/login")` calls keep working.
+ * Legacy entry point. Now lives at `/{locale}/auth/reset-password`. Reset emails
+ * sent before localization point here, so we preserve the `token` query param
+ * when redirecting to the localized page.
  */
 function detectLocale(): Locale {
   const accept = headers().get("accept-language");
@@ -19,6 +18,12 @@ function detectLocale(): Locale {
   return DEFAULT_LOCALE;
 }
 
-export default function LegacyLoginRedirect() {
-  redirect(authPath(detectLocale(), "login"));
+export default function LegacyResetPasswordRedirect({
+  searchParams,
+}: {
+  searchParams: { token?: string };
+}) {
+  const base = authPath(detectLocale(), "reset-password");
+  const token = searchParams.token;
+  redirect(token ? `${base}?token=${encodeURIComponent(token)}` : base);
 }

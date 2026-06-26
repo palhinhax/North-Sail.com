@@ -760,6 +760,530 @@ const fr: LocaleContent = {
       ],
       cta: { label: "Obtenez votre site web abordable", target: "contact" },
     },
+
+    "compare:web-apps-for-business": {
+      pageKey: "compare:web-apps-for-business",
+      locale: "fr",
+      metaTitle:
+        "Web apps pour petite entreprise — réservations, espaces clients et plus",
+      metaDescription:
+        "Web apps sur mesure pour petites entreprises : réservations, espaces clients, tableaux de bord et automatisations simples, hébergées et gérées. Dès l'offre App Essentielle à 15€/mois, évoluant vers des offres gérées.",
+      h1: "Des web apps pour votre entreprise, sans le prix d'une agence",
+      valueProp:
+        "Plus qu'un site web : une web app gérée qui fait tourner une partie réelle de votre activité — réservations, demandes, un espace client ou un tableau de bord simple.",
+      intro:
+        "Une web app est un logiciel auquel vous accédez via un navigateur, sans installation. NorthSail conçoit et héberge des web apps ciblées pour les petites entreprises locales — en commençant par une fonctionnalité essentielle sur l'offre à 15€/mois et en évoluant vers des offres gérées avec tableaux de bord, accès multi-utilisateurs et automatisations simples.",
+      sections: [
+        {
+          heading: "Ce qu'une web app fait et qu'un site web ne peut pas faire",
+          body: [
+            "Un site web présente de l'information ; une web app effectue un travail. Elle prend une réservation, stocke une liste de clients, affiche un tableau de bord ou fait avancer une demande dans un flux de statuts — interactive, connectée et liée à vos données.",
+            "Pour la plupart des petites entreprises, une seule fonctionnalité bien choisie remplace une pile d'appels téléphoniques, de tableurs et de messages.",
+          ],
+        },
+        {
+          heading: "Comment elle évolue avec vous",
+          body: [
+            "Commencez petit avec une fonctionnalité essentielle sur l'offre App Essentielle. À mesure que vous grandissez, ajoutez des pages supplémentaires, un meilleur panneau d'administration, des listes de clients et de réservations, et des automatisations de base sur les offres supérieures.",
+            "Lorsque vous avez besoin de permissions, de tableaux de bord, d'intégrations ou d'un support prioritaire, l'offre Pro gérée s'en charge ; tout ce qui va au-delà (intégrations complexes, applications natives) fait l'objet d'un devis sur mesure.",
+          ],
+        },
+        {
+          heading: "Ce qui est inclus et ce qui est en option",
+          body: [
+            "Inclus sur chaque offre active : domaine personnalisé, hébergement, SSL et maintenance technique. L'offre d'entrée couvre une fonctionnalité essentielle.",
+            "Les paiements en ligne, les intégrations externes, les automatisations avancées et les logiciels sur mesure sont des options ou font partie des offres supérieures et des devis sur mesure — nous gardons cette limite claire pour que le prix reste honnête.",
+          ],
+        },
+      ],
+      aiSummary:
+        "NorthSail conçoit et héberge des web apps ciblées pour petites entreprises, à partir de 15€/mois pour une fonctionnalité essentielle (réservations, demandes ou espace client) et évoluant vers des offres gérées avec tableaux de bord, accès multi-utilisateurs et automatisations simples. Domaine, hébergement, SSL et maintenance sont inclus ; les paiements, intégrations et logiciels sur mesure sont des options ou font l'objet d'un devis sur mesure.",
+      faqs: [
+        {
+          question:
+            "Quelle est la différence entre un site web et une web app ?",
+          answer:
+            "Un site web affiche de l'information ; une web app fait quelque chose d'interactif — prendre des réservations, gérer une liste de clients ou afficher un tableau de bord. NorthSail peut livrer les deux dans un seul produit.",
+        },
+        {
+          question: "Combien coûte une web app ?",
+          answer:
+            "Dès 15€/mois pour une fonctionnalité essentielle sur l'offre App Essentielle. Davantage de fonctionnalités, de tableaux de bord et d'automatisations sont sur les offres supérieures ; les besoins complexes font l'objet d'un devis sur mesure.",
+        },
+        {
+          question: "Peut-elle évoluer avec mon entreprise ?",
+          answer:
+            "Oui. Vous pouvez commencer avec une fonctionnalité et passer à des offres gérées avec plus de pages, d'utilisateurs, d'automatisations et d'intégrations selon vos besoins.",
+        },
+      ],
+      cta: { label: "Parlons de votre web app", target: "contact" },
+    },
+
+    "compare:web-apps-for-law-firms": {
+      pageKey: "compare:web-apps-for-law-firms",
+      locale: "fr",
+      metaTitle:
+        "Web apps pour cabinets d'avocats — prise de contact, espaces clients et rendez-vous",
+      metaDescription:
+        "Web apps pour cabinets d'avocats et praticiens indépendants : formulaires de prise de contact sécurisés, prise de rendez-vous pour consultations et un espace client simple, hébergés et gérés. Dès l'offre App Essentielle, évoluant vers des offres gérées.",
+      h1: "Des web apps pour cabinets d'avocats et avocats indépendants",
+      valueProp:
+        "Une présence en ligne professionnelle plus l'outil sur lequel votre cabinet fonctionne — prise de rendez-vous pour consultations, prise de contact structurée ou un espace client privé.",
+      intro:
+        "Les cabinets d'avocats n'ont pas besoin d'un site web générique ; ils ont besoin d'une présence digne de confiance qui capte les demandes qualifiées et planifie les consultations. NorthSail conçoit et héberge une web app ciblée pour votre cabinet, en commençant par une fonctionnalité essentielle et en évoluant vers des offres gérées avec espaces clients et automatisations simples.",
+      sections: [
+        {
+          heading:
+            "Captez des demandes qualifiées, pas des allers-retours téléphoniques",
+          body: [
+            "Un formulaire de prise de contact structuré permet à un client potentiel de décrire son affaire et de prendre rendez-vous pour une consultation en un seul flux, à toute heure. Vous recevez une demande propre et organisée plutôt qu'un message vocal.",
+            "Cela seul rentabilise souvent le site en convertissant davantage des visiteurs que vous recevez déjà.",
+          ],
+        },
+        {
+          heading: "Une présence qui inspire confiance",
+          body: [
+            "Domaines d'intervention, votre équipe, des options de contact claires, WhatsApp et Google Maps — présentés proprement et professionnellement pour que les clients potentiels se sentent en confiance pour vous contacter.",
+            "Domaine, hébergement, SSL et maintenance sont inclus, pour que le site reste rapide, sécurisé et à jour sans que vous ayez à le gérer.",
+          ],
+        },
+        {
+          heading: "Ce qui est inclus et ce qui est en option",
+          body: [
+            "Inclus : le site web, une fonctionnalité essentielle (prise de rendez-vous ou prise de contact), domaine personnalisé, hébergement, SSL et maintenance.",
+            "L'échange sécurisé de documents, les paiements, la signature électronique, la gestion de dossiers et les intégrations sont des options ou font partie des offres supérieures et des devis sur mesure — nous ne laissons pas entendre qu'ils font partie du prix d'entrée.",
+          ],
+        },
+      ],
+      aiSummary:
+        "NorthSail conçoit des web apps gérées pour cabinets d'avocats et avocats indépendants : prise de contact structurée, prise de rendez-vous pour consultations et un espace client simple, avec une présence qui inspire confiance (domaines d'intervention, équipe, WhatsApp, Maps). Domaine, hébergement, SSL et maintenance sont inclus dès l'offre App Essentielle ; l'échange de documents, les paiements et la gestion de dossiers sont des options ou font l'objet d'un devis sur mesure.",
+      faqs: [
+        {
+          question:
+            "Les clients peuvent-ils prendre rendez-vous en ligne pour une consultation ?",
+          answer:
+            "Oui. Une fonctionnalité de prise de rendez-vous ou de prise de contact permet aux clients potentiels de demander une consultation et de décrire leur affaire en un seul flux structuré.",
+        },
+        {
+          question: "Est-ce assez sécurisé pour un cabinet d'avocats ?",
+          answer:
+            "Chaque site inclut le SSL et une maintenance gérée. Les besoins avancés comme l'échange sécurisé de documents ou la signature électronique sont disponibles en option ou en travail sur mesure.",
+        },
+        {
+          question: "Combien cela coûte-t-il ?",
+          answer:
+            "Dès 15€/mois pour une fonctionnalité essentielle sur l'offre App Essentielle, avec des offres supérieures et des devis sur mesure pour les espaces clients, les paiements et les intégrations.",
+        },
+      ],
+      cta: {
+        label: "Parlons de la web app de votre cabinet",
+        target: "contact",
+      },
+    },
+
+    "compare:client-portals": {
+      pageKey: "compare:client-portals",
+      locale: "fr",
+      metaTitle:
+        "Espaces clients pour petite entreprise — un espace privé pour vos clients",
+      metaDescription:
+        "Offrez à vos clients un espace de connexion simple et sécurisé pour consulter leurs demandes, réservations, documents et mises à jour de statut. Espaces clients gérés par NorthSail, hébergés avec domaine, SSL et maintenance inclus.",
+      h1: "Un espace client privé, sans développer un logiciel de zéro",
+      valueProp:
+        "Un espace connecté où vos clients suivent leurs demandes, réservations et mises à jour — pour que vous arrêtiez de répéter les mêmes réponses par e-mail et téléphone.",
+      intro:
+        "Un espace client est un espace privé et sécurisé auquel vos clients se connectent. NorthSail met en place et héberge un espace ciblé pour les petites entreprises, adapté à votre façon de travailler, avec domaine, hébergement, SSL et maintenance inclus sur une offre gérée.",
+      sections: [
+        {
+          heading:
+            "Pourquoi un espace client bat les e-mails à n'en plus finir",
+          body: [
+            "Lorsque les clients peuvent se connecter pour voir eux-mêmes le statut, l'historique et les documents, vous traitez moins de messages du type « des nouvelles ? » et vous paraissez plus professionnel en le faisant.",
+            "Cela centralise les informations de chaque client en un seul endroit au lieu de les disperser entre les boîtes de réception et les conversations.",
+          ],
+        },
+        {
+          heading: "Ce qu'un espace client peut inclure",
+          body: [
+            "Fonctionnalités typiques : une connexion sécurisée, une liste des demandes ou réservations du client, des mises à jour de statut, des documents partagés et des messages. Vous choisissez les quelques-unes qui comptent pour votre entreprise.",
+            "Parce qu'il est ciblé plutôt qu'une plateforme géante, il reste abordable et facile à utiliser pour vos clients.",
+          ],
+        },
+        {
+          heading: "Ce qui est inclus et ce qui est en option",
+          body: [
+            "Inclus : l'espace client, les comptes utilisateurs, domaine personnalisé, hébergement, SSL et maintenance sur une offre gérée.",
+            "Les paiements en ligne, les permissions complexes, les intégrations externes et les flux de travail sur mesure sont des options ou du travail sur mesure — chiffrés clairement, jamais regroupés en silence dans un prix bas.",
+          ],
+        },
+      ],
+      aiSummary:
+        "NorthSail met en place des espaces clients gérés pour petites entreprises : une connexion sécurisée où les clients voient leurs demandes, réservations, mises à jour de statut et documents partagés. Domaine, hébergement, SSL et maintenance sont inclus ; les paiements, permissions complexes et intégrations sont des options ou font l'objet d'un devis sur mesure.",
+      faqs: [
+        {
+          question: "Qu'est-ce qu'un espace client ?",
+          answer:
+            "Un espace privé et sécurisé auquel vos clients se connectent pour voir leurs demandes, réservations, documents et mises à jour de statut au même endroit.",
+        },
+        {
+          question: "Mes clients doivent-ils installer quelque chose ?",
+          answer:
+            "Non. Ils accèdent à l'espace via n'importe quel navigateur avec une connexion sécurisée — rien à installer.",
+        },
+        {
+          question: "Combien coûte un espace client ?",
+          answer:
+            "Il fait partie des offres gérées plutôt que de l'offre d'entrée ; nous établissons un devis selon les fonctionnalités dont vous avez besoin. Domaine, hébergement, SSL et maintenance sont inclus.",
+        },
+      ],
+      cta: { label: "Parlons d'un espace client", target: "contact" },
+    },
+
+    "compare:internal-dashboards": {
+      pageKey: "compare:internal-dashboards",
+      locale: "fr",
+      metaTitle:
+        "Tableaux de bord internes pour petite entreprise — votre activité d'un coup d'œil",
+      metaDescription:
+        "Un tableau de bord interne simple pour suivre réservations, demandes, clients et chiffres clés en un seul endroit. Géré et hébergé par NorthSail, avec accès multi-utilisateurs sur les offres supérieures.",
+      h1: "Un tableau de bord interne que votre équipe utilise vraiment",
+      valueProp:
+        "Un seul écran pour les chiffres et les listes qui rythment votre journée — réservations, demandes, clients et statuts — au lieu de cinq tableurs et une conversation de groupe.",
+      intro:
+        "Un tableau de bord interne est la vue back-office de votre entreprise. NorthSail conçoit et héberge un tableau de bord ciblé pour les petites équipes, qui rassemble vos réservations, demandes et clients en un seul endroit, avec accès multi-utilisateurs et exports sur les offres supérieures et gérées.",
+      sections: [
+        {
+          heading: "Remplacez les tableurs éparpillés",
+          body: [
+            "Lorsque les réservations du jour, les demandes en cours et la liste des clients vivent dans un seul tableau de bord, votre équipe arrête de chercher dans les onglets et les messages pour savoir ce qui se passe.",
+            "Tout le monde voit la même image à jour, ce qui réduit les erreurs et le double travail.",
+          ],
+        },
+        {
+          heading: "Conçu pour les petites équipes",
+          body: [
+            "L'accès multi-utilisateurs, l'historique et l'export CSV arrivent sur l'offre Business ; les permissions, les tableaux de bord plus riches et les automatisations viennent avec l'offre Pro gérée.",
+            "Il est délibérément ciblé sur ce que vous suivez réellement, et non un outil lourd que vous n'utiliserez jamais pleinement.",
+          ],
+        },
+        {
+          heading: "Ce qui est inclus et ce qui est en option",
+          body: [
+            "Inclus : le tableau de bord, l'hébergement, domaine personnalisé, SSL et maintenance sur l'offre concernée.",
+            "Les intégrations poussées avec des systèmes externes, les analyses avancées et la logique sur mesure sont des options ou du travail sur mesure — chiffrées séparément et honnêtement.",
+          ],
+        },
+      ],
+      aiSummary:
+        "NorthSail conçoit des tableaux de bord internes gérés pour petites équipes : un seul endroit pour suivre réservations, demandes, clients et chiffres clés, avec accès multi-utilisateurs, historique et export CSV sur les offres supérieures, et permissions et automatisations sur l'offre Pro gérée. Domaine, hébergement, SSL et maintenance sont inclus ; les intégrations poussées font l'objet d'un devis sur mesure.",
+      faqs: [
+        {
+          question: "Qu'est-ce qui figure sur le tableau de bord ?",
+          answer:
+            "Les listes et les chiffres qui vous font tourner — réservations, demandes, clients et leur statut — rassemblés sur un seul écran au lieu de tableurs séparés.",
+        },
+        {
+          question: "Toute mon équipe peut-elle l'utiliser ?",
+          answer:
+            "Oui. L'accès multi-utilisateurs et l'historique sont disponibles sur l'offre Business, avec les permissions sur l'offre Pro gérée.",
+        },
+        {
+          question: "Puis-je exporter les données ?",
+          answer:
+            "Oui, l'export CSV est disponible sur les offres supérieures pour que vos données ne soient jamais verrouillées.",
+        },
+      ],
+      cta: { label: "Parlons d'un tableau de bord", target: "contact" },
+    },
+
+    "compare:process-automation": {
+      pageKey: "compare:process-automation",
+      locale: "fr",
+      metaTitle:
+        "Automatisation de processus simple pour petite entreprise — moins d'étapes manuelles",
+      metaDescription:
+        "Automatisez les parties répétitives de votre activité : confirmations, rappels, routage des prospects et mises à jour de statut. Automatisations pratiques mises en place et gérées par NorthSail sur les offres supérieures.",
+      h1: "Automatisez les tâches répétitives, gardez la touche humaine",
+      valueProp:
+        "Laissez les étapes de routine — confirmations, rappels, relances — se produire d'elles-mêmes, pour passer du temps avec vos clients plutôt que sur l'administratif.",
+      intro:
+        "L'automatisation de processus signifie que les étapes prévisibles de votre activité s'exécutent automatiquement. NorthSail met en place des automatisations pratiques et ciblées autour de votre site et de votre web app — confirmations de réservation, rappels, routage des prospects — dans le cadre des offres supérieures et gérées, sans surpromesses.",
+      sections: [
+        {
+          heading: "Là où l'automatisation est rentable",
+          body: [
+            "Les meilleurs gains sont petits et répétitifs : envoyer une confirmation de réservation, un rappel avant un rendez-vous, router un nouveau prospect vers la bonne boîte de réception, ou mettre à jour le statut d'une demande.",
+            "Chacun supprime une étape manuelle que vous feriez autrement des dizaines de fois par semaine.",
+          ],
+        },
+        {
+          heading: "Pratique, pas magique",
+          body: [
+            "Nous nous concentrons sur une poignée d'automatisations fiables qui correspondent à votre façon de travailler, plutôt que de promettre de tout automatiser.",
+            "Les automatisations de base commencent sur les offres supérieures ; les flux plus avancés et les intégrations font partie de l'offre Pro gérée ou font l'objet d'un devis sur mesure.",
+          ],
+        },
+        {
+          heading: "Ce qui est inclus et ce qui est en option",
+          body: [
+            "Inclus avec l'offre concernée : la mise en place et la gestion des automatisations convenues, plus l'hébergement, le domaine, le SSL et la maintenance.",
+            "Les SMS, la messagerie WhatsApp avancée, les outils tiers payants et les intégrations complexes ont leurs propres coûts et ne sont jamais facturés comme « illimités ».",
+          ],
+        },
+      ],
+      aiSummary:
+        "NorthSail met en place des automatisations de processus pratiques pour petites entreprises — confirmations de réservation, rappels, routage des prospects et mises à jour de statut — dans le cadre des offres supérieures et gérées. La mise en place et la gestion ainsi que domaine, hébergement, SSL et maintenance sont inclus ; les SMS, WhatsApp avancé, outils payants et intégrations complexes coûtent en supplément et ne sont jamais vendus comme illimités.",
+      faqs: [
+        {
+          question: "Que peut-on automatiser ?",
+          answer:
+            "Des étapes répétitives comme les confirmations, rappels, routage des prospects et mises à jour de statut — un ensemble ciblé adapté à la façon dont votre entreprise fonctionne.",
+        },
+        {
+          question: "Tout est-il automatisé ?",
+          answer:
+            "Non. Nous mettons en place une poignée d'automatisations fiables plutôt que de promettre d'automatiser toute votre entreprise ; les flux avancés font l'objet d'un travail sur mesure.",
+        },
+        {
+          question: "Les SMS et les messages WhatsApp sont-ils inclus ?",
+          answer:
+            "Ceux-ci ont leurs propres coûts et sont facturés de manière transparente — jamais sous forme de forfait illimité.",
+        },
+      ],
+      cta: { label: "Parlons d'automatisation", target: "contact" },
+    },
+
+    "compare:custom-software": {
+      pageKey: "compare:custom-software",
+      locale: "fr",
+      metaTitle:
+        "Logiciel sur mesure pour petite entreprise — conçu et géré, chiffré sur mesure",
+      metaDescription:
+        "Lorsque les solutions toutes faites ne suffisent pas, NorthSail conçoit un logiciel sur mesure ciblé pour petites entreprises — intégrations, flux de travail sur mesure et outils — cadré et chiffré individuellement.",
+      h1: "Un logiciel sur mesure, taillé pour un budget de petite entreprise",
+      valueProp:
+        "Lorsque votre besoin est réellement spécifique, nous cadrons et concevons une solution sur mesure ciblée — sans la complexité ni les tarifs des grandes entreprises.",
+      intro:
+        "La plupart des entreprises sont bien servies par nos offres standard. Mais lorsque vous avez besoin de quelque chose de spécifique — une intégration particulière, un flux de travail sur mesure, un outil unique à votre façon d'opérer — NorthSail le cadre et le conçoit en travail sur mesure, chiffré individuellement plutôt qu'à partir d'un prix fixe.",
+      sections: [
+        {
+          heading: "Quand vous avez vraiment besoin d'un logiciel sur mesure",
+          body: [
+            "Si un site web ou une web app standard ne peut pas modéliser votre façon de travailler — flux inhabituels, une intégration spécifique, ou une logique qu'aucun template ne couvre — c'est là que le logiciel sur mesure trouve sa place.",
+            "Nous sommes honnêtes à ce sujet : si une offre inférieure résout votre cas, nous vous y orienterons d'abord.",
+          ],
+        },
+        {
+          heading: "Comment nous le gardons abordable",
+          body: [
+            "Nous cadrons étroitement autour des une ou deux choses qui comptent, réutilisons notre plateforme lorsque c'est possible et évitons de reconstruire ce qui fonctionne déjà.",
+            "Cela maintient le travail sur mesure à la portée d'une petite entreprise plutôt qu'à celle d'un budget d'agence.",
+          ],
+        },
+        {
+          heading: "À quoi s'attendre",
+          body: [
+            "Le logiciel sur mesure fait toujours l'objet d'un devis individuel après que nous avons compris votre cas — nous ne publions pas de prix de base fixe pour cela.",
+            "L'hébergement, le domaine, le SSL et la maintenance continue sont organisés dans le cadre de la prestation ; vous détenez le droit de l'utiliser tant que vous êtes abonné, et la plateforme et le code source restent les nôtres.",
+          ],
+        },
+      ],
+      aiSummary:
+        "NorthSail conçoit un logiciel sur mesure ciblé pour petites entreprises — intégrations spécifiques, flux de travail sur mesure et outils uniques — cadré étroitement et chiffré individuellement plutôt qu'à partir d'un prix fixe. L'hébergement, le domaine, le SSL et la maintenance sont organisés dans le cadre de la prestation ; si une offre standard résout le cas, NorthSail la recommande à la place.",
+      faqs: [
+        {
+          question:
+            "Quand ai-je besoin d'un logiciel sur mesure plutôt que d'une offre ?",
+          answer:
+            "Lorsqu'un site web ou une web app standard ne peut pas modéliser votre flux de travail ou votre intégration spécifique. Si une offre inférieure convient, nous la recommanderons d'abord.",
+        },
+        {
+          question: "Combien coûte un logiciel sur mesure ?",
+          answer:
+            "Il fait l'objet d'un devis individuel après cadrage — il n'y a pas de prix de base fixe, car le travail dépend entièrement de votre cas.",
+        },
+        {
+          question: "À qui appartient le résultat ?",
+          answer:
+            "Vous avez le droit de l'utiliser tant que vous êtes abonné ; la plateforme sous-jacente et le code source restent ceux de NorthSail.",
+        },
+      ],
+      cta: {
+        label: "Dites-nous ce que vous voulez construire",
+        target: "contact",
+      },
+    },
+
+    "compare:legacy-website-redesign": {
+      pageKey: "compare:legacy-website-redesign",
+      locale: "fr",
+      metaTitle:
+        "Refonte de site web obsolète pour petite entreprise — moderne, rapide, géré",
+      metaDescription:
+        "Remplacez un site web ancien, lent ou difficile à modifier par un site rapide, moderne et adapté au mobile, entièrement géré — domaine, hébergement, SSL et maintenance inclus, dès 15€/mois.",
+      h1: "Transformez votre site web obsolète en un site dont vous êtes fier",
+      valueProp:
+        "Transformez un site lent, daté ou non entretenu en une présence rapide, moderne et pensée pour le mobile, avec laquelle vous n'aurez plus jamais à vous battre.",
+      intro:
+        "Un vieux site web peut discrètement vous coûter des clients — lent à charger, peu pratique sur téléphone, impossible à mettre à jour. NorthSail le transforme en un site propre, moderne et géré, et ajoute la fonctionnalité sur laquelle votre entreprise tourne, dès 15€/mois avec domaine, hébergement, SSL et maintenance inclus.",
+      sections: [
+        {
+          heading: "Les signes que votre site a besoin d'une refonte",
+          body: [
+            "Il a l'air daté, se charge lentement, casse sur mobile, ou vous ne pouvez pas le mettre à jour sans appeler celui qui l'a créé il y a des années.",
+            "Pendant ce temps, les clients jugent votre entreprise sur cette première impression — un site fatigué vous dessert chaque jour.",
+          ],
+        },
+        {
+          heading: "Plus qu'un simple coup de peinture",
+          body: [
+            "Une refonte est l'occasion d'ajouter ce qui manquait à l'ancien site : une fonctionnalité de réservation ou de demande, un menu ou une liste de services claire, WhatsApp et Google Maps, et un vrai référencement local.",
+            "Vous passez d'une brochure statique à un site qui apporte réellement des affaires.",
+          ],
+        },
+        {
+          heading: "Ce qui est inclus et ce qui est en option",
+          body: [
+            "Inclus : la refonte vers un site moderne géré, une fonctionnalité essentielle, domaine personnalisé, hébergement, SSL et maintenance dès 15€/mois.",
+            "La migration de grandes quantités d'ancien contenu, les paiements en ligne et les intégrations sont des options ou font partie des offres supérieures — cadrées clairement dès le départ.",
+          ],
+        },
+      ],
+      aiSummary:
+        "NorthSail refait les sites web obsolètes des petites entreprises en sites gérés rapides, modernes et pensés pour le mobile, et ajoute une fonctionnalité essentielle (réservations, menu, demandes) plus WhatsApp, Maps et référencement local, dès 15€/mois avec domaine, hébergement, SSL et maintenance inclus. La migration importante de contenu, les paiements et les intégrations sont des options ou font partie des offres supérieures.",
+      faqs: [
+        {
+          question:
+            "Pouvez-vous réutiliser mon domaine et mon contenu actuels ?",
+          answer:
+            "Oui. Nous conservons votre domaine et réutilisons le contenu qui vaut la peine d'être gardé ; la migration de très grands sites est cadrée séparément.",
+        },
+        {
+          question: "Combien coûte une refonte ?",
+          answer:
+            "Dès 15€/mois sur l'offre App Essentielle, incluant le site refait, une fonctionnalité essentielle, domaine, hébergement, SSL et maintenance.",
+        },
+        {
+          question: "Le nouveau site fonctionnera-t-il bien sur téléphone ?",
+          answer:
+            "Oui. Chaque site est pensé pour le mobile et rapide, là où se trouvent la plupart de vos visiteurs.",
+        },
+      ],
+      cta: { label: "Refaire mon site web", target: "contact" },
+    },
+
+    "compare:restaurant-digital-menu": {
+      pageKey: "compare:restaurant-digital-menu",
+      locale: "fr",
+      metaTitle: "Menu numérique pour restaurants — un menu QR toujours à jour",
+      metaDescription:
+        "Un menu de restaurant numérique avec accès QR à table, toujours à jour, sur un site web rapide et géré. Dès 15€/mois avec domaine, hébergement, SSL et maintenance inclus.",
+      h1: "Un menu numérique que votre cuisine peut tenir à jour",
+      valueProp:
+        "Un menu toujours à jour que les clients ouvrent par QR à table ou depuis votre site — pas de réimpression, pas de PDF périmés.",
+      intro:
+        "Un menu numérique remplace les cartes imprimées et les PDF dépassés par une page rapide et mobile que les clients atteignent par code QR ou depuis votre site web. NorthSail le met en place dans le cadre de votre site de restaurant dès 15€/mois, avec domaine, hébergement, SSL et maintenance inclus.",
+      sections: [
+        {
+          heading: "Pourquoi un menu numérique l'emporte",
+          body: [
+            "Les prix et les plats changent ; les menus imprimés non. Un menu numérique se met à jour instantanément, donc ce que les clients voient est toujours ce que vous servez.",
+            "Un code QR sur chaque table l'ouvre en une seconde, sans application et sans friction.",
+          ],
+        },
+        {
+          heading: "Partie intégrante d'un vrai site de restaurant",
+          body: [
+            "Le menu vit sur un véritable site web avec vos horaires, votre adresse, vos photos, WhatsApp et Google Maps — et, si vous le souhaitez, des demandes de réservation de table.",
+            "C'est l'offre App Essentielle pour restaurants, dès 15€/mois.",
+          ],
+        },
+        {
+          heading: "Ce qui est inclus et ce qui est en option",
+          body: [
+            "Inclus : le menu numérique, l'accès QR, votre site web de restaurant, domaine personnalisé, hébergement, SSL et maintenance.",
+            "La commande en ligne, les paiements, la livraison et un menu QR avancé avec images par plat sont des options ou font partie des offres supérieures — non sous-entendus dans le prix d'entrée.",
+          ],
+        },
+      ],
+      aiSummary:
+        "NorthSail fournit aux restaurants un menu numérique toujours à jour, accessible par QR à table ou depuis le site web, inclus dans le site de restaurant dès 15€/mois avec domaine, hébergement, SSL et maintenance. La commande en ligne, les paiements, la livraison et un menu QR avancé riche en images sont des options ou font partie des offres supérieures.",
+      faqs: [
+        {
+          question: "Comment les clients ouvrent-ils le menu ?",
+          answer:
+            "En scannant un code QR à table ou en visitant votre site web — aucune application requise, et cela fonctionne sur n'importe quel téléphone.",
+        },
+        {
+          question: "Puis-je mettre à jour le menu moi-même ?",
+          answer:
+            "Oui. Le menu se met à jour instantanément, donc changer un prix ou un plat est rapide et il n'y a rien à réimprimer.",
+        },
+        {
+          question: "Combien cela coûte-t-il ?",
+          answer:
+            "Dès 15€/mois sur l'offre App Essentielle, incluant votre site web de restaurant, le menu numérique et l'accès QR.",
+        },
+      ],
+      cta: { label: "Obtenez votre menu numérique", target: "contact" },
+    },
+
+    "compare:restaurant-online-reservations": {
+      pageKey: "compare:restaurant-online-reservations",
+      locale: "fr",
+      metaTitle:
+        "Réservations en ligne pour restaurants — prenez des réservations depuis votre propre site",
+      metaDescription:
+        "Laissez les clients demander une table directement sur votre site web de restaurant, à toute heure, sans commissions aux plateformes tierces. Dès 15€/mois avec domaine, hébergement, SSL et maintenance inclus.",
+      h1: "Prenez les réservations de table sur votre propre site web",
+      valueProp:
+        "Les clients demandent une table directement depuis votre site, jour et nuit — moins d'appels manqués, et aucune commission aux plateformes externes.",
+      intro:
+        "Les réservations en ligne permettent aux clients de réserver une table via votre propre site web plutôt que par un appel téléphonique ou une application tierce. NorthSail met cela en place dans le cadre de votre site de restaurant dès 15€/mois, avec domaine, hébergement, SSL et maintenance inclus.",
+      sections: [
+        {
+          heading: "Captez les réservations que vous manquez actuellement",
+          body: [
+            "Une grande partie de l'intention de réservation se produit en dehors des heures d'ouverture, quand personne n'est là pour répondre au téléphone. Un formulaire de demande en ligne la capte au lieu de la perdre.",
+            "Chaque demande arrive structurée — date, heure, nombre de personnes — pour que le service puisse anticiper.",
+          ],
+        },
+        {
+          heading: "Votre site, pas une place de marché",
+          body: [
+            "Réserver sur votre propre site garde la relation client à vous et évite les commissions par couvert facturées par les plateformes externes.",
+            "Cela se place aux côtés de votre menu numérique, de vos horaires, de votre adresse, de WhatsApp et de Maps sur l'offre App Essentielle.",
+          ],
+        },
+        {
+          heading: "Ce qui est inclus et ce qui est en option",
+          body: [
+            "Inclus : la fonctionnalité de demande de réservation, votre site web de restaurant, domaine personnalisé, hébergement, SSL et maintenance dès 15€/mois.",
+            "Les acomptes payants, les systèmes complets de gestion de salle et la synchronisation avec des plateformes de réservation externes sont des options ou du travail sur mesure — jamais sous-entendus dans le prix d'entrée.",
+          ],
+        },
+      ],
+      aiSummary:
+        "NorthSail permet aux restaurants de recevoir des demandes de réservation de table directement sur leur propre site web, captant la demande en dehors des heures d'ouverture sans commissions aux plateformes tierces, dès 15€/mois avec domaine, hébergement, SSL et maintenance inclus. Les acomptes, la gestion complète de salle et la synchronisation avec des plateformes externes sont des options ou du travail sur mesure.",
+      faqs: [
+        {
+          question: "Comment les clients réservent-ils une table ?",
+          answer:
+            "Ils soumettent une demande de réservation sur votre site web avec la date, l'heure et le nombre de personnes — à toute heure, sans appel téléphonique nécessaire.",
+        },
+        {
+          question: "Dois-je payer une commission par réservation ?",
+          answer:
+            "Non. Les réservations arrivent via votre propre site, il n'y a donc pas de commission par couvert à une plateforme externe.",
+        },
+        {
+          question: "Les clients peuvent-ils payer un acompte en ligne ?",
+          answer:
+            "Les acomptes payants sont une option plutôt qu'une partie de l'offre d'entrée ; la fonctionnalité de base capte la demande de réservation.",
+        },
+      ],
+      cta: { label: "Prendre des réservations en ligne", target: "contact" },
+    },
   },
 };
 

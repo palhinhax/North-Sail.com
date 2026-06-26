@@ -94,7 +94,10 @@ export const ADMIN = {
 
 /** Logs in via the credentials form. */
 export async function login(page: Page, email: string, password: string) {
-  await page.goto("/auth/login");
+  // Target the Portuguese route directly so the selectors below stay
+  // deterministic regardless of `Accept-Language` (bare `/auth/login` now
+  // redirects to the negotiated locale).
+  await page.goto("/pt/auth/login");
   await page.getByLabel("Email").fill(email);
   await page.getByLabel("Password", { exact: true }).fill(password);
   await page.getByRole("button", { name: "Entrar" }).click();

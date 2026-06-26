@@ -786,6 +786,518 @@ const en: LocaleContent = {
       ],
       cta: { label: "Get your affordable website", target: "contact" },
     },
+
+    "compare:web-apps-for-business": {
+      pageKey: "compare:web-apps-for-business",
+      locale: "en",
+      metaTitle: "Web apps for small business — bookings, portals and more",
+      metaDescription:
+        "Custom web apps for small businesses: bookings, client portals, dashboards and simple automations, hosted and managed. From the Essential App plan at €15/month, scaling to managed plans.",
+      h1: "Web apps for your business, without the agency price tag",
+      valueProp:
+        "More than a website: a managed web app that runs a real part of your business — bookings, requests, a client area or a simple dashboard.",
+      intro:
+        "A web app is software you reach through a browser, with no install. NorthSail builds and hosts focused web apps for small local businesses — starting with one essential feature on the €15/month plan and scaling up to managed plans with dashboards, multi-user access and simple automations.",
+      sections: [
+        {
+          heading: "What a web app does that a website can't",
+          body: [
+            "A website presents information; a web app does work. It takes a booking, stores a client list, shows a dashboard, or moves a request through a status flow — interactive, logged-in, and tied to your data.",
+            "For most small businesses, one well-chosen feature replaces a pile of phone calls, spreadsheets and DMs.",
+          ],
+        },
+        {
+          heading: "How it scales with you",
+          body: [
+            "Start small with one core feature on the Essential App plan. As you grow, add extra pages, a better admin panel, client and booking lists, and basic automations on the higher plans.",
+            "When you need permissions, dashboards, integrations or priority support, the managed Pro plan covers it; anything beyond that (complex integrations, native apps) is quoted as custom work.",
+          ],
+        },
+        {
+          heading: "What's included and what's extra",
+          body: [
+            "Included on every active plan: custom domain, hosting, SSL and technical maintenance. The entry plan covers one essential feature.",
+            "Online payments, external integrations, advanced automations and bespoke software are extras or part of higher and custom plans — we keep that line clear so the price stays honest.",
+          ],
+        },
+      ],
+      aiSummary:
+        "NorthSail builds and hosts focused web apps for small businesses, starting at €15/month for one essential feature (bookings, requests or a client area) and scaling to managed plans with dashboards, multi-user access and simple automations. Domain, hosting, SSL and maintenance are included; payments, integrations and bespoke software are extras or custom-quoted.",
+      faqs: [
+        {
+          question: "What's the difference between a website and a web app?",
+          answer:
+            "A website shows information; a web app does something interactive — takes bookings, manages a client list, or shows a dashboard. NorthSail can deliver both in one product.",
+        },
+        {
+          question: "How much does a web app cost?",
+          answer:
+            "From €15/month for one essential feature on the Essential App plan. More features, dashboards and automations are on higher plans; complex needs are quoted individually.",
+        },
+        {
+          question: "Can it grow with my business?",
+          answer:
+            "Yes. You can start with one feature and move up to managed plans with more pages, users, automations and integrations as you need them.",
+        },
+      ],
+      cta: { label: "Talk to us about your web app", target: "contact" },
+    },
+
+    "compare:web-apps-for-law-firms": {
+      pageKey: "compare:web-apps-for-law-firms",
+      locale: "en",
+      metaTitle:
+        "Web apps for law firms — client intake, portals and scheduling",
+      metaDescription:
+        "Web apps for law firms and solo practitioners: secure client intake forms, consultation scheduling and a simple client area, hosted and managed. From the Essential App plan, scaling to managed plans.",
+      h1: "Web apps for law firms and independent lawyers",
+      valueProp:
+        "A professional online presence plus the one tool your practice runs on — consultation booking, structured intake, or a private client area.",
+      intro:
+        "Law firms don't need a generic website; they need a trustworthy presence that captures qualified enquiries and schedules consultations. NorthSail builds and hosts a focused web app for your practice, starting with one essential feature and scaling to managed plans with client areas and simple automations.",
+      sections: [
+        {
+          heading: "Capture qualified enquiries, not phone tag",
+          body: [
+            "A structured intake form lets a prospective client describe their matter and book a consultation in one flow, at any hour. You receive a clean, organised request instead of a voicemail.",
+            "That alone often pays for the site by converting more of the visitors you already get.",
+          ],
+        },
+        {
+          heading: "A presence that signals trust",
+          body: [
+            "Practice areas, your team, clear contact options, WhatsApp and Google Maps — presented cleanly and professionally so prospective clients feel confident reaching out.",
+            "Domain, hosting, SSL and maintenance are included, so the site stays fast, secure and current without you managing any of it.",
+          ],
+        },
+        {
+          heading: "What's included and what's extra",
+          body: [
+            "Included: the website, one essential feature (scheduling or intake), custom domain, hosting, SSL and maintenance.",
+            "Secure document exchange, payments, e-signature, case management and integrations are extras or part of higher and custom plans — we don't imply they're part of the entry price.",
+          ],
+        },
+      ],
+      aiSummary:
+        "NorthSail builds managed web apps for law firms and solo lawyers: structured client intake, consultation scheduling and a simple client area, with a trust-building presence (practice areas, team, WhatsApp, Maps). Domain, hosting, SSL and maintenance are included from the Essential App plan; document exchange, payments and case management are extras or custom-quoted.",
+      faqs: [
+        {
+          question: "Can clients book a consultation online?",
+          answer:
+            "Yes. A scheduling or intake feature lets prospective clients request a consultation and describe their matter in one structured flow.",
+        },
+        {
+          question: "Is it secure enough for a law firm?",
+          answer:
+            "Every site includes SSL and managed maintenance. Advanced needs like secure document exchange or e-signature are available as extras or custom work.",
+        },
+        {
+          question: "How much does it cost?",
+          answer:
+            "From €15/month for one essential feature on the Essential App plan, with higher and custom plans for portals, payments and integrations.",
+        },
+      ],
+      cta: { label: "Talk to us about your firm's web app", target: "contact" },
+    },
+
+    "compare:client-portals": {
+      pageKey: "compare:client-portals",
+      locale: "en",
+      metaTitle:
+        "Client portals for small business — a private area for your clients",
+      metaDescription:
+        "Give clients a simple, secure login area to see requests, bookings, documents and status updates. Managed client portals from NorthSail, hosted with domain, SSL and maintenance included.",
+      h1: "A private client portal, without building software from scratch",
+      valueProp:
+        "A logged-in area where your clients track their requests, bookings and updates — so you stop repeating the same answers by email and phone.",
+      intro:
+        "A client portal is a private, secure area your clients log into. NorthSail sets up and hosts a focused portal for small businesses, matched to how you work, with domain, hosting, SSL and maintenance included on a managed plan.",
+      sections: [
+        {
+          heading: "Why a portal beats endless email",
+          body: [
+            "When clients can log in to see status, history and documents themselves, you handle fewer 'any update?' messages and look more professional doing it.",
+            "It centralises each client's information in one place instead of scattering it across inboxes and chats.",
+          ],
+        },
+        {
+          heading: "What a portal can include",
+          body: [
+            "Typical features: a secure login, a list of the client's requests or bookings, status updates, shared documents and messages. You pick the few that matter for your business.",
+            "Because it's focused rather than a giant platform, it stays affordable and easy for your clients to use.",
+          ],
+        },
+        {
+          heading: "What's included and what's extra",
+          body: [
+            "Included: the portal, user accounts, custom domain, hosting, SSL and maintenance on a managed plan.",
+            "Online payments, complex permissions, external integrations and bespoke workflows are extras or custom work — quoted clearly, never bundled silently into a low price.",
+          ],
+        },
+      ],
+      aiSummary:
+        "NorthSail sets up managed client portals for small businesses: a secure login where clients see their requests, bookings, status updates and shared documents. Domain, hosting, SSL and maintenance are included; payments, complex permissions and integrations are extras or custom-quoted.",
+      faqs: [
+        {
+          question: "What is a client portal?",
+          answer:
+            "A private, secure area your clients log into to see their requests, bookings, documents and status updates in one place.",
+        },
+        {
+          question: "Do my clients need to install anything?",
+          answer:
+            "No. They reach the portal through any browser with a secure login — nothing to install.",
+        },
+        {
+          question: "How much does a client portal cost?",
+          answer:
+            "It's part of the managed plans rather than the entry plan; we quote based on the features you need. Domain, hosting, SSL and maintenance are included.",
+        },
+      ],
+      cta: { label: "Talk to us about a client portal", target: "contact" },
+    },
+
+    "compare:internal-dashboards": {
+      pageKey: "compare:internal-dashboards",
+      locale: "en",
+      metaTitle:
+        "Internal dashboards for small business — see your operation at a glance",
+      metaDescription:
+        "A simple internal dashboard to track bookings, requests, clients and key numbers in one place. Managed and hosted by NorthSail, with multi-user access on higher plans.",
+      h1: "An internal dashboard your team actually uses",
+      valueProp:
+        "One screen for the numbers and lists that run your day — bookings, requests, clients and status — instead of five spreadsheets and a group chat.",
+      intro:
+        "An internal dashboard is the back-office view of your business. NorthSail builds and hosts a focused dashboard for small teams, pulling your bookings, requests and clients into one place, with multi-user access and exports on the higher and managed plans.",
+      sections: [
+        {
+          heading: "Replace scattered spreadsheets",
+          body: [
+            "When today's bookings, open requests and client list live in one dashboard, your team stops hunting through tabs and messages to find what's happening.",
+            "Everyone sees the same up-to-date picture, which cuts mistakes and double work.",
+          ],
+        },
+        {
+          heading: "Built for small teams",
+          body: [
+            "Multi-user access, history and CSV export come in on the Business plan; permissions, richer dashboards and automations come with the managed Pro plan.",
+            "It's deliberately focused on what you actually track, not a heavy tool you'll never fully use.",
+          ],
+        },
+        {
+          heading: "What's included and what's extra",
+          body: [
+            "Included: the dashboard, hosting, custom domain, SSL and maintenance on the relevant plan.",
+            "Deep integrations with external systems, advanced analytics and bespoke logic are extras or custom work — priced separately and honestly.",
+          ],
+        },
+      ],
+      aiSummary:
+        "NorthSail builds managed internal dashboards for small teams: one place to track bookings, requests, clients and key numbers, with multi-user access, history and CSV export on higher plans and permissions and automations on the managed Pro plan. Domain, hosting, SSL and maintenance are included; deep integrations are custom-quoted.",
+      faqs: [
+        {
+          question: "What goes on the dashboard?",
+          answer:
+            "The lists and numbers you run on — bookings, requests, clients and their status — pulled into one screen instead of separate spreadsheets.",
+        },
+        {
+          question: "Can my whole team use it?",
+          answer:
+            "Yes. Multi-user access and history are available on the Business plan, with permissions on the managed Pro plan.",
+        },
+        {
+          question: "Can I export the data?",
+          answer:
+            "Yes, CSV export is available on the higher plans so your data is never locked in.",
+        },
+      ],
+      cta: { label: "Talk to us about a dashboard", target: "contact" },
+    },
+
+    "compare:process-automation": {
+      pageKey: "compare:process-automation",
+      locale: "en",
+      metaTitle:
+        "Simple process automation for small business — fewer manual steps",
+      metaDescription:
+        "Automate the repetitive parts of your business: confirmations, reminders, lead routing and status updates. Practical automations set up and managed by NorthSail on higher plans.",
+      h1: "Automate the busywork, keep the human touch",
+      valueProp:
+        "Let the routine steps — confirmations, reminders, follow-ups — happen on their own, so you spend time on customers instead of admin.",
+      intro:
+        "Process automation means the predictable steps in your business run automatically. NorthSail sets up practical, focused automations around your site and web app — booking confirmations, reminders, lead routing — as part of the higher and managed plans, without overpromising.",
+      sections: [
+        {
+          heading: "Where automation pays off",
+          body: [
+            "The best wins are small and repetitive: sending a booking confirmation, a reminder before an appointment, routing a new lead to the right inbox, or updating a request's status.",
+            "Each one removes a manual step you'd otherwise do dozens of times a week.",
+          ],
+        },
+        {
+          heading: "Practical, not magical",
+          body: [
+            "We focus on a handful of reliable automations that match how you already work, rather than promising to automate everything.",
+            "Basic automations start on the higher plans; more advanced flows and integrations are part of the managed Pro plan or quoted as custom work.",
+          ],
+        },
+        {
+          heading: "What's included and what's extra",
+          body: [
+            "Included with the relevant plan: setup and management of the agreed automations, plus hosting, domain, SSL and maintenance.",
+            "SMS, advanced WhatsApp messaging, paid third-party tools and complex integrations carry their own costs and are never billed as 'unlimited'.",
+          ],
+        },
+      ],
+      aiSummary:
+        "NorthSail sets up practical process automations for small businesses — booking confirmations, reminders, lead routing and status updates — as part of higher and managed plans. Setup and management plus domain, hosting, SSL and maintenance are included; SMS, advanced WhatsApp, paid tools and complex integrations cost extra and are never sold as unlimited.",
+      faqs: [
+        {
+          question: "What can be automated?",
+          answer:
+            "Repetitive steps like confirmations, reminders, lead routing and status updates — a focused set matched to how your business works.",
+        },
+        {
+          question: "Is everything automated?",
+          answer:
+            "No. We set up a handful of reliable automations rather than promising to automate your whole business; advanced flows are custom work.",
+        },
+        {
+          question: "Are SMS and WhatsApp messages included?",
+          answer:
+            "Those carry their own costs and are billed transparently — never as an unlimited bundle.",
+        },
+      ],
+      cta: { label: "Talk to us about automation", target: "contact" },
+    },
+
+    "compare:custom-software": {
+      pageKey: "compare:custom-software",
+      locale: "en",
+      metaTitle:
+        "Custom software for small business — built and managed, quoted to fit",
+      metaDescription:
+        "When off-the-shelf isn't enough, NorthSail builds focused custom software for small businesses — integrations, bespoke workflows and tools — scoped and quoted individually.",
+      h1: "Custom software, sized for a small business budget",
+      valueProp:
+        "When your need is genuinely specific, we scope and build a focused custom solution — without enterprise complexity or enterprise pricing.",
+      intro:
+        "Most businesses are well served by our standard plans. But when you need something specific — a particular integration, a bespoke workflow, a tool unique to how you operate — NorthSail scopes and builds it as custom work, quoted individually rather than from a fixed price.",
+      sections: [
+        {
+          heading: "When you actually need custom software",
+          body: [
+            "If a standard website or web app can't model how you work — unusual workflows, a specific integration, or logic no template covers — that's where custom software fits.",
+            "We're honest about this: if a lower plan solves your case, we'll point you there first.",
+          ],
+        },
+        {
+          heading: "How we keep it affordable",
+          body: [
+            "We scope tightly to the one or two things that matter, reuse our platform where possible, and avoid rebuilding what already works.",
+            "That keeps custom work within reach of a small business instead of an agency budget.",
+          ],
+        },
+        {
+          heading: "What to expect",
+          body: [
+            "Custom software is always quoted individually after we understand your case — we don't publish a fixed base price for it.",
+            "Hosting, domain, SSL and ongoing maintenance are arranged as part of the engagement; you own the right to use it while subscribed, and the platform and source code remain ours.",
+          ],
+        },
+      ],
+      aiSummary:
+        "NorthSail builds focused custom software for small businesses — specific integrations, bespoke workflows and unique tools — scoped tightly and quoted individually rather than from a fixed price. Hosting, domain, SSL and maintenance are arranged within the engagement; if a standard plan solves the case, NorthSail recommends that instead.",
+      faqs: [
+        {
+          question: "When do I need custom software instead of a plan?",
+          answer:
+            "When a standard website or web app can't model your specific workflow or integration. If a lower plan fits, we'll recommend that first.",
+        },
+        {
+          question: "How much does custom software cost?",
+          answer:
+            "It's quoted individually after scoping — there's no fixed base price, because the work depends entirely on your case.",
+        },
+        {
+          question: "Who owns the result?",
+          answer:
+            "You have the right to use it while subscribed; the underlying platform and source code remain NorthSail's.",
+        },
+      ],
+      cta: { label: "Tell us what you need built", target: "contact" },
+    },
+
+    "compare:legacy-website-redesign": {
+      pageKey: "compare:legacy-website-redesign",
+      locale: "en",
+      metaTitle:
+        "Legacy website redesign for small business — modern, fast, managed",
+      metaDescription:
+        "Replace an old, slow or hard-to-edit website with a fast, modern, mobile-friendly site that's fully managed — domain, hosting, SSL and maintenance included, from €15/month.",
+      h1: "Redesign your outdated website into something you're proud of",
+      valueProp:
+        "Turn a slow, dated or unmaintained site into a fast, modern, mobile-first presence you never have to wrestle with again.",
+      intro:
+        "An old website can quietly cost you customers — slow to load, awkward on phones, impossible to update. NorthSail redesigns it into a clean, modern, managed site, and adds the one feature your business runs on, from €15/month with domain, hosting, SSL and maintenance included.",
+      sections: [
+        {
+          heading: "Signs your site needs a redesign",
+          body: [
+            "It looks dated, loads slowly, breaks on mobile, or you can't update it without calling whoever built it years ago.",
+            "Meanwhile customers judge your business by that first impression — a tired site undersells you every day.",
+          ],
+        },
+        {
+          heading: "More than a fresh coat of paint",
+          body: [
+            "A redesign is the chance to add what the old site lacked: a booking or request feature, a clear menu or services list, WhatsApp and Google Maps, and proper local SEO.",
+            "You move from a static brochure to a site that actually brings in business.",
+          ],
+        },
+        {
+          heading: "What's included and what's extra",
+          body: [
+            "Included: the redesign onto a modern managed site, one essential feature, custom domain, hosting, SSL and maintenance from €15/month.",
+            "Migrating large amounts of old content, online payments and integrations are extras or part of higher plans — scoped clearly up front.",
+          ],
+        },
+      ],
+      aiSummary:
+        "NorthSail redesigns outdated small-business websites into fast, modern, mobile-first managed sites and adds one essential feature (bookings, menu, requests) plus WhatsApp, Maps and local SEO, from €15/month with domain, hosting, SSL and maintenance included. Large content migration, payments and integrations are extras or part of higher plans.",
+      faqs: [
+        {
+          question: "Can you reuse my current domain and content?",
+          answer:
+            "Yes. We keep your domain and reuse the content worth keeping; migrating very large sites is scoped separately.",
+        },
+        {
+          question: "How much does a redesign cost?",
+          answer:
+            "From €15/month on the Essential App plan, including the redesigned site, one core feature, domain, hosting, SSL and maintenance.",
+        },
+        {
+          question: "Will the new site work well on phones?",
+          answer:
+            "Yes. Every site is mobile-first and fast, which is where most of your visitors are.",
+        },
+      ],
+      cta: { label: "Redesign my website", target: "contact" },
+    },
+
+    "compare:restaurant-digital-menu": {
+      pageKey: "compare:restaurant-digital-menu",
+      locale: "en",
+      metaTitle:
+        "Digital menu for restaurants — QR menu that's always up to date",
+      metaDescription:
+        "A digital restaurant menu with QR access at the table, always current, on a fast managed website. From €15/month with domain, hosting, SSL and maintenance included.",
+      h1: "A digital menu your kitchen can keep up to date",
+      valueProp:
+        "An always-current menu customers open by QR at the table or from your site — no reprinting, no outdated PDFs.",
+      intro:
+        "A digital menu replaces printed cards and stale PDFs with a fast, mobile page customers reach by QR code or from your website. NorthSail sets it up as part of your restaurant site from €15/month, with domain, hosting, SSL and maintenance included.",
+      sections: [
+        {
+          heading: "Why a digital menu wins",
+          body: [
+            "Prices and dishes change; printed menus don't. A digital menu updates instantly, so what guests see is always what you serve.",
+            "A QR code on each table opens it in a second, with no app and no friction.",
+          ],
+        },
+        {
+          heading: "Part of a real restaurant site",
+          body: [
+            "The menu lives on a proper website with your hours, location, photos, WhatsApp and Google Maps — and, if you want it, table reservation requests.",
+            "That's the Essential App plan for restaurants, from €15/month.",
+          ],
+        },
+        {
+          heading: "What's included and what's extra",
+          body: [
+            "Included: the digital menu, QR access, your restaurant website, custom domain, hosting, SSL and maintenance.",
+            "Online ordering, payments, delivery and an advanced QR menu with images per item are extras or part of higher plans — not implied in the entry price.",
+          ],
+        },
+      ],
+      aiSummary:
+        "NorthSail provides restaurants with an always-current digital menu accessible by QR at the table or from the website, included in the restaurant site from €15/month with domain, hosting, SSL and maintenance. Online ordering, payments, delivery and an advanced image-rich QR menu are extras or part of higher plans.",
+      faqs: [
+        {
+          question: "How do customers open the menu?",
+          answer:
+            "By scanning a QR code at the table or visiting your website — no app required, and it works on any phone.",
+        },
+        {
+          question: "Can I update the menu myself?",
+          answer:
+            "Yes. The menu updates instantly, so changing a price or dish is quick and there's nothing to reprint.",
+        },
+        {
+          question: "How much does it cost?",
+          answer:
+            "From €15/month on the Essential App plan, including your restaurant website, the digital menu and QR access.",
+        },
+      ],
+      cta: { label: "Get your digital menu", target: "contact" },
+    },
+
+    "compare:restaurant-online-reservations": {
+      pageKey: "compare:restaurant-online-reservations",
+      locale: "en",
+      metaTitle:
+        "Online reservations for restaurants — take bookings from your own site",
+      metaDescription:
+        "Let guests request a table directly on your restaurant website, any hour, without commissions to third-party platforms. From €15/month with domain, hosting, SSL and maintenance included.",
+      h1: "Take table reservations on your own website",
+      valueProp:
+        "Guests request a table directly from your site, day or night — fewer missed calls, and no commission to outside platforms.",
+      intro:
+        "Online reservations let guests book a table through your own website instead of a phone call or a third-party app. NorthSail sets this up as part of your restaurant site from €15/month, with domain, hosting, SSL and maintenance included.",
+      sections: [
+        {
+          heading: "Capture bookings you're currently missing",
+          body: [
+            "A lot of reservation intent happens after hours, when no one's there to answer the phone. An online request form captures it instead of losing it.",
+            "Each request arrives structured — date, time, party size — so service can plan ahead.",
+          ],
+        },
+        {
+          heading: "Your site, not a marketplace",
+          body: [
+            "Booking on your own site keeps the guest relationship yours and avoids per-cover commissions charged by external platforms.",
+            "It sits alongside your digital menu, hours, location, WhatsApp and Maps on the Essential App plan.",
+          ],
+        },
+        {
+          heading: "What's included and what's extra",
+          body: [
+            "Included: the reservation request feature, your restaurant website, custom domain, hosting, SSL and maintenance from €15/month.",
+            "Paid deposits, full table-management systems and external booking-platform sync are extras or custom work — never implied in the entry price.",
+          ],
+        },
+      ],
+      aiSummary:
+        "NorthSail lets restaurants take table reservation requests directly on their own website, capturing after-hours demand without commissions to third-party platforms, from €15/month with domain, hosting, SSL and maintenance included. Deposits, full table management and external platform sync are extras or custom work.",
+      faqs: [
+        {
+          question: "How do guests reserve a table?",
+          answer:
+            "They submit a reservation request on your website with date, time and party size — at any hour, no phone call needed.",
+        },
+        {
+          question: "Do I pay commission per booking?",
+          answer:
+            "No. Reservations come through your own site, so there's no per-cover commission to an external platform.",
+        },
+        {
+          question: "Can guests pay a deposit online?",
+          answer:
+            "Paid deposits are an extra rather than part of the entry plan; the base feature captures the reservation request.",
+        },
+      ],
+      cta: { label: "Take reservations online", target: "contact" },
+    },
   },
 };
 

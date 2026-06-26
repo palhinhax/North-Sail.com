@@ -1,7 +1,8 @@
 import Link from "next/link";
-import { Globe } from "lucide-react";
+import { Globe, Mail } from "lucide-react";
 import { Container } from "./container";
 import { PoweredByBadge } from "@/app/components/PoweredByBadge";
+import { CONTACT_EMAIL } from "@/lib/seo/site";
 
 const COLUMNS: { title: string; links: { href: string; label: string }[] }[] = [
   {
@@ -41,6 +42,13 @@ export function MarketingFooter() {
             <p className="max-w-xs text-center text-body-md text-ink-muted md:text-left">
               O site do seu negócio, sem complicações.
             </p>
+            <a
+              href={`mailto:${CONTACT_EMAIL}`}
+              className="inline-flex items-center gap-1.5 text-label-sm text-ink-muted transition-colors hover:text-brand"
+            >
+              <Mail className="h-3.5 w-3.5" />
+              {CONTACT_EMAIL}
+            </a>
             <span className="inline-flex items-center gap-1 rounded-full border border-line px-3 py-1 text-label-sm text-ink-muted">
               <Globe className="h-3.5 w-3.5" />
               pt-PT

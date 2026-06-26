@@ -3,12 +3,7 @@ import { redirect } from "next/navigation";
 import { DEFAULT_LOCALE, isLocale, type Locale } from "@/lib/i18n/config";
 import { authPath } from "@/lib/i18n/routes";
 
-/**
- * Legacy entry point. Auth pages now live at `/{locale}/auth/*`; this route
- * resolves a best-guess locale from the `Accept-Language` header and redirects
- * there, so older links, NextAuth's `signIn` page and server-side
- * `redirect("/auth/login")` calls keep working.
- */
+/** Legacy entry point. Now lives at `/{locale}/auth/forgot-password`. */
 function detectLocale(): Locale {
   const accept = headers().get("accept-language");
   if (!accept) return DEFAULT_LOCALE;
@@ -19,6 +14,6 @@ function detectLocale(): Locale {
   return DEFAULT_LOCALE;
 }
 
-export default function LegacyLoginRedirect() {
-  redirect(authPath(detectLocale(), "login"));
+export default function LegacyForgotPasswordRedirect() {
+  redirect(authPath(detectLocale(), "forgot-password"));
 }

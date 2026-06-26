@@ -746,6 +746,537 @@ const de: LocaleContent = {
       ],
       cta: { label: "Günstige Website erhalten", target: "contact" },
     },
+
+    "compare:web-apps-for-business": {
+      pageKey: "compare:web-apps-for-business",
+      locale: "de",
+      metaTitle:
+        "Web-Apps für kleine Unternehmen — Buchungen, Portale und mehr",
+      metaDescription:
+        "Individuelle Web-Apps für kleine Unternehmen: Buchungen, Kundenportale, Dashboards und einfache Automatisierungen, gehostet und verwaltet. Ab dem Essential-App-Tarif zu 15€/Monat, skalierbar zu verwalteten Tarifen.",
+      h1: "Web-Apps für Ihr Unternehmen, ohne Agenturpreis",
+      valueProp:
+        "Mehr als eine Website: eine verwaltete Web-App, die einen echten Teil Ihres Geschäfts betreibt — Buchungen, Anfragen, einen Kundenbereich oder ein einfaches Dashboard.",
+      intro:
+        "Eine Web-App ist Software, die Sie über einen Browser erreichen, ohne Installation. NorthSail erstellt und hostet fokussierte Web-Apps für kleine lokale Unternehmen — beginnend mit einer wesentlichen Funktion im 15€/Monat-Tarif und skalierbar zu verwalteten Tarifen mit Dashboards, Mehrbenutzerzugriff und einfachen Automatisierungen.",
+      sections: [
+        {
+          heading: "Was eine Web-App kann, was eine Website nicht kann",
+          body: [
+            "Eine Website präsentiert Informationen; eine Web-App leistet Arbeit. Sie nimmt eine Buchung entgegen, speichert eine Kundenliste, zeigt ein Dashboard oder führt eine Anfrage durch einen Statusablauf — interaktiv, eingeloggt und mit Ihren Daten verknüpft.",
+            "Für die meisten kleinen Unternehmen ersetzt eine gut gewählte Funktion einen Berg an Telefonaten, Tabellen und Nachrichten.",
+          ],
+        },
+        {
+          heading: "Wie es mit Ihnen wächst",
+          body: [
+            "Beginnen Sie klein mit einer Kernfunktion im Essential-App-Tarif. Wenn Sie wachsen, ergänzen Sie zusätzliche Seiten, ein besseres Admin-Panel, Kunden- und Buchungslisten sowie grundlegende Automatisierungen in den höheren Tarifen.",
+            "Wenn Sie Berechtigungen, Dashboards, Integrationen oder priorisierten Support benötigen, deckt der verwaltete Pro-Tarif das ab; alles darüber hinaus (komplexe Integrationen, native Apps) wird als individuelle Arbeit angeboten.",
+          ],
+        },
+        {
+          heading: "Was inklusive ist und was extra kostet",
+          body: [
+            "In jedem aktiven Tarif inklusive: individuelle Domain, Hosting, SSL und technische Wartung. Der Einstiegstarif deckt eine wesentliche Funktion ab.",
+            "Online-Zahlungen, externe Integrationen, fortgeschrittene Automatisierungen und maßgeschneiderte Software sind Extras oder Teil höherer und individueller Tarife — wir halten diese Grenze klar, damit der Preis ehrlich bleibt.",
+          ],
+        },
+      ],
+      aiSummary:
+        "NorthSail erstellt und hostet fokussierte Web-Apps für kleine Unternehmen, beginnend ab 15€/Monat für eine wesentliche Funktion (Buchungen, Anfragen oder einen Kundenbereich) und skalierbar zu verwalteten Tarifen mit Dashboards, Mehrbenutzerzugriff und einfachen Automatisierungen. Domain, Hosting, SSL und Wartung sind inklusive; Zahlungen, Integrationen und maßgeschneiderte Software sind Extras oder werden individuell angeboten.",
+      faqs: [
+        {
+          question:
+            "Was ist der Unterschied zwischen einer Website und einer Web-App?",
+          answer:
+            "Eine Website zeigt Informationen; eine Web-App tut etwas Interaktives — nimmt Buchungen entgegen, verwaltet eine Kundenliste oder zeigt ein Dashboard. NorthSail kann beides in einem Produkt liefern.",
+        },
+        {
+          question: "Wie viel kostet eine Web-App?",
+          answer:
+            "Ab 15€/Monat für eine wesentliche Funktion im Essential-App-Tarif. Mehr Funktionen, Dashboards und Automatisierungen gibt es in höheren Tarifen; komplexe Anforderungen werden individuell angeboten.",
+        },
+        {
+          question: "Kann sie mit meinem Unternehmen wachsen?",
+          answer:
+            "Ja. Sie können mit einer Funktion beginnen und zu verwalteten Tarifen mit mehr Seiten, Benutzern, Automatisierungen und Integrationen aufsteigen, sobald Sie diese benötigen.",
+        },
+      ],
+      cta: {
+        label: "Sprechen Sie mit uns über Ihre Web-App",
+        target: "contact",
+      },
+    },
+
+    "compare:web-apps-for-law-firms": {
+      pageKey: "compare:web-apps-for-law-firms",
+      locale: "de",
+      metaTitle:
+        "Web-Apps für Kanzleien — Mandantenaufnahme, Portale und Terminplanung",
+      metaDescription:
+        "Web-Apps für Kanzleien und Einzelanwälte: sichere Mandantenaufnahmeformulare, Beratungsterminplanung und ein einfacher Mandantenbereich, gehostet und verwaltet. Ab dem Essential-App-Tarif, skalierbar zu verwalteten Tarifen.",
+      h1: "Web-Apps für Kanzleien und selbstständige Anwälte",
+      valueProp:
+        "Eine professionelle Online-Präsenz plus das eine Werkzeug, mit dem Ihre Kanzlei arbeitet — Beratungsbuchung, strukturierte Mandantenaufnahme oder ein privater Mandantenbereich.",
+      intro:
+        "Kanzleien brauchen keine generische Website; sie brauchen eine vertrauenswürdige Präsenz, die qualifizierte Anfragen erfasst und Beratungstermine plant. NorthSail erstellt und hostet eine fokussierte Web-App für Ihre Kanzlei, beginnend mit einer wesentlichen Funktion und skalierbar zu verwalteten Tarifen mit Mandantenbereichen und einfachen Automatisierungen.",
+      sections: [
+        {
+          heading: "Qualifizierte Anfragen erfassen, statt Telefon-Pingpong",
+          body: [
+            "Ein strukturiertes Aufnahmeformular lässt einen potenziellen Mandanten sein Anliegen beschreiben und in einem Ablauf einen Beratungstermin buchen, zu jeder Stunde. Sie erhalten eine saubere, organisierte Anfrage statt einer Sprachnachricht.",
+            "Das allein zahlt die Seite oft aus, indem mehr der Besucher konvertiert werden, die Sie bereits haben.",
+          ],
+        },
+        {
+          heading: "Eine Präsenz, die Vertrauen signalisiert",
+          body: [
+            "Tätigkeitsfelder, Ihr Team, klare Kontaktoptionen, WhatsApp und Google Maps — sauber und professionell präsentiert, damit sich potenzielle Mandanten sicher fühlen, Sie zu kontaktieren.",
+            "Domain, Hosting, SSL und Wartung sind inklusive, sodass die Seite schnell, sicher und aktuell bleibt, ohne dass Sie irgendetwas davon verwalten.",
+          ],
+        },
+        {
+          heading: "Was inklusive ist und was extra kostet",
+          body: [
+            "Inklusive: die Website, eine wesentliche Funktion (Terminplanung oder Aufnahme), individuelle Domain, Hosting, SSL und Wartung.",
+            "Sicherer Dokumentenaustausch, Zahlungen, E-Signatur, Aktenverwaltung und Integrationen sind Extras oder Teil höherer und individueller Tarife — wir suggerieren nicht, dass sie zum Einstiegspreis gehören.",
+          ],
+        },
+      ],
+      aiSummary:
+        "NorthSail erstellt verwaltete Web-Apps für Kanzleien und Einzelanwälte: strukturierte Mandantenaufnahme, Beratungsterminplanung und einen einfachen Mandantenbereich, mit einer vertrauensbildenden Präsenz (Tätigkeitsfelder, Team, WhatsApp, Maps). Domain, Hosting, SSL und Wartung sind ab dem Essential-App-Tarif inklusive; Dokumentenaustausch, Zahlungen und Aktenverwaltung sind Extras oder werden individuell angeboten.",
+      faqs: [
+        {
+          question: "Können Mandanten online einen Beratungstermin buchen?",
+          answer:
+            "Ja. Eine Terminplanungs- oder Aufnahmefunktion lässt potenzielle Mandanten einen Beratungstermin anfragen und ihr Anliegen in einem strukturierten Ablauf beschreiben.",
+        },
+        {
+          question: "Ist es sicher genug für eine Kanzlei?",
+          answer:
+            "Jede Seite beinhaltet SSL und verwaltete Wartung. Fortgeschrittene Anforderungen wie sicherer Dokumentenaustausch oder E-Signatur sind als Extras oder individuelle Arbeit verfügbar.",
+        },
+        {
+          question: "Wie viel kostet es?",
+          answer:
+            "Ab 15€/Monat für eine wesentliche Funktion im Essential-App-Tarif, mit höheren und individuellen Tarifen für Portale, Zahlungen und Integrationen.",
+        },
+      ],
+      cta: {
+        label: "Sprechen Sie mit uns über die Web-App Ihrer Kanzlei",
+        target: "contact",
+      },
+    },
+
+    "compare:client-portals": {
+      pageKey: "compare:client-portals",
+      locale: "de",
+      metaTitle:
+        "Kundenportale für kleine Unternehmen — ein privater Bereich für Ihre Kunden",
+      metaDescription:
+        "Geben Sie Kunden einen einfachen, sicheren Login-Bereich, um Anfragen, Buchungen, Dokumente und Status-Updates zu sehen. Verwaltete Kundenportale von NorthSail, gehostet mit Domain, SSL und Wartung inklusive.",
+      h1: "Ein privates Kundenportal, ohne Software von Grund auf zu erstellen",
+      valueProp:
+        "Ein eingeloggter Bereich, in dem Ihre Kunden ihre Anfragen, Buchungen und Updates verfolgen — damit Sie nicht mehr dieselben Antworten per E-Mail und Telefon wiederholen.",
+      intro:
+        "Ein Kundenportal ist ein privater, sicherer Bereich, in den sich Ihre Kunden einloggen. NorthSail richtet ein fokussiertes Portal für kleine Unternehmen ein und hostet es, abgestimmt auf Ihre Arbeitsweise, mit Domain, Hosting, SSL und Wartung inklusive in einem verwalteten Tarif.",
+      sections: [
+        {
+          heading: "Warum ein Portal besser ist als endlose E-Mails",
+          body: [
+            "Wenn Kunden sich einloggen können, um Status, Verlauf und Dokumente selbst zu sehen, bearbeiten Sie weniger 'Gibt es ein Update?'-Nachrichten und wirken dabei professioneller.",
+            "Es zentralisiert die Informationen jedes Kunden an einem Ort, statt sie über Postfächer und Chats zu verstreuen.",
+          ],
+        },
+        {
+          heading: "Was ein Portal beinhalten kann",
+          body: [
+            "Typische Funktionen: ein sicherer Login, eine Liste der Anfragen oder Buchungen des Kunden, Status-Updates, geteilte Dokumente und Nachrichten. Sie wählen die wenigen aus, die für Ihr Unternehmen wichtig sind.",
+            "Weil es fokussiert ist und keine riesige Plattform, bleibt es bezahlbar und für Ihre Kunden einfach zu nutzen.",
+          ],
+        },
+        {
+          heading: "Was inklusive ist und was extra kostet",
+          body: [
+            "Inklusive: das Portal, Benutzerkonten, individuelle Domain, Hosting, SSL und Wartung in einem verwalteten Tarif.",
+            "Online-Zahlungen, komplexe Berechtigungen, externe Integrationen und maßgeschneiderte Abläufe sind Extras oder individuelle Arbeit — klar angeboten, niemals stillschweigend in einen niedrigen Preis gebündelt.",
+          ],
+        },
+      ],
+      aiSummary:
+        "NorthSail richtet verwaltete Kundenportale für kleine Unternehmen ein: ein sicherer Login, in dem Kunden ihre Anfragen, Buchungen, Status-Updates und geteilten Dokumente sehen. Domain, Hosting, SSL und Wartung sind inklusive; Zahlungen, komplexe Berechtigungen und Integrationen sind Extras oder werden individuell angeboten.",
+      faqs: [
+        {
+          question: "Was ist ein Kundenportal?",
+          answer:
+            "Ein privater, sicherer Bereich, in den sich Ihre Kunden einloggen, um ihre Anfragen, Buchungen, Dokumente und Status-Updates an einem Ort zu sehen.",
+        },
+        {
+          question: "Müssen meine Kunden etwas installieren?",
+          answer:
+            "Nein. Sie erreichen das Portal über jeden Browser mit einem sicheren Login — nichts zu installieren.",
+        },
+        {
+          question: "Wie viel kostet ein Kundenportal?",
+          answer:
+            "Es ist Teil der verwalteten Tarife statt des Einstiegstarifs; wir erstellen ein Angebot basierend auf den Funktionen, die Sie benötigen. Domain, Hosting, SSL und Wartung sind inklusive.",
+        },
+      ],
+      cta: {
+        label: "Sprechen Sie mit uns über ein Kundenportal",
+        target: "contact",
+      },
+    },
+
+    "compare:internal-dashboards": {
+      pageKey: "compare:internal-dashboards",
+      locale: "de",
+      metaTitle:
+        "Interne Dashboards für kleine Unternehmen — Ihr Betrieb auf einen Blick",
+      metaDescription:
+        "Ein einfaches internes Dashboard, um Buchungen, Anfragen, Kunden und Kennzahlen an einem Ort zu verfolgen. Verwaltet und gehostet von NorthSail, mit Mehrbenutzerzugriff in höheren Tarifen.",
+      h1: "Ein internes Dashboard, das Ihr Team wirklich nutzt",
+      valueProp:
+        "Ein Bildschirm für die Zahlen und Listen, die Ihren Tag bestimmen — Buchungen, Anfragen, Kunden und Status — statt fünf Tabellen und einem Gruppenchat.",
+      intro:
+        "Ein internes Dashboard ist die Back-Office-Ansicht Ihres Unternehmens. NorthSail erstellt und hostet ein fokussiertes Dashboard für kleine Teams, das Ihre Buchungen, Anfragen und Kunden an einem Ort zusammenführt, mit Mehrbenutzerzugriff und Exporten in den höheren und verwalteten Tarifen.",
+      sections: [
+        {
+          heading: "Verstreute Tabellen ersetzen",
+          body: [
+            "Wenn die heutigen Buchungen, offenen Anfragen und die Kundenliste in einem Dashboard leben, muss Ihr Team nicht mehr durch Tabs und Nachrichten suchen, um zu sehen, was passiert.",
+            "Alle sehen dasselbe aktuelle Bild, was Fehler und Doppelarbeit reduziert.",
+          ],
+        },
+        {
+          heading: "Für kleine Teams gemacht",
+          body: [
+            "Mehrbenutzerzugriff, Verlauf und CSV-Export kommen im Business-Tarif hinzu; Berechtigungen, reichhaltigere Dashboards und Automatisierungen kommen mit dem verwalteten Pro-Tarif.",
+            "Es ist bewusst auf das fokussiert, was Sie tatsächlich verfolgen, kein schwerfälliges Werkzeug, das Sie nie voll nutzen werden.",
+          ],
+        },
+        {
+          heading: "Was inklusive ist und was extra kostet",
+          body: [
+            "Inklusive: das Dashboard, Hosting, individuelle Domain, SSL und Wartung im jeweiligen Tarif.",
+            "Tiefe Integrationen mit externen Systemen, fortgeschrittene Analysen und maßgeschneiderte Logik sind Extras oder individuelle Arbeit — separat und ehrlich angeboten.",
+          ],
+        },
+      ],
+      aiSummary:
+        "NorthSail erstellt verwaltete interne Dashboards für kleine Teams: ein Ort, um Buchungen, Anfragen, Kunden und Kennzahlen zu verfolgen, mit Mehrbenutzerzugriff, Verlauf und CSV-Export in höheren Tarifen sowie Berechtigungen und Automatisierungen im verwalteten Pro-Tarif. Domain, Hosting, SSL und Wartung sind inklusive; tiefe Integrationen werden individuell angeboten.",
+      faqs: [
+        {
+          question: "Was kommt auf das Dashboard?",
+          answer:
+            "Die Listen und Zahlen, mit denen Sie arbeiten — Buchungen, Anfragen, Kunden und ihr Status — auf einem Bildschirm zusammengeführt statt in getrennten Tabellen.",
+        },
+        {
+          question: "Kann mein ganzes Team es nutzen?",
+          answer:
+            "Ja. Mehrbenutzerzugriff und Verlauf sind im Business-Tarif verfügbar, mit Berechtigungen im verwalteten Pro-Tarif.",
+        },
+        {
+          question: "Kann ich die Daten exportieren?",
+          answer:
+            "Ja, CSV-Export ist in den höheren Tarifen verfügbar, sodass Ihre Daten nie eingeschlossen sind.",
+        },
+      ],
+      cta: {
+        label: "Sprechen Sie mit uns über ein Dashboard",
+        target: "contact",
+      },
+    },
+
+    "compare:process-automation": {
+      pageKey: "compare:process-automation",
+      locale: "de",
+      metaTitle:
+        "Einfache Prozessautomatisierung für kleine Unternehmen — weniger manuelle Schritte",
+      metaDescription:
+        "Automatisieren Sie die repetitiven Teile Ihres Geschäfts: Bestätigungen, Erinnerungen, Lead-Weiterleitung und Status-Updates. Praktische Automatisierungen, eingerichtet und verwaltet von NorthSail in höheren Tarifen.",
+      h1: "Automatisieren Sie die Fleißarbeit, behalten Sie die menschliche Note",
+      valueProp:
+        "Lassen Sie die routinemäßigen Schritte — Bestätigungen, Erinnerungen, Nachfassaktionen — von selbst geschehen, damit Sie Zeit für Kunden statt für Verwaltung aufwenden.",
+      intro:
+        "Prozessautomatisierung bedeutet, dass die vorhersehbaren Schritte in Ihrem Geschäft automatisch ablaufen. NorthSail richtet praktische, fokussierte Automatisierungen rund um Ihre Seite und Web-App ein — Buchungsbestätigungen, Erinnerungen, Lead-Weiterleitung — als Teil der höheren und verwalteten Tarife, ohne zu viel zu versprechen.",
+      sections: [
+        {
+          heading: "Wo sich Automatisierung auszahlt",
+          body: [
+            "Die besten Erfolge sind klein und repetitiv: das Senden einer Buchungsbestätigung, einer Erinnerung vor einem Termin, das Weiterleiten eines neuen Leads an das richtige Postfach oder das Aktualisieren des Status einer Anfrage.",
+            "Jeder davon entfernt einen manuellen Schritt, den Sie sonst Dutzende Male pro Woche tun würden.",
+          ],
+        },
+        {
+          heading: "Praktisch, nicht magisch",
+          body: [
+            "Wir konzentrieren uns auf eine Handvoll zuverlässiger Automatisierungen, die zu Ihrer bereits bestehenden Arbeitsweise passen, statt zu versprechen, alles zu automatisieren.",
+            "Grundlegende Automatisierungen beginnen in den höheren Tarifen; fortgeschrittenere Abläufe und Integrationen sind Teil des verwalteten Pro-Tarifs oder werden als individuelle Arbeit angeboten.",
+          ],
+        },
+        {
+          heading: "Was inklusive ist und was extra kostet",
+          body: [
+            "Im jeweiligen Tarif inklusive: Einrichtung und Verwaltung der vereinbarten Automatisierungen sowie Hosting, Domain, SSL und Wartung.",
+            "SMS, fortgeschrittenes WhatsApp-Messaging, kostenpflichtige Drittanbieter-Tools und komplexe Integrationen tragen ihre eigenen Kosten und werden niemals als 'unbegrenzt' abgerechnet.",
+          ],
+        },
+      ],
+      aiSummary:
+        "NorthSail richtet praktische Prozessautomatisierungen für kleine Unternehmen ein — Buchungsbestätigungen, Erinnerungen, Lead-Weiterleitung und Status-Updates — als Teil höherer und verwalteter Tarife. Einrichtung und Verwaltung sowie Domain, Hosting, SSL und Wartung sind inklusive; SMS, fortgeschrittenes WhatsApp, kostenpflichtige Tools und komplexe Integrationen kosten extra und werden nie als unbegrenzt verkauft.",
+      faqs: [
+        {
+          question: "Was kann automatisiert werden?",
+          answer:
+            "Repetitive Schritte wie Bestätigungen, Erinnerungen, Lead-Weiterleitung und Status-Updates — ein fokussierter Satz, abgestimmt auf die Arbeitsweise Ihres Unternehmens.",
+        },
+        {
+          question: "Wird alles automatisiert?",
+          answer:
+            "Nein. Wir richten eine Handvoll zuverlässiger Automatisierungen ein, statt zu versprechen, Ihr ganzes Geschäft zu automatisieren; fortgeschrittene Abläufe sind individuelle Arbeit.",
+        },
+        {
+          question: "Sind SMS- und WhatsApp-Nachrichten inklusive?",
+          answer:
+            "Diese tragen ihre eigenen Kosten und werden transparent abgerechnet — niemals als unbegrenztes Paket.",
+        },
+      ],
+      cta: {
+        label: "Sprechen Sie mit uns über Automatisierung",
+        target: "contact",
+      },
+    },
+
+    "compare:custom-software": {
+      pageKey: "compare:custom-software",
+      locale: "de",
+      metaTitle:
+        "Individuelle Software für kleine Unternehmen — erstellt und verwaltet, passend angeboten",
+      metaDescription:
+        "Wenn Standardlösungen nicht ausreichen, erstellt NorthSail fokussierte individuelle Software für kleine Unternehmen — Integrationen, maßgeschneiderte Abläufe und Werkzeuge — individuell zugeschnitten und angeboten.",
+      h1: "Individuelle Software, im Rahmen eines kleinen Unternehmensbudgets",
+      valueProp:
+        "Wenn Ihr Bedarf wirklich spezifisch ist, definieren und erstellen wir eine fokussierte individuelle Lösung — ohne Enterprise-Komplexität oder Enterprise-Preise.",
+      intro:
+        "Die meisten Unternehmen sind mit unseren Standardtarifen gut bedient. Aber wenn Sie etwas Spezifisches benötigen — eine bestimmte Integration, einen maßgeschneiderten Ablauf, ein Werkzeug, das einzigartig für Ihre Arbeitsweise ist — definiert und erstellt NorthSail es als individuelle Arbeit, individuell angeboten statt zu einem Festpreis.",
+      sections: [
+        {
+          heading: "Wann Sie wirklich individuelle Software brauchen",
+          body: [
+            "Wenn eine Standard-Website oder Web-App Ihre Arbeitsweise nicht abbilden kann — ungewöhnliche Abläufe, eine bestimmte Integration oder Logik, die keine Vorlage abdeckt — dann passt individuelle Software.",
+            "Wir sind dabei ehrlich: Wenn ein niedrigerer Tarif Ihren Fall löst, weisen wir Sie zuerst darauf hin.",
+          ],
+        },
+        {
+          heading: "Wie wir es bezahlbar halten",
+          body: [
+            "Wir grenzen eng auf die ein oder zwei Dinge ein, die wichtig sind, nutzen unsere Plattform wo möglich wieder und vermeiden, das neu zu bauen, was bereits funktioniert.",
+            "Das hält individuelle Arbeit in Reichweite eines kleinen Unternehmens statt eines Agenturbudgets.",
+          ],
+        },
+        {
+          heading: "Was Sie erwarten können",
+          body: [
+            "Individuelle Software wird immer individuell angeboten, nachdem wir Ihren Fall verstanden haben — wir veröffentlichen dafür keinen festen Basispreis.",
+            "Hosting, Domain, SSL und laufende Wartung werden als Teil des Auftrags geregelt; Sie besitzen das Nutzungsrecht, solange Sie abonniert sind, und die Plattform und der Quellcode bleiben unser Eigentum.",
+          ],
+        },
+      ],
+      aiSummary:
+        "NorthSail erstellt fokussierte individuelle Software für kleine Unternehmen — bestimmte Integrationen, maßgeschneiderte Abläufe und einzigartige Werkzeuge — eng zugeschnitten und individuell angeboten statt zu einem Festpreis. Hosting, Domain, SSL und Wartung werden innerhalb des Auftrags geregelt; wenn ein Standardtarif den Fall löst, empfiehlt NorthSail diesen stattdessen.",
+      faqs: [
+        {
+          question:
+            "Wann brauche ich individuelle Software statt eines Tarifs?",
+          answer:
+            "Wenn eine Standard-Website oder Web-App Ihren spezifischen Ablauf oder Ihre Integration nicht abbilden kann. Wenn ein niedrigerer Tarif passt, empfehlen wir diesen zuerst.",
+        },
+        {
+          question: "Wie viel kostet individuelle Software?",
+          answer:
+            "Sie wird nach der Bedarfsdefinition individuell angeboten — es gibt keinen festen Basispreis, weil die Arbeit ganz von Ihrem Fall abhängt.",
+        },
+        {
+          question: "Wem gehört das Ergebnis?",
+          answer:
+            "Sie haben das Nutzungsrecht, solange Sie abonniert sind; die zugrunde liegende Plattform und der Quellcode bleiben Eigentum von NorthSail.",
+        },
+      ],
+      cta: { label: "Sagen Sie uns, was Sie brauchen", target: "contact" },
+    },
+
+    "compare:legacy-website-redesign": {
+      pageKey: "compare:legacy-website-redesign",
+      locale: "de",
+      metaTitle:
+        "Redesign alter Websites für kleine Unternehmen — modern, schnell, verwaltet",
+      metaDescription:
+        "Ersetzen Sie eine alte, langsame oder schwer zu bearbeitende Website durch eine schnelle, moderne, mobilfreundliche Seite, die vollständig verwaltet wird — Domain, Hosting, SSL und Wartung inklusive, ab 15€/Monat.",
+      h1: "Gestalten Sie Ihre veraltete Website zu etwas um, auf das Sie stolz sind",
+      valueProp:
+        "Verwandeln Sie eine langsame, veraltete oder ungewartete Seite in eine schnelle, moderne, mobile-first Präsenz, mit der Sie sich nie wieder herumschlagen müssen.",
+      intro:
+        "Eine alte Website kann Sie unbemerkt Kunden kosten — langsam beim Laden, umständlich auf Handys, unmöglich zu aktualisieren. NorthSail gestaltet sie zu einer übersichtlichen, modernen, verwalteten Seite um und ergänzt die eine Funktion, mit der Ihr Unternehmen arbeitet, ab 15€/Monat mit Domain, Hosting, SSL und Wartung inklusive.",
+      sections: [
+        {
+          heading: "Anzeichen, dass Ihre Seite ein Redesign braucht",
+          body: [
+            "Sie wirkt veraltet, lädt langsam, funktioniert nicht auf Mobilgeräten, oder Sie können sie nicht aktualisieren, ohne denjenigen anzurufen, der sie vor Jahren erstellt hat.",
+            "Währenddessen beurteilen Kunden Ihr Unternehmen nach diesem ersten Eindruck — eine müde Seite verkauft Sie jeden Tag unter Wert.",
+          ],
+        },
+        {
+          heading: "Mehr als ein frischer Anstrich",
+          body: [
+            "Ein Redesign ist die Gelegenheit, hinzuzufügen, was der alten Seite fehlte: eine Buchungs- oder Anfragefunktion, ein klares Menü oder eine Leistungsliste, WhatsApp und Google Maps sowie ordentliches lokales SEO.",
+            "Sie wechseln von einer statischen Broschüre zu einer Seite, die tatsächlich Geschäft bringt.",
+          ],
+        },
+        {
+          heading: "Was inklusive ist und was extra kostet",
+          body: [
+            "Inklusive: das Redesign auf eine moderne verwaltete Seite, eine wesentliche Funktion, individuelle Domain, Hosting, SSL und Wartung ab 15€/Monat.",
+            "Die Migration großer Mengen alter Inhalte, Online-Zahlungen und Integrationen sind Extras oder Teil höherer Tarife — von Anfang an klar definiert.",
+          ],
+        },
+      ],
+      aiSummary:
+        "NorthSail gestaltet veraltete Websites kleiner Unternehmen zu schnellen, modernen, mobile-first verwalteten Seiten um und ergänzt eine wesentliche Funktion (Buchungen, Menü, Anfragen) sowie WhatsApp, Maps und lokales SEO, ab 15€/Monat mit Domain, Hosting, SSL und Wartung inklusive. Die Migration großer Inhalte, Zahlungen und Integrationen sind Extras oder Teil höherer Tarife.",
+      faqs: [
+        {
+          question:
+            "Können Sie meine aktuelle Domain und Inhalte wiederverwenden?",
+          answer:
+            "Ja. Wir behalten Ihre Domain und verwenden die erhaltenswerten Inhalte wieder; die Migration sehr großer Seiten wird separat definiert.",
+        },
+        {
+          question: "Wie viel kostet ein Redesign?",
+          answer:
+            "Ab 15€/Monat im Essential-App-Tarif, inklusive der neu gestalteten Seite, einer Kernfunktion, Domain, Hosting, SSL und Wartung.",
+        },
+        {
+          question: "Wird die neue Seite gut auf Handys funktionieren?",
+          answer:
+            "Ja. Jede Seite ist mobile-first und schnell, denn dort sind die meisten Ihrer Besucher.",
+        },
+      ],
+      cta: { label: "Meine Website neu gestalten", target: "contact" },
+    },
+
+    "compare:restaurant-digital-menu": {
+      pageKey: "compare:restaurant-digital-menu",
+      locale: "de",
+      metaTitle:
+        "Digitale Speisekarte für Restaurants — QR-Speisekarte, immer aktuell",
+      metaDescription:
+        "Eine digitale Restaurant-Speisekarte mit QR-Zugang am Tisch, immer aktuell, auf einer schnellen verwalteten Website. Ab 15€/Monat mit Domain, Hosting, SSL und Wartung inklusive.",
+      h1: "Eine digitale Speisekarte, die Ihre Küche aktuell halten kann",
+      valueProp:
+        "Eine stets aktuelle Speisekarte, die Kunden per QR am Tisch oder von Ihrer Seite öffnen — kein Neudruck, keine veralteten PDFs.",
+      intro:
+        "Eine digitale Speisekarte ersetzt gedruckte Karten und veraltete PDFs durch eine schnelle, mobile Seite, die Kunden per QR-Code oder über Ihre Website erreichen. NorthSail richtet sie als Teil Ihrer Restaurant-Seite ab 15€/Monat ein, mit Domain, Hosting, SSL und Wartung inklusive.",
+      sections: [
+        {
+          heading: "Warum eine digitale Speisekarte gewinnt",
+          body: [
+            "Preise und Gerichte ändern sich; gedruckte Speisekarten nicht. Eine digitale Speisekarte aktualisiert sich sofort, sodass das, was Gäste sehen, immer das ist, was Sie servieren.",
+            "Ein QR-Code an jedem Tisch öffnet sie in einer Sekunde, ohne App und ohne Reibung.",
+          ],
+        },
+        {
+          heading: "Teil einer echten Restaurant-Seite",
+          body: [
+            "Die Speisekarte lebt auf einer richtigen Website mit Ihren Öffnungszeiten, Standort, Fotos, WhatsApp und Google Maps — und, wenn Sie möchten, Tischreservierungsanfragen.",
+            "Das ist der Essential-App-Tarif für Restaurants, ab 15€/Monat.",
+          ],
+        },
+        {
+          heading: "Was inklusive ist und was extra kostet",
+          body: [
+            "Inklusive: die digitale Speisekarte, QR-Zugang, Ihre Restaurant-Website, individuelle Domain, Hosting, SSL und Wartung.",
+            "Online-Bestellung, Zahlungen, Lieferung und eine fortgeschrittene QR-Speisekarte mit Bildern pro Gericht sind Extras oder Teil höherer Tarife — nicht im Einstiegspreis suggeriert.",
+          ],
+        },
+      ],
+      aiSummary:
+        "NorthSail bietet Restaurants eine stets aktuelle digitale Speisekarte, zugänglich per QR am Tisch oder über die Website, enthalten in der Restaurant-Seite ab 15€/Monat mit Domain, Hosting, SSL und Wartung. Online-Bestellung, Zahlungen, Lieferung und eine fortgeschrittene bildreiche QR-Speisekarte sind Extras oder Teil höherer Tarife.",
+      faqs: [
+        {
+          question: "Wie öffnen Kunden die Speisekarte?",
+          answer:
+            "Durch Scannen eines QR-Codes am Tisch oder durch Besuch Ihrer Website — keine App erforderlich, und es funktioniert auf jedem Handy.",
+        },
+        {
+          question: "Kann ich die Speisekarte selbst aktualisieren?",
+          answer:
+            "Ja. Die Speisekarte aktualisiert sich sofort, sodass das Ändern eines Preises oder Gerichts schnell geht und nichts neu gedruckt werden muss.",
+        },
+        {
+          question: "Wie viel kostet es?",
+          answer:
+            "Ab 15€/Monat im Essential-App-Tarif, inklusive Ihrer Restaurant-Website, der digitalen Speisekarte und QR-Zugang.",
+        },
+      ],
+      cta: { label: "Digitale Speisekarte erhalten", target: "contact" },
+    },
+
+    "compare:restaurant-online-reservations": {
+      pageKey: "compare:restaurant-online-reservations",
+      locale: "de",
+      metaTitle:
+        "Online-Reservierungen für Restaurants — Buchungen über Ihre eigene Seite",
+      metaDescription:
+        "Lassen Sie Gäste direkt auf Ihrer Restaurant-Website einen Tisch anfragen, zu jeder Stunde, ohne Provisionen an Drittanbieter-Plattformen. Ab 15€/Monat mit Domain, Hosting, SSL und Wartung inklusive.",
+      h1: "Tischreservierungen über Ihre eigene Website entgegennehmen",
+      valueProp:
+        "Gäste fragen einen Tisch direkt über Ihre Seite an, Tag und Nacht — weniger verpasste Anrufe und keine Provision an externe Plattformen.",
+      intro:
+        "Online-Reservierungen lassen Gäste einen Tisch über Ihre eigene Website buchen statt per Telefonanruf oder Drittanbieter-App. NorthSail richtet dies als Teil Ihrer Restaurant-Seite ab 15€/Monat ein, mit Domain, Hosting, SSL und Wartung inklusive.",
+      sections: [
+        {
+          heading: "Erfassen Sie Buchungen, die Sie derzeit verpassen",
+          body: [
+            "Viel Reservierungsabsicht entsteht außerhalb der Öffnungszeiten, wenn niemand da ist, um ans Telefon zu gehen. Ein Online-Anfrageformular erfasst sie, statt sie zu verlieren.",
+            "Jede Anfrage kommt strukturiert an — Datum, Uhrzeit, Personenzahl — sodass der Service vorausplanen kann.",
+          ],
+        },
+        {
+          heading: "Ihre Seite, kein Marktplatz",
+          body: [
+            "Eine Buchung auf Ihrer eigenen Seite hält die Gästebeziehung bei Ihnen und vermeidet Pro-Gedeck-Provisionen, die externe Plattformen berechnen.",
+            "Sie steht neben Ihrer digitalen Speisekarte, Öffnungszeiten, Standort, WhatsApp und Maps im Essential-App-Tarif.",
+          ],
+        },
+        {
+          heading: "Was inklusive ist und was extra kostet",
+          body: [
+            "Inklusive: die Reservierungsanfragefunktion, Ihre Restaurant-Website, individuelle Domain, Hosting, SSL und Wartung ab 15€/Monat.",
+            "Bezahlte Anzahlungen, vollständige Tischverwaltungssysteme und die Synchronisierung mit externen Buchungsplattformen sind Extras oder individuelle Arbeit — niemals im Einstiegspreis suggeriert.",
+          ],
+        },
+      ],
+      aiSummary:
+        "NorthSail lässt Restaurants Tischreservierungsanfragen direkt auf ihrer eigenen Website entgegennehmen und erfasst Nachfrage außerhalb der Öffnungszeiten ohne Provisionen an Drittanbieter-Plattformen, ab 15€/Monat mit Domain, Hosting, SSL und Wartung inklusive. Anzahlungen, vollständige Tischverwaltung und die Synchronisierung externer Plattformen sind Extras oder individuelle Arbeit.",
+      faqs: [
+        {
+          question: "Wie reservieren Gäste einen Tisch?",
+          answer:
+            "Sie senden eine Reservierungsanfrage auf Ihrer Website mit Datum, Uhrzeit und Personenzahl — zu jeder Stunde, ohne Telefonanruf.",
+        },
+        {
+          question: "Zahle ich Provision pro Buchung?",
+          answer:
+            "Nein. Reservierungen kommen über Ihre eigene Seite, sodass es keine Pro-Gedeck-Provision an eine externe Plattform gibt.",
+        },
+        {
+          question: "Können Gäste online eine Anzahlung leisten?",
+          answer:
+            "Bezahlte Anzahlungen sind ein Extra statt Teil des Einstiegstarifs; die Basisfunktion erfasst die Reservierungsanfrage.",
+        },
+      ],
+      cta: { label: "Reservierungen online entgegennehmen", target: "contact" },
+    },
   },
 };
 

@@ -8,6 +8,8 @@ interface AuthShellProps {
   children: React.ReactNode;
   /** Link rendered under the form (e.g. "Não tens conta? Criar"). */
   footer?: React.ReactNode;
+  /** Destination for the logo link. Defaults to the site root. */
+  homeHref?: string;
 }
 
 export function AuthShell({
@@ -15,12 +17,17 @@ export function AuthShell({
   subtitle,
   children,
   footer,
+  homeHref = "/",
 }: AuthShellProps) {
   return (
     <div className="flex min-h-screen items-center justify-center bg-surface-low px-6 py-12">
       <div className="w-full max-w-md">
         <div className="mb-8 flex justify-center">
-          <Link href="/" aria-label="NorthSail" className="flex items-center">
+          <Link
+            href={homeHref}
+            aria-label="NorthSail"
+            className="flex items-center"
+          >
             <Image
               src="/logo.png"
               alt="NorthSail"

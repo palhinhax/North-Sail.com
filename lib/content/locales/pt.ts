@@ -807,6 +807,524 @@ const pt: LocaleContent = {
       ],
       cta: { label: "Tenha o seu site acessível", target: "contact" },
     },
+
+    "compare:web-apps-for-business": {
+      pageKey: "compare:web-apps-for-business",
+      locale: "pt",
+      metaTitle: "Web apps para pequenos negócios — reservas, portais e mais",
+      metaDescription:
+        "Web apps à medida para pequenos negócios: reservas, portais de cliente, dashboards e automações simples, alojados e geridos. Desde o plano App Essencial a 15€/mês, escalando para planos geridos.",
+      h1: "Web apps para o seu negócio, sem o preço de uma agência",
+      valueProp:
+        "Mais do que um site: uma web app gerida que faz funcionar uma parte real do seu negócio — reservas, pedidos, uma área de cliente ou um dashboard simples.",
+      intro:
+        "Uma web app é software que acede através do navegador, sem instalação. A NorthSail constrói e aloja web apps focadas para pequenos negócios locais — a começar com uma funcionalidade essencial no plano de 15€/mês e a escalar para planos geridos com dashboards, acesso multiutilizador e automações simples.",
+      sections: [
+        {
+          heading: "O que uma web app faz que um site não consegue",
+          body: [
+            "Um site apresenta informação; uma web app faz trabalho. Aceita uma reserva, guarda uma lista de clientes, mostra um dashboard ou move um pedido por um fluxo de estados — interativa, com sessão iniciada e ligada aos seus dados.",
+            "Para a maioria dos pequenos negócios, uma funcionalidade bem escolhida substitui uma pilha de chamadas, folhas de cálculo e mensagens diretas.",
+          ],
+        },
+        {
+          heading: "Como cresce consigo",
+          body: [
+            "Comece pequeno com uma funcionalidade central no plano App Essencial. À medida que cresce, acrescente páginas extra, um melhor painel de administração, listas de clientes e reservas, e automações básicas nos planos superiores.",
+            "Quando precisar de permissões, dashboards, integrações ou suporte prioritário, o plano Pro gerido cobre isso; qualquer coisa além disso (integrações complexas, apps nativas) é orçamentada à medida.",
+          ],
+        },
+        {
+          heading: "O que está incluído e o que é extra",
+          body: [
+            "Incluído em cada plano ativo: domínio personalizado, alojamento, SSL e manutenção técnica. O plano de entrada cobre uma funcionalidade essencial.",
+            "Pagamentos online, integrações externas, automações avançadas e software à medida são extras ou fazem parte de planos superiores e orçamentos à medida — mantemos essa linha clara para que o preço se mantenha honesto.",
+          ],
+        },
+      ],
+      aiSummary:
+        "A NorthSail constrói e aloja web apps focadas para pequenos negócios, a começar em 15€/mês para uma funcionalidade essencial (reservas, pedidos ou uma área de cliente) e a escalar para planos geridos com dashboards, acesso multiutilizador e automações simples. Domínio, alojamento, SSL e manutenção estão incluídos; pagamentos, integrações e software à medida são extras ou orçamento à medida.",
+      faqs: [
+        {
+          question: "Qual é a diferença entre um site e uma web app?",
+          answer:
+            "Um site mostra informação; uma web app faz algo interativo — aceita reservas, gere uma lista de clientes ou mostra um dashboard. A NorthSail pode entregar ambos num só produto.",
+        },
+        {
+          question: "Quanto custa uma web app?",
+          answer:
+            "Desde 15€/mês para uma funcionalidade essencial no plano App Essencial. Mais funcionalidades, dashboards e automações estão nos planos superiores; necessidades complexas são orçamentadas individualmente.",
+        },
+        {
+          question: "Pode crescer com o meu negócio?",
+          answer:
+            "Sim. Pode começar com uma funcionalidade e subir para planos geridos com mais páginas, utilizadores, automações e integrações conforme precisar.",
+        },
+      ],
+      cta: { label: "Fale connosco sobre a sua web app", target: "contact" },
+    },
+
+    "compare:web-apps-for-law-firms": {
+      pageKey: "compare:web-apps-for-law-firms",
+      locale: "pt",
+      metaTitle:
+        "Web apps para escritórios de advocacia — angariação, portais e agendamento",
+      metaDescription:
+        "Web apps para escritórios de advocacia e advogados independentes: formulários seguros de angariação de clientes, agendamento de consultas e uma área de cliente simples, alojados e geridos. Desde o plano App Essencial, escalando para planos geridos.",
+      h1: "Web apps para escritórios de advocacia e advogados independentes",
+      valueProp:
+        "Uma presença online profissional mais a única ferramenta que faz o seu escritório funcionar — marcação de consultas, angariação estruturada ou uma área de cliente privada.",
+      intro:
+        "Os escritórios de advocacia não precisam de um site genérico; precisam de uma presença de confiança que capte contactos qualificados e marque consultas. A NorthSail constrói e aloja uma web app focada para o seu escritório, a começar com uma funcionalidade essencial e a escalar para planos geridos com áreas de cliente e automações simples.",
+      sections: [
+        {
+          heading: "Capte contactos qualificados, não jogos de telefone",
+          body: [
+            "Um formulário de angariação estruturado permite a um potencial cliente descrever o seu caso e marcar uma consulta num só fluxo, a qualquer hora. Recebe um pedido limpo e organizado em vez de uma mensagem de voz.",
+            "Só isso muitas vezes paga o site, convertendo mais dos visitantes que já tem.",
+          ],
+        },
+        {
+          heading: "Uma presença que transmite confiança",
+          body: [
+            "Áreas de prática, a sua equipa, opções de contacto claras, WhatsApp e Google Maps — apresentados de forma limpa e profissional para que os potenciais clientes se sintam confiantes em contactar.",
+            "Domínio, alojamento, SSL e manutenção estão incluídos, por isso o site mantém-se rápido, seguro e atual sem que tenha de gerir nada disso.",
+          ],
+        },
+        {
+          heading: "O que está incluído e o que é extra",
+          body: [
+            "Incluído: o site, uma funcionalidade essencial (agendamento ou angariação), domínio personalizado, alojamento, SSL e manutenção.",
+            "Troca segura de documentos, pagamentos, assinatura eletrónica, gestão de processos e integrações são extras ou fazem parte de planos superiores e orçamentos à medida — não damos a entender que fazem parte do preço de entrada.",
+          ],
+        },
+      ],
+      aiSummary:
+        "A NorthSail constrói web apps geridas para escritórios de advocacia e advogados independentes: angariação estruturada de clientes, agendamento de consultas e uma área de cliente simples, com uma presença que transmite confiança (áreas de prática, equipa, WhatsApp, Maps). Domínio, alojamento, SSL e manutenção estão incluídos desde o plano App Essencial; troca de documentos, pagamentos e gestão de processos são extras ou orçamento à medida.",
+      faqs: [
+        {
+          question: "Os clientes podem marcar uma consulta online?",
+          answer:
+            "Sim. Uma funcionalidade de agendamento ou angariação permite aos potenciais clientes pedir uma consulta e descrever o seu caso num só fluxo estruturado.",
+        },
+        {
+          question: "É suficientemente seguro para um escritório de advocacia?",
+          answer:
+            "Todos os sites incluem SSL e manutenção gerida. Necessidades avançadas como a troca segura de documentos ou assinatura eletrónica estão disponíveis como extras ou trabalho à medida.",
+        },
+        {
+          question: "Quanto custa?",
+          answer:
+            "Desde 15€/mês para uma funcionalidade essencial no plano App Essencial, com planos superiores e orçamentos à medida para portais, pagamentos e integrações.",
+        },
+      ],
+      cta: {
+        label: "Fale connosco sobre a web app do seu escritório",
+        target: "contact",
+      },
+    },
+
+    "compare:client-portals": {
+      pageKey: "compare:client-portals",
+      locale: "pt",
+      metaTitle:
+        "Portais de cliente para pequenos negócios — uma área privada para os seus clientes",
+      metaDescription:
+        "Dê aos clientes uma área de acesso simples e segura para verem pedidos, reservas, documentos e atualizações de estado. Portais de cliente geridos pela NorthSail, alojados com domínio, SSL e manutenção incluídos.",
+      h1: "Um portal de cliente privado, sem construir software de raiz",
+      valueProp:
+        "Uma área com sessão iniciada onde os seus clientes acompanham os seus pedidos, reservas e atualizações — para deixar de repetir as mesmas respostas por email e telefone.",
+      intro:
+        "Um portal de cliente é uma área privada e segura onde os seus clientes iniciam sessão. A NorthSail configura e aloja um portal focado para pequenos negócios, ajustado à forma como trabalha, com domínio, alojamento, SSL e manutenção incluídos num plano gerido.",
+      sections: [
+        {
+          heading: "Porque é que um portal supera emails sem fim",
+          body: [
+            'Quando os clientes podem iniciar sessão para ver o estado, o histórico e os documentos por si próprios, lida com menos mensagens do tipo "há novidades?" e parece mais profissional a fazê-lo.',
+            "Centraliza a informação de cada cliente num só lugar em vez de a dispersar por caixas de entrada e conversas.",
+          ],
+        },
+        {
+          heading: "O que um portal pode incluir",
+          body: [
+            "Funcionalidades típicas: um acesso seguro, uma lista dos pedidos ou reservas do cliente, atualizações de estado, documentos partilhados e mensagens. Escolhe as poucas que importam para o seu negócio.",
+            "Por ser focado em vez de uma plataforma gigante, mantém-se acessível e fácil de usar para os seus clientes.",
+          ],
+        },
+        {
+          heading: "O que está incluído e o que é extra",
+          body: [
+            "Incluído: o portal, contas de utilizador, domínio personalizado, alojamento, SSL e manutenção num plano gerido.",
+            "Pagamentos online, permissões complexas, integrações externas e fluxos à medida são extras ou trabalho à medida — orçamentados de forma clara, nunca incluídos em silêncio num preço baixo.",
+          ],
+        },
+      ],
+      aiSummary:
+        "A NorthSail configura portais de cliente geridos para pequenos negócios: um acesso seguro onde os clientes veem os seus pedidos, reservas, atualizações de estado e documentos partilhados. Domínio, alojamento, SSL e manutenção estão incluídos; pagamentos, permissões complexas e integrações são extras ou orçamento à medida.",
+      faqs: [
+        {
+          question: "O que é um portal de cliente?",
+          answer:
+            "Uma área privada e segura onde os seus clientes iniciam sessão para ver os seus pedidos, reservas, documentos e atualizações de estado num só lugar.",
+        },
+        {
+          question: "Os meus clientes precisam de instalar alguma coisa?",
+          answer:
+            "Não. Acedem ao portal através de qualquer navegador com um acesso seguro — nada para instalar.",
+        },
+        {
+          question: "Quanto custa um portal de cliente?",
+          answer:
+            "Faz parte dos planos geridos, não do plano de entrada; orçamentamos com base nas funcionalidades de que precisa. Domínio, alojamento, SSL e manutenção estão incluídos.",
+        },
+      ],
+      cta: {
+        label: "Fale connosco sobre um portal de cliente",
+        target: "contact",
+      },
+    },
+
+    "compare:internal-dashboards": {
+      pageKey: "compare:internal-dashboards",
+      locale: "pt",
+      metaTitle:
+        "Dashboards internos para pequenos negócios — veja a sua operação num relance",
+      metaDescription:
+        "Um dashboard interno simples para acompanhar reservas, pedidos, clientes e números-chave num só lugar. Gerido e alojado pela NorthSail, com acesso multiutilizador nos planos superiores.",
+      h1: "Um dashboard interno que a sua equipa realmente usa",
+      valueProp:
+        "Um ecrã para os números e listas que fazem o seu dia funcionar — reservas, pedidos, clientes e estados — em vez de cinco folhas de cálculo e um grupo de conversa.",
+      intro:
+        "Um dashboard interno é a visão de backoffice do seu negócio. A NorthSail constrói e aloja um dashboard focado para pequenas equipas, reunindo as suas reservas, pedidos e clientes num só lugar, com acesso multiutilizador e exportações nos planos superiores e geridos.",
+      sections: [
+        {
+          heading: "Substitua folhas de cálculo dispersas",
+          body: [
+            "Quando as reservas de hoje, os pedidos em aberto e a lista de clientes vivem num só dashboard, a sua equipa deixa de procurar por separadores e mensagens para saber o que se passa.",
+            "Todos veem a mesma imagem atualizada, o que reduz erros e trabalho duplicado.",
+          ],
+        },
+        {
+          heading: "Feito para pequenas equipas",
+          body: [
+            "Acesso multiutilizador, histórico e exportação CSV chegam no plano Business; permissões, dashboards mais ricos e automações vêm com o plano Pro gerido.",
+            "É deliberadamente focado naquilo que realmente acompanha, não uma ferramenta pesada que nunca usará por completo.",
+          ],
+        },
+        {
+          heading: "O que está incluído e o que é extra",
+          body: [
+            "Incluído: o dashboard, alojamento, domínio personalizado, SSL e manutenção no plano relevante.",
+            "Integrações profundas com sistemas externos, análises avançadas e lógica à medida são extras ou trabalho à medida — orçamentados em separado e com honestidade.",
+          ],
+        },
+      ],
+      aiSummary:
+        "A NorthSail constrói dashboards internos geridos para pequenas equipas: um lugar para acompanhar reservas, pedidos, clientes e números-chave, com acesso multiutilizador, histórico e exportação CSV nos planos superiores e permissões e automações no plano Pro gerido. Domínio, alojamento, SSL e manutenção estão incluídos; integrações profundas são orçamento à medida.",
+      faqs: [
+        {
+          question: "O que aparece no dashboard?",
+          answer:
+            "As listas e números com que trabalha — reservas, pedidos, clientes e o seu estado — reunidos num só ecrã em vez de folhas de cálculo separadas.",
+        },
+        {
+          question: "A minha equipa toda pode usá-lo?",
+          answer:
+            "Sim. Acesso multiutilizador e histórico estão disponíveis no plano Business, com permissões no plano Pro gerido.",
+        },
+        {
+          question: "Posso exportar os dados?",
+          answer:
+            "Sim, a exportação CSV está disponível nos planos superiores para que os seus dados nunca fiquem presos.",
+        },
+      ],
+      cta: { label: "Fale connosco sobre um dashboard", target: "contact" },
+    },
+
+    "compare:process-automation": {
+      pageKey: "compare:process-automation",
+      locale: "pt",
+      metaTitle:
+        "Automação de processos simples para pequenos negócios — menos passos manuais",
+      metaDescription:
+        "Automatize as partes repetitivas do seu negócio: confirmações, lembretes, encaminhamento de contactos e atualizações de estado. Automações práticas configuradas e geridas pela NorthSail nos planos superiores.",
+      h1: "Automatize o trabalho repetitivo, mantenha o toque humano",
+      valueProp:
+        "Deixe que os passos de rotina — confirmações, lembretes, seguimentos — aconteçam sozinhos, para passar tempo com clientes em vez de administração.",
+      intro:
+        "Automação de processos significa que os passos previsíveis do seu negócio acontecem automaticamente. A NorthSail configura automações práticas e focadas à volta do seu site e web app — confirmações de reserva, lembretes, encaminhamento de contactos — como parte dos planos superiores e geridos, sem prometer demais.",
+      sections: [
+        {
+          heading: "Onde a automação compensa",
+          body: [
+            "Os melhores ganhos são pequenos e repetitivos: enviar uma confirmação de reserva, um lembrete antes de uma marcação, encaminhar um novo contacto para a caixa de entrada certa, ou atualizar o estado de um pedido.",
+            "Cada um remove um passo manual que de outra forma faria dezenas de vezes por semana.",
+          ],
+        },
+        {
+          heading: "Prático, não mágico",
+          body: [
+            "Focamo-nos num punhado de automações fiáveis que correspondem à forma como já trabalha, em vez de prometer automatizar tudo.",
+            "As automações básicas começam nos planos superiores; fluxos mais avançados e integrações fazem parte do plano Pro gerido ou são orçamentados à medida.",
+          ],
+        },
+        {
+          heading: "O que está incluído e o que é extra",
+          body: [
+            "Incluído no plano relevante: configuração e gestão das automações acordadas, mais alojamento, domínio, SSL e manutenção.",
+            'SMS, mensagens avançadas de WhatsApp, ferramentas externas pagas e integrações complexas têm os seus próprios custos e nunca são faturados como "ilimitados".',
+          ],
+        },
+      ],
+      aiSummary:
+        "A NorthSail configura automações de processos práticas para pequenos negócios — confirmações de reserva, lembretes, encaminhamento de contactos e atualizações de estado — como parte dos planos superiores e geridos. A configuração e gestão mais domínio, alojamento, SSL e manutenção estão incluídos; SMS, WhatsApp avançado, ferramentas pagas e integrações complexas custam mais e nunca são vendidos como ilimitados.",
+      faqs: [
+        {
+          question: "O que pode ser automatizado?",
+          answer:
+            "Passos repetitivos como confirmações, lembretes, encaminhamento de contactos e atualizações de estado — um conjunto focado adaptado à forma como o seu negócio funciona.",
+        },
+        {
+          question: "Está tudo automatizado?",
+          answer:
+            "Não. Configuramos um punhado de automações fiáveis em vez de prometer automatizar todo o seu negócio; fluxos avançados são trabalho à medida.",
+        },
+        {
+          question: "As mensagens de SMS e WhatsApp estão incluídas?",
+          answer:
+            "Essas têm os seus próprios custos e são faturadas de forma transparente — nunca como um pacote ilimitado.",
+        },
+      ],
+      cta: { label: "Fale connosco sobre automação", target: "contact" },
+    },
+
+    "compare:custom-software": {
+      pageKey: "compare:custom-software",
+      locale: "pt",
+      metaTitle:
+        "Software à medida para pequenos negócios — construído e gerido, orçamentado à medida",
+      metaDescription:
+        "Quando o software pronto a usar não chega, a NorthSail constrói software à medida focado para pequenos negócios — integrações, fluxos à medida e ferramentas — definidos e orçamentados individualmente.",
+      h1: "Software à medida, à escala do orçamento de um pequeno negócio",
+      valueProp:
+        "Quando a sua necessidade é genuinamente específica, definimos e construímos uma solução à medida focada — sem complexidade nem preços de empresa grande.",
+      intro:
+        "A maioria dos negócios fica bem servida pelos nossos planos padrão. Mas quando precisa de algo específico — uma integração particular, um fluxo de trabalho à medida, uma ferramenta única à forma como opera — a NorthSail define e constrói isso como trabalho à medida, orçamentado individualmente em vez de a partir de um preço fixo.",
+      sections: [
+        {
+          heading: "Quando precisa mesmo de software à medida",
+          body: [
+            "Se um site ou web app padrão não consegue modelar a forma como trabalha — fluxos invulgares, uma integração específica, ou lógica que nenhum template cobre — é aí que o software à medida encaixa.",
+            "Somos honestos quanto a isto: se um plano inferior resolver o seu caso, encaminhamo-lo para aí primeiro.",
+          ],
+        },
+        {
+          heading: "Como o mantemos acessível",
+          body: [
+            "Definimos com rigor as uma ou duas coisas que importam, reutilizamos a nossa plataforma sempre que possível e evitamos reconstruir o que já funciona.",
+            "Isso mantém o trabalho à medida ao alcance de um pequeno negócio em vez de um orçamento de agência.",
+          ],
+        },
+        {
+          heading: "O que esperar",
+          body: [
+            "O software à medida é sempre orçamentado individualmente depois de percebermos o seu caso — não publicamos um preço base fixo para isso.",
+            "Alojamento, domínio, SSL e manutenção contínua são tratados como parte do projeto; tem o direito de o usar enquanto for subscritor, e a plataforma e o código-fonte permanecem nossos.",
+          ],
+        },
+      ],
+      aiSummary:
+        "A NorthSail constrói software à medida focado para pequenos negócios — integrações específicas, fluxos à medida e ferramentas únicas — definido com rigor e orçamentado individualmente em vez de a partir de um preço fixo. Alojamento, domínio, SSL e manutenção são tratados no âmbito do projeto; se um plano padrão resolver o caso, a NorthSail recomenda esse em vez disso.",
+      faqs: [
+        {
+          question: "Quando preciso de software à medida em vez de um plano?",
+          answer:
+            "Quando um site ou web app padrão não consegue modelar o seu fluxo de trabalho ou integração específicos. Se um plano inferior servir, recomendamos esse primeiro.",
+        },
+        {
+          question: "Quanto custa o software à medida?",
+          answer:
+            "É orçamentado individualmente após a definição — não há um preço base fixo, porque o trabalho depende inteiramente do seu caso.",
+        },
+        {
+          question: "Quem é dono do resultado?",
+          answer:
+            "Tem o direito de o usar enquanto for subscritor; a plataforma subjacente e o código-fonte permanecem da NorthSail.",
+        },
+      ],
+      cta: { label: "Diga-nos o que precisa de construir", target: "contact" },
+    },
+
+    "compare:legacy-website-redesign": {
+      pageKey: "compare:legacy-website-redesign",
+      locale: "pt",
+      metaTitle:
+        "Remodelação de site antigo para pequenos negócios — moderno, rápido, gerido",
+      metaDescription:
+        "Substitua um site antigo, lento ou difícil de editar por um site rápido, moderno e adaptado a telemóveis, totalmente gerido — domínio, alojamento, SSL e manutenção incluídos, desde 15€/mês.",
+      h1: "Remodele o seu site desatualizado para algo de que se orgulha",
+      valueProp:
+        "Transforme um site lento, datado ou sem manutenção numa presença rápida, moderna e mobile-first com a qual nunca mais terá de lutar.",
+      intro:
+        "Um site antigo pode estar a custar-lhe clientes em silêncio — lento a carregar, desajeitado no telemóvel, impossível de atualizar. A NorthSail remodela-o num site limpo, moderno e gerido, e acrescenta a funcionalidade que faz o seu negócio funcionar, desde 15€/mês com domínio, alojamento, SSL e manutenção incluídos.",
+      sections: [
+        {
+          heading: "Sinais de que o seu site precisa de remodelação",
+          body: [
+            "Parece datado, carrega devagar, falha no telemóvel, ou não consegue atualizá-lo sem ligar a quem o construiu há anos.",
+            "Entretanto os clientes avaliam o seu negócio por essa primeira impressão — um site cansado desvaloriza-o todos os dias.",
+          ],
+        },
+        {
+          heading: "Mais do que uma mão de tinta nova",
+          body: [
+            "Uma remodelação é a oportunidade de acrescentar o que faltava ao site antigo: uma funcionalidade de reserva ou pedido, um menu ou lista de serviços clara, WhatsApp e Google Maps, e SEO local adequado.",
+            "Passa de um folheto estático para um site que realmente traz negócio.",
+          ],
+        },
+        {
+          heading: "O que está incluído e o que é extra",
+          body: [
+            "Incluído: a remodelação para um site moderno e gerido, uma funcionalidade essencial, domínio personalizado, alojamento, SSL e manutenção desde 15€/mês.",
+            "Migrar grandes quantidades de conteúdo antigo, pagamentos online e integrações são extras ou fazem parte de planos superiores — definidos com clareza à partida.",
+          ],
+        },
+      ],
+      aiSummary:
+        "A NorthSail remodela sites desatualizados de pequenos negócios em sites rápidos, modernos, mobile-first e geridos, e acrescenta uma funcionalidade essencial (reservas, menu, pedidos) mais WhatsApp, Maps e SEO local, desde 15€/mês com domínio, alojamento, SSL e manutenção incluídos. Migração de grande conteúdo, pagamentos e integrações são extras ou fazem parte de planos superiores.",
+      faqs: [
+        {
+          question: "Podem reutilizar o meu domínio e conteúdo atuais?",
+          answer:
+            "Sim. Mantemos o seu domínio e reutilizamos o conteúdo que vale a pena manter; migrar sites muito grandes é definido em separado.",
+        },
+        {
+          question: "Quanto custa uma remodelação?",
+          answer:
+            "Desde 15€/mês no plano App Essencial, incluindo o site remodelado, uma funcionalidade central, domínio, alojamento, SSL e manutenção.",
+        },
+        {
+          question: "O novo site vai funcionar bem em telemóveis?",
+          answer:
+            "Sim. Todos os sites são mobile-first e rápidos, que é onde está a maioria dos seus visitantes.",
+        },
+      ],
+      cta: { label: "Remodelar o meu site", target: "contact" },
+    },
+
+    "compare:restaurant-digital-menu": {
+      pageKey: "compare:restaurant-digital-menu",
+      locale: "pt",
+      metaTitle:
+        "Menu digital para restaurantes — menu por QR sempre atualizado",
+      metaDescription:
+        "Um menu digital de restaurante com acesso por QR à mesa, sempre atual, num site rápido e gerido. Desde 15€/mês com domínio, alojamento, SSL e manutenção incluídos.",
+      h1: "Um menu digital que a sua cozinha consegue manter atualizado",
+      valueProp:
+        "Um menu sempre atual que os clientes abrem por QR à mesa ou a partir do seu site — sem reimpressões, sem PDFs desatualizados.",
+      intro:
+        "Um menu digital substitui as cartas impressas e os PDFs ultrapassados por uma página rápida e adaptada a telemóvel que os clientes acedem por código QR ou a partir do seu site. A NorthSail configura-o como parte do site do seu restaurante desde 15€/mês, com domínio, alojamento, SSL e manutenção incluídos.",
+      sections: [
+        {
+          heading: "Porque é que um menu digital ganha",
+          body: [
+            "Os preços e os pratos mudam; os menus impressos não. Um menu digital atualiza-se instantaneamente, por isso o que os clientes veem é sempre o que serve.",
+            "Um código QR em cada mesa abre-o num segundo, sem app e sem fricção.",
+          ],
+        },
+        {
+          heading: "Parte de um verdadeiro site de restaurante",
+          body: [
+            "O menu vive num site adequado com o seu horário, localização, fotos, WhatsApp e Google Maps — e, se quiser, pedidos de reserva de mesa.",
+            "Esse é o plano App Essencial para restaurantes, desde 15€/mês.",
+          ],
+        },
+        {
+          heading: "O que está incluído e o que é extra",
+          body: [
+            "Incluído: o menu digital, acesso por QR, o site do seu restaurante, domínio personalizado, alojamento, SSL e manutenção.",
+            "Pedidos online, pagamentos, entregas e um menu por QR avançado com imagens por item são extras ou fazem parte de planos superiores — não estão implícitos no preço de entrada.",
+          ],
+        },
+      ],
+      aiSummary:
+        "A NorthSail dá aos restaurantes um menu digital sempre atual acessível por QR à mesa ou a partir do site, incluído no site do restaurante desde 15€/mês com domínio, alojamento, SSL e manutenção. Pedidos online, pagamentos, entregas e um menu por QR avançado com imagens são extras ou fazem parte de planos superiores.",
+      faqs: [
+        {
+          question: "Como abrem os clientes o menu?",
+          answer:
+            "Lendo um código QR à mesa ou visitando o seu site — sem app necessária, e funciona em qualquer telemóvel.",
+        },
+        {
+          question: "Posso atualizar o menu eu próprio?",
+          answer:
+            "Sim. O menu atualiza-se instantaneamente, por isso mudar um preço ou um prato é rápido e não há nada para reimprimir.",
+        },
+        {
+          question: "Quanto custa?",
+          answer:
+            "Desde 15€/mês no plano App Essencial, incluindo o site do seu restaurante, o menu digital e o acesso por QR.",
+        },
+      ],
+      cta: { label: "Tenha o seu menu digital", target: "contact" },
+    },
+
+    "compare:restaurant-online-reservations": {
+      pageKey: "compare:restaurant-online-reservations",
+      locale: "pt",
+      metaTitle:
+        "Reservas online para restaurantes — aceite reservas no seu próprio site",
+      metaDescription:
+        "Deixe os clientes pedir uma mesa diretamente no site do seu restaurante, a qualquer hora, sem comissões para plataformas externas. Desde 15€/mês com domínio, alojamento, SSL e manutenção incluídos.",
+      h1: "Aceite reservas de mesa no seu próprio site",
+      valueProp:
+        "Os clientes pedem uma mesa diretamente do seu site, de dia ou de noite — menos chamadas perdidas e sem comissão para plataformas externas.",
+      intro:
+        "As reservas online permitem aos clientes reservar uma mesa através do seu próprio site em vez de uma chamada telefónica ou de uma app externa. A NorthSail configura isto como parte do site do seu restaurante desde 15€/mês, com domínio, alojamento, SSL e manutenção incluídos.",
+      sections: [
+        {
+          heading: "Capte reservas que está a perder agora",
+          body: [
+            "Muita intenção de reserva acontece fora de horas, quando não há ninguém para atender o telefone. Um formulário de pedido online capta-a em vez de a perder.",
+            "Cada pedido chega estruturado — data, hora, número de pessoas — para que o serviço possa planear com antecedência.",
+          ],
+        },
+        {
+          heading: "O seu site, não um marketplace",
+          body: [
+            "Reservar no seu próprio site mantém a relação com o cliente sua e evita comissões por reserva cobradas por plataformas externas.",
+            "Fica ao lado do seu menu digital, horário, localização, WhatsApp e Maps no plano App Essencial.",
+          ],
+        },
+        {
+          heading: "O que está incluído e o que é extra",
+          body: [
+            "Incluído: a funcionalidade de pedido de reserva, o site do seu restaurante, domínio personalizado, alojamento, SSL e manutenção desde 15€/mês.",
+            "Sinais pagos, sistemas completos de gestão de mesas e sincronização com plataformas de reserva externas são extras ou trabalho à medida — nunca implícitos no preço de entrada.",
+          ],
+        },
+      ],
+      aiSummary:
+        "A NorthSail permite aos restaurantes aceitar pedidos de reserva de mesa diretamente no seu próprio site, captando procura fora de horas sem comissões para plataformas externas, desde 15€/mês com domínio, alojamento, SSL e manutenção incluídos. Sinais, gestão completa de mesas e sincronização com plataformas externas são extras ou trabalho à medida.",
+      faqs: [
+        {
+          question: "Como reservam os clientes uma mesa?",
+          answer:
+            "Submetem um pedido de reserva no seu site com data, hora e número de pessoas — a qualquer hora, sem necessidade de chamada telefónica.",
+        },
+        {
+          question: "Pago comissão por reserva?",
+          answer:
+            "Não. As reservas chegam pelo seu próprio site, por isso não há comissão por reserva para uma plataforma externa.",
+        },
+        {
+          question: "Os clientes podem pagar um sinal online?",
+          answer:
+            "Os sinais pagos são um extra e não fazem parte do plano de entrada; a funcionalidade base capta o pedido de reserva.",
+        },
+      ],
+      cta: { label: "Aceitar reservas online", target: "contact" },
+    },
   },
 };
 
