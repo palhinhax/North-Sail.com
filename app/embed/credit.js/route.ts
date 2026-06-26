@@ -67,11 +67,7 @@ const SCRIPT = `(function () {
   a.rel = "noopener";
   a.setAttribute("aria-label", "Feito por NorthSail — north-sail.com");
   a.innerHTML =
-    '<svg class="ns-credit__logo" viewBox="0 0 32 32" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">' +
-    '<rect width="32" height="32" rx="8" fill="#0A2540"></rect>' +
-    '<path d="M16 6 L24 24 L16 20 L8 24 Z" fill="#2F6BFF"></path>' +
-    '<path d="M16 6 L16 20 L8 24 Z" fill="#19B5A7"></path>' +
-    "</svg>" +
+    '<img class="ns-credit__logo" src="https://www.north-sail.com/android-chrome-192x192.png" width="20" height="20" alt="" aria-hidden="true" />' +
     '<span class="ns-credit__word" style="background-image:' +
     grad +
     '">' +
