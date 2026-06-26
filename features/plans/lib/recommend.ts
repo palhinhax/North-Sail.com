@@ -29,6 +29,7 @@ export function recommendPlan(input: RecommendArgs): Recommendation {
       planCode: "PRO_GESTAO",
       reason:
         "Integrações externas (Booking, POS, PMS, ERP, faturação, etc.) — recomendamos PRO Gestão como base. Pode exigir orçamento.",
+      reasonKey: "integrations",
       quoteOnly: true,
     };
   }
@@ -38,6 +39,7 @@ export function recommendPlan(input: RecommendArgs): Recommendation {
       planCode: "PRO_GESTAO",
       reason:
         "Automações, pagamentos ou múltiplos utilizadores na equipa — encaixa no plano PRO Gestão.",
+      reasonKey: "automationPayments",
       quoteOnly: false,
     };
   }
@@ -47,6 +49,7 @@ export function recommendPlan(input: RecommendArgs): Recommendation {
       planCode: "BUSINESS_LOCAL",
       reason:
         "Vários espaços/salas/membros — recomendamos Business Local com mais módulos.",
+      reasonKey: "multiLocation",
       quoteOnly: false,
     };
   }
@@ -56,6 +59,7 @@ export function recommendPlan(input: RecommendArgs): Recommendation {
       planCode: "MINI_APP_PLUS",
       reason:
         "Vários profissionais ou horários semanais/calendário — App Avançada cobre.",
+      reasonKey: "multiStaff",
       quoteOnly: false,
     };
   }
@@ -65,6 +69,7 @@ export function recommendPlan(input: RecommendArgs): Recommendation {
       planCode: "MINI_APP",
       reason:
         "Uma funcionalidade essencial (reservas / marcações / pedidos / aulas) — App Essencial.",
+      reasonKey: "bookings",
       quoteOnly: false,
     };
   }
@@ -72,6 +77,7 @@ export function recommendPlan(input: RecommendArgs): Recommendation {
   return {
     planCode: "PRESENCA",
     reason: "Só presença online, contactos e WhatsApp.",
+    reasonKey: "presence",
     quoteOnly: false,
   };
 }

@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { useSession } from "next-auth/react";
 import { cn } from "@/lib/utils";
 import type { Locale } from "@/lib/i18n/config";
-import { localePath, type PageKey } from "@/lib/i18n/routes";
+import { localePath, onboardingPath, type PageKey } from "@/lib/i18n/routes";
 import { getDictionary } from "@/lib/content/dictionary";
 import { LanguageSwitcher } from "./language-switcher";
 
@@ -87,7 +87,7 @@ export function LocaleNav({
                 {dict.navLogin}
               </Link>
               <Link
-                href="/comecar"
+                href={onboardingPath(locale)}
                 className="rounded-md bg-brand-container px-6 py-2.5 text-label-md font-medium text-white shadow-sm transition-colors hover:bg-brand"
               >
                 {dict.navStart}

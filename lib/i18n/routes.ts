@@ -238,6 +238,15 @@ export function localePath(locale: Locale, key: PageKey): string {
   return slug ? `/${locale}/${slug}` : `/${locale}`;
 }
 
+/**
+ * Path to the localized onboarding wizard, e.g. `/pt/comecar`. The wizard keeps
+ * the same `comecar` slug across locales (it is `noindex`, so a translated slug
+ * would add no SEO value); the locale prefix is what selects the language.
+ */
+export function onboardingPath(locale: Locale): string {
+  return `/${locale}/comecar`;
+}
+
 /** Resolve a locale + raw slug back to its page key, or null if unknown. */
 export function resolvePageKey(locale: Locale, slug: string): PageKey | null {
   for (const key of SLUG_PAGE_KEYS) {

@@ -31,7 +31,11 @@ import {
   TrialReassurance,
 } from "@/components/marketing";
 import type { Locale } from "@/lib/i18n/config";
-import { localePath, type IndustryKey } from "@/lib/i18n/routes";
+import {
+  localePath,
+  onboardingPath,
+  type IndustryKey,
+} from "@/lib/i18n/routes";
 import { getDictionary } from "@/lib/content/dictionary";
 import { getHomeContent } from "@/lib/content/locales";
 import { getPlans } from "@/lib/content/plans";
@@ -79,7 +83,7 @@ export function HomeTemplate({ locale }: { locale: Locale }) {
         badge={<TrialBadge label={dict.trialBadge} />}
         actions={
           <>
-            <CtaLink href="/comecar" variant="primary" size="lg">
+            <CtaLink href={onboardingPath(locale)} variant="primary" size="lg">
               {dict.trialCtaStart}
               <ArrowRight className="h-4 w-4" />
             </CtaLink>

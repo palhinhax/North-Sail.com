@@ -8,7 +8,7 @@ import {
   SectionHeader,
 } from "@/components/marketing";
 import type { Locale } from "@/lib/i18n/config";
-import { localePath } from "@/lib/i18n/routes";
+import { localePath, onboardingPath } from "@/lib/i18n/routes";
 import { getDictionary } from "@/lib/content/dictionary";
 import { planName } from "@/lib/content/plans";
 import { availableIndustries, getIndustryContent } from "@/lib/content/locales";
@@ -241,7 +241,7 @@ export function IndustryTemplate({
         <div className="mx-auto flex max-w-2xl flex-col items-center gap-6 text-center">
           <h2 className="text-display-sm text-brand">{content.cta.label}</h2>
           <div className="flex flex-col gap-3 sm:flex-row">
-            <CtaLink href="/comecar" variant="primary" size="lg">
+            <CtaLink href={onboardingPath(locale)} variant="primary" size="lg">
               {dict.ctaStart}
               <ArrowRight className="h-4 w-4" />
             </CtaLink>

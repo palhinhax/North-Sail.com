@@ -51,8 +51,22 @@ export interface Plan {
   active: boolean;
 }
 
+/**
+ * Stable identifier for the reason behind a recommendation. The wizard maps
+ * this to a localized sentence, while {@link Recommendation.reason} keeps the
+ * canonical pt-PT text for the API/back-office.
+ */
+export type ReasonKey =
+  | "integrations"
+  | "automationPayments"
+  | "multiLocation"
+  | "multiStaff"
+  | "bookings"
+  | "presence";
+
 export interface Recommendation {
   planCode: PlanCode;
   reason: string;
+  reasonKey: ReasonKey;
   quoteOnly: boolean;
 }

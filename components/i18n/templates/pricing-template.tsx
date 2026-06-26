@@ -8,7 +8,7 @@ import {
   TrialReassurance,
 } from "@/components/marketing";
 import type { Locale } from "@/lib/i18n/config";
-import { localePath } from "@/lib/i18n/routes";
+import { localePath, onboardingPath } from "@/lib/i18n/routes";
 import { getDictionary } from "@/lib/content/dictionary";
 import { EXTRAS, getPlans, PRICING_META } from "@/lib/content/plans";
 import {
@@ -154,7 +154,7 @@ export function PricingTemplate({ locale }: { locale: Locale }) {
                   ))}
                 </ul>
                 <CtaLink
-                  href="/comecar"
+                  href={onboardingPath(locale)}
                   variant={plan.highlighted ? "primary" : "outline"}
                   className="w-full"
                 >

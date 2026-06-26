@@ -13,7 +13,12 @@
       "PowerShell(\"---lock file---\")",
       "Bash(grep -v \"^$\")",
       "Bash(git commit -m ' *)",
-      "Bash(git commit -m 'chore: update local Claude permissions *)"
+      "Bash(git commit -m 'chore: update local Claude permissions *)",
+      "Bash(curl -sI -A \"Googlebot\" --max-time 25 \"https://www.north-sail.com/\")",
+      "Bash(curl -sI --max-time 25 \"https://www.north-sail.com/\")",
+      "Bash(curl -s --max-time 2 -o /dev/null \"http://localhost:3987/\")",
+      "Bash(break)",
+      "Bash(curl -sI --max-time 10 \"http://localhost:3987/\")"
     ]
   }
 }

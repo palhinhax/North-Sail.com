@@ -22,8 +22,10 @@ export function makeUser(overrides: Partial<NewUser> = {}): NewUser {
 }
 
 /**
- * Runs the public onboarding wizard at /comecar end-to-end, creating an account
- * and landing on the dashboard (signed in).
+ * Runs the public onboarding wizard end-to-end, creating an account and landing
+ * on the dashboard (signed in). Targets the Portuguese route directly so the
+ * selectors below stay deterministic regardless of `Accept-Language` (the bare
+ * `/comecar` now redirects to the negotiated locale).
  */
 export async function completeOnboarding(
   page: Page,
@@ -32,7 +34,7 @@ export async function completeOnboarding(
 ) {
   const sector = opts.sector ?? "Restaurante";
 
-  await page.goto("/comecar");
+  await page.goto("/pt/comecar");
 
   // Step 1 — sector
   await page.getByRole("button", { name: sector, exact: true }).click();
