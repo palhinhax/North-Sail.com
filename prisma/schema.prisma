@@ -66,6 +66,13 @@ enum LeadStatus {
   ARCHIVED
 }
 
+enum DiscountType {
+  FREE_PERIOD
+  PERCENT
+  FIXED
+  FREE_SETUP
+}
+
 model User {
   id           String   @id @default(cuid())
   name         String?
@@ -78,6 +85,7 @@ model User {
   assignedRequests ServiceRequest[] @relation("AssignedAdmin")
   posts            Post[]
   passwordResets   PasswordResetToken[]
+  createdDiscountCodes DiscountCode[] @relation("DiscountCreatedBy")
 }
 
 model PasswordResetToken {
@@ -124,6 +132,7 @@ model Business {
 
   subscription Subscription?
   requests     ServiceRequest[]
+  discountRedemptions DiscountRedemption[]
 }
 
 model Plan {
@@ -156,6 +165,8 @@ model Subscription {
   trialEndsAt          DateTime?
   currentPeriodEnd     DateTime?
   stripeSubscriptionId String?
+  isComped     Boolean   @default(false)   // subscrição oferecida via código
+  setupWaived  Boolean   @default(false)   // setup isentado via FREE_SETUP
   startedAt        DateTime           @default(now())
   canceledAt       DateTime?
   createdAt        DateTime           @default(now())
@@ -236,4 +247,61 @@ model Lead {
   createdAt         DateTime   @default(now())
 
   @@index([status, createdAt])
+}
+
+model DiscountCode {
+  id              String       @id @default(cuid())
+  code            String       @unique
+  type            DiscountType
+
+  // PERCENT: 1–100. FIXED: cêntimos. Ignorado em FREE_PERIOD / FREE_SETUP.
+  value           Int          @default(0)
+
+  // FREE_PERIOD: meses oferecidos. PERCENT/FIXED: meses de desconto. FREE_SETUP: ignorado.
+  durationMonths  Int?
+
+  appliesToPlanIds String[]    @default([])  // vazio = todos os planos
+  maxRedemptions   Int?                       // null = ilimitado
+  redemptionsUsed  Int         @default(0)
+  perAccountLimit  Int         @default(1)
+
+  validFrom        DateTime    @default(now())
+  validUntil       DateTime?
+  active           Boolean     @default(true)
+  notes            String?
+
+  // Só PERCENT/FIXED: criado uma vez na Stripe e reutilizado.
+  stripeCouponId        String?
+  stripePromotionCodeId String?
+
+  createdById     String?
+  createdBy       User?        @relation("DiscountCreatedBy", fields: [createdById], references: [id])
+  createdAt       DateTime     @default(now())
+  updatedAt       DateTime     @updatedAt
+
+  redemptions     DiscountRedemption[]
+
+  @@index([code])
+  @@index([active])
+}
+
+model DiscountRedemption {
+  id            String       @id @default(cuid())
+  codeId        String
+  code          DiscountCode @relation(fields: [codeId], references: [id], onDelete: Cascade)
+  businessId    String
+  business      Business     @relation(fields: [businessId], references: [id], onDelete: Cascade)
+
+  // Snapshot do efeito, para auditoria.
+  effectType    DiscountType
+  effectSummary String       // ex.: "12 meses grátis", "-50% durante 3 meses"
+  appliedUntil  DateTime?    // FREE_PERIOD: até quando ficou oferecido
+  consumed      Boolean      @default(false) // PERCENT/FIXED/FREE_SETUP: usados no checkout
+
+  redeemedAt    DateTime     @default(now())
+
+  @@index([businessId])
+  // perAccountLimit = 1 fica reforçado a nível de BD.
+  // Se quiseres permitir perAccountLimit > 1 no futuro, remove este unique e valida só em código.
+  @@unique([codeId, businessId])
 }

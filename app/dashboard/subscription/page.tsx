@@ -15,6 +15,7 @@ import { syncSubscriptionFromStripe } from "@/lib/stripe/sync";
 import { planSelfServeEnabled } from "@/lib/stripe/portal-config";
 import { StripeCheckout } from "./_components/stripe-checkout";
 import { ManageBillingButton } from "./_components/manage-billing-button";
+import { RedeemField } from "@/features/discounts/components";
 
 const outlineButton =
   "flex w-full items-center justify-center rounded-lg border border-line bg-surface-lowest px-4 py-3 text-label-md font-medium text-brand shadow-sm transition-colors hover:bg-surface-low";
@@ -202,6 +203,13 @@ export default async function SubscriptionPage({
           </>
         )}
       </section>
+
+      {/* Discount code — redeem on the existing subscription */}
+      {status !== "CANCELED" && (
+        <div>
+          <RedeemField />
+        </div>
+      )}
 
       {/* Trial highlight */}
       {isTrialing && trialDays !== null && (
