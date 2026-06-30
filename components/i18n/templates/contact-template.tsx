@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react";
+import { Mail, MessageCircle } from "lucide-react";
 import { Container, Section } from "@/components/marketing";
 import type { Locale } from "@/lib/i18n/config";
 import { localePath } from "@/lib/i18n/routes";
@@ -19,6 +19,21 @@ const EMAIL_LEADIN: Record<Locale, string> = {
   de: "Lieber per E-Mail? Schreiben Sie uns direkt an",
 };
 
+const WHATSAPP_LABEL: Record<Locale, string> = {
+  pt: "Falar no WhatsApp",
+  en: "Chat on WhatsApp",
+  es: "Hablar por WhatsApp",
+  fr: "Discuter sur WhatsApp",
+  de: "Auf WhatsApp schreiben",
+};
+
+/**
+ * Company / legal details. Fill these in when available — concrete company
+ * identity (registered name, tax number, address) is a strong trust signal.
+ * Leave empty to hide the line.
+ */
+const COMPANY_LINE = ""; // e.g. "NorthSail, Lda · NIF 5XXXXXXXX · Lisboa, Portugal"
+
 export function ContactTemplate({
   locale,
   defaultIndustry,
@@ -29,6 +44,10 @@ export function ContactTemplate({
   const dict = getDictionary(locale);
   const c = getContactContent(locale);
   const path = localePath(locale, "contact");
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER?.replace(
+    /\D/g,
+    ""
+  );
 
   const crumbs = [
     { name: dict.breadcrumbHome, href: localePath(locale, "home") },
@@ -64,6 +83,26 @@ export function ContactTemplate({
               {CONTACT_EMAIL}
             </a>
           </p>
+
+          {whatsappNumber && (
+            <p className="mt-3 flex justify-center">
+              <a
+                href={`https://wa.me/${whatsappNumber}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border border-line px-4 py-2 text-label-md font-medium text-brand transition-colors hover:border-brand-accent hover:text-brand-accent"
+              >
+                <MessageCircle className="h-4 w-4 text-[#25D366]" />
+                {WHATSAPP_LABEL[locale]}
+              </a>
+            </p>
+          )}
+
+          {COMPANY_LINE && (
+            <p className="mt-6 text-center text-label-sm text-ink-subtle">
+              {COMPANY_LINE}
+            </p>
+          )}
         </div>
       </Section>
     </>

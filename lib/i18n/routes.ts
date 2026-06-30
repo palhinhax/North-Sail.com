@@ -10,6 +10,9 @@ export type PageKey =
   | "pricing"
   | "ai-summary"
   | "contact"
+  | "about"
+  | "cases"
+  | "consulting"
   | "industry:restaurants"
   | "industry:cafes"
   | "industry:hairdressers"
@@ -76,6 +79,27 @@ export const SLUGS: SlugMap = {
     es: "contacto",
     fr: "contact",
     de: "kontakt",
+  },
+  about: {
+    en: "about",
+    pt: "sobre",
+    es: "sobre",
+    fr: "a-propos",
+    de: "ueber-uns",
+  },
+  cases: {
+    en: "case-studies",
+    pt: "casos",
+    es: "casos",
+    fr: "etudes-de-cas",
+    de: "referenzen",
+  },
+  consulting: {
+    en: "consulting",
+    pt: "consultoria",
+    es: "consultoria",
+    fr: "conseil",
+    de: "beratung",
   },
   "industry:restaurants": {
     en: "restaurants",

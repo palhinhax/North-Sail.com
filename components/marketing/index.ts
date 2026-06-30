@@ -14,3 +14,4 @@ export { MarketingLayout } from "./marketing-layout";
 export { AuthShell } from "./auth-shell";
 export { WhatsAppFab } from "./whatsapp-fab";
 export { FounderOfferBanner } from "./founder-offer-banner";
+export { LiveEmbed } from "./live-embed";

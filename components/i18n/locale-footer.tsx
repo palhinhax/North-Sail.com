@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Facebook, Github, Instagram, Linkedin, MapPin } from "lucide-react";
 import {
   Container,
   FounderOfferBanner,
@@ -8,8 +9,39 @@ import { PoweredByBadge } from "@/app/components/PoweredByBadge";
 import { LOCALE_LABELS, type Locale } from "@/lib/i18n/config";
 import { localePath, type PageKey } from "@/lib/i18n/routes";
 import { getDictionary } from "@/lib/content/dictionary";
-import { SITE_NAME } from "@/lib/seo/site";
+import { SITE_NAME, SOCIAL_LINKS } from "@/lib/seo/site";
 import { LocaleNav } from "./locale-nav";
+
+/** Inline footer labels for the new pages (no content-registry dependency). */
+const ABOUT_LABEL: Record<Locale, string> = {
+  pt: "Sobre",
+  en: "About",
+  es: "Sobre nosotros",
+  fr: "À propos",
+  de: "Über uns",
+};
+const CASES_LABEL: Record<Locale, string> = {
+  pt: "Casos",
+  en: "Case studies",
+  es: "Casos",
+  fr: "Études de cas",
+  de: "Fallstudien",
+};
+const CONSULTING_LABEL: Record<Locale, string> = {
+  pt: "Consultoria",
+  en: "Consulting",
+  es: "Consultoría",
+  fr: "Conseil",
+  de: "Beratung",
+};
+
+const SOCIAL_ICONS = [
+  { key: "linkedin", href: SOCIAL_LINKS.linkedin, Icon: Linkedin, label: "LinkedIn" },
+  { key: "instagram", href: SOCIAL_LINKS.instagram, Icon: Instagram, label: "Instagram" },
+  { key: "facebook", href: SOCIAL_LINKS.facebook, Icon: Facebook, label: "Facebook" },
+  { key: "github", href: SOCIAL_LINKS.github, Icon: Github, label: "GitHub" },
+  { key: "googleBusiness", href: SOCIAL_LINKS.googleBusiness, Icon: MapPin, label: "Google" },
+] as const;
 
 export function LocaleFooter({ locale }: { locale: Locale }) {
   const dict = getDictionary(locale);
@@ -38,6 +70,10 @@ export function LocaleFooter({ locale }: { locale: Locale }) {
         title: dict.footerSolutions,
         links: [
           {
+            href: localePath(locale, "consulting"),
+            label: CONSULTING_LABEL[locale],
+          },
+          {
             href: localePath(locale, "compare:web-apps-for-business"),
             label: dict.footerWebApps,
           },
@@ -58,6 +94,8 @@ export function LocaleFooter({ locale }: { locale: Locale }) {
       {
         title: dict.footerCompany,
         links: [
+          { href: localePath(locale, "about"), label: ABOUT_LABEL[locale] },
+          { href: localePath(locale, "cases"), label: CASES_LABEL[locale] },
           { href: localePath(locale, "ai-summary"), label: dict.nav[3].label },
           { href: localePath(locale, "contact"), label: dict.ctaContact },
         ],
@@ -88,6 +126,24 @@ export function LocaleFooter({ locale }: { locale: Locale }) {
             <span className="inline-flex items-center gap-1 rounded-full border border-line px-3 py-1 text-label-sm text-ink-muted">
               {LOCALE_LABELS[locale]}
             </span>
+            {SOCIAL_ICONS.some((s) => s.href) && (
+              <div className="flex items-center gap-3 pt-1">
+                {SOCIAL_ICONS.filter((s) => s.href).map(
+                  ({ key, href, Icon, label }) => (
+                    <a
+                      key={key}
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={label}
+                      className="text-ink-muted transition-colors hover:text-brand"
+                    >
+                      <Icon className="h-5 w-5" />
+                    </a>
+                  )
+                )}
+              </div>
+            )}
           </div>
           <div className="flex flex-wrap justify-center gap-10 md:gap-16">
             {columns.map((col) => (

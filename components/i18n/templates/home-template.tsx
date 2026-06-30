@@ -42,6 +42,9 @@ import { getPlans } from "@/lib/content/plans";
 import { JsonLd, organizationSchema, websiteSchema } from "@/lib/seo/jsonld";
 import { AiSummaryBlock } from "./ai-summary-block";
 import { ExampleSites } from "./example-sites";
+import { TestimonialsSection } from "./testimonials-section";
+import { ComparisonSection } from "./comparison-section";
+import { ConsultingBand } from "./consulting-band";
 
 /** Low-friction "talk to us / get a demo" CTA label, per locale. */
 const DEMO_CTA: Record<Locale, string> = {
@@ -178,6 +181,9 @@ export function HomeTemplate({ locale }: { locale: Locale }) {
         </Section>
       )}
 
+      {/* Consulting / digital transformation axis */}
+      <ConsultingBand locale={locale} />
+
       {/* How it works */}
       <Section tone="muted" bordered>
         <SectionHeader title={c.howItWorksTitle} />
@@ -193,6 +199,9 @@ export function HomeTemplate({ locale }: { locale: Locale }) {
           ))}
         </div>
       </Section>
+
+      {/* NorthSail vs Wix/WordPress vs agency */}
+      <ComparisonSection locale={locale} />
 
       {/* Plans */}
       <Section>
@@ -223,6 +232,9 @@ export function HomeTemplate({ locale }: { locale: Locale }) {
           </Link>
         </div>
       </Section>
+
+      {/* Client testimonials (renders only when real ones exist) */}
+      <TestimonialsSection locale={locale} />
 
       {/* AI-friendly summary */}
       <AiSummaryBlock label={dict.aiSummaryLabel} text={c.aiSummary} />

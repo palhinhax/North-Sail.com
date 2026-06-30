@@ -18,7 +18,13 @@ import {
 } from "@/lib/content/locales";
 import { getLegalContent } from "@/lib/content/legal";
 import {
+  AboutTemplate,
+  aboutMeta,
   AiSummaryTemplate,
+  CasesTemplate,
+  casesMeta,
+  ConsultingTemplate,
+  consultingMeta,
   CompareTemplate,
   ContactTemplate,
   IndustryTemplate,
@@ -77,6 +83,15 @@ function metaFor(
     const c = getContactContent(locale);
     return { title: c.metaTitle, description: c.metaDescription };
   }
+  if (pageKey === "about") {
+    return aboutMeta(locale);
+  }
+  if (pageKey === "cases") {
+    return casesMeta(locale);
+  }
+  if (pageKey === "consulting") {
+    return consultingMeta(locale);
+  }
   const industry = industryKeyOf(pageKey);
   if (industry) {
     const c = getIndustryContent(locale, industry);
@@ -111,6 +126,12 @@ export default function LocaleSlugPage({
     body = <AiSummaryTemplate locale={locale} />;
   } else if (pageKey === "contact") {
     body = <ContactTemplate locale={locale} />;
+  } else if (pageKey === "about") {
+    body = <AboutTemplate locale={locale} />;
+  } else if (pageKey === "cases") {
+    body = <CasesTemplate locale={locale} />;
+  } else if (pageKey === "consulting") {
+    body = <ConsultingTemplate locale={locale} />;
   } else if (legalKeyOf(pageKey)) {
     body = <LegalTemplate locale={locale} which={legalKeyOf(pageKey)!} />;
   } else {

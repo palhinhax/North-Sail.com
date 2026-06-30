@@ -41,6 +41,8 @@ on price and simplicity for very small businesses, not on enterprise hotel featu
 - Internal dashboards and admin panels that replace spreadsheets
 - Business process automation (replacing manual Excel/email workflows)
 - Website redesign and modernisation, with ongoing maintenance
+- Digital transformation and IT consulting: strategy, audit, project management
+- Consultants embedded in the client's team for their IT projects (quoted per project)
 
 ## Who it serves
 Small local businesses: restaurants and cafes, hairdressers and barbers, hotels
@@ -61,6 +63,13 @@ SSL, maintenance, support and continuous evolution. Data is isolated per client,
 access is role-based, traffic is SSL-encrypted, and confidentiality is the default
 — suitable for law firms, clinics and professional services.
 
+## Consulting & digital transformation (for companies)
+Beyond building, NorthSail offers digital transformation and IT consulting:
+strategy and roadmap, audit and modernisation (moving off spreadsheets/legacy),
+end-to-end IT project management, and consultants embedded in the client's team
+for their IT projects (staff augmentation / dedicated team). Consulting is quoted
+per project — there are no fixed public prices for it.
+
 ## Not included in entry-level small-business plans
 Online payments, deposits and external integrations (POS, PMS, channel managers,
 Booking.com/Airbnb sync, dynamic pricing, invoicing, CRM) are extras or part of
@@ -77,6 +86,9 @@ higher plans, not the €15 Essential App plan.
 ## Key pages (English; replace /en with /pt, /es, /fr, /de for other languages)
 - Home: https://www.north-sail.com/en
 - Pricing: https://www.north-sail.com/en/pricing
+- About (who we are): https://www.north-sail.com/en/about
+- Case studies / examples: https://www.north-sail.com/en/case-studies
+- Consulting & digital transformation: https://www.north-sail.com/en/consulting
 - AI summary: https://www.north-sail.com/en/ai-summary
 - Contact / get a recommendation: https://www.north-sail.com/en/contact
 

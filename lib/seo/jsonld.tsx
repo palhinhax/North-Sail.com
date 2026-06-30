@@ -1,4 +1,10 @@
-import { absUrl, CONTACT_EMAIL, SITE_NAME, SITE_URL } from "./site";
+import {
+  absUrl,
+  activeSocialUrls,
+  CONTACT_EMAIL,
+  SITE_NAME,
+  SITE_URL,
+} from "./site";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 type Json = Record<string, any>;
@@ -54,11 +60,17 @@ export function organizationSchema(): Json {
       "Business process automation",
       "Local SEO",
       "Software as a service",
+      "Digital transformation consulting",
+      "IT consulting",
+      "IT project management",
+      "IT staff augmentation",
     ],
     serviceType: [
       "Website design",
       "Web application development",
       "Custom software development",
+      "Digital transformation consulting",
+      "IT consulting",
     ],
     areaServed: [
       { "@type": "Country", name: "Portugal" },
@@ -66,9 +78,9 @@ export function organizationSchema(): Json {
       { "@type": "Place", name: "Worldwide" },
     ],
     knowsLanguage: ["pt-PT", "en", "es-ES", "fr-FR", "de-DE"],
-    // Add real profile URLs (LinkedIn, GitHub, Crunchbase, etc.) here as they
-    // go live — sameAs is a primary entity-disambiguation signal.
-    sameAs: [],
+    // Real profile URLs (LinkedIn, Instagram, etc.) — configured in lib/seo/site.ts
+    // (SOCIAL_LINKS). sameAs is a primary entity-disambiguation + authority signal.
+    sameAs: activeSocialUrls(),
   };
 }
 

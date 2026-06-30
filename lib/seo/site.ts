@@ -19,3 +19,23 @@ export function absUrl(path: string): string {
 
 /** Default social share image (Open Graph / Twitter). */
 export const OG_IMAGE = "/logo.png";
+
+/**
+ * Public social / profile URLs. Fill these in as each goes live — they power
+ * BOTH the footer links and the Organization `sameAs` schema, which is a primary
+ * authority and brand-disambiguation signal for Google and AI assistants
+ * (helps separate NorthSail the software company from the nautical brands).
+ * Leave a value as "" to hide it.
+ */
+export const SOCIAL_LINKS = {
+  linkedin: "", // e.g. "https://www.linkedin.com/company/northsail"
+  instagram: "", // e.g. "https://www.instagram.com/northsail"
+  facebook: "", // e.g. "https://www.facebook.com/northsail"
+  github: "", // e.g. "https://github.com/northsail"
+  googleBusiness: "", // your Google Business Profile share URL
+} as const;
+
+/** Non-empty social URLs, used by both the footer and the `sameAs` schema. */
+export function activeSocialUrls(): string[] {
+  return Object.values(SOCIAL_LINKS).filter((u) => u.trim().length > 0);
+}
