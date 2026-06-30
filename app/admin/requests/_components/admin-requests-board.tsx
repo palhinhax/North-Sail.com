@@ -7,6 +7,7 @@ import { Clock, Search } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { requestStatusLabels } from "@/features/requests/schemas";
 import { getStatusStyle } from "@/features/requests/status-style";
+import { DeleteButton } from "../../_components/delete-button";
 
 export interface AdminRequest {
   id: string;
@@ -114,11 +115,16 @@ export function AdminRequestsBoard({ requests }: { requests: AdminRequest[] }) {
                 {group.items.map((r) => {
                   const s = getStatusStyle(r.status);
                   return (
-                    <Link
+                    <div
                       key={r.id}
-                      href={`/admin/requests/${r.id}`}
-                      className="group flex h-full flex-col rounded-2xl border bg-card p-6 transition-all hover:border-primary/40 hover:shadow-md"
+                      className="group relative flex h-full flex-col rounded-2xl border bg-card p-6 transition-all hover:border-primary/40 hover:shadow-md"
                     >
+                      {/* Link em overlay: cartão clicável sem englobar o botão de apagar */}
+                      <Link
+                        href={`/admin/requests/${r.id}`}
+                        aria-label={`Ver ${r.title}`}
+                        className="absolute inset-0 rounded-2xl"
+                      />
                       <div className="mb-4 flex items-start justify-between">
                         <span
                           className={cn(
@@ -131,6 +137,15 @@ export function AdminRequestsBoard({ requests }: { requests: AdminRequest[] }) {
                           />
                           {s.label}
                         </span>
+                        <div className="relative z-10">
+                          <DeleteButton
+                            endpoint={`/api/requests/${r.id}`}
+                            itemLabel={r.title}
+                            iconOnly
+                            title="Apagar pedido?"
+                            description={`Vais apagar o pedido "${r.title}" e o respetivo histórico, mensagens e anexos. Esta ação é permanente e não pode ser desfeita.`}
+                          />
+                        </div>
                       </div>
                       <h3 className="mb-1.5 line-clamp-2 font-semibold">
                         {r.title}
@@ -147,7 +162,7 @@ export function AdminRequestsBoard({ requests }: { requests: AdminRequest[] }) {
                         </span>
                         <span className="text-xs">{r.type}</span>
                       </div>
-                    </Link>
+                    </div>
                   );
                 })}
               </div>

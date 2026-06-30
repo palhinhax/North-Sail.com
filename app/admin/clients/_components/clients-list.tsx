@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { ChevronRight, Search } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { DeleteButton } from "../../_components/delete-button";
 
 export interface AdminClient {
   id: string;
@@ -80,11 +81,16 @@ export function ClientsList({ clients }: { clients: AdminClient[] }) {
           {filtered.map((c, i) => {
             const status = c.status ?? "";
             return (
-              <Link
+              <div
                 key={c.id}
-                href={`/admin/clients/${c.id}`}
-                className="group flex items-center justify-between gap-4 rounded-2xl border bg-card p-4 shadow-sm transition-all hover:border-primary/30 hover:shadow-md md:p-5"
+                className="group relative flex items-center justify-between gap-4 rounded-2xl border bg-card p-4 shadow-sm transition-all hover:border-primary/30 hover:shadow-md md:p-5"
               >
+                {/* Link em overlay: torna o cartão clicável sem englobar o botão de apagar */}
+                <Link
+                  href={`/admin/clients/${c.id}`}
+                  aria-label={`Ver ${c.name}`}
+                  className="absolute inset-0 rounded-2xl"
+                />
                 <div className="flex min-w-0 items-center gap-4">
                   <div
                     className={cn(
@@ -123,8 +129,17 @@ export function ClientsList({ clients }: { clients: AdminClient[] }) {
                     </div>
                   </div>
                 </div>
-                <ChevronRight className="h-5 w-5 shrink-0 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:text-primary" />
-              </Link>
+                <div className="relative z-10 flex shrink-0 items-center gap-1">
+                  <DeleteButton
+                    endpoint={`/api/businesses/${c.id}`}
+                    itemLabel={c.name}
+                    iconOnly
+                    title="Apagar cliente?"
+                    description={`Vais apagar o cliente "${c.name}" e a respetiva conta, subscrição, pedidos e anexos. Esta ação é permanente e não pode ser desfeita.`}
+                  />
+                  <ChevronRight className="h-5 w-5 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:text-primary" />
+                </div>
+              </div>
             );
           })}
         </div>

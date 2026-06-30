@@ -70,3 +70,35 @@ export async function PATCH(request: Request, { params }: RouteParams) {
   });
   return NextResponse.json(updated);
 }
+
+export async function DELETE(_request: Request, { params }: RouteParams) {
+  const session = await auth();
+  if (!session?.user?.id) {
+    return NextResponse.json({ message: "Unauthorized" }, { status: 401 });
+  }
+  // Apagar um cliente é uma ação destrutiva: só admins.
+  if (!isAdmin(session)) {
+    return NextResponse.json({ message: "Forbidden" }, { status: 403 });
+  }
+
+  const { id } = await params;
+  const business = await prisma.business.findUnique({
+    where: { id },
+    select: { ownerId: true, owner: { select: { role: true } } },
+  });
+  if (!business) {
+    return NextResponse.json({ message: "Not found" }, { status: 404 });
+  }
+
+  // Apaga o negócio (em cascade: subscrição, pedidos, mensagens, anexos,
+  // eventos de estado e resgates de desconto) e, se o dono for um cliente,
+  // também a sua conta de utilizador — libertando o email para reutilizar.
+  await prisma.$transaction(async (tx) => {
+    await tx.business.delete({ where: { id } });
+    if (business.owner.role === "CLIENT") {
+      await tx.user.delete({ where: { id: business.ownerId } });
+    }
+  });
+
+  return NextResponse.json({ ok: true });
+}

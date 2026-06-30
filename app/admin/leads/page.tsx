@@ -2,6 +2,7 @@ import { redirect } from "next/navigation";
 import { auth } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { DeleteButton } from "../_components/delete-button";
 
 export const dynamic = "force-dynamic";
 
@@ -51,9 +52,18 @@ export default async function AdminLeadsPage() {
                     {lead.locale ? ` · ${lead.locale}` : ""}
                   </p>
                 </div>
-                <span className="whitespace-nowrap rounded-full border px-2 py-0.5 text-xs text-muted-foreground">
-                  {formatDate(lead.createdAt)}
-                </span>
+                <div className="flex items-center gap-2">
+                  <span className="whitespace-nowrap rounded-full border px-2 py-0.5 text-xs text-muted-foreground">
+                    {formatDate(lead.createdAt)}
+                  </span>
+                  <DeleteButton
+                    endpoint={`/api/leads/${lead.id}`}
+                    itemLabel={lead.businessName}
+                    iconOnly
+                    title="Apagar lead?"
+                    description={`Vais apagar a lead "${lead.businessName}". Esta ação é permanente e não pode ser desfeita.`}
+                  />
+                </div>
               </CardHeader>
               <CardContent className="space-y-2 text-sm">
                 <p className="whitespace-pre-wrap">{lead.need}</p>

@@ -84,3 +84,27 @@ export async function PATCH(request: Request, { params }: RouteParams) {
   });
   return NextResponse.json(updated);
 }
+
+export async function DELETE(_request: Request, { params }: RouteParams) {
+  const session = await auth();
+  if (!session?.user?.id) {
+    return NextResponse.json({ message: "Unauthorized" }, { status: 401 });
+  }
+  // Apagar um pedido só é permitido a admins.
+  if (!isAdmin(session)) {
+    return NextResponse.json({ message: "Forbidden" }, { status: 403 });
+  }
+
+  const { id } = await params;
+  const existing = await prisma.serviceRequest.findUnique({
+    where: { id },
+    select: { id: true },
+  });
+  if (!existing) {
+    return NextResponse.json({ message: "Not found" }, { status: 404 });
+  }
+
+  // Em cascade: eventos de estado, mensagens e anexos do pedido.
+  await prisma.serviceRequest.delete({ where: { id } });
+  return NextResponse.json({ ok: true });
+}
