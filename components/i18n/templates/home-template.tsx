@@ -41,6 +41,16 @@ import { getHomeContent } from "@/lib/content/locales";
 import { getPlans } from "@/lib/content/plans";
 import { JsonLd, organizationSchema, websiteSchema } from "@/lib/seo/jsonld";
 import { AiSummaryBlock } from "./ai-summary-block";
+import { ExampleSites } from "./example-sites";
+
+/** Low-friction "talk to us / get a demo" CTA label, per locale. */
+const DEMO_CTA: Record<Locale, string> = {
+  pt: "Pedir demo grátis",
+  en: "Get a free demo",
+  es: "Pedir demo gratis",
+  fr: "Demander une démo",
+  de: "Kostenlose Demo",
+};
 
 const SECTOR_ICONS: Record<IndustryKey, React.ReactNode> = {
   restaurants: <UtensilsCrossed className="h-5 w-5" />,
@@ -88,6 +98,13 @@ export function HomeTemplate({ locale }: { locale: Locale }) {
               <ArrowRight className="h-4 w-4" />
             </CtaLink>
             <CtaLink
+              href={localePath(locale, "contact")}
+              variant="secondary"
+              size="lg"
+            >
+              {DEMO_CTA[locale]}
+            </CtaLink>
+            <CtaLink
               href={localePath(locale, "pricing")}
               variant="outline"
               size="lg"
@@ -110,6 +127,9 @@ export function HomeTemplate({ locale }: { locale: Locale }) {
           </p>
         </div>
       </section>
+
+      {/* Visual proof: example sites per sector */}
+      <ExampleSites locale={locale} />
 
       {/* Sectors → industry pages */}
       <Section>

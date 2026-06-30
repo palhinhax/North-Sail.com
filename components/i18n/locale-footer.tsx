@@ -1,5 +1,9 @@
 import Link from "next/link";
-import { Container } from "@/components/marketing";
+import {
+  Container,
+  FounderOfferBanner,
+  WhatsAppFab,
+} from "@/components/marketing";
 import { PoweredByBadge } from "@/app/components/PoweredByBadge";
 import { LOCALE_LABELS, type Locale } from "@/lib/i18n/config";
 import { localePath, type PageKey } from "@/lib/i18n/routes";
@@ -125,8 +129,12 @@ export function LocaleMarketingLayout({
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <LocaleNav locale={locale} pageKey={pageKey} />
-      <main className="flex-1 pt-16">{children}</main>
+      <main className="flex-1 pt-16">
+        <FounderOfferBanner locale={locale} />
+        {children}
+      </main>
       {!hideFooter && <LocaleFooter locale={locale} />}
+      <WhatsAppFab locale={locale} />
     </div>
   );
 }

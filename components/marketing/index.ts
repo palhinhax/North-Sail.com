@@ -12,3 +12,5 @@ export { TrialBadge, TrialReassurance } from "./trial-badge";
 export { PageHeader } from "./page-header";
 export { MarketingLayout } from "./marketing-layout";
 export { AuthShell } from "./auth-shell";
+export { WhatsAppFab } from "./whatsapp-fab";
+export { FounderOfferBanner } from "./founder-offer-banner";
