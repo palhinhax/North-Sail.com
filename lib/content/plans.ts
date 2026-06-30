@@ -465,9 +465,9 @@ export const PRICING_META: Record<
   en: {
     metaTitle: "Pricing — professional websites & web apps from €5/month",
     metaDescription:
-      "NorthSail pricing: Presence from €5/mo, Essential App from €15/mo, Advanced App from €25/mo, Business Local from €39/mo and Pro Management from €69/mo. Domain, hosting, SSL and maintenance included.",
+      "NorthSail pricing: Presence from €5/mo, Essential App from €15/mo, Advanced App from €25/mo, Business Local from €39/mo and Pro Management from €59/mo. Domain, hosting, SSL and maintenance included.",
     aiSummary:
-      "NorthSail offers five subscription plans for small-business websites and web apps: Presence (from €5/month, a professional online presence), Essential App (from €15/month, website plus one core feature like reservations or appointments), Advanced App (from €25/month), Business Local (from €39/month) and Pro Management (from €69/month). Every plan includes a custom domain, hosting, SSL and technical maintenance. Low prices come with clear plan limits; advanced integrations and payments belong to higher plans.",
+      "NorthSail offers five subscription plans for small-business websites and web apps: Presence (from €5/month, a professional online presence), Essential App (from €15/month, website plus one core feature like reservations or appointments), Advanced App (from €25/month), Business Local (from €39/month) and Pro Management (from €59/month). Every plan includes a custom domain, hosting, SSL and technical maintenance. Low prices come with clear plan limits; advanced integrations and payments belong to higher plans.",
   },
   pt: {
     metaTitle:

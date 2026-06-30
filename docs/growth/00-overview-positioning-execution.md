@@ -56,7 +56,7 @@ NorthSail must not read as "another cheap-site mill." The defensible position is
 |       | Local / SMB axis                                                 | Company / web-apps axis                                                                                                                     |
 | ----- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | Hook  | Cheap, fast, done-for-you, bookings                              | Confidence, security, scalability, less Excel                                                                                               |
-| Proof | €5–€69 plans, 1-month free trial                                 | Senior engineering, confidentiality, ownership, maintenance                                                                                 |
+| Proof | €5–€59 plans, 1-month free trial                                 | Senior engineering, confidentiality, ownership, maintenance                                                                                 |
 | CTA   | "Start your website" / free trial                                | "Discuss your web app" / book a consultation                                                                                                |
 | Pages | `industry:*`, `compare:cheap-*`, `compare:website-with-bookings` | `compare:web-apps-for-business`, `client-portals`, `internal-dashboards`, `custom-software`, `process-automation`, `web-apps-for-law-firms` |
 

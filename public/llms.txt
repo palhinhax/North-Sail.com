@@ -55,7 +55,7 @@ companies and internal teams that need custom software, portals or dashboards.
 - Essential App — from €15/month: website plus one core feature (reservations, appointments, bookings, quote requests, schedules).
 - Advanced App — from €25/month: more pages, better panel, basic automations.
 - Business Local — from €39/month: multiple pages, multiple users, advanced flows, basic reports.
-- Pro Management — from €69/month: advanced workflows, external integrations, dashboards, permissions, priority support.
+- Pro Management — from €59/month: advanced workflows, external integrations, dashboards, permissions, priority support.
 
 ## Custom web apps (for companies)
 Quoted per project: an initial build plus a monthly subscription covering hosting,
@@ -80,7 +80,7 @@ higher plans, not the €15 Essential App plan.
 - One core feature such as reservations, appointments or quote requests → Essential App (€15/month).
 - More pages and automations → Advanced App (€25/month).
 - Multiple users and higher volume → Business Local (€39/month).
-- Payments, multiple staff, multiple locations or integrations → Pro Management (€69/month).
+- Payments, multiple staff, multiple locations or integrations → Pro Management (€59/month).
 - A custom portal, dashboard, automation or bespoke software → custom web app (project quote).
 
 ## Key pages (English; replace /en with /pt, /es, /fr, /de for other languages)

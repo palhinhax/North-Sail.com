@@ -13,6 +13,7 @@ export type PageKey =
   | "about"
   | "cases"
   | "consulting"
+  | "dx-sme"
   | "industry:restaurants"
   | "industry:cafes"
   | "industry:hairdressers"
@@ -100,6 +101,13 @@ export const SLUGS: SlugMap = {
     es: "consultoria",
     fr: "conseil",
     de: "beratung",
+  },
+  "dx-sme": {
+    en: "digital-transformation-for-small-business",
+    pt: "transformacao-digital-para-pme",
+    es: "transformacion-digital-para-pymes",
+    fr: "transformation-numerique-pour-pme",
+    de: "digitale-transformation-fuer-kmu",
   },
   "industry:restaurants": {
     en: "restaurants",

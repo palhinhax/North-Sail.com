@@ -11,6 +11,14 @@ const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID ?? "G-PMGH4XBS9G";
 // Only load analytics in production so local/dev visits aren't tracked.
 const GA_ENABLED = process.env.NODE_ENV === "production" && !!GA_MEASUREMENT_ID;
 
+// Search-engine ownership verification. Paste the codes from Google Search
+// Console (meta-tag method) and Bing Webmaster Tools into these env vars; the
+// verification <meta> tags then render automatically. Required to get the site
+// indexed and to submit the sitemap.
+const GOOGLE_SITE_VERIFICATION =
+  process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
+const BING_SITE_VERIFICATION = process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION;
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -47,6 +55,12 @@ export const metadata: Metadata = {
     ],
   },
   manifest: "/site.webmanifest",
+  verification: {
+    ...(GOOGLE_SITE_VERIFICATION ? { google: GOOGLE_SITE_VERIFICATION } : {}),
+    ...(BING_SITE_VERIFICATION
+      ? { other: { "msvalidate.01": BING_SITE_VERIFICATION } }
+      : {}),
+  },
 };
 
 export default function RootLayout({

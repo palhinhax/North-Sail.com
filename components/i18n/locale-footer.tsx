@@ -34,13 +34,40 @@ const CONSULTING_LABEL: Record<Locale, string> = {
   fr: "Conseil",
   de: "Beratung",
 };
+const DX_SME_LABEL: Record<Locale, string> = {
+  pt: "Transformação digital para PME",
+  en: "Digital transformation for SMEs",
+  es: "Transformación digital para pymes",
+  fr: "Transformation numérique pour PME",
+  de: "Digitale Transformation für KMU",
+};
 
 const SOCIAL_ICONS = [
-  { key: "linkedin", href: SOCIAL_LINKS.linkedin, Icon: Linkedin, label: "LinkedIn" },
-  { key: "instagram", href: SOCIAL_LINKS.instagram, Icon: Instagram, label: "Instagram" },
-  { key: "facebook", href: SOCIAL_LINKS.facebook, Icon: Facebook, label: "Facebook" },
+  {
+    key: "linkedin",
+    href: SOCIAL_LINKS.linkedin,
+    Icon: Linkedin,
+    label: "LinkedIn",
+  },
+  {
+    key: "instagram",
+    href: SOCIAL_LINKS.instagram,
+    Icon: Instagram,
+    label: "Instagram",
+  },
+  {
+    key: "facebook",
+    href: SOCIAL_LINKS.facebook,
+    Icon: Facebook,
+    label: "Facebook",
+  },
   { key: "github", href: SOCIAL_LINKS.github, Icon: Github, label: "GitHub" },
-  { key: "googleBusiness", href: SOCIAL_LINKS.googleBusiness, Icon: MapPin, label: "Google" },
+  {
+    key: "googleBusiness",
+    href: SOCIAL_LINKS.googleBusiness,
+    Icon: MapPin,
+    label: "Google",
+  },
 ] as const;
 
 export function LocaleFooter({ locale }: { locale: Locale }) {
@@ -72,6 +99,10 @@ export function LocaleFooter({ locale }: { locale: Locale }) {
           {
             href: localePath(locale, "consulting"),
             label: CONSULTING_LABEL[locale],
+          },
+          {
+            href: localePath(locale, "dx-sme"),
+            label: DX_SME_LABEL[locale],
           },
           {
             href: localePath(locale, "compare:web-apps-for-business"),

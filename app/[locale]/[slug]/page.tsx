@@ -25,6 +25,8 @@ import {
   casesMeta,
   ConsultingTemplate,
   consultingMeta,
+  DxSmeTemplate,
+  dxSmeMeta,
   CompareTemplate,
   ContactTemplate,
   IndustryTemplate,
@@ -92,6 +94,9 @@ function metaFor(
   if (pageKey === "consulting") {
     return consultingMeta(locale);
   }
+  if (pageKey === "dx-sme") {
+    return dxSmeMeta(locale);
+  }
   const industry = industryKeyOf(pageKey);
   if (industry) {
     const c = getIndustryContent(locale, industry);
@@ -132,6 +137,8 @@ export default function LocaleSlugPage({
     body = <CasesTemplate locale={locale} />;
   } else if (pageKey === "consulting") {
     body = <ConsultingTemplate locale={locale} />;
+  } else if (pageKey === "dx-sme") {
+    body = <DxSmeTemplate locale={locale} />;
   } else if (legalKeyOf(pageKey)) {
     body = <LegalTemplate locale={locale} which={legalKeyOf(pageKey)!} />;
   } else {

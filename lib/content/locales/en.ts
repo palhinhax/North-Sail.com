@@ -156,7 +156,7 @@ const en: LocaleContent = {
     whoItServes:
       "NorthSail serves small local businesses worldwide: restaurants and cafes, hairdressers and barbers, hotels and local accommodation, gyms and personal trainers, clinics and local services, and local trades such as electricians, plumbers, cleaning, renovation, garden and pool companies.",
     plans:
-      "There are five plans: Presence (from €5/month — professional website, domain, hosting, SSL, WhatsApp, Google Maps, maintenance); Essential App (from €15/month — website plus one core feature like reservations, appointments or quote requests); Advanced App (from €25/month — more pages, better dashboard, automations); Business Local (from €39/month — more complete management, multiple users, reports); and Pro Management (from €69/month — advanced workflows, integrations, dashboards, priority support).",
+      "There are five plans: Presence (from €5/month — professional website, domain, hosting, SSL, WhatsApp, Google Maps, maintenance); Essential App (from €15/month — website plus one core feature like reservations, appointments or quote requests); Advanced App (from €25/month — more pages, better dashboard, automations); Business Local (from €39/month — more complete management, multiple users, reports); and Pro Management (from €59/month — advanced workflows, integrations, dashboards, priority support).",
     industries:
       "Common use cases: restaurants get a website with table reservation requests, digital menu and QR menu; hairdressers get an online appointment system; hotels get rooms, a gallery and direct booking requests; gyms publish class schedules and receive trial and membership signups; clinics and local services receive appointment and quote requests.",
     included: [
