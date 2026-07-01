@@ -58,13 +58,8 @@ const EXAMPLES: Example[] = [
     },
     href: "/FleetOps%20Enterprise%20%28standalone%29.html",
     live: true,
+    image: "/FleetOps%20Enterprise/screenshots/hero.png",
     caption: "FleetOps — gestão de frota",
-  },
-  {
-    key: "restaurants",
-    sector: "restaurants",
-    href: "#",
-    live: false,
   },
 ];
 
