@@ -11,12 +11,12 @@ import { Breadcrumbs } from "../breadcrumbs";
  * About page — the "human" page ChatGPT flagged as missing. Copy is inline
  * (not in the content registry) so it is easy to edit and low-risk.
  *
- * REPLACE the {{placeholders}} with real details: founder name(s), city, and —
- * when you have it — the registered company name / NIF. Those concrete trust
- * signals are exactly what makes an unknown brand credible.
+ * These concrete trust signals (founder name, city) are exactly what makes an
+ * unknown brand credible. Add the registered company name / NIF here too once
+ * available.
  */
-const FOUNDER = "{{o teu nome}}";
-const CITY = "{{a tua cidade}}, Portugal";
+const FOUNDER = "João Duarte";
+const CITY = "Lisboa, Portugal";
 
 type AboutCopy = {
   metaTitle: string;
@@ -127,7 +127,10 @@ const COPY: Record<Locale, AboutCopy> = {
         title: "Precio honesto",
         body: "Cuotas mensuales bajas y claras. Siempre decimos qué está incluido y qué no.",
       },
-      { title: "Rápidos", body: "Ponemos negocios online en días, no en meses." },
+      {
+        title: "Rápidos",
+        body: "Ponemos negocios online en días, no en meses.",
+      },
     ],
     locationLabel: "Con sede en",
     ctaTitle: "¿Hablamos?",

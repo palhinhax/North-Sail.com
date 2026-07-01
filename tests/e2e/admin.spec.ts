@@ -1,6 +1,10 @@
 import { test, expect, type BrowserContext } from "@playwright/test";
 import { completeOnboarding, loginAsAdmin, makeUser } from "./helpers";
 
+function escapeRegExp(value: string) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
 /**
  * Admin side. Requires an admin account — defaults to the seeded
  * admin@northsail.com / password123 (override with E2E_ADMIN_EMAIL /
@@ -33,7 +37,12 @@ test.describe("Admin", () => {
       .getByPlaceholder(/Procurar cliente, email ou pedido/i)
       .fill(user.businessName);
     await page
-      .getByText(new RegExp(`App para ${user.businessName}`, "i"))
+      .getByRole("link", {
+        name: new RegExp(
+          `Ver App para ${escapeRegExp(user.businessName)}`,
+          "i"
+        ),
+      })
       .click();
     await page.waitForURL("**/admin/requests/**");
 
@@ -72,7 +81,11 @@ test.describe("Admin", () => {
 
     await page.goto("/admin/clients");
     await page.getByPlaceholder(/Pesquisar clientes/i).fill(user.businessName);
-    await page.getByText(user.businessName, { exact: false }).first().click();
+    await page
+      .getByRole("link", {
+        name: new RegExp(`Ver ${escapeRegExp(user.businessName)}`, "i"),
+      })
+      .click();
     await page.waitForURL("**/admin/clients/**");
 
     await expect(
