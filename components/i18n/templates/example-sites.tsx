@@ -48,6 +48,19 @@ const EXAMPLES: Example[] = [
     caption: "Opero — gestão de empresa",
   },
   {
+    key: "fleet",
+    titleByLocale: {
+      pt: "Empresa — plataforma de frota",
+      en: "Enterprise — fleet platform",
+      es: "Empresa — plataforma de flota",
+      fr: "Entreprise — plateforme de flotte",
+      de: "Unternehmen — Flottenplattform",
+    },
+    href: "/FleetOps%20Enterprise%20%28standalone%29.html",
+    live: true,
+    caption: "FleetOps — gestão de frota",
+  },
+  {
     key: "restaurants",
     sector: "restaurants",
     href: "#",
