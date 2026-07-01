@@ -27,6 +27,8 @@ import {
   consultingMeta,
   DxSmeTemplate,
   dxSmeMeta,
+  OfferTemplate,
+  offerMeta,
   CompareTemplate,
   ContactTemplate,
   IndustryTemplate,
@@ -97,6 +99,9 @@ function metaFor(
   if (pageKey === "dx-sme") {
     return dxSmeMeta(locale);
   }
+  if (pageKey === "offer") {
+    return offerMeta(locale);
+  }
   const industry = industryKeyOf(pageKey);
   if (industry) {
     const c = getIndustryContent(locale, industry);
@@ -139,6 +144,8 @@ export default function LocaleSlugPage({
     body = <ConsultingTemplate locale={locale} />;
   } else if (pageKey === "dx-sme") {
     body = <DxSmeTemplate locale={locale} />;
+  } else if (pageKey === "offer") {
+    body = <OfferTemplate locale={locale} />;
   } else if (legalKeyOf(pageKey)) {
     body = <LegalTemplate locale={locale} which={legalKeyOf(pageKey)!} />;
   } else {

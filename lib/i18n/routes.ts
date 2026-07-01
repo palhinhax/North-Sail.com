@@ -14,6 +14,7 @@ export type PageKey =
   | "cases"
   | "consulting"
   | "dx-sme"
+  | "offer"
   | "industry:restaurants"
   | "industry:cafes"
   | "industry:hairdressers"
@@ -108,6 +109,15 @@ export const SLUGS: SlugMap = {
     es: "transformacion-digital-para-pymes",
     fr: "transformation-numerique-pour-pme",
     de: "digitale-transformation-fuer-kmu",
+  },
+  // Promo landing (launch offer). Same slug across locales so the campaign
+  // link/QR stays stable regardless of language.
+  offer: {
+    en: "oferta-1-ano-gratis",
+    pt: "oferta-1-ano-gratis",
+    es: "oferta-1-ano-gratis",
+    fr: "oferta-1-ano-gratis",
+    de: "oferta-1-ano-gratis",
   },
   "industry:restaurants": {
     en: "restaurants",

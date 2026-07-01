@@ -6,6 +6,7 @@ import {
   RequestType,
   RequestStatus,
   BillingCycle,
+  DiscountType,
 } from "@prisma/client";
 import bcrypt from "bcryptjs";
 
@@ -220,6 +221,33 @@ async function main() {
     });
     console.log("✅ Demo request with timeline:", req.title);
   }
+
+  // Launch offer code (Instagram campaign): 1 year free, worth €449.
+  // FREE_PERIOD needs no Stripe coupon. Limited to 10 redemptions ("vagas
+  // limitadas"), one per account, valid on any plan.
+  await prisma.discountCode.upsert({
+    where: { code: "NS-Q54Z-3464" },
+    update: {
+      type: DiscountType.FREE_PERIOD,
+      durationMonths: 12,
+      maxRedemptions: 10,
+      perAccountLimit: 1,
+      active: true,
+      notes: "Oferta de lançamento Instagram — 1 ano grátis (valor 449€).",
+    },
+    create: {
+      code: "NS-Q54Z-3464",
+      type: DiscountType.FREE_PERIOD,
+      value: 0,
+      durationMonths: 12,
+      appliesToPlanIds: [],
+      maxRedemptions: 10,
+      perAccountLimit: 1,
+      active: true,
+      notes: "Oferta de lançamento Instagram — 1 ano grátis (valor 449€).",
+    },
+  });
+  console.log("✅ Launch offer code seeded: NS-Q54Z-3464 (12 months free)");
 
   console.log("\n📧 Login credentials:");
   console.log("   Admin:  admin@northsail.com / password123");

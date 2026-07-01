@@ -3,7 +3,11 @@ import { notFound } from "next/navigation";
 import { isLocale, type Locale } from "@/lib/i18n/config";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { getHomeContent } from "@/lib/content/locales";
-import { HomeTemplate, LocaleMarketingLayout } from "@/components/i18n";
+import {
+  HomeTemplate,
+  LocaleMarketingLayout,
+  OfferPopup,
+} from "@/components/i18n";
 
 export function generateMetadata({
   params,
@@ -30,6 +34,7 @@ export default function LocaleHomePage({
   return (
     <LocaleMarketingLayout locale={locale} pageKey="home">
       <HomeTemplate locale={locale} />
+      <OfferPopup locale={locale} />
     </LocaleMarketingLayout>
   );
 }

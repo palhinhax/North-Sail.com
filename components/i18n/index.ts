@@ -17,5 +17,7 @@ export {
   consultingMeta,
 } from "./templates/consulting-template";
 export { DxSmeTemplate, dxSmeMeta } from "./templates/dx-sme-template";
+export { OfferTemplate, offerMeta } from "./templates/offer-template";
+export { OfferPopup } from "./offer-popup";
 export { LegalTemplate } from "./templates/legal-template";
 export { AiSummaryBlock } from "./templates/ai-summary-block";
